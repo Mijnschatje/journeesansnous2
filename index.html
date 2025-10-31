@@ -307,5 +307,67 @@
     <div class="fab-share__hint" id="shareHint" aria-live="polite"></div>
   </div>
 </div>
+  <script>
+(function(){
+  const fab   = document.getElementById('shareFab');
+  const panel = document.getElementById('sharePanel');
+  const linkX = document.getElementById('shareX');
+  const linkFb= document.getElementById('shareFb');
+  const linkMl= document.getElementById('shareMail');
+  const btnCp = document.getElementById('shareCopy');
+  const hint  = document.getElementById('shareHint');
+
+  // Construire les liens à partir de l’URL et du titre de la page
+  const pageUrl   = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  linkX.href  = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
+  linkFb.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+  linkMl.href = `mailto:?subject=${pageTitle}&body=${pageUrl}`;
+
+  // Ouvrir/fermer le panneau, ou utiliser Web Share API si dispo
+  fab.addEventListener('click', async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: document.title, url: window.location.href });
+        return;
+      }
+    } catch(e){ /* si l’utilisateur annule, on ne fait rien */ }
+
+    const open = panel.classList.toggle('is-open');
+    fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // Copier le lien
+  btnCp.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      hint.textContent = 'Lien copié ✔';
+      setTimeout(()=> hint.textContent = '', 1500);
+    } catch {
+      hint.textContent = 'Impossible de copier. Sélectionne et copie manuellement.';
+      setTimeout(()=> hint.textContent = '', 2500);
+    }
+  });
+
+  // Fermer si on clique à l’extérieur
+  document.addEventListener('click', (e) => {
+    if (!panel.classList.contains('is-open')) return;
+    if (e.target === fab || fab.contains(e.target) || panel.contains(e.target)) return;
+    panel.classList.remove('is-open');
+    fab.setAttribute('aria-expanded','false');
+  });
+
+  // Accessibilité: Échap pour fermer
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.classList.contains('is-open')) {
+      panel.classList.remove('is-open');
+      fab.setAttribute('aria-expanded','false');
+      fab.focus();
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
