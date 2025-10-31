@@ -24,17 +24,33 @@
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 
-    /* ====== Topbar ====== */
+    /* ====== Top nav (logo) ====== */
+    .nav{
+      border-bottom:1px solid var(--line);
+      background:#fff;
+    }
+    .nav .inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:36px;width:auto}
+    .brand .fallback{font-weight:800;letter-spacing:.3px}
+
+    /* ====== Topbar (marquee) ====== */
     .topbar{background:#111;color:#fff;border-bottom:1px solid #000}
+    .topbar .container{position:relative}
     .marquee{
-      padding:8px 0; font-size:14px; white-space:nowrap; overflow:hidden;
+      position:relative; overflow:hidden; padding:8px 0; font-size:14px;
       mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
     }
-    .marquee::after{
-      /* simple auto défilement sans JS */
-      content: attr(data-text);
+    .marquee__track{
+      display:flex; gap:50px; white-space:nowrap;
+      will-change: transform;
+      animation: marquee-slide 28s linear infinite;
     }
-    /* Animation "pauvre" en CSS : on duplique le contenu via JS on time — pour l’instant on laisse fixe. */
+    @keyframes marquee-slide{
+      0%{ transform: translateX(0) }
+      100%{ transform: translateX(-50%) }
+    }
+    .marquee b{font-weight:800}
 
     /* ====== Hero ====== */
     .hero{
@@ -99,14 +115,35 @@
 </head>
 <body>
 
-  <!-- Bandeau infos -->
+  <!-- Nav avec logo -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="container inner">
+      <a class="brand" href="./">
+        <img src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block'">
+        <span class="fallback" style="display:none">Journée Sans Nous</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Bandeau infos (marquee) -->
   <header class="topbar">
     <div class="container">
-      <div class="marquee">
-        <strong>EN RÉGION PARISIENNE :</strong> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
-        <strong>tous les lundis 19h</strong> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
-        <strong>À L'ÉCHELLE NATIONALE :</strong> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
-        <strong>EN RÉGION PARISIENNE :</strong> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
+      <div class="marquee" role="region" aria-label="Informations importantes">
+        <!-- On duplique le bloc pour créer une boucle fluide -->
+        <div class="marquee__track">
+          <div>
+            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
+            <b>tous les lundis 19h</b> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
+            <b>À L'ÉCHELLE NATIONALE :</b> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
+            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
+          </div>
+          <div>
+            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
+            <b>tous les lundis 19h</b> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
+            <b>À L'ÉCHELLE NATIONALE :</b> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
+            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
+          </div>
+        </div>
       </div>
     </div>
   </header>
