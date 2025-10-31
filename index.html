@@ -85,40 +85,51 @@
     }
     .marquee b{font-weight:800}
 
-    /* ====== Hero ====== */
-    .hero{
-      background: linear-gradient(135deg, var(--brand) 0%, var(--brand2) 100%);
-      color:#fff; padding:60px 0; border-bottom:1px solid var(--line); position:relative; overflow:hidden;
-    }
-    .stack{display:flex;flex-direction:column}
-    .pill{
-      display:inline-block; font-weight:600; font-size:14px; letter-spacing:.2px;
-      background:rgba(255,255,255,.18); color:#fff; border:1px solid rgba(255,255,255,.35);
-      border-radius:999px; padding:8px 12px; width:max-content;
-      backdrop-filter:saturate(140%) blur(4px);
-    }
-    h1{font-size:clamp(28px,4vw,44px);line-height:1.12;margin:.25rem 0 0}
-    .lead{font-size:clamp(16px,2.1vw,20px);opacity:.95;margin:.6rem 0 0}
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="stack" style="gap:18px;align-items:center;text-align:center">
+      <!-- Logo SVG centré -->
+      <img src="assets/img/titre_journeesansnous-02.svg"
+           alt="Journée Sans Nous"
+           style="max-width:420px;width:100%;height:auto;margin-bottom:10px" />
 
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;
-      padding:12px 16px;border-radius:12px;font-weight:700;border:1px solid transparent;
-      transition:transform .06s ease, box-shadow .06s ease, opacity .2s ease;
-      background:#fff;color:#111
-    }
-    .btn:hover{transform:translateY(-1px)}
-    .btn:active{transform:translateY(0)}
-    .btn--primary{background:#fff;color:#111}
-    .btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
-    .cta{margin-top:8px}
+      <!-- Nouveau titre secondaire -->
+      <h2 style="font-size:clamp(22px,3vw,32px);font-weight:700;margin:0;color:#fff;">
+        Grève générale solidaire contre les lois racistes
+      </h2>
 
-    .stats{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:18px}
-    .stat{grid-column:span 12;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);
-          border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px}
-    .stat .big{font-size:22px;font-weight:800}
-    .stat .label{opacity:.95}
-    @media(min-width:680px){.stat{grid-column:span 6}}
-    @media(min-width:960px){.stat{grid-column:span 3}}
+      <p class="lead" style="max-width:680px;margin:auto;opacity:.95">
+        Des quartiers populaires aux campagnes, des écoles aux lieux de travail :<br>
+        <strong>« Si on s’arrête, tout s’arrête ! »</strong>
+      </p>
+
+      <div class="row cta" style="justify-content:center">
+        <a class="btn btn--primary" href="#outil">Je me mets en grève</a>
+        <a class="btn btn--ghost" href="#pourquoi">Pourquoi cette grève ?</a>
+      </div>
+
+      <div class="stats" style="margin-top:28px">
+        <div class="stat card">
+          <div class="big">✊</div>
+          <div class="label">Un mouvement historique</div>
+        </div>
+        <div class="stat card">
+          <div class="big">200+</div>
+          <div class="label">Collectifs mobilisés</div>
+        </div>
+        <div class="stat card">
+          <div class="big">30</div>
+          <div class="label">Ans de lutte</div>
+        </div>
+        <div class="stat card">
+          <div class="big">100%</div>
+          <div class="label">Légal & solidaire</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     /* ====== Sections ====== */
     section{padding:44px 0;border-bottom:1px solid var(--line)}
@@ -151,10 +162,6 @@
   <!-- Nav avec logo -->
   <nav class="nav" aria-label="Navigation principale">
     <div class="container inner">
-      <a class="brand" href="./">
-        <img src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block'">
-        <span class="fallback" style="display:none">Journée Sans Nous</span>
-      </a>
     </div>
   </nav>
 
