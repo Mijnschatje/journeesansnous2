@@ -290,6 +290,22 @@
       </div>
     </div>
   </footer>
-
+<!-- Bouton flottant de partage -->
+<div class="fab-share" aria-live="polite">
+  <button class="fab-share__btn" id="shareFab" aria-haspopup="dialog" aria-expanded="false" aria-label="Partager cette page">
+    <!-- icône partage (SVG inline) -->
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7a3.2 3.2 0 0 0 0-1.39l7.02-4.11A2.99 2.99 0 1 0 15 5a3 3 0 0 0 .05.55L8.03 9.66A3 3 0 1 0 9 14a3 3 0 0 0-.05-.55l7.07 4.14c.5.56 1.22.91 2.01.91a3 3 0 1 0-0.03-6.42Z"/></svg>
+  </button>
+  <div class="fab-share__panel" id="sharePanel" role="dialog" aria-label="Partager">
+    <p class="fab-share__title">Partager</p>
+    <div class="fab-share__row">
+      <a class="fab-share__link" id="shareX" target="_blank" rel="noreferrer noopener">X</a>
+      <a class="fab-share__link" id="shareFb" target="_blank" rel="noreferrer noopener">Facebook</a>
+      <a class="fab-share__link" id="shareMail">Email</a>
+      <button class="fab-share__copy" id="shareCopy" type="button">Copier le lien</button>
+    </div>
+    <div class="fab-share__hint" id="shareHint" aria-live="polite"></div>
+  </div>
+</div>
 </body>
 </html>
