@@ -1,11 +1,101 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="assets/css/styles.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+  <style>
+    /* ====== Variables & reset ====== */
+    :root{
+      --brand:#f0493a; --brand2:#ff6b5b;
+      --text:#111; --muted:#666; --line:#e7e7e7;
+      --bg:#ffffff; --surface:#fff; --surface2:#f7f8fa;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+      color:var(--text); background:var(--bg); line-height:1.55;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+    /* ====== Topbar ====== */
+    .topbar{background:#111;color:#fff;border-bottom:1px solid #000}
+    .marquee{
+      padding:8px 0; font-size:14px; white-space:nowrap; overflow:hidden;
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+    .marquee::after{
+      /* simple auto défilement sans JS */
+      content: attr(data-text);
+    }
+    /* Animation "pauvre" en CSS : on duplique le contenu via JS on time — pour l’instant on laisse fixe. */
+
+    /* ====== Hero ====== */
+    .hero{
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand2) 100%);
+      color:#fff; padding:60px 0; border-bottom:1px solid var(--line); position:relative; overflow:hidden;
+    }
+    .stack{display:flex;flex-direction:column}
+    .pill{
+      display:inline-block; font-weight:600; font-size:14px; letter-spacing:.2px;
+      background:rgba(255,255,255,.18); color:#fff; border:1px solid rgba(255,255,255,.35);
+      border-radius:999px; padding:8px 12px; width:max-content;
+      backdrop-filter:saturate(140%) blur(4px);
+    }
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.12;margin:.25rem 0 0}
+    .lead{font-size:clamp(16px,2.1vw,20px);opacity:.95;margin:.6rem 0 0}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:12px 16px;border-radius:12px;font-weight:700;border:1px solid transparent;
+      transition:transform .06s ease, box-shadow .06s ease, opacity .2s ease;
+      background:#fff;color:#111
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn--primary{background:#fff;color:#111}
+    .btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+    .cta{margin-top:8px}
+
+    .stats{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:18px}
+    .stat{grid-column:span 12;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);
+          border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px}
+    .stat .big{font-size:22px;font-weight:800}
+    .stat .label{opacity:.95}
+    @media(min-width:680px){.stat{grid-column:span 6}}
+    @media(min-width:960px){.stat{grid-column:span 3}}
+
+    /* ====== Sections ====== */
+    section{padding:44px 0;border-bottom:1px solid var(--line)}
+    .section-title{font-size:clamp(22px,3vw,30px);margin:0 0 8px}
+
+    /* ====== Steps ====== */
+    .steps{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:10px}
+    .step{
+      grid-column:span 12;background:var(--surface);border:1px solid var(--line);
+      border-radius:16px;padding:18px
+    }
+    .step h3{margin:.3rem 0 .4rem 0;font-size:20px}
+    @media(min-width:760px){.step{grid-column:span 4}}
+
+    /* ====== Quote ====== */
+    .quote{
+      border:1px solid var(--line); background:var(--surface2);
+      border-radius:16px; padding:18px; font-size:18px
+    }
+
+    /* ====== Footer ====== */
+    footer{padding:20px 0;background:#fff;border-top:1px solid var(--line);font-size:14px}
+    .share{display:flex;align-items:center;gap:10px}
+    .share span{color:var(--muted)}
+    footer a{text-decoration:underline}
+  </style>
 </head>
 <body>
 
@@ -34,19 +124,19 @@
         </div>
 
         <div class="stats">
-          <div class="card stat">
+          <div class="stat card">
             <div class="big">✊</div>
             <div class="label">Un mouvement historique</div>
           </div>
-          <div class="card stat">
+          <div class="stat card">
             <div class="big">200+</div>
             <div class="label">Collectifs mobilisés</div>
           </div>
-          <div class="card stat">
+          <div class="stat card">
             <div class="big">30</div>
             <div class="label">Ans de lutte</div>
           </div>
-          <div class="card stat">
+          <div class="stat card">
             <div class="big">100%</div>
             <div class="label">Légal & solidaire</div>
           </div>
