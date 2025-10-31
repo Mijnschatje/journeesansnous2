@@ -5,185 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+
+  <!-- Feuille de styles globale -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Ajustements locaux : animation du logo, hero, bouton flottant -->
   <style>
-    /* ====== Variables & reset ====== */
-    :root{
-      --brand:#f0493a; --brand2:#ff6b5b;
-      --text:#111; --muted:#666; --line:#e7e7e7;
-      --bg:#ffffff; --surface:#fff; --surface2:#f7f8fa;
+    /* Animation d'apparition (fade-in + descente) */
+    @keyframes fadeDropIn {
+      0%   { opacity: 0; transform: translateY(-12px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-
-    body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
-      color:var(--text); background:var(--bg); line-height:1.55;
-    }
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-
-    /* ===== Floating Share Button ===== */
-.fab-share {
-  position: fixed; right: 18px; bottom: 18px; z-index: 9999;
-}
-.fab-share__btn {
-  appearance: none; border: 0; cursor: pointer;
-  width: 56px; height: 56px; border-radius: 50%;
-  background: #111; color: #fff; display: grid; place-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.18);
-  transition: transform .08s ease, box-shadow .2s ease, opacity .2s ease;
-}
-.fab-share__btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,.22)}
-.fab-share__btn:active { transform: translateY(0) }
-
-.fab-share__panel {
-  position: absolute; right: 66px; bottom: 6px;
-  background: #fff; border: 1px solid var(--line);
-  border-radius: 12px; padding: 10px; min-width: 230px;
-  box-shadow: 0 10px 28px rgba(0,0,0,.14);
-  display: none;
-}
-.fab-share__panel.is-open { display: block; }
-.fab-share__title { font-weight: 700; font-size: 14px; margin: 0 0 8px; }
-.fab-share__row { display: flex; gap: 10px; flex-wrap: wrap }
-.fab-share__link, .fab-share__copy {
-  display: inline-flex; align-items: center; gap: 8px;
-  border: 1px solid var(--line); border-radius: 10px;
-  padding: 8px 10px; font-weight: 600; font-size: 14px; color: #111; background: #fff;
-}
-.fab-share__copy { cursor: pointer; }
-.fab-share__hint { margin-top: 8px; font-size: 12px; color: var(--muted); }
-@media (max-width: 480px){ .fab-share__panel{ right: 0; bottom: 64px } }
-
-    /* ====== Top nav (logo) ====== */
-    .nav{
-      border-bottom:1px solid var(--line);
-      background:#fff;
-    }
-    .nav .inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand img{height:36px;width:auto}
-    .brand .fallback{font-weight:800;letter-spacing:.3px}
-
-    /* ====== Topbar (marquee) ====== */
-    .topbar{background:#111;color:#fff;border-bottom:1px solid #000}
-    .topbar .container{position:relative}
-    .marquee{
-      position:relative; overflow:hidden; padding:8px 0; font-size:14px;
-      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-    }
-    .marquee__track{
-      display:flex; gap:50px; white-space:nowrap;
-      will-change: transform;
-      animation: marquee-slide 28s linear infinite;
-    }
-    @keyframes marquee-slide{
-      0%{ transform: translateX(0) }
-      100%{ transform: translateX(-50%) }
-    }
-    .marquee b{font-weight:800}
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="stack" style="gap:18px;align-items:center;text-align:center">
-      <!-- Logo SVG centré -->
-      <img src="assets/img/titre_journeesansnous-02.svg"
-           alt="Journée Sans Nous"
-           style="max-width:420px;width:100%;height:auto;margin-bottom:10px" />
-
-      <!-- Nouveau titre secondaire -->
-      <h2 style="font-size:clamp(22px,3vw,32px);font-weight:700;margin:0;color:#fff;">
-        Grève générale solidaire contre les lois racistes
-      </h2>
-
-      <p class="lead" style="max-width:680px;margin:auto;opacity:.95">
-        Des quartiers populaires aux campagnes, des écoles aux lieux de travail :<br>
-        <strong>« Si on s’arrête, tout s’arrête ! »</strong>
-      </p>
-
-      <div class="row cta" style="justify-content:center">
-        <a class="btn btn--primary" href="#outil">Je me mets en grève</a>
-        <a class="btn btn--ghost" href="#pourquoi">Pourquoi cette grève ?</a>
-      </div>
-
-      <div class="stats" style="margin-top:28px">
-        <div class="stat card">
-          <div class="big">✊</div>
-          <div class="label">Un mouvement historique</div>
-        </div>
-        <div class="stat card">
-          <div class="big">200+</div>
-          <div class="label">Collectifs mobilisés</div>
-        </div>
-        <div class="stat card">
-          <div class="big">30</div>
-          <div class="label">Ans de lutte</div>
-        </div>
-        <div class="stat card">
-          <div class="big">100%</div>
-          <div class="label">Légal & solidaire</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    /* ====== Sections ====== */
-    section{padding:44px 0;border-bottom:1px solid var(--line)}
-    .section-title{font-size:clamp(22px,3vw,30px);margin:0 0 8px}
-
-    /* ====== Steps ====== */
-    .steps{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:10px}
-    .step{
-      grid-column:span 12;background:var(--surface);border:1px solid var(--line);
-      border-radius:16px;padding:18px
-    }
-    .step h3{margin:.3rem 0 .4rem 0;font-size:20px}
-    @media(min-width:760px){.step{grid-column:span 4}}
-
-    /* ====== Quote ====== */
-    .quote{
-      border:1px solid var(--line); background:var(--surface2);
-      border-radius:16px; padding:18px; font-size:18px
+    .fade-drop {
+      opacity: 0;
+      animation: fadeDropIn .8s ease-out .1s forwards;
+      will-change: transform, opacity;
     }
 
-    /* ====== Footer ====== */
-    footer{padding:20px 0;background:#fff;border-top:1px solid var(--line);font-size:14px}
-    .share{display:flex;align-items:center;gap:10px}
-    .share span{color:var(--muted)}
-    footer a{text-decoration:underline}
+    /* Sécuriser l'apparence du hero (au cas où la feuille globale ne charge pas) */
+    .hero {
+      background: linear-gradient(135deg, #f0493a 0%, #ff6b5b 100%);
+      padding: 60px 0;
+      border-bottom: 1px solid var(--line, rgba(0,0,0,.08));
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+    }
+    .hero .stack { gap: 18px; align-items: center; text-align: center; }
+    .hero .lead { max-width: 680px; margin: 0 auto; opacity: .95; }
+
+    /* Bandeau infos si jamais tes classes globales manquent */
+    .topbar { background:#111; color:#fff; font-size:.92rem; padding:.5rem 0; }
+    .topbar .marquee { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* Bouton flottant de partage (garde-fou si le CSS global n'est pas chargé) */
+    .share-fab {
+      position: fixed; right: 18px; bottom: 18px; z-index: 9999;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .share-fab a {
+      display:flex; align-items:center; justify-content:center;
+      width: 52px; height: 52px; border-radius: 999px;
+      background: #222; color: #fff; text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18); font-weight: 700;
+    }
+    .share-fab a:hover { transform: translateY(-2px); transition: transform .15s ease; }
+    @media (prefers-color-scheme: light) {
+      .share-fab a { background:#000; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Nav avec logo -->
-  <nav class="nav" aria-label="Navigation principale">
-    <div class="container inner">
-    </div>
-  </nav>
-
-  <!-- Bandeau infos (marquee) -->
+  <!-- Bandeau infos -->
   <header class="topbar">
     <div class="container">
-      <div class="marquee" role="region" aria-label="Informations importantes">
-        <!-- On duplique le bloc pour créer une boucle fluide -->
-        <div class="marquee__track">
-          <div>
-            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
-            <b>tous les lundis 19h</b> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
-            <b>À L'ÉCHELLE NATIONALE :</b> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
-            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
-          </div>
-          <div>
-            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
-            <b>tous les lundis 19h</b> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
-            <b>À L'ÉCHELLE NATIONALE :</b> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
-            <b>EN RÉGION PARISIENNE :</b> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
-          </div>
-        </div>
+      <div class="marquee" aria-live="polite">
+        <strong>EN RÉGION PARISIENNE :</strong> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
+        <strong>tous les lundis 19h</strong> ➜ Réunion d'organisation – 3 rue du Château d'Eau •
+        <strong>À L'ÉCHELLE NATIONALE :</strong> jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel •
+        <strong>EN RÉGION PARISIENNE :</strong> lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris
       </div>
     </div>
   </header>
@@ -191,31 +72,46 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <div class="stack" style="gap:18px">
-        <span class="pill">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
-        <h1>Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers</h1>
-        <p class="lead">Des quartiers populaires aux campagnes, des écoles aux lieux de travail : « Si on s’arrête, tout s’arrête ! »</p>
-        <div class="row cta">
+      <div class="stack">
+        <!-- Logo SVG centré + animation -->
+        <img
+          class="fade-drop"
+          src="assets/img/titre_journeesansnous-02.svg"
+          alt="Journée Sans Nous"
+          style="max-width:420px;width:100%;height:auto;margin:0 auto 6px auto"
+        />
+
+        <!-- Titre secondaire -->
+        <h2 style="font-size:clamp(22px,3vw,32px);font-weight:800;margin:0;color:#fff;">
+          Grève générale solidaire contre les lois racistes
+        </h2>
+
+        <p class="lead">
+          Des quartiers populaires aux campagnes, des écoles aux lieux de travail :<br>
+          <strong>« Si on s’arrête, tout s’arrête ! »</strong>
+        </p>
+
+        <div class="row cta" style="justify-content:center">
           <a class="btn btn--primary" href="#outil">Je me mets en grève</a>
           <a class="btn btn--ghost" href="#pourquoi">Pourquoi cette grève ?</a>
         </div>
 
-        <div class="stats">
-          <div class="stat card">
+        <div class="stats" style="margin-top:28px">
+          <div class="card stat">
             <div class="big">✊</div>
             <div class="label">Un mouvement historique</div>
           </div>
-          <div class="stat card">
+          <div class="card stat">
             <div class="big">200+</div>
             <div class="label">Collectifs mobilisés</div>
           </div>
-          <div class="stat card">
+          <div class="card stat">
             <div class="big">30</div>
             <div class="label">Ans de lutte</div>
           </div>
-          <div class="stat card">
+          <div class="card stat">
             <div class="big">100%</div>
-            <div class="label">Légal & solidaire</div>
+            <div class="label">Légal &amp; solidaire</div>
           </div>
         </div>
       </div>
@@ -226,7 +122,10 @@
   <section id="pourquoi">
     <div class="container">
       <h2 class="section-title">Un mouvement historique <small style="color:var(--muted)">1996 — 2025</small></h2>
-      <p>30 ans de lutte depuis l'occupation de l'Église Saint-Bernard. Les personnes sans papiers et leurs allié·e·s se mobilisent pour l’égalité des droits : papiers, école, logement, santé, culture, travail.</p>
+      <p>
+        30 ans de lutte depuis l'occupation de l'Église Saint-Bernard. Les personnes sans papiers et leurs allié·e·s se mobilisent
+        pour l’égalité des droits : papiers, école, logement, santé, culture, travail.
+      </p>
     </div>
   </section>
 
@@ -263,7 +162,11 @@
   <section>
     <div class="container">
       <div class="quote">
-        <p style="margin:0 0 .5rem 0">« L'enjeu, c'est souvent de faire comprendre aux collègues l'intérêt collectif de la régularisation : égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles. Quand on met des noms et des visages sur les collègues sans papiers, tout devient concret. »</p>
+        <p style="margin:0 0 .5rem 0">
+          « L'enjeu, c'est souvent de faire comprendre aux collègues l'intérêt collectif de la régularisation :
+          égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles.
+          Quand on met des noms et des visages sur les collègues sans papiers, tout devient concret. »
+        </p>
         <p style="margin:0;color:var(--muted)">— Un camarade de la CGT Jeunes Toulouse</p>
       </div>
     </div>
@@ -297,84 +200,13 @@
       </div>
     </div>
   </footer>
-<!-- Bouton flottant de partage -->
-<div class="fab-share" aria-live="polite">
-  <button class="fab-share__btn" id="shareFab" aria-haspopup="dialog" aria-expanded="false" aria-label="Partager cette page">
-    <!-- icône partage (SVG inline) -->
-    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7a3.2 3.2 0 0 0 0-1.39l7.02-4.11A2.99 2.99 0 1 0 15 5a3 3 0 0 0 .05.55L8.03 9.66A3 3 0 1 0 9 14a3 3 0 0 0-.05-.55l7.07 4.14c.5.56 1.22.91 2.01.91a3 3 0 1 0-0.03-6.42Z"/></svg>
-  </button>
-  <div class="fab-share__panel" id="sharePanel" role="dialog" aria-label="Partager">
-    <p class="fab-share__title">Partager</p>
-    <div class="fab-share__row">
-      <a class="fab-share__link" id="shareX" target="_blank" rel="noreferrer noopener">X</a>
-      <a class="fab-share__link" id="shareFb" target="_blank" rel="noreferrer noopener">Facebook</a>
-      <a class="fab-share__link" id="shareMail">Email</a>
-      <button class="fab-share__copy" id="shareCopy" type="button">Copier le lien</button>
-    </div>
-    <div class="fab-share__hint" id="shareHint" aria-live="polite"></div>
+
+  <!-- Bouton flottant de partage -->
+  <div class="share-fab" aria-label="Partage rapide">
+    <a href="https://twitter.com/intent/tweet?text=Journ%C3%A9e%20Sans%20Nous%20-%2018%20d%C3%A9cembre%202025&url=https%3A%2F%2Fmijnschatje.github.io%2Fjourneesansnous2%2F" title="Partager sur X/Twitter" aria-label="Partager sur X/Twitter">X</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmijnschatje.github.io%2Fjourneesansnous2%2F" title="Partager sur Facebook" aria-label="Partager sur Facebook">f</a>
+    <a href="mailto:?subject=Journ%C3%A9e%20Sans%20Nous&body=https%3A%2F%2Fmijnschatje.github.io%2Fjourneesansnous2%2F" title="Partager par e-mail" aria-label="Partager par e-mail">✉︎</a>
   </div>
-</div>
-  <script>
-(function(){
-  const fab   = document.getElementById('shareFab');
-  const panel = document.getElementById('sharePanel');
-  const linkX = document.getElementById('shareX');
-  const linkFb= document.getElementById('shareFb');
-  const linkMl= document.getElementById('shareMail');
-  const btnCp = document.getElementById('shareCopy');
-  const hint  = document.getElementById('shareHint');
-
-  // Construire les liens à partir de l’URL et du titre de la page
-  const pageUrl   = encodeURIComponent(window.location.href);
-  const pageTitle = encodeURIComponent(document.title);
-
-  linkX.href  = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
-  linkFb.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-  linkMl.href = `mailto:?subject=${pageTitle}&body=${pageUrl}`;
-
-  // Ouvrir/fermer le panneau, ou utiliser Web Share API si dispo
-  fab.addEventListener('click', async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: document.title, url: window.location.href });
-        return;
-      }
-    } catch(e){ /* si l’utilisateur annule, on ne fait rien */ }
-
-    const open = panel.classList.toggle('is-open');
-    fab.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-
-  // Copier le lien
-  btnCp.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      hint.textContent = 'Lien copié ✔';
-      setTimeout(()=> hint.textContent = '', 1500);
-    } catch {
-      hint.textContent = 'Impossible de copier. Sélectionne et copie manuellement.';
-      setTimeout(()=> hint.textContent = '', 2500);
-    }
-  });
-
-  // Fermer si on clique à l’extérieur
-  document.addEventListener('click', (e) => {
-    if (!panel.classList.contains('is-open')) return;
-    if (e.target === fab || fab.contains(e.target) || panel.contains(e.target)) return;
-    panel.classList.remove('is-open');
-    fab.setAttribute('aria-expanded','false');
-  });
-
-  // Accessibilité: Échap pour fermer
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && panel.classList.contains('is-open')) {
-      panel.classList.remove('is-open');
-      fab.setAttribute('aria-expanded','false');
-      fab.focus();
-    }
-  });
-})();
-</script>
 
 </body>
 </html>
