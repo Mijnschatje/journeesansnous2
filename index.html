@@ -10,7 +10,7 @@
 
   <style>
     :root{
-      --brand:#ee4943;           /* couleur marque générale */
+      --brand:#ee4943;
       --brand-600:#d33e38;
       --ink:#0f172a;
       --muted:#475569;
@@ -35,20 +35,65 @@
     /* ===== HERO (dégradé rouge + logo animé) ===== */
     .hero{
       background:linear-gradient(135deg,#f0493a 0%, #ff6b5b 100%);
-      padding:60px 0;
+      padding:60px 0 80px;
       border-bottom:1px solid var(--line);
       position:relative;
       overflow:hidden;
       color:#fff;
+      text-align:center;
     }
-    .hero .inner{max-width:1000px;margin:auto;text-align:center;padding:0 18px}
-    .pill{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;backdrop-filter:blur(4px)}
-    .hero-logo{width:min(90vw,820px);margin:18px auto 6px;display:block;opacity:0;transform:translateY(14px);animation:fadeSlide .8s ease-out .1s forwards}
-    @keyframes fadeSlide{to{opacity:1;transform:translateY(0)}}
-    .hero-subtitle{font-size:clamp(18px,2.6vw,28px);margin:8px 0 22px;font-weight:700;color:#fff;opacity:.95}
 
-    .hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;transition:all .25s;border:2px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.08)}
+    /* badge : fond noir, texte blanc */
+    .pill{
+      display:inline-block;
+      background:#000;
+      color:#fff;
+      border-radius:999px;
+      padding:8px 16px;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:0.3px;
+      box-shadow:0 2px 8px rgba(0,0,0,.2);
+    }
+
+    .hero-logo{
+      width:min(90vw,820px);
+      margin:10px auto 10px;
+      display:block;
+      opacity:0;
+      transform:translateY(14px);
+      animation:fadeSlide .8s ease-out .1s forwards;
+    }
+    @keyframes fadeSlide{to{opacity:1;transform:translateY(0)}}
+
+    .hero-subtitle{
+      font-size:clamp(18px,2.6vw,28px);
+      margin:8px 0 22px;
+      font-weight:700;
+      color:#fff;
+      opacity:.95;
+    }
+
+    .hero-cta{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 18px;
+      border-radius:12px;
+      font-size:15px;
+      font-weight:700;
+      cursor:pointer;
+      transition:all .25s;
+      border:2px solid rgba(255,255,255,.35);
+      color:#fff;
+      background:rgba(255,255,255,.08);
+    }
     .btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.16)}
     .btn--light{background:#fff;color:#d43830;border-color:#fff}
     .btn--light:hover{background:#ffe7e5}
@@ -61,7 +106,7 @@
     .stat-number{font-size:56px;font-weight:800;background:linear-gradient(120deg,var(--brand),#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
     .stat-label{color:var(--muted);font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 
-    /* ===== Section Parcours (3 étapes) ===== */
+    /* ===== Parcours (3 étapes) ===== */
     .parcours{background:#fafafa;padding:80px 20px}
     .parcours h2{text-align:center;font-size:clamp(32px,4vw,48px);color:#d43830;margin:0 0 48px;font-weight:800}
     .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;max-width:1200px;margin:auto}
@@ -116,7 +161,6 @@
   <header>
     <div class="wrap topbar">
       <div class="brand"><span>Journée Sans Nous</span></div>
-      <button class="btn btn--light" id="shareTop"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Partager</button>
     </div>
     <div class="ticker">
       <div class="track">
@@ -132,12 +176,11 @@
     <div class="inner">
       <span class="pill">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
 
-      <!-- Logo SVG (image de titre) -->
+      <!-- Logo SVG remonté -->
       <img class="hero-logo"
            src="assets/img/titre_journeesansnous-02.svg"
-           alt="Journée Sans Nous — Si on s'arrête, tout s'arrête !" loading="eager">
+           alt="Journée Sans Nous — Si on s'arrête, tout s'arrête !" loading="eager" style="margin-top:-10px">
 
-      <!-- Sous-titre (remplace l’ancien grand titre) -->
       <p class="hero-subtitle">Grève générale solidaire contre les lois racistes</p>
 
       <div class="hero-cta">
@@ -238,26 +281,18 @@
   </button>
 
   <script>
-    // Partage depuis la topbar
-    document.getElementById('shareTop').addEventListener('click', sharePage);
-    // Partage depuis le bouton flottant
     document.getElementById('shareButton').addEventListener('click', sharePage);
 
     function sharePage(){
       const shareText = "18 décembre 2025 — Grève générale solidaire avec les personnes sans papiers : Journée Sans Nous. « Si on s’arrête, tout s’arrête ! »";
       const shareUrl = window.location.href;
       if(navigator.share){
-        navigator.share({ title:'Journée Sans Nous - 18 décembre 2025', text:shareText, url:shareUrl })
-          .catch(()=>{});
+        navigator.share({ title:'Journée Sans Nous - 18 décembre 2025', text:shareText, url:shareUrl }).catch(()=>{});
       }else{
-        const full = shareText + "\\n\\n" + shareUrl;
-        navigator.clipboard.writeText(full).then(()=>{
-          const btn = document.activeElement;
-          if(btn && btn.tagName === 'BUTTON'){
-            const original = btn.innerHTML;
-            btn.innerHTML = '✔️ Copié !';
-            setTimeout(()=>{ btn.innerHTML = original; }, 1600);
-          }
+        navigator.clipboard.writeText(shareText + '\\n' + shareUrl).then(()=>{
+          const btn = document.getElementById('shareButton');
+          btn.innerHTML = '✔️ Copié !';
+          setTimeout(()=>location.reload(),1500);
         });
       }
     }
