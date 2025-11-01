@@ -90,10 +90,30 @@
     .step-link{color:var(--brand);font-weight:700;font-size:15px;text-decoration:none}
     .step-link:hover{text-decoration:underline}
     .step-clickable {cursor: pointer;}
+.step-clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 .step-clickable:hover {
   background: #fff7f6;
-  box-shadow: 0 8px 24px rgba(238,73,67,.25);
-  transform: translateY(-6px);}
+  box-shadow: 0 8px 24px rgba(238, 73, 67, 0.25);
+  transform: translateY(-6px);
+}
+.step-clickable:active {
+  background: #ffeae7;
+  transform: translateY(0);
+}
+.step-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--brand);
+  transition: color 0.2s ease;
+}
+.step-clickable:hover .step-link {
+  color: var(--brand-600);
+}
+
 
 
     /* ===== Témoignage ===== */
@@ -144,9 +164,43 @@
         <a class="btn" href="#outil">Contacter mon syndicat</a>
       </div>
     </div>
-  </section>
-      <article class="step-card"><div class="step-num">2</div><h3 class="step-title">Connaître ses droits</h3><p class="step-desc">Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.</p><a class="step-link" href="outil-mails.html">Accéder au guide & outil</a></article>
-      <article class="step-card"><div class="step-num">3</div><h3 class="step-title">Agir</h3><p class="step-desc">Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.</p><a class="step-link" href="outil-mails.html">Je me lance</a></article>
+<section class="parcours" id="parcours">
+  <h2>Comment participer en 3 étapes</h2>
+  <div class="steps">
+
+    <!-- Étape 1 -->
+    <article class="step-card step-clickable" onclick="window.location.href='comprendre.html'">
+      <div class="step-num">1</div>
+      <h3 class="step-title">Comprendre</h3>
+      <p class="step-desc">
+        Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?
+      </p>
+      <span class="step-link">Synthèse de la situation →</span>
+    </article>
+
+    <!-- Étape 2 -->
+    <article class="step-card step-clickable" onclick="window.location.href='guide-grève.html'">
+      <div class="step-num">2</div>
+      <h3 class="step-title">Connaître ses droits</h3>
+      <p class="step-desc">
+        Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.
+      </p>
+      <span class="step-link">Lire le guide pratique →</span>
+    </article>
+
+    <!-- Étape 3 -->
+    <article class="step-card step-clickable" onclick="window.location.href='outil-mails.html'">
+      <div class="step-num">3</div>
+      <h3 class="step-title">Agir</h3>
+      <p class="step-desc">
+        Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.
+      </p>
+      <span class="step-link">Je me lance →</span>
+    </article>
+
+  </div>
+</section>
+
     </div>
   <section class="temoignage" id="temoignage">
     <p class="temoignage-text">« L'enjeu, c'est souvent de faire comprendre aux collègues l'intérêt collectif de la régularisation : égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles. »</p>
