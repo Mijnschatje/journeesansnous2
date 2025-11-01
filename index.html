@@ -248,7 +248,7 @@ header, .ticker, .hero {
 
 /* 4) Hero media : ne plus dépendre de vw + padding → limiter à 100% */
 .hero-media{
-  width: 100%;
+  width: 92vw; 
   max-width: 820px;               /* logo 820px max sur desktop */
   margin-inline: auto;
 }
@@ -262,6 +262,20 @@ img, svg {
   height: auto;
 }
 
+/* Logo principal */
+  .hero-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+/* Date du hero */
+.hero-date {
+  width: 60%;               /* ← 60% sur ordinateur */
+  height: auto;
+  display: block;
+  margin: 6px auto 0;
+}
 /* 6) Le ticker peut créer du débordement : sécurise-le */
 .ticker { position: relative; }
 .ticker .track {
