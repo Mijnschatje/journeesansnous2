@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Appel — Journée Sans Nous</title>
-  <meta name="description" content="Appel à la Journée Sans Nous — 18 décembre : grève générale solidaire contre le racisme et pour l’égalité des droits." />
+  <title>Appel – Journée Sans Nous</title>
+  <meta name="description" content="Appel à la Journée Sans Nous – 18 décembre : grève générale solidaire contre le racisme et pour l'égalité des droits." />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 
@@ -19,7 +19,7 @@
     body{font:16px/1.65 'Manrope',sans-serif;color:var(--ink);background:var(--bg)}
     a{color:var(--brand);text-decoration:none}
 
-    /* ===== HEADER + TICKER (navigation de base) ===== */
+    /* ===== HEADER + TICKER ===== */
     header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
     .wrap{max-width:1100px;margin:auto;padding:0 18px}
     .topbar{display:flex;justify-content:space-between;align-items:center;height:64px}
@@ -28,13 +28,11 @@
     .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-    /* ===== HERO DE PAGE ===== */
-    .page-hero{
-      background:linear-gradient(180deg,var(--accent) 0%,var(--accent-2) 100%);
-      color:#fff;text-align:center;padding:70px 16px 60px;border-bottom:1px solid var(--line)
-    }
-    .page-hero h1{font-size:clamp(30px,5vw,54px);font-weight:800;margin-bottom:10px}
-    .page-hero p{font-size:clamp(15px,2.2vw,18px);opacity:.95}
+    /* ===== HERO - MÊME STYLE QUE outil-mails.html ===== */
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800}
+    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
 
     /* ===== CONTENU APPEL ===== */
     .container{max-width:1100px;margin:40px auto;padding:0 18px}
@@ -46,22 +44,46 @@
     .lead{font-size:18px}
     .sep{height:1px;background:var(--line);margin:28px 0}
 
-    /* ===== BLOCS FORMULAIRES ===== */
-    .forms{display:grid;grid-template-columns:1fr;gap:26px;margin-top:28px}
+    /* ===== BOUTONS FORMULAIRES (au lieu de blocs) ===== */
+    .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
+    .form-trigger{
+      background:var(--card);border:2px solid var(--brand);border-radius:16px;
+      padding:24px; cursor:pointer; transition:.3s;
+      text-align:center;
+      box-shadow:0 4px 12px rgba(0,0,0,.04)
+    }
+    .form-trigger:hover{
+      box-shadow:0 8px 24px rgba(238,73,67,.25);
+      transform:translateY(-2px);
+      background:#fff7f6;
+    }
+    .form-trigger h3{font-size:22px;margin:0 0 8px;font-weight:800;color:var(--brand)}
+    .form-trigger p{margin:0;color:var(--muted);font-size:15px}
+
+    /* ===== BLOCS FORMULAIRES (cachés par défaut) ===== */
     .form-card{
       background:var(--card);border:1px solid var(--line);border-radius:16px;
-      padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04)
+      padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04);
+      display:none; /* ✅ Caché par défaut */
+      margin-top:20px;
+    }
+    .form-card.active{
+      display:block; /* ✅ Affiché quand actif */
     }
     .form-card h3{font-size:20px;margin:6px 6px 8px;font-weight:800;color:#b42727}
     .form-card p{margin:0 6px 14px;color:var(--muted)}
     .form-frame{
       width:100%; border:0; display:block;
-      height:1200px; /* ajuste si besoin */
+      height:1200px;
       border-top:1px solid var(--line)
     }
     @media (min-width:900px){
-      .forms{grid-template-columns:1fr 1fr}
       .form-frame{height:1150px}
+    }
+    @media (max-width:680px){
+      .forms-grid{grid-template-columns:1fr}
+      .form-trigger h3{font-size:19px}
+      .form-trigger p{font-size:14px}
     }
 
     /* ===== FOOTER ===== */
@@ -87,28 +109,30 @@
   <div class="ticker"><div class="track">
     <span style="padding-right:32px"><strong>Assemblée Générale </strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11 •</span>
     <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> Chaque lundi à 19h · 3 rue du Château d'Eau PARIS 10 •</span>
-    <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
+    <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h—21h · sur ZOOM •</span>
   </div></div>
 </header>
 
-<section class="page-hero">
-  <h1>Appel à la Journée Sans Nous</h1>
-  <p>18 décembre — Journée internationale des migrant·e·s</p>
+<section class="hero">
+  <div class="wrap">
+    <h1>Appel à la Journée Sans Nous</h1>
+    <p class="lede">18 décembre — Journée internationale des migrant·e·s</p>
+  </div>
 </section>
 
 <main class="container">
   <article class="appel">
-    <h2>18 DÉCEMBRE – JOURNÉE INTERNATIONALE DES MIGRANT·E·S<br>UNE JOURNÉE SANS NOUS : si on s’arrête, tout s’arrête !</h2>
+    <h2>18 DÉCEMBRE — JOURNÉE INTERNATIONALE DES MIGRANT·E·S<br>UNE JOURNÉE SANS NOUS : si on s'arrête, tout s'arrête !</h2>
 
-    <p>Ce pays ne marche pas sans immigré·e·s. Il n’existe pas sans l’immigration et en bénéficie à tous points de vue.</p>
-    <p>Ce n’est pas l’immigration qui le détruit, ce sont les politiques menées, le racisme et l’injustice.</p>
-    <p>Le 18 décembre, à l’occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
-    <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s’arrête, tout s’arrête ! ».</p>
-    <p>Avec ou sans papiers, immigré·e·s, enfants d’immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n’irons pas à l’école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
+    <p>Ce pays ne marche pas sans immigré·e·s. Il n'existe pas sans l'immigration et en bénéficie à tous points de vue.</p>
+    <p>Ce n'est pas l'immigration qui le détruit, ce sont les politiques menées, le racisme et l'injustice.</p>
+    <p>Le 18 décembre, à l'occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
+    <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s'arrête, tout s'arrête ! ».</p>
+    <p>Avec ou sans papiers, immigré·e·s, enfants d'immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n'irons pas à l'école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
 
     <ul>
-      <li><strong>Pour l’abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
-      <li><strong>Pour l’égalité des droits</strong> de toutes et tous, à l’école, au logement, à la santé, à la culture, au travail.</li>
+      <li><strong>Pour l'abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
+      <li><strong>Pour l'égalité des droits</strong> de toutes et tous, à l'école, au logement, à la santé, à la culture, au travail.</li>
       <li><strong>Pour la régularisation</strong> des sans-papiers</li>
       <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
       <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
@@ -116,25 +140,38 @@
 
     <div class="sep"></div>
 
-    <section class="forms">
-      <!-- Formulaire Collectifs / Organisations -->
-      <div class="form-card">
+    <!-- Boutons pour afficher les formulaires -->
+    <div class="forms-grid">
+      <!-- Trigger Collectifs -->
+      <div class="form-trigger" onclick="toggleForm('collectif')">
         <h3>Je signe en tant que collectif</h3>
         <p>Ce formulaire est destiné aux collectifs, syndicats, partis, assos, media…</p>
-        <iframe class="form-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true"
-          title="Formulaire pour collectifs"></iframe>
       </div>
 
-      <!-- Formulaire Individu -->
-      <div class="form-card">
+      <!-- Trigger Individu -->
+      <div class="form-trigger" onclick="toggleForm('individu')">
         <h3>Je m'engage en tant que personne</h3>
         <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
-        <iframe class="form-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true"
-          title="Formulaire pour individu·e·s"></iframe>
       </div>
-    </section>
+    </div>
+
+    <!-- Formulaire Collectifs (caché par défaut) -->
+    <div id="form-collectif" class="form-card">
+      <h3>Formulaire pour collectifs</h3>
+      <p>Ce formulaire est destiné aux collectifs, syndicats, partis, assos, media…</p>
+      <iframe class="form-frame"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true"
+        title="Formulaire pour collectifs"></iframe>
+    </div>
+
+    <!-- Formulaire Individu (caché par défaut) -->
+    <div id="form-individu" class="form-card">
+      <h3>Formulaire pour individu·e·s</h3>
+      <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
+      <iframe class="form-frame"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true"
+        title="Formulaire pour individu·e·s"></iframe>
+    </div>
   </article>
 </main>
 
@@ -152,10 +189,28 @@
 </button>
 
 <script>
+  // Gestion de l'affichage des formulaires
+  function toggleForm(type) {
+    const formCollectif = document.getElementById('form-collectif');
+    const formIndividu = document.getElementById('form-individu');
+    
+    if (type === 'collectif') {
+      formCollectif.classList.toggle('active');
+      formIndividu.classList.remove('active');
+      // Scroll vers le formulaire
+      setTimeout(() => formCollectif.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    } else {
+      formIndividu.classList.toggle('active');
+      formCollectif.classList.remove('active');
+      setTimeout(() => formIndividu.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }
+
+  // Bouton de partage
   document.getElementById('shareButton').onclick=()=>{
-    const t="Appel — Journée Sans Nous (18 décembre) : « Si on s’arrête, tout s’arrête ! »";
+    const t="Appel – Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
     const u=window.location.href;
-    if(navigator.share){navigator.share({title:'Appel — Journée Sans Nous',text:t,url:u})}
+    if(navigator.share){navigator.share({title:'Appel – Journée Sans Nous',text:t,url:u})}
     else{navigator.clipboard.writeText(`${t}\n${u}`).then(()=>alert('Lien copié ✅'))}
   }
 </script>
