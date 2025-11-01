@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Appel — Journée Sans Nous</title>
+  <meta name="description" content="Appel à la Journée Sans Nous — 18 décembre : grève générale solidaire contre le racisme et pour l’égalité des droits." />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    :root{
+      --brand:#ee4943; --brand-600:#d33e38;
+      --ink:#0f172a; --muted:#475569;
+      --line:#e5e7eb; --bg:#fafafa; --card:#fff;
+      --accent:#b42727; --accent-2:#f0493a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font:16px/1.65 'Manrope',sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:var(--brand);text-decoration:none}
+
+    /* ===== HEADER + TICKER (navigation de base) ===== */
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .wrap{max-width:1100px;margin:auto;padding:0 18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px}
+    .brand{font-weight:800;color:var(--brand);font-size:18px}
+    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
+    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* ===== HERO DE PAGE ===== */
+    .page-hero{
+      background:linear-gradient(180deg,var(--accent) 0%,var(--accent-2) 100%);
+      color:#fff;text-align:center;padding:70px 16px 60px;border-bottom:1px solid var(--line)
+    }
+    .page-hero h1{font-size:clamp(30px,5vw,54px);font-weight:800;margin-bottom:10px}
+    .page-hero p{font-size:clamp(15px,2.2vw,18px);opacity:.95}
+
+    /* ===== CONTENU APPEL ===== */
+    .container{max-width:1100px;margin:40px auto;padding:0 18px}
+    .appel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 22px}
+    .appel h2{font-size:clamp(22px,3.4vw,28px);margin:0 0 12px;font-weight:800;color:#b42727}
+    .appel p{margin:0 0 14px}
+    .appel ul{margin:10px 0 0 1.2rem}
+    .appel li{margin:10px 0}
+    .lead{font-size:18px}
+    .sep{height:1px;background:var(--line);margin:28px 0}
+
+    /* ===== BLOCS FORMULAIRES ===== */
+    .forms{display:grid;grid-template-columns:1fr;gap:26px;margin-top:28px}
+    .form-card{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04)
+    }
+    .form-card h3{font-size:20px;margin:6px 6px 8px;font-weight:800;color:#b42727}
+    .form-card p{margin:0 6px 14px;color:var(--muted)}
+    .form-frame{
+      width:100%; border:0; display:block;
+      height:1200px; /* ajuste si besoin */
+      border-top:1px solid var(--line)
+    }
+    @media (min-width:900px){
+      .forms{grid-template-columns:1fr 1fr}
+      .form-frame{height:1150px}
+    }
+
+    /* ===== FOOTER ===== */
+    footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:30px 18px;text-align:center;margin-top:50px}
+    .footer-logo{max-width:120px;height:auto;vertical-align:middle;margin:0 8px}
+
+    /* ===== Bouton flottant partage ===== */
+    .share-button{
+      position:fixed;bottom:24px;right:24px;z-index:9999;
+      background:#ee4943;color:#fff;border:none;border-radius:50px;
+      padding:12px 20px;display:flex;align-items:center;gap:8px;
+      font-size:14px;font-weight:700;cursor:pointer;
+      box-shadow:0 4px 12px rgba(238,73,67,.4);transition:.3s
+    }
+    .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap topbar"><div class="brand">Journée Sans Nous</div></div>
+  <div class="ticker"><div class="track">
+    <span style="padding-right:32px"><strong>Assemblée Générale </strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11 •</span>
+    <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> Chaque lundi à 19h · 3 rue du Château d'Eau PARIS 10 •</span>
+    <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
+  </div></div>
+</header>
+
+<section class="page-hero">
+  <h1>Appel à la Journée Sans Nous</h1>
+  <p>18 décembre — Journée internationale des migrant·e·s</p>
+</section>
+
+<main class="container">
+  <article class="appel">
+    <h2>18 DÉCEMBRE – JOURNÉE INTERNATIONALE DES MIGRANT·E·S<br>UNE JOURNÉE SANS NOUS : si on s’arrête, tout s’arrête !</h2>
+
+    <p class="lead">Ce pays ne marche pas sans immigré·e·s. Il n’existe pas sans l’immigration et en bénéficie à tous points de vue.</p>
+    <p>Ce n’est pas l’immigration qui le détruit, ce sont les politiques menées, le racisme et l’injustice.</p>
+    <p>Le 18 décembre, à l’occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
+    <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s’arrête, tout s’arrête ! ».</p>
+    <p>Avec ou sans papiers, immigré·e·s, enfants d’immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n’irons pas à l’école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
+
+    <ul>
+      <li><strong>Pour l’abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
+      <li><strong>Pour l’égalité des droits</strong> de toutes et tous, à l’école, au logement, à la santé, à la culture, au travail.</li>
+      <li><strong>Pour la régularisation</strong> des sans-papiers</li>
+      <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
+      <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
+    </ul>
+
+    <div class="sep"></div>
+
+    <section class="forms">
+      <!-- Formulaire Collectifs / Organisations -->
+      <div class="form-card">
+        <h3>Signer en tant que collectif, association ou organisation</h3>
+        <p>Ce formulaire est destiné aux structures (collectifs, syndicats, assos…).</p>
+        <iframe class="form-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true"
+          title="Formulaire pour collectifs"></iframe>
+      </div>
+
+      <!-- Formulaire Individu -->
+      <div class="form-card">
+        <h3>S’engager en tant que personne</h3>
+        <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
+        <iframe class="form-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true"
+          title="Formulaire pour individu·e·s"></iframe>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <div>
+    © Journée Sans Nous • Initiative de
+    <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
+      <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+    </a> • 2025
+  </div>
+</footer>
+
+<button id="shareButton" class="share-button">
+  <i class="fa-solid fa-share-nodes"></i> Partager
+</button>
+
+<script>
+  document.getElementById('shareButton').onclick=()=>{
+    const t="Appel — Journée Sans Nous (18 décembre) : « Si on s’arrête, tout s’arrête ! »";
+    const u=window.location.href;
+    if(navigator.share){navigator.share({title:'Appel — Journée Sans Nous',text:t,url:u})}
+    else{navigator.clipboard.writeText(`${t}\n${u}`).then(()=>alert('Lien copié ✅'))}
+  }
+</script>
+
+</body>
+</html>
