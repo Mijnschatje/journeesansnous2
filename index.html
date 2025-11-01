@@ -38,16 +38,20 @@
   @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ========== Hero ========== */
-.hero {
-  background: linear-gradient(to bottom, #de2727 0%, #f0493a 100%);
-  padding: 58px 0 64px;
+.hero{
+  background: linear-gradient(to bottom, #b42727 0%, #f0493a 100%);
+  min-height: 88vh;                 /* plein écran desktop */
+  display: flex;
+  align-items: center;              /* centre verticalement le contenu */
+  padding: 48px 0 56px;             /* pas de gros vide en bas */
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
   color: #fff;
 }
 
-/* Conteneur en colonne, centré (plus de grille 2 colonnes) */
+/* Conteneur (quel que soit le markup actuel) */
+.hero .container,
 .hero-container{
   max-width: 1100px;
   margin: 0 auto;
@@ -58,13 +62,13 @@
   gap: 18px;
 }
 
-/* Bloc media : on contrôle la taille globale ici */
+/* Bloc media : contrôle la taille globale du logo+date */
 .hero-media{
-  width: min(92vw, 860px);  /* grand sur desktop, large sur mobile */
+  width: min(92vw, 860px);
   margin: 0 auto;
 }
 
-/* Logo principal – très lisible */
+/* Logo principal */
 .hero-logo{
   width: 100%;
   height: auto;
@@ -75,7 +79,7 @@
   animation: fadeSlide .8s ease-out .05s forwards;
 }
 
-/* Date : toujours ~70% de la largeur du logo */
+/* Date : ~70% de la largeur du logo */
 .hero-date{
   width: 70%;
   height: auto;
@@ -86,7 +90,7 @@
   animation: fadeSlide .9s ease-out .18s forwards;
 }
 
-/* Boutons (restaure le style si perdu) */
+/* Boutons */
 .hero-cta{
   display: flex;
   justify-content: center;
@@ -94,7 +98,6 @@
   flex-wrap: wrap;
   margin-top: 6px;
 }
-
 .btn{
   display: inline-flex;
   align-items: center;
@@ -114,24 +117,48 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,.12);
 }
-.btn--light{
-  background: #fff;
-  color: var(--brand-600);
-  border-color: #fff;
+.btn--light{ background:#fff; color:var(--brand-600); border-color:#fff }
+.btn--light:hover{ background:#ffe7e5 }
+
+/* Flèche d'incitation au scroll */
+.scroll-indicator{
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.12);
+  text-decoration: none;
+  animation: bounce 1.6s ease-in-out infinite;
 }
-.btn--light:hover{
-  background: #ffe7e5;
+.scroll-indicator:hover{ background: rgba(255,255,255,.22) }
+
+/* Animations */
+@keyframes fadeSlide{ to{ opacity:1; transform:translateY(0) } }
+@keyframes bounce{
+  0%,100%{ transform: translate(-50%,0) }
+  50%{    transform: translate(-50%,6px) }
+}
+@media (prefers-reduced-motion: reduce){
+  .scroll-indicator{ animation:none }
 }
 
-/* Animation */
-@keyframes fadeSlide { to { opacity:1; transform: translateY(0) } }
-
-/* Responsive : juste affiner les tailles très petites */
-@media (max-width: 480px){
+/* Responsive : réduire la hauteur & le padding pour éviter le "vide" */
+@media (max-width: 600px){
+  .hero{
+    min-height: 74vh;
+    padding-bottom: 24px;
+  }
   .hero-media{ width: 94vw; }
   .hero-date{ width: 72%; }
 }
-  
+
   /* ===== Steps ===== */
   .parcours{background:#fafafa;padding:80px 20px}
   .parcours h2{text-align:center;font-size:clamp(32px,4vw,46px);color:#d43830;margin-bottom:48px;font-weight:800}
@@ -204,6 +231,11 @@
 </div>
     </div>
   </div>
+    <a href="#parcours" class="scroll-indicator" aria-label="Faire défiler">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
 </section>
 
 <!-- ===== cartes parcours ===== -->
