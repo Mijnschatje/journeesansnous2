@@ -6,102 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  
+  <style>
+    /* ===== Styles additionnels pour hero cohérent ===== */
+    :root{--brand:#ee4943;--brand-600:#d33e38;--ink:#0f172a;--muted:#475569;--line:#e5e7eb}
+    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .wrap{max-width:1100px;margin:auto;padding:0 18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;flex-wrap:wrap;gap:10px}
+    .brand{font-weight:800;color:var(--brand);font-size:18px;display:flex;align-items:center;gap:10px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font-family:inherit;font-size:14px;transition:all .2s;font-weight:600}
+    .btn:hover{background:#f8f9fa;transform:translateY(-1px)}
+    .btn.primary{background:var(--brand);border-color:var(--brand-600);color:#fff}
+    .btn.primary:hover{background:var(--brand-600)}
+    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
+    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    
+    /* ===== HERO - MÊME STYLE QUE outil-mails.html ===== */
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
+    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800;flex-shrink:0}
+  </style>
 </head>
 
-<!-- bouton flottent de partage À ajouter juste avant </body> -->
-<button class="share-button" id="shareButton">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="18" cy="5" r="3"></circle>
-    <circle cx="6" cy="12" r="3"></circle>
-    <circle cx="18" cy="19" r="3"></circle>
-    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-  </svg>
-  <span>Partager</span>
-</button>
-
-<style>
-.share-button {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  background: #ee4943;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(238, 73, 67, 0.4);
-  transition: all 0.3s ease;
-}
-
-.share-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(238, 73, 67, 0.6);
-  background: #d33e38;
-}
-
-.share-button:active {
-  transform: translateY(0);
-}
-
-.share-button svg {
-  width: 20px;
-  height: 20px;
-}
-
-@media (max-width: 768px) {
-  .share-button {
-    bottom: 16px;
-    right: 16px;
-    padding: 10px 16px;
-    font-size: 13px;
-  }
-  
-  .share-button svg {
-    width: 18px;
-    height: 18px;
-  }
-}
-</style>
-<script>
-document.getElementById('shareButton').addEventListener('click', function() {
-  const shareText = "18 décembre 2025, Journée Internationale des Migrant.e.s, mettons-nous en grève solidaire avec les personnes sans papiers pour agir contre les lois racistes et les discriminations ➜ JOURNÉE SANS NOUS, Si on s'arrête, tout s'arrête !";
-  const shareUrl = window.location.href;
-  
-  if (navigator.share) {
-    // API native de partage (mobile)
-    navigator.share({
-      title: 'Journée Sans Nous - 18 décembre 2025',
-      text: shareText,
-      url: shareUrl
-    }).catch(err => console.log('Partage annulé'));
-  } else {
-    // Fallback : copier dans le presse-papier
-    const fullText = shareText + '\n\n' + shareUrl;
-    navigator.clipboard.writeText(fullText).then(() => {
-      // Feedback visuel
-      const btn = document.getElementById('shareButton');
-      const originalText = btn.innerHTML;
-      btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copié !</span>';
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-      }, 2000);
-    });
-  }
-});
-</script>
   <body>
   <header>
     <div class="wrap topbar">
-      <div class="brand"><span> Journée Sans Nous</span></div>
+      <div class="brand"><span>Journée Sans Nous</span></div>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
         <a class="btn primary" href="./outil-mails.html"><i class="fa-solid fa-envelope"></i> Générer mon mail</a>
       </div>
@@ -111,21 +47,12 @@ document.getElementById('shareButton').addEventListener('click', function() {
   <div class="ticker"><div class="track">🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • Chaque lundi 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel • 🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris</div></div>
 
   <div class="hero">
-    <div class="wrap inner">
-      <div>
-        <h1>
-          <span class="hero-highlight">Si on s'arrête,</span><br>
-          tout s'arrête.
-        </h1>
-        <p class="lede">Participe à la grève générale solidaire du 18 décembre pour l'égalité des droits, la justice sociale et la dignité des personnes immigrées et sans papiers.</p>
-        
-        <div class="hero-cta">
-          <a href="./outil-mails.html" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Je contacte mon syndicat</a>
-          <a href="#decide" class="btn"><i class="fa-solid fa-arrow-down"></i> Comment participer ?</a>
-        </div>
-      </div>
+    <div class="wrap">
+      <h1><span class="step-num">2</span> Connaître ses droits</h1>
+      <p class="lede">Faire grève légalement, avec ou sans syndicat, et s'organiser collectivement dans son établissement ou son entreprise.</p>
     </div>
   </div>
+
 
   <main>
     <aside class="toc">

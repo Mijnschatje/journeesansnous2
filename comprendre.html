@@ -1,34 +1,56 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+  <link rel="stylesheet" href="assets/css/styles.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  
+  <style>
+    /* ===== Styles additionnels pour hero cohérent ===== */
+    :root{--brand:#ee4943;--brand-600:#d33e38;--ink:#0f172a;--muted:#475569;--line:#e5e7eb}
+    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .wrap{max-width:1100px;margin:auto;padding:0 18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;flex-wrap:wrap;gap:10px}
+    .brand{font-weight:800;color:var(--brand);font-size:18px;display:flex;align-items:center;gap:10px}
+    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
+    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    
+    /* ===== HERO - MÊME STYLE QUE outil-mails.html ===== */
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
+    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800;flex-shrink:0}
+  </style>
 </head>
 
 <body>
 <header>
   <div class="wrap topbar">
-      <div class="brand"><span> Journée Sans Nous</span></div>
-      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-    <button class="share-cta" id="shareTop"><i class="fa-solid fa-share-nodes"></i> Partager la page</button>
+    <div class="brand"><span>Journée Sans Nous</span></div>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <button class="share-cta" id="shareTop"><i class="fa-solid fa-share-nodes"></i> Partager la page</button>
+    </div>
   </div>
 </header>
 
 <div class="ticker"><div class="track">
-EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • tous les lundis 19h ➜ Réunion d’organisation – 3 rue du Château d’Eau • À L’ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l’appel
+EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • tous les lundis 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel
 </div></div>
 
 <section class="hero">
   <div class="wrap">
-    <h1>Comprendre la situation</h1>
-    <p class="lede">Pourquoi la grève du 18 décembre est une réponse nécessaire aux politiques de précarisation et de répression.</p>
+    <h1><span class="step-num">1</span> Comprendre</h1>
+    <p class="lede">Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?</p>
   </div>
 </section>
 
-<main>
   <section id="intro">
   <p>
     <strong class="emphase">Migrer n’est ni une lubie ni du tourisme : c’est souvent une nécessité.</strong>
