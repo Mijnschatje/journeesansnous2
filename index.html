@@ -218,6 +218,56 @@
     box-shadow:0 4px 12px rgba(238,73,67,.4);transition:.3s;
   }
   .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
+/* 1) Empêche tout débordement horizontal global (mobile) */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 2) Coupe tout débordement potentiel des bandes plein écran */
+header, .ticker, .hero {
+  overflow-x: clip; /* (fallback possible: hidden) */
+}
+
+/* 3) Centrage robuste et padding fluide sur le container du hero */
+.hero .container,
+.hero-container {
+  max-width: 1100px;
+  margin-inline: auto;            /* centre horizontalement */
+  padding-inline: clamp(12px, 4vw, 18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;            /* centre horizontalement */
+  justify-content: center;        /* centre verticalement */
+  text-align: center;
+  gap: 16px;
+}
+
+/* 4) Hero media : ne plus dépendre de vw + padding → limiter à 100% */
+.hero-media{
+  width: 100%;
+  max-width: 760px;               /* ← ajuste ta “taille max” ici */
+  margin-inline: auto;
+}
+
+/* 5) Images/SVG toujours block et responsives (évite les décalages) */
+.hero-media img,
+.hero-media svg,
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6) Le ticker peut créer du débordement : sécurise-le */
+.ticker { position: relative; }
+.ticker .track {
+  display: inline-block;
+  will-change: transform;
+  /* optionnel : évite toute marge/padding latéral qui ferait dépasser */
+  padding-inline: 0;
+}
+
 </style>
 </head>
 
