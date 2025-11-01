@@ -7,9 +7,7 @@
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- 🔗 Lien vers la feuille de style principale -->
-  <link rel="stylesheet" href="/journeesansnous2/assets/css/styles.css?v=2025-11-01">
+  <link rel="stylesheet" href="/journeesansnous2/assets/css/styles.css?v=2025-11-02">
 
   <style>
     :root{
@@ -23,7 +21,7 @@
     body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
     a{color:var(--brand);text-decoration:none}
 
-    /* ===== Topbar ===== */
+    /* ===== Header ===== */
     header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
     .wrap{max-width:1100px;margin:auto;padding:0 18px}
     .topbar{display:flex;justify-content:space-between;align-items:center;height:64px}
@@ -36,7 +34,7 @@
     .hero{
       background:linear-gradient(135deg,#f0493a 0%, #ff6b5b 100%);
       color:#fff;text-align:center;position:relative;overflow:hidden;
-      padding:30px 0 50px; /* réduit */
+      padding:40px 0 60px;
     }
     .hero .inner{max-width:900px;margin:auto;padding:0 18px}
     .pill{
@@ -52,22 +50,14 @@
     .hero-logo{
       width:min(90vw,720px);
       display:block;
-      margin:0 auto 6px;
+      margin:0 auto 12px;
       opacity:0;
-      transform:translateY(14px);
+      transform:translateY(20px);
       animation:fadeSlide .8s ease-out .1s forwards;
     }
     @keyframes fadeSlide{to{opacity:1;transform:translateY(0)}}
-
-    .hero-subtitle{
-      font-size:clamp(18px,2.5vw,26px);
-      margin:4px 0 12px;
-      font-weight:700;
-      color:#fff;
-      opacity:.95;
-    }
     .hero-cta{
-      display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;
+      display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px;
     }
     .btn{
       display:inline-flex;align-items:center;gap:10px;
@@ -81,105 +71,24 @@
     .btn--light{background:#fff;color:#d33e38;border-color:#fff}
     .btn--light:hover{background:#ffe7e5}
 
-/* ===== Steps ===== */
-.parcours {
-  background: #fafafa;
-  padding: 80px 20px;
-}
-.parcours h2 {
-  text-align: center;
-  font-size: clamp(32px, 4vw, 46px);
-  color: #d43830;
-  margin-bottom: 48px;
-  font-weight: 800;
-}
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-  max-width: 1200px;
-  margin: auto;
-}
-.step-card {
-  background: #fff;
-  border: 2px solid var(--line);
-  border-radius: 18px;
-  padding: 28px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
+    /* ===== Steps ===== */
+    .parcours{background:#fafafa;padding:80px 20px}
+    .parcours h2{text-align:center;font-size:clamp(32px,4vw,46px);color:#d43830;margin-bottom:48px;font-weight:800}
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;max-width:1200px;margin:auto}
+    .step-card{background:#fff;border:2px solid var(--line);border-radius:18px;padding:28px;text-align:center;transition:.3s}
+    .step-clickable{cursor:pointer}
+    .step-clickable:hover{background:#fff7f6;box-shadow:0 8px 24px rgba(238,73,67,.25);transform:translateY(-6px)}
+    .step-num{width:54px;height:54px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 16px}
+    .step-title{font-size:22px;color:#d43830;font-weight:800;margin-bottom:10px}
+    .step-desc{color:var(--muted);font-size:15px;margin-bottom:18px}
+    .step-link{display:inline-block;margin-top:10px;font-weight:700;color:var(--brand);transition:color .2s}
+    .step-clickable:hover .step-link{color:var(--brand-600)}
+    .step-card{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+    .step-card.visible{opacity:1;transform:translateY(0)}
+    .step-card:nth-child(1).visible{transition-delay:.1s}
+    .step-card:nth-child(2).visible{transition-delay:.3s}
+    .step-card:nth-child(3).visible{transition-delay:.5s}
 
-/* === Cartes entièrement cliquables === */
-.step-clickable {
-  cursor: pointer;
-}
-.step-clickable:hover {
-  background: #fff7f6;
-  box-shadow: 0 8px 24px rgba(238, 73, 67, 0.25);
-  transform: translateY(-6px);
-}
-.step-clickable:active {
-  background: #ffeae7;
-  transform: translateY(0);
-}
-
-/* === Contenu des steps === */
-.step-num {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: var(--brand);
-  color: #fff;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin: 0 auto 16px;
-}
-.step-title {
-  font-size: 22px;
-  color: #d43830;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.step-desc {
-  color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 18px;
-}
-.step-link {
-  display: inline-block;
-  margin-top: 10px;
-  font-weight: 700;
-  color: var(--brand);
-  transition: color 0.2s ease;
-}
-.step-clickable:hover .step-link {
-  color: var(--brand-600);
-}
-/* ===== Animation d'apparition des steps ===== */
-.step-card {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.step-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Petit délai progressif pour l’effet séquentiel */
-.step-card:nth-child(1).visible {
-  transition-delay: 0.1s;
-}
-.step-card:nth-child(2).visible {
-  transition-delay: 0.3s;
-}
-.step-card:nth-child(3).visible {
-  transition-delay: 0.5s;
-}
     /* ===== Témoignage ===== */
     .temoignage{background:linear-gradient(135deg,#fff2f1,#ffe8e6);padding:80px 20px;text-align:center}
     .temoignage-text{font-size:21px;font-style:italic;line-height:1.6;max-width:800px;margin:auto;color:var(--ink);margin-bottom:18px}
@@ -194,13 +103,19 @@
     .cta-final .btn.secondary:hover{background:#ffe7e5}
 
     /* ===== FOOTER ===== */
-footer {
-  background: #fdfdfd;              /* presque blanc */
-  border-top: 1px solid #e5e7eb;    /* fine ligne grise */
-  color: #475569;                   /* texte gris doux */
-  padding: 30px 18px;
-  text-align: center;
-}
+    footer {
+      background: #fdfdfd;
+      border-top: 1px solid #e5e7eb;
+      color: #475569;
+      padding: 26px 18px;
+      text-align: center;
+    }
+    footer .footer-logo {
+      max-width: 140px;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 8px;
+    }
 
     /* ===== Bouton flottant ===== */
     .share-button{
@@ -213,93 +128,100 @@ footer {
     .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="wrap topbar"><div class="brand">Journée Sans Nous</div></div>
-    <div class="ticker"><div class="track">
-      <span style="padding-right:32px"><strong>Assemblée Générale </strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11  •</span>
-      <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> Chaque lundi à 19h · 3 rue du Château d'Eau PARIS 10 •</span>
-      <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
-    </div></div>
-  </header>
+<header>
+  <div class="wrap topbar"><div class="brand">Journée Sans Nous</div></div>
+  <div class="ticker"><div class="track">
+    <span style="padding-right:32px"><strong>Assemblée Générale </strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11  •</span>
+    <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> Chaque lundi à 19h · 3 rue du Château d'Eau PARIS 10 •</span>
+    <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
+  </div></div>
+</header>
 
-  <section class="hero">
-    <div class="inner">
-      <img class="hero-logo" src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous" loading="eager">
-            <span class="pill">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
-      <div class="hero-cta">
-        <a class="btn btn--light" href="#parcours">Comment participer</a>
-        <a class="btn" href="#outil">Contacter mon syndicat</a>
-      </div>
+<section class="hero">
+  <div class="inner">
+    <img class="hero-logo" src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous">
+    <span class="pill">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
+    <div class="hero-cta">
+      <a class="btn btn--light" href="#parcours">Comment participer</a>
+      <a class="btn" href="outil-mails.html">Contacter mon syndicat</a>
     </div>
-<section class="parcours" id="parcours">
-  <h2>Comment participer en 3 étapes</h2>
-  <div class="steps">
-
-    <!-- Étape 1 -->
-    <article class="step-card step-clickable" onclick="window.location.href='comprendre.html'">
-      <div class="step-num">1</div>
-      <h3 class="step-title">Comprendre</h3>
-      <p class="step-desc">
-        Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?
-      </p>
-      <span class="step-link">Synthèse de la situation →</span>
-    </article>
-
-    <!-- Étape 2 -->
-    <article class="step-card step-clickable" onclick="window.location.href='guide-greve.html'">
-      <div class="step-num">2</div>
-      <h3 class="step-title">Connaître ses droits</h3>
-      <p class="step-desc">
-        Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.
-      </p>
-      <span class="step-link">Lire le guide pratique →</span>
-    </article>
-
-    <!-- Étape 3 -->
-    <article class="step-card step-clickable" onclick="window.location.href='outil-mails.html'">
-      <div class="step-num">3</div>
-      <h3 class="step-title">Agir</h3>
-      <p class="step-desc">
-        Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.
-      </p>
-      <span class="step-link">Je me lance →</span>
-    </article>
-
   </div>
 </section>
 
-    </div>
-  <section class="temoignage" id="temoignage">
-    <p class="temoignage-text">« L'enjeu, c'est souvent de faire comprendre aux collègues l'intérêt collectif de la régularisation : égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles. »</p>
-    <div class="temoignage-author">— Un camarade de la CGT Jeunes Toulouse</div>
-  </section>
+<section class="parcours" id="parcours">
+  <h2>Comment participer en 3 étapes</h2>
+  <div class="steps">
+    <article class="step-card step-clickable" onclick="window.location.href='comprendre.html'">
+      <div class="step-num">1</div>
+      <h3 class="step-title">Comprendre</h3>
+      <p class="step-desc">Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?</p>
+      <span class="step-link">Synthèse de la situation →</span>
+    </article>
 
-  <section class="cta-final">
-    <h2>Prêt·e à faire grève le 18 décembre ?</h2>
-    <p>Des quartiers populaires aux campagnes, des écoles aux lieux de travail — « Si on s’arrête, tout s’arrête ! »</p>
-    <div class="hero-cta">
-      <a class="btn secondary" href="outil-mails.html">Contacter mon syndicat</a>
-      <a class="btn" href="#parcours">Voir les étapes</a>
-    </div>
-  </section>
+    <article class="step-card step-clickable" onclick="window.location.href='guide-greve.html'">
+      <div class="step-num">2</div>
+      <h3 class="step-title">Connaître ses droits</h3>
+      <p class="step-desc">Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.</p>
+      <span class="step-link">Lire le guide pratique →</span>
+    </article>
 
-<a href="https://www.antiracisme-solidarite.org/18-d%C3%A9cembre-2025-journee-sans-nous" target="_blank" rel="noreferrer noopener" class="footer-brand" aria-label="Marche des Solidarités">
-  <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" style="max-width:180px;height:auto;vertical-align:middle;">
-</a>
+    <article class="step-card step-clickable" onclick="window.location.href='outil-mails.html'">
+      <div class="step-num">3</div>
+      <h3 class="step-title">Agir</h3>
+      <p class="step-desc">Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.</p>
+      <span class="step-link">Je me lance →</span>
+    </article>
+  </div>
+</section>
 
-  <button id="shareButton" class="share-button">
-    <i class="fa-solid fa-share-nodes"></i> Partager
-  </button>
+<section class="temoignage" id="temoignage">
+  <p class="temoignage-text">« L'enjeu, c'est souvent de faire comprendre aux collègues l'intérêt collectif de la régularisation : égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles. »</p>
+  <div class="temoignage-author">— Un camarade de la CGT Jeunes Toulouse</div>
+</section>
 
-  <script>
-    document.getElementById('shareButton').onclick=()=>{
-      const t="18 décembre 2025 — Grève générale solidaire : Journée Sans Nous. « Si on s’arrête, tout s’arrête ! »";
-      const u=window.location.href;
-      if(navigator.share){navigator.share({title:'Journée Sans Nous',text:t,url:u})}
-      else{navigator.clipboard.writeText(t+"\\n"+u).then(()=>alert("Lien copié ✅"))}
-    }
-  </script>
+<section class="cta-final">
+  <h2>Prêt·e à faire grève le 18 décembre ?</h2>
+  <p>Des quartiers populaires aux campagnes, des écoles aux lieux de travail — « Si on s’arrête, tout s’arrête ! »</p>
+  <div class="hero-cta">
+    <a class="btn secondary" href="outil-mails.html">Contacter mon syndicat</a>
+    <a class="btn" href="#parcours">Voir les étapes</a>
+  </div>
+</section>
+
+<footer>
+  <div>
+    © Journée Sans Nous • Initiative de
+    <a href="https://www.marchedessolidarites.org" target="_blank" rel="noreferrer noopener">
+      <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+    </a>
+    • <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">antiracisme-solidarite.org</a>
+  </div>
+</footer>
+
+<button id="shareButton" class="share-button"><i class="fa-solid fa-share-nodes"></i> Partager</button>
+
+<script>
+  document.getElementById('shareButton').onclick=()=>{
+    const t="18 décembre 2025 — Grève générale solidaire : Journée Sans Nous. « Si on s’arrête, tout s’arrête ! »";
+    const u=window.location.href;
+    if(navigator.share){navigator.share({title:'Journée Sans Nous',text:t,url:u})}
+    else{navigator.clipboard.writeText(t+"\\n"+u).then(()=>alert('Lien copié ✅'))}
+  }
+
+  // Apparition séquentielle des steps
+  const steps = document.querySelectorAll('.step-card');
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.3});
+  steps.forEach(step=>observer.observe(step));
+</script>
 </body>
 </html>
