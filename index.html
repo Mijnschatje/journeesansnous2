@@ -338,6 +338,17 @@
     setTimeout(setHeaderH, 300);
   })();
 </script>
+<script>
+  // Scroll fluide jusqu'avant le titre de la section parcours
+  document.querySelector('.scroll-indicator')?.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector('#parcours');
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY - 60; // monte un peu avant le titre
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  });
+</script>
 
 </body>
 </html>
