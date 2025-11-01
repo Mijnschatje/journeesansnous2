@@ -78,11 +78,28 @@
   gap:16px;
 }
 
-/* Bloc media (logo + date) */
-.hero-media{
-  width:min(94vw, 820px);           /* un peu plus grand sur desktop */
-  margin:0 auto;
+.hero-media {
+  width: 92vw;              /* remplit presque tout l’écran sur mobile */
+  max-width: 880px;         /* limite sur desktop */
+  margin-inline: auto;
 }
+
+/* Ajuste la taille de la date en dessous */
+.hero-date {
+  width: 68%;               /* un peu plus petit que le logo */
+}
+
+/* Ajustement spécifique pour les petits écrans */
+@media (max-width: 600px) {
+  .hero-media {
+    width: 96vw;            /* occupe quasi toute la largeur */
+    max-width: none;        /* retire la limite pour ne pas le brider */
+  }
+  .hero-date {
+    width: 74%;             /* proportion plus douce sous le logo */
+  }
+}
+
 
 /* Logo principal */
 .hero-logo{
