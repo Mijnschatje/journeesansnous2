@@ -94,7 +94,67 @@
       /* ✅ CORRECTION: Réduire la marge à gauche sur mobile */
       main{margin-top:0;padding-left:18px;padding-right:18px}
     }
-  </style>
+
+  /* Boutons d'action (mail | copier | télécharger) */
+  .actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-top:16px;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:12px;
+    border:2px solid rgba(0,0,0,.08);
+    background:#fff;
+    color:#0f172a;               /* var(--ink) */
+    font:600 15px/1 'Manrope', system-ui, sans-serif;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+  }
+  .btn i{ font-size:15px; }
+
+  .btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border-color:rgba(0,0,0,.12);
+  }
+
+  .btn:active{
+    transform:translateY(0);
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+  }
+
+  /* Variante principale (rouge JSN) */
+  .btn.primary{
+    background: var(--brand, #ee4943);
+    color:#fff;
+    border-color: var(--brand-600, #d33e38);
+  }
+  .btn.primary:hover{
+    background: var(--brand-600, #d33e38);
+    border-color: var(--brand-600, #d33e38);
+    box-shadow:0 8px 24px rgba(238,73,67,.28);
+  }
+
+  /* Variante “ghost” si besoin  */
+  .btn.ghost{
+    background:transparent;
+    color:var(--brand, #ee4943);
+    border-color: rgba(238,73,67,.35);
+  }
+  .btn.ghost:hover{
+    background: rgba(238,73,67,.06);
+    border-color: rgba(238,73,67,.55);
+  }
+</style>
+
 </head>
 <body>
 <header>
