@@ -326,6 +326,30 @@
   steps.forEach(step=>observer.observe(step));
 </script>
   <script>
+  // Scroll doux uniquement au clic (pas au chargement)
+  (function () {
+    const link = document.querySelector('.scroll-indicator');
+    if (!link) return;
+
+    // Si l'URL contient un hash #parcours (souvenir du navigateur), on le supprime
+    if (location.hash === '#parcours') {
+      history.replaceState(null, '', location.pathname);
+    }
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.dataset.target || '#parcours');
+      if (!target) return;
+
+      // Décale légèrement pour montrer le début de la section
+      const offset = 24; // ajuste si tu veux plus/moins d’espace au-dessus
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  })();
+</script>
+  <script>
   (function(){
     function setHeaderH(){
       const h = document.querySelector('header')?.offsetHeight || 110;
