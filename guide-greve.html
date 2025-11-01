@@ -31,6 +31,65 @@
     .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
     .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
     .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800;flex-shrink:0}
+ /* ===== Structure principale ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+/* ===== Typographie ===== */
+h1, h2, h3 {
+  color: var(--brand);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 1.6em;
+  margin-bottom: .6em;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+blockquote {
+  border-left: 4px solid var(--brand);
+  background: #fff2f1;
+  padding: 10px 16px;
+  border-radius: 12px;
+  margin: 1.5em 0;
+  color: var(--muted);
+}
+
+/* ===== Notes / Encadrés ===== */
+.note {
+  border-left: 4px solid var(--brand);
+  background: #fff5f4;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+
+.warning {
+  background: #fff3cd;
+  color: #856404;
+  border-left: 4px solid #ffecb5;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
   </style>
 </head>
 
