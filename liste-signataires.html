@@ -7,92 +7,219 @@
   <meta name="description" content="Ils et elles ont répondu à notre appel : organisations signataires de la Journée Sans Nous." />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <!-- ta feuille de style globale -->
-  <link rel="stylesheet" href="/journeesansnous2/assets/css/styles.css?v=2025-11-02">
 
   <style>
-    /* Spécifique à la page logos (léger) */
-    .page-header{
-      background: linear-gradient(180deg, #b42727 0%, #f0493a 100%);
-      color:#fff; text-align:center; padding:48px 16px; border-bottom:1px solid var(--line);
+    :root {
+      --brand: #ee4943;
+      --brand-600: #d33e38;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e5e7eb;
+      --bg: #fafafa;
+      --card: #fff;
     }
-    .page-header h1{font-size: clamp(28px, 4.8vw, 56px); line-height:1.1; margin:0 0 8px; font-weight:800}
-    .page-header p{opacity:.95; margin:0; font-size: clamp(14px, 2vw, 18px)}
 
-    .logos-wrap{max-width:1200px;margin:34px auto 56px;padding:0 16px}
-    .logos-grid{
-      display:grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap:18px;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font: 16px/1.6 'Manrope', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
     }
-    .logo-card{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px;
-      display:flex; align-items:center; justify-content:center;
-      height:140px;             /* hauteur de carte */
-      transition:.2s;
+
+    a { color: var(--brand); text-decoration: none; }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
     }
-    .logo-card:hover{box-shadow:0 8px 20px rgba(0,0,0,.06); transform: translateY(-2px)}
-    .logo-card img{
-      max-height:90px;          /* CONTRAINTE DE HAUTEUR */
-      width:auto;
-      max-width:100%;
-      object-fit:contain;
+    .wrap { max-width: 1100px; margin: auto; padding: 0 18px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
     }
-    .logo-caption{
-      text-align:center; font-size:12px; color:var(--muted);
-      margin-top:6px; word-break:break-word;
+    .brand {
+      font-weight: 800;
+      color: var(--brand);
+      font-size: 18px;
+    }
+    .ticker {
+      background: var(--brand);
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .ticker .track {
+      display: inline-block;
+      animation: scroll 60s linear infinite;
+      padding: 8px 0;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      background: linear-gradient(180deg, #b42727 0%, #f0493a 100%);
+      color: #fff;
+      text-align: center;
+      padding: 60px 16px 50px;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-header h1 {
+      font-size: clamp(28px, 4.5vw, 52px);
+      margin: 0 0 10px;
+      font-weight: 800;
+    }
+    .page-header p {
+      font-size: clamp(15px, 2vw, 18px);
+      opacity: 0.95;
+    }
+
+    /* ===== GRILLE DES LOGOS ===== */
+    .logos-wrap {
+      max-width: 1300px;
+      margin: 50px auto 70px;
+      padding: 0 16px;
+    }
+    .logos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 14px;
+    }
+    .logo-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+      transition: all .2s ease;
+    }
+    .logo-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,.08);
+      transform: translateY(-3px);
+    }
+    .logo-card img {
+      max-height: 100px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .logos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+      }
+      .logo-card {
+        height: 110px;
+        padding: 10px;
+      }
+      .logo-card img {
+        max-height: 80px;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #fdfdfd;
+      border-top: 1px solid #e5e7eb;
+      color: #475569;
+      padding: 30px 18px;
+      text-align: center;
+    }
+    footer .footer-logo {
+      max-width: 120px;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 8px;
+    }
+
+    /* ===== BOUTON FLOTTANT ===== */
+    .share-button {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      background: #ee4943;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(238,73,67,.4);
+      transition: .3s;
+    }
+    .share-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(238,73,67,.6);
+      background: #d33e38;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- ===== Header + Ticker (identique à index) ===== -->
   <header>
-    <div class="wrap topbar"><div class="brand">Journée Sans Nous</div></div>
-    <div class="ticker"><div class="track">
-      <span style="padding-right:32px"><strong>Assemblée Générale</strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11 •</span>
-      <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> chaque lundi · 3 rue du Château d'Eau PARIS 10 •</span>
-      <span style="padding-right:32px"><strong>Réunion Unitaire Nationale</strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
-    </div></div>
+    <div class="wrap topbar">
+      <div class="brand">Journée Sans Nous</div>
+    </div>
+    <div class="ticker">
+      <div class="track">
+        <span style="padding-right:32px"><strong>Assemblée Générale </strong> lundi 17 novembre 19h · 29 Bd du Temple PARIS 11 •</span>
+        <span style="padding-right:32px"><strong>Réunion Unitaire Paris 19h</strong> Chaque lundi à 19h · 3 rue du Château d'Eau PARIS 10 •</span>
+        <span style="padding-right:32px"><strong>Réunion Unitaire Nationale </strong> jeudi 13 novembre 19h–21h · sur ZOOM •</span>
+      </div>
+    </div>
   </header>
 
-  <!-- Titre de page -->
   <section class="page-header">
     <h1>Ils et elles ont répondu à notre appel</h1>
-    <p>Logos des organisations signataires (mise à jour en continu)</p>
+    <p>Les organisations, syndicats et collectifs signataires de la Journée Sans Nous.</p>
   </section>
 
-  <!-- Grille des logos -->
   <main class="logos-wrap">
     <div class="logos-grid">
-
-      <!-- Place chaque logo dans l’ordre fourni, avec un libellé lisible -->
-      <figure class="logo-card">
-        <img loading="lazy" src="assets/img/logos/1_Collectif-Belleville.jpg" alt="Collectif Belleville">
-      </figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CSP-montreuil.jpg" alt="CSP Montreuil"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CSP17" alt="CSP 17"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CSP75.jpg" alt="CSP 75"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CSP93" alt="CSP 93"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CSP93.jpg" alt="CSP 93"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_CTSPV.jpg" alt="CTSPV"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_droits-devant.gif" alt="Droits Devant !!"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/1_gilets-noirs.jpg" alt="Gilets Noirs"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/2_fasti.svg" alt="FASTI"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/2_MEP.png" alt="MEP"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/2_OST.jpeg" alt="MEP"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/ACCUEIL-refugies-bruz" alt="Accueil Réfugiés Bruz"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/adelphicite.jpg" alt="Adelphicité"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/afa-annecy.jpeg" alt="AFA Annecy"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/AMI-pouzauges.png" alt="AMI Pouzauges"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/antifa-villefranche.jpeg" alt="Antifa Villefranche"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/APEL-egalite.jpg" alt="APEL Égalité"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/apprentis-de-la-terre.png" alt="Apprentis de la Terre"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/ApresJeunes.png" alt="Après Jeunes"></figure>
-      <figure class="logo-card"><img loading="lazy" src="assets/img/logos/ASTIR.jpg" alt="ASTIR"></figure>
+      <!-- 🧩 tous les logos existants -->
+      <figure class="logo-card"><img src="assets/img/logos/1_Collectif-Belleville.jpg" alt="Collectif Belleville"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CSP-montreuil.jpg" alt="CSP Montreuil"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CSP17" alt="CSP 17"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CSP75.jpg" alt="CSP 75"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CSP93" alt="CSP 93"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CSP93.jpg" alt="CSP 93"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_CTSPV.jpg" alt="CTSPV"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_droits-devant.gif" alt="Droits Devant"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/1_gilets-noirs.jpg" alt="Gilets Noirs"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/2_fasti.svg" alt="FASTI"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/2_MEP.png" alt="MEP"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/2_OST.jpeg" alt="MEP"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/ACCUEIL-refugies-bruz" alt="Accueil Réfugiés Bruz"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/adelphicite.jpg" alt="Adelphicité"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/afa-annecy.jpeg" alt="AFA Annecy"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/AMI-pouzauges.png" alt="AMI Pouzauges"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/antifa-villefranche.jpeg" alt="Antifa Villefranche"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/APEL-egalite.jpg" alt="APEL Égalité"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/apprentis-de-la-terre.png" alt="Apprentis de la Terre"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/ApresJeunes.png" alt="Après Jeunes"></figure>
+      <figure class="logo-card"><img src="assets/img/logos/ASTIR.jpg" alt="ASTIR"></figure>
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/Attac-flandre.jpg" alt="Attac Flandre"></figure>
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/attacLCS.jpg" alt="Attac LCS"></figure>
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/CALME.png" alt="CALME"></figure>
@@ -138,11 +265,9 @@
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/URC2.jpg" alt="URC 2"></figure>
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/villejuifvilledaccueil.jpg" alt="Villejuif Ville d’Accueil"></figure>
       <figure class="logo-card"><img loading="lazy" src="assets/img/logos/young-struggle.jpg" alt="Young Struggle"></figure>
-
     </div>
   </main>
 
-  <!-- ===== Footer identique ===== -->
   <footer>
     <div>
       © Journée Sans Nous • Initiative de
@@ -151,6 +276,19 @@
       </a> • 2025
     </div>
   </footer>
+
+  <button id="shareButton" class="share-button">
+    <i class="fa-solid fa-share-nodes"></i> Partager
+  </button>
+
+  <script>
+    document.getElementById('shareButton').onclick = () => {
+      const t = "Ils et elles ont répondu à notre appel — Signataires de la Journée Sans Nous";
+      const u = window.location.href;
+      if (navigator.share) navigator.share({ title: 'Journée Sans Nous — Signataires', text: t, url: u });
+      else navigator.clipboard.writeText(t + "\\n" + u).then(() => alert('Lien copié ✅'));
+    };
+  </script>
 
 </body>
 </html>
