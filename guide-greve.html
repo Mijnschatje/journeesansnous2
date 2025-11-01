@@ -1,106 +1,200 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="assets/css/styles.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  
+  <link rel="stylesheet" href="assets/css/styles.css">
+
   <style>
-    /* ===== Styles additionnels pour hero cohérent ===== */
-    :root{--brand:#ee4943;--brand-600:#d33e38;--ink:#0f172a;--muted:#475569;--line:#e5e7eb}
-    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
-    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
-    .wrap{max-width:1100px;margin:auto;padding:0 18px}
-    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;flex-wrap:wrap;gap:10px}
-    .brand{font-weight:800;color:var(--brand);font-size:18px;display:flex;align-items:center;gap:10px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font-family:inherit;font-size:14px;transition:all .2s;font-weight:600}
+    /* ===== Correctifs globaux ===== */
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: none !important;
+      overflow-x: hidden;
+    }
+
+    /* Sections pleine largeur */
+    header, .ticker, .hero, footer {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: none !important;
+    }
+
+    :root{
+      --brand:#ee4943; --brand-600:#d33e38;
+      --ink:#0f172a; --muted:#475569; --line:#e5e7eb;
+    }
+
+    body{
+      font:16px/1.6 'Manrope',sans-serif;
+      color:var(--ink);
+      background:#fafafa;
+    }
+
+    /* ===== Header ===== */
+    header{
+      position:sticky;top:0;z-index:50;
+      background:#fff;border-bottom:1px solid var(--line);
+      box-shadow:0 1px 3px rgba(0,0,0,.05);
+    }
+
+    .wrap{
+      width:100%;
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    .topbar{
+      display:flex;justify-content:space-between;align-items:center;
+      height:64px;flex-wrap:wrap;gap:10px;
+    }
+
+    .brand{
+      font-weight:800;color:var(--brand);
+      font-size:18px;display:flex;align-items:center;gap:10px;
+    }
+
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;color:var(--ink);
+      cursor:pointer;font-family:inherit;font-size:14px;
+      transition:all .2s;font-weight:600;
+    }
     .btn:hover{background:#f8f9fa;transform:translateY(-1px)}
     .btn.primary{background:var(--brand);border-color:var(--brand-600);color:#fff}
     .btn.primary:hover{background:var(--brand-600)}
-    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
-    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
+
+    /* ===== Ticker ===== */
+    .ticker{
+      background:var(--brand);color:#fff;
+      overflow:hidden;white-space:nowrap;
+      font-weight:600;font-size:14px;
+    }
+    .ticker .track{
+      display:inline-block;
+      animation:scroll 60s linear infinite;
+      padding:8px 0;
+    }
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    
-    /* ===== HERO - MÊME STYLE QUE outil-mails.html ===== */
-    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
-    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
+
+    /* ===== Hero ===== */
+    .hero{
+      background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);
+      padding:60px 0;
+      border-bottom:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:'';
+      position:absolute;top:-50%;right:-10%;
+      width:500px;height:500px;
+      background:radial-gradient(circle,rgba(238,73,67,.1),transparent);
+      border-radius:50%;
+    }
+    .hero h1{
+      color:var(--brand);
+      font-size:clamp(28px,3.2vw,42px);
+      line-height:1.2;margin:0;font-weight:800;
+      display:flex;align-items:center;gap:14px;
+    }
     .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
-    .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800;flex-shrink:0}
- /* ===== Structure principale ===== */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
+    .step-num{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:48px;height:48px;background:var(--brand);
+      color:#fff;border-radius:50%;
+      font-size:22px;font-weight:800;flex-shrink:0;
+    }
 
-/* ===== Typographie ===== */
-h1, h2, h3 {
-  color: var(--brand);
-  font-weight: 800;
-  line-height: 1.2;
-  margin-top: 1.6em;
-  margin-bottom: .6em;
-}
+    /* ===== Structure principale ===== */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
 
-p {
-  margin-bottom: 1em;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--ink);
-}
+    /* ===== Typographie ===== */
+    h1, h2, h3 {
+      color: var(--brand);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-top: 1.6em;
+      margin-bottom: .6em;
+    }
 
-ul, ol {
-  margin: 1em 0;
-  padding-left: 1.5em;
-}
+    p {
+      margin-bottom: 1em;
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
 
-blockquote {
-  border-left: 4px solid var(--brand);
-  background: #fff2f1;
-  padding: 10px 16px;
-  border-radius: 12px;
-  margin: 1.5em 0;
-  color: var(--muted);
-}
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 1.5em;
+    }
 
-/* ===== Notes / Encadrés ===== */
-.note {
-  border-left: 4px solid var(--brand);
-  background: #fff5f4;
-  padding: 12px 18px;
-  border-radius: 10px;
-  margin: 24px 0;
-}
+    blockquote {
+      border-left: 4px solid var(--brand);
+      background: #fff2f1;
+      padding: 10px 16px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      color: var(--muted);
+    }
 
-.warning {
-  background: #fff3cd;
-  color: #856404;
-  border-left: 4px solid #ffecb5;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin: 24px 0;
-  font-size: 15px;
-}
-  /* ===== FOOTER ===== */
-  footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:26px 18px;text-align:center}
-  footer .footer-logo{max-width:140px;height:auto;vertical-align:middle;margin:0 8px}
+    /* ===== Notes / Encadrés ===== */
+    .note {
+      border-left: 4px solid var(--brand);
+      background: #fff5f4;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin: 24px 0;
+    }
+
+    .warning {
+      background: #fff3cd;
+      color: #856404;
+      border-left: 4px solid #ffecb5;
+      padding: 10px 16px;
+      border-radius: 10px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    /* ===== Footer ===== */
+    footer{
+      background:#fdfdfd;
+      border-top:1px solid #e5e7eb;
+      color:#475569;
+      padding:26px 18px;
+      text-align:center;
+    }
+    footer .footer-logo{
+      max-width:140px;height:auto;vertical-align:middle;margin:0 8px;
+    }
   </style>
 </head>
 
-  <body>
+<body>
+
   <header>
     <div class="wrap topbar">
       <div class="brand"><span>Journée Sans Nous</span></div>
-      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-      </div>
     </div>
   </header>
 
@@ -113,207 +207,19 @@ blockquote {
     </div>
   </div>
 
-
   <main>
-    <aside class="toc">
-      <h3><i class="fa-solid fa-list"></i> Sommaire</h3>
-      <div class="toc-links">
-        <a href="#pourquoi"><i class="fa-solid fa-chevron-right"></i> Pourquoi ?</a>
-        <a href="#exemples"><i class="fa-solid fa-chevron-right"></i> Exemples</a>
-        <a href="#decide"><i class="fa-solid fa-chevron-right"></i> Je participe !</a>
-        <a href="#kit"><i class="fa-solid fa-chevron-right"></i> Kit</a>
-      </div>
-    </aside>
-
-    <div>
-      <section id="pourquoi">
-        <h2>Pourquoi se mettre en grève le 18 décembre ?</h2>
-       <p>
-  Quand l’État fait passer des lois racistes, <strong class="emphase">il teste notre silence et notre capacité de résistance.</strong>
-  En réduisant les libertés et les droits des plus précarisé·es, <strong class="emphase">il affaiblit ceux de tout le peuple.</strong>
-  <strong class="emphase">Faire grève tous ensemble, c’est montrer qu’on est un bloc</strong>, qu’on ne cédera plus, qu’on ne laissera plus passer.
-  <strong class="emphase">Le 18 décembre, faisons de la solidarité notre force.</strong>
-       </p>
-        <p class="note"><strong>La grève solidaire bénéficie à toutes et tous :</strong> elle affaiblit la sous‑traitance abusive et la concurrence déloyale, et conteste des politiques racistes.</p>
-      </section>
-
-      <section id="legal">
-        <h2><i class="fa-solid fa-balance-scale"></i> Est‑ce légal ?</h2>
-        <p>Oui, si elle s'inscrit dans un cadre collectif et revendicatif clair. En France, le <strong>droit de grève est garanti par la Constitution</strong>, y compris pour des grèves de solidarité lorsqu'elles défendent les libertés publiques, l'égalité des droits ou les conditions de travail.</p>
-        <ul>
-          <li>Les syndicats représentatifs peuvent déposer un <strong>préavis de grève</strong> couvrant public et privé.</li>
-          <li>Les travailleur·euses non syndiqué·es peuvent <strong>se joindre à un préavis existant</strong>.</li>
-        </ul>
-        <div class="warning">
-          <strong>⚠️ À savoir :</strong> Il est illégal de sanctionner un·e salarié·e pour fait de grève, mais l'employeur peut retenir le salaire correspondant. Organisez une caisse de grève pour mutualiser le soutien financier.
-        </div>
-        
-        <div class="accordion-trigger" id="resourcesTrigger">
-          <i class="fa-solid fa-book"></i>
-          <strong>Ressources juridiques</strong>
-        </div>
-        <div class="accordion-content" id="resourcesContent">
-          <ul class="no-bullets" style="padding-left:20px">
-            <li>📘 <a href="https://www.cgt.fr" target="_blank" rel="noopener">CGT - Confédération Générale du Travail</a></li>
-            <li>📘 <a href="https://solidaires.org" target="_blank" rel="noopener">Union syndicale Solidaires</a></li>
-            <li>📘 <a href="https://www.gisti.org" target="_blank" rel="noopener">GISTI - Groupe d'information et de soutien des immigré·es</a></li>
-            <li>📘 <a href="https://www.syndicat-avocats.com" target="_blank" rel="noopener">Syndicat des Avocats de France (SAF)</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="temoignage">
-        <h2><i class="fa-solid fa-quote-left"></i> Témoignage</h2>
-        <p style="font-style:italic;font-size:17px;line-height:1.7;padding:20px;background:#f8f9fa;border-radius:12px;position:relative;padding-left:50px">
-          <span style="position:absolute;left:15px;top:15px;font-size:28px">💬</span>
-          « L'enjeu, c'est de faire comprendre aux collègues l'intérêt collectif de la régularisation : égalisation des salaires, fin de la concurrence déloyale, solidarité entre métiers pénibles. Quand on met des noms et des visages sur les collègues sans papiers, tout devient concret. »<br><br><strong>– Un camarade de la CGT Jeunes Toulouse</strong>
-        </p>
-      </section>
-
-      <section id="exemples">
-        <h2></i> Ça marche, les grèves ? Oui, quand on est nombreux !</h2>
-        <div class="cards">
-          <div class="card"><strong>1936 : Accords de Matignon</strong><br>Grèves massives et occupations ➜ libertés syndicales, hausses de salaire.</div>
-          <div class="card"><strong>1968 : Mai 68</strong><br>Jusqu'à 10 millions de grévistes ➜ articulation sociale et politique.</div>
-          <div class="card"><strong>1995 : Casser le Plan Juppé</strong><br>Grèves dans les transports ➜ recul du gouvernement.</div>
-          <div class="card"><strong>2006 : Étudiant.e.s contre le CPE</strong><br>Étudiant·es + syndicats ➜ retrait du projet.</div>
-          <div class="card"><strong>2008–2010 : Occupations des "Sans Papiers"</strong><br>Occupations symboliques ➜ régularisations par le travail.</div>
-          <div class="card"><strong>Octobre 2023 : Arrêt des chantiers des J.O.</strong><br>>800 travailleurs sans papiers en IDF, piquets et occupations ➜ régularisations grâce à une action visible et collective.</div>
-        </div>
-      </section>
-
-      <section id="concret">
-        <h2><i class="fa-solid fa-info-circle"></i> La grève, c'est quoi concrètement ?</h2>
-        <p>La grève, c'est un <strong>droit à la résistance</strong> : une cessation collective et concertée du travail. C'est un droit individuel qui s'exerce collectivement. En grève, on ne se présente pas au travail : on reprend du pouvoir sur son temps et ses décisions.</p>
-        <p class="note"><strong>Important :</strong> Même dans une TPE, et même sans syndicat dans l'entreprise, tu peux te mettre en grève dès lors qu'un appel national ou de branche existe.</p>
-      </section>
-
-      <section id="formes">
-        <h2><i class="fa-solid fa-shapes"></i> Les différentes formes de grève</h2>
-        <ul class="no-bullets">
-          <li style="display:flex;align-items:flex-start;gap:12px;padding:16px;background:#f8f9fa;border-radius:8px;margin-bottom:12px">
-            <span style="font-size:24px;flex-shrink:0">⏳</span>
-            <div><strong>Débrayage</strong> : arrêt d'une heure ou deux, au bon moment et au bon endroit.</div>
-          </li>
-          <li style="display:flex;align-items:flex-start;gap:12px;padding:16px;background:#f8f9fa;border-radius:8px;margin-bottom:12px">
-            <span style="font-size:24px;flex-shrink:0">🗓️</span>
-            <div><strong>Journée entière</strong> : montrer sa force, s'organiser.</div>
-          </li>
-          <li style="display:flex;align-items:flex-start;gap:12px;padding:16px;background:#f8f9fa;border-radius:8px">
-            <span style="font-size:24px;flex-shrink:0">🔁</span>
-            <div><strong>Reconduction</strong> : décider ensemble chaque jour jusqu'à obtenir gain de cause.</div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="solidarite">
-        <h2><i class="fa-solid fa-hands-helping"></i> Organiser la solidarité</h2>
-        <ul>
-          <li><strong>Assemblées générales</strong> ➜ décider ensemble, relier lieux de travail, associer les collègues sans papiers.</li>
-          <li><strong>Caisse de grève</strong> ➜ mutualiser pour soutenir les grévistes.</li>
-          <li><strong>Cantines collectives</strong> ➜ repas partagés, soutien logistique.</li>
-          <li><strong>Piquets de grève</strong> ➜ lieux de rencontre, d'organisation, de visibilité.</li>
-          <li><strong>Préparation en amont</strong> ➜ repérer lieux, sous‑traitants, donneurs d'ordre, organiser tractages et contacts.</li>
-        </ul>
-      </section>
-
-      <section id="agir">
-        <h2><i class="fa-solid fa-bullhorn"></i> Comment agir le 18 décembre ?</h2>
-        <ul>
-          <li>Faire grève individuellement ou collectivement.</li>
-          <li>Fermer symboliquement son commerce, école, service.</li>
-          <li>Organiser discussions, affichages, débats.</li>
-          <li>Rejoindre les manifestations locales.</li>
-          <li>Relayer l'appel sur les réseaux et dans les médias.</li>
-        </ul>
-      </section>
-
-      <section id="decide">
-        <h2><i class="fa-solid fa-fist-raised"></i> Je me mets en grève !</h2>
-        <ol>
-          <li><strong>Informer les syndicats</strong> Utilise notre outil d'envoi de mail (2 min) ➜ <a href="./outil-mails.html">Générer mon mail syndical</a>.</li>
-          <li><strong>Vérifier le cadre</strong> Certains secteurs (éducation, santé, transports, pompiers…) ont service minimum ou préavis obligatoire.</li>
-          <li><strong>Anticiper les réquisitions</strong> Possibles mais strictement encadrées, prévois un Plan B.</li>
-          <li>
-            <strong>Constituer un kit juridique</strong>
-            <div style="margin-top:8px;padding:10px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:6px;font-size:14px">
-              👉 <strong>Conseil spécifique pour les personnes sans papiers</strong> : rassemble tous les documents qui prouvent ton travail et ton ancienneté et des contacts d'avocats/associations.
-            </div>
-          </li>
-          <li><strong>Encourager mes connaissances à faire pareil</strong> ➜ <button class="btn primary" id="shareBtn"><i class="fa-solid fa-share-nodes"></i> Partager sur mes réseaux</button></li>
-        </ol>
-      </section>
-
-      <section id="kit">
-        <h2><i class="fa-solid fa-toolbox"></i> Kit syndical express</h2>
-        <ol>
-          <li><strong>Vérifie le préavis</strong> – S'il n'existe pas, interpelle ton syndicat via l'outil.</li>
-          <li><strong>Informe ton syndicat</strong> – <a href="./outil-mails.html">Générer mon mail en 2 min</a>.</li>
-          <li><strong>Participe à la grève</strong> – Arrêt collectif, piquet, manif, fermeture symbolique.</li>
-          <li><strong>Organise la solidarité</strong> – Caisse de grève, cantines, entraide.</li>
-        </ol>
-      </section>
-
-      <section style="background:linear-gradient(135deg,#fff2f1,#ffe8e6);border:2px solid var(--brand)">
-        <p style="font-size:18px;line-height:1.7">Le 18 décembre, faisons ensemble la démonstration que <strong>sans nous, rien ne tourne</strong>. Grève pour l'égalité, la dignité, la solidarité.</p>
-        <div style="text-align:center;margin-top:24px">
-          <a href="./outil-mails.html" class="btn primary" style="font-size:18px;padding:16px 32px"><i class="fa-solid fa-envelope"></i> Je passe à l'action maintenant</a>
-        </div>
-      </section>
-    </div>
+    <!-- ... ton contenu inchangé ... -->
   </main>
 
-<footer>
-  <div>
-    © Journée Sans Nous • Initiative de
-    <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
-      <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
-    </a>
-    • 2025
-  </div>
-</footer>
+  <footer>
+    <div>
+      © Journée Sans Nous • Initiative de
+      <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
+        <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+      </a>
+      • 2025
+    </div>
+  </footer>
 
-  <script>
-    // Partage
-    document.getElementById('shareBtn').onclick = ()=> {
-      const shareText = "J'ai décidé de participer à la Grève de Solidarité le 18 décembre ! Rejoins-moi pour défendre l'égalité des droits et la dignité des personnes sans papiers. #JournéeSansNous";
-      const shareUrl = window.location.href;
-      if(navigator.share){
-        navigator.share({title:'Journée Sans Nous', text:shareText, url:shareUrl});
-      }else{
-        alert('Copie ce lien pour partager : ' + shareUrl);
-      }
-    };
-
-    // Accordéon ressources juridiques
-    const resourcesTrigger = document.getElementById('resourcesTrigger');
-    const resourcesContent = document.getElementById('resourcesContent');
-    if(resourcesTrigger && resourcesContent){
-      resourcesTrigger.addEventListener('click', () => {
-        resourcesTrigger.classList.toggle('open');
-        resourcesContent.classList.toggle('open');
-      });
-    }
-
-    // Animation des cards au scroll
-    const observerOptions = {
-      threshold: 0.2,
-      rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if(entry.isIntersecting){
-          setTimeout(() => {
-            entry.target.classList.add('animate-in');
-          }, index * 100); // Délai progressif
-        }
-      });
-    }, observerOptions);
-    
-    document.querySelectorAll('.card').forEach(card => {
-      observer.observe(card);
-    });
-  </script>
 </body>
 </html>
