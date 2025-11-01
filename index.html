@@ -30,47 +30,75 @@
     .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-    /* ===== HERO ===== */
-    .hero{
-      background:linear-gradient(135deg,#f0493a 0%, #ff6b5b 100%);
-      color:#fff;text-align:center;position:relative;overflow:hidden;
-      padding:40px 0 60px;
-    }
-    .hero .inner{max-width:900px;margin:auto;padding:0 18px}
-    .pill{
-      display:inline-block;
-      background:#000;
-      color:#fff;
-      border-radius:999px;
-      padding:6px 14px;
-      font-size:14px;
-      font-weight:700;
-      margin-bottom:12px;
-    }
-    .hero-logo{
-      width:min(90vw,720px);
-      display:block;
-      margin:0 auto 12px;
-      opacity:0;
-      transform:translateY(20px);
-      animation:fadeSlide .8s ease-out .1s forwards;
-    }
-    @keyframes fadeSlide{to{opacity:1;transform:translateY(0)}}
-    .hero-cta{
-      display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px;
-    }
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:10px 16px;border-radius:10px;
-      font-size:15px;font-weight:700;
-      border:2px solid rgba(255,255,255,.4);
-      color:#fff;background:rgba(255,255,255,.1);
-      transition:.2s;
-    }
-    .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
-    .btn--light{background:#fff;color:#d33e38;border-color:#fff}
-    .btn--light:hover{background:#ffe7e5}
+ /* ========== Hero ========== */
+.hero{
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  padding: 60px 0;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
 
+/* 2 colonnes : media (logo+date) / texte */
+.hero .container{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: center;
+}
+
+/* Conteneur commun pour contrôler les largeurs */
+.hero-media{
+  max-width: min(90vw, 720px);
+  margin: 0 auto;
+}
+
+/* Le logo occupe 100% du conteneur */
+.hero-logo{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide .8s ease-out .1s forwards;
+}
+
+/* La date fait 70% du logo (du même conteneur) */
+.hero-date{
+  width: 70%;
+  max-width: none;       /* important pour ne pas brider la règle au-dessus */
+  height: auto;
+  display: block;
+  margin: 6px auto 0;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeSlide 1s ease-out .3s forwards;
+}
+
+/* Texte */
+.hero h1{font-size: clamp(28px, 4vw, 46px); line-height:1.1; margin:0 0 12px}
+.hero p{font-size: clamp(16px, 2.1vw, 20px); margin:0 0 18px; color:#fff}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .badge{
+  display:inline-block;background:rgba(255,255,255,.15);color:#fff;
+  border:1px solid rgba(255,255,255,.3); padding:6px 10px;border-radius:999px;
+  font-weight:700;letter-spacing:.3px
+}
+
+/* Animation */
+@keyframes fadeSlide { to { opacity:1; transform: translateY(0) } }
+
+/* Responsive : on empile en 1 colonne, et on ajuste les tailles */
+@media (max-width: 900px){
+  .hero .container{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-media{ max-width: 85vw; }
+  .hero-date{ width: 70%; } /* reste 70% du logo (du conteneur) */
+}
     /* ===== Steps ===== */
     .parcours{background:#fafafa;padding:80px 20px}
     .parcours h2{text-align:center;font-size:clamp(32px,4vw,46px);color:#d43830;margin-bottom:48px;font-weight:800}
@@ -140,17 +168,26 @@
   </div></div>
 </header>
 
-<section class="hero">
-  <div class="inner">
-    <img class="hero-logo" src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous">
-<img class="hero-date" src="assets/img/18_decembre.svg" alt="18 décembre 2025 - Journée Internationale des Migrant·e·s">
-    <div class="hero-cta">
-      <a class="btn btn--light" href="#parcours">Comment participer</a>
-      <a class="btn" href="outil-mails.html">Contacter mon syndicat</a>
+      /* ===== Bloc titre page d'accueil ===== */
+  <section class="hero">
+  <div class="container">
+    <div class="hero-media">
+      <img class="hero-logo" src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous" loading="eager">
+      <img class="hero-date" src="assets/img/18_decembre.svg" alt="18 décembre 2025 • Journée Internationale des Migrant·e·s">
+    </div>
+
+    <div class="hero-text">
+      <span class="badge">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
+      <p class="hero-sub">« Si on s’arrête, tout s’arrête ! »</p>
+      <div class="hero-cta">
+        <a class="btn btn--light" href="#parcours">Comment participer</a>
+        <a class="btn" href="#outil">Contacter mon syndicat</a>
+      </div>
     </div>
   </div>
 </section>
 
+        /* ===== cartes parcours ===== */
 <section class="parcours" id="parcours">
   <h2>Comment participer en 3 étapes</h2>
   <div class="steps">
