@@ -37,26 +37,17 @@
   .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
   @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-.hero-media {
-  width: 92vw;              /* remplit presque tout l’écran sur mobile */
-  max-width: 880px;         /* limite sur desktop */
-  margin-inline: auto;
-}
-
-/* Ajuste la taille de la date en dessous */
-.hero-date {
-  width: 68%;               /* un peu plus petit que le logo */
-}
-
-/* Ajustement spécifique pour les petits écrans */
-@media (max-width: 600px) {
-  .hero-media {
-    width: 96vw;            /* occupe quasi toute la largeur */
-    max-width: none;        /* retire la limite pour ne pas le brider */
-  }
-  .hero-date {
-    width: 74%;             /* proportion plus douce sous le logo */
-  }
+/* ===== HERO plein écran ajusté ===== */
+.hero{
+  background: linear-gradient(to bottom, #b42727 0%, #f0493a 100%);
+  min-height: calc(100dvh - var(--header-h, 110px)); /* tient compte du header+ticker */
+  display: flex;
+  align-items: center;
+  padding: 32px 0 44px;             /* marges compactes pour éviter le “coupé” */
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  color: #fff;
 }
 
 /* petit “aperçu” de la section suivante (fond #fafafa) */
