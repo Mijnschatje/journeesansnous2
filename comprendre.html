@@ -1,498 +1,293 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="assets/css/styles.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journée Sans Nous - 18 décembre 2025</title>
   <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+
+  <!-- Styles globaux -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  
+  <link rel="stylesheet" href="assets/css/styles.css">
+
   <style>
-    /* ===== Styles additionnels pour hero cohérent ===== */
-    :root{--brand:#ee4943;--brand-600:#d33e38;--ink:#0f172a;--muted:#475569;--line:#e5e7eb}
-    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
-    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
-    .wrap{max-width:1100px;margin:auto;padding:0 18px}
-    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;flex-wrap:wrap;gap:10px}
-    .brand{font-weight:800;color:var(--brand);font-size:18px;display:flex;align-items:center;gap:10px}
-    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
-    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
-    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    
-    /* ===== HERO - MÊME STYLE QUE outil-mails.html ===== */
-    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
-    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
-    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
-    .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800;flex-shrink:0}
+    /* ===== Correctifs globaux ===== */
+    html, body { width:100%; margin:0; padding:0; max-width:none !important; }
+    :root{ --brand:#ee4943; --brand-600:#d33e38; --ink:#0f172a; --muted:#475569; --line:#e5e7eb; }
 
- /* ===== Structure principale ===== */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
+    body{ font:16px/1.6 'Manrope',sans-serif; color:var(--ink); background:#fafafa; }
+    .wrap{ max-width:1100px; margin:auto; padding:0 18px; }
 
-/* ===== Typographie ===== */
-h1, h2, h3 {
-  color: var(--brand);
-  font-weight: 800;
-  line-height: 1.2;
-  margin-top: 1.6em;
-  margin-bottom: .6em;
-}
+    /* ===== Header + ticker ===== */
+    header{ position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 1px 3px rgba(0,0,0,.05); }
+    .topbar{ display:flex; justify-content:space-between; align-items:center; height:64px; flex-wrap:wrap; gap:10px; }
+    .brand{ font-weight:800; color:var(--brand); font-size:18px; display:flex; align-items:center; gap:10px; }
+    .ticker{ background:var(--brand); color:#fff; overflow:hidden; white-space:nowrap; font-weight:600; font-size:14px; }
+    .ticker .track{ display:inline-block; animation:scroll 60s linear infinite; padding:8px 0; }
+    @keyframes scroll{ 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
-p {
-  margin-bottom: 1em;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--ink);
-}
+    /* ===== Hero (fond clair comme outil-mails) ===== */
+    .hero{ background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%); padding:60px 0; border-bottom:1px solid var(--line); position:relative; overflow:hidden; }
+    .hero::before{ content:''; position:absolute; top:-50%; right:-10%; width:500px; height:500px;
+      background:radial-gradient(circle,rgba(238,73,67,.1),transparent); border-radius:50%; }
+    .hero h1{ color:var(--brand); font-size:clamp(28px,3.2vw,42px); line-height:1.2; margin:0; font-weight:800; display:flex; align-items:center; gap:14px; }
+    .hero .lede{ color:var(--muted); margin:.6rem 0 0; font-size:17px; }
+    .step-num{ display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px;
+      background:var(--brand); color:#fff; border-radius:50%; font-size:22px; font-weight:800; flex-shrink:0; }
 
-ul, ol {
-  margin: 1em 0;
-  padding-left: 1.5em;
-}
+    /* ===== Contenu central ===== */
+    main{ max-width:900px; margin:0 auto; padding:60px 20px; background:#fff; border-radius:16px;
+      box-shadow:0 2px 12px rgba(0,0,0,0.05); }
 
-blockquote {
-  border-left: 4px solid var(--brand);
-  background: #fff2f1;
-  padding: 10px 16px;
-  border-radius: 12px;
-  margin: 1.5em 0;
-  color: var(--muted);
-}
+    /* Typo */
+    h1,h2,h3{ color:var(--brand); font-weight:800; line-height:1.2; margin-top:1.6em; margin-bottom:.6em; }
+    p{ margin-bottom:1em; font-size:17px; line-height:1.7; color:var(--ink); }
+    ul,ol{ margin:1em 0; padding-left:1.5em; }
+    blockquote{ border-left:4px solid var(--brand); background:#fff2f1; padding:10px 16px; border-radius:12px; margin:1.5em 0; color:var(--muted); }
+    .note{ border-left:4px solid var(--brand); background:#fff5f4; padding:12px 18px; border-radius:10px; margin:24px 0; }
+    .warning{ background:#fff3cd; color:#856404; border-left:4px solid #ffecb5; padding:10px 16px; border-radius:10px; margin:24px 0; font-size:15px; }
 
-/* ===== Notes / Encadrés ===== */
-.note {
-  border-left: 4px solid var(--brand);
-  background: #fff5f4;
-  padding: 12px 18px;
-  border-radius: 10px;
-  margin: 24px 0;
-}
+    /* ===== Footer ===== */
+    footer{ background:#fdfdfd; border-top:1px solid #e5e7eb; color:#475569; padding:26px 18px; text-align:center; }
+    footer .footer-logo{ max-width:140px; height:auto; vertical-align:middle; margin:0 8px; }
 
-.warning {
-  background: #fff3cd;
-  color: #856404;
-  border-left: 4px solid #ffecb5;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin: 24px 0;
-  font-size: 15px;
-}
- 
+    /* ===== Bouton flottant partage ===== */
+    .share-button{
+      position:fixed; bottom:24px; right:24px; z-index:9999; background:#ee4943; color:#fff; border:none; border-radius:50px;
+      padding:12px 20px; display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; cursor:pointer;
+      box-shadow:0 4px 12px rgba(238,73,67,.4); transition:all .3s ease;
+    }
+    .share-button:hover{ transform:translateY(-2px); box-shadow:0 6px 20px rgba(238,73,67,.6); background:#d33e38; }
+    .share-button svg{ width:20px; height:20px; }
+    @media (max-width:768px){
+      .share-button{ bottom:16px; right:16px; padding:10px 16px; font-size:13px; }
+      .share-button svg{ width:18px; height:18px; }
+    }
   </style>
 </head>
 
 <body>
-<header>
-  <div class="wrap topbar">
-    <div class="brand"><span>Journée Sans Nous</span></div>
-    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+
+  <!-- Header -->
+  <header>
+    <div class="wrap topbar">
+      <div class="brand">Journée Sans Nous</div>
+    </div>
+  </header>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="track">
+      EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris •
+      tous les lundis 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau •
+      À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel
     </div>
   </div>
-</header>
 
-<div class="ticker"><div class="track">
-EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • tous les lundis 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel
-</div></div>
-
-<section class="hero">
-  <div class="wrap">
-    <h1><span class="step-num">1</span> Comprendre</h1>
-    <p class="lede">Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?</p>
-  </div>
-</section>
-  
-<main>
-  <section id="intro">
-  <p>
-    <strong class="emphase">Migrer n’est ni une lubie ni du tourisme : c’est souvent une nécessité.</strong>
-    Les raisons sont multiples et légitimes — <span class="emphase">climat</span>, <span class="emphase">guerres</span>, 
-    <span class="emphase">persécutions politiques</span>, <span class="emphase">injustices économiques</span>, 
-    <span class="emphase">regroupement familial</span>. La France et l’Union européenne portent une part de responsabilité
-    dans ces mouvements (politiques commerciales et militaires, extraction de ressources, accords de coopération
-    et de contrôle des frontières, contributions aux dérèglements climatiques).
-  </p>
-  <p>
-    <strong class="emphase">Les politiques migratoires et sociales actuelles fragilisent tout le monde.</strong>
-    Ce qui commence par la remise en cause des droits des personnes sans papiers ou étrangères
-    finit par <span class="emphase">affaiblir nos droits et libertés à toutes et touts</span>.
-    <strong class="emphase">Comprendre ce qui se joue aujourd’hui, c’est refuser la division et construire la solidarité pour faire face.</strong>
-  </p>
-</section>
-
-   <section id="regu">
-    <h2>Être régularisé devient impossible</h2>
-    <p>Alors que la régularisation par le travail, introduite pour les métiers « en tension », semblait offrir une ouverture, elle se heurte à des critères toujours plus stricts et à des pratiques préfectorales arbitraires. La circulaire du 23 janvier 2025, impulsée par Bruno Retailleau, exige désormais trois années de présence en France, douze mois d’ancienneté de travail et une maîtrise certifiée du français.</p>
-    <p>Ces critères sont appliqués de façon inégale selon les préfectures. Dans certains départements, la voie « métiers en tension » n’est même pas indiquée sur les sites officiels. Les refus se multiplient, souvent assortis d’une obligation de quitter le territoire (OQTF), y compris pour des personnes parfaitement intégrées et en emploi stable.</p>
-    <p>Des titres de séjour sont aussi retirés à des personnes déjà régularisées, sur la base de prétextes administratifs. <strong>Obtenir un rendez-vous en préfecture est de l'ordre de l'impossible,</strong> les rendez-vous se revendent au marché noir, les délais s'allongent et des préfectures ferment leurs portes pour n'offrir qu'un service "en ligne" complexe et inaccessible pour certain.e.s. <strong>Des familles entières se retrouvent ainsi séparées, précarisées, privées de droits et menacées d’expulsion.</strong></p>
-
-<details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.lacimade.org/publication/travail-sans-papiers-droits-entraves/" target="_blank" rel="noopener">La Cimade — Le travail sans papiers, des droits entravés</a></li>
-    <li><a href="https://www.gisti.org/spip.php?rubrique11" target="_blank" rel="noopener">Gisti — Régularisation, droit au séjour et travail</a></li>
-    <li><a href="https://www.resf.fr/" target="_blank" rel="noopener">Réseau Éducation Sans Frontières — Témoignages et actions pour la régularisation</a></li>
-  </ul>
-</details>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <h1><span class="step-num">1</span> Comprendre</h1>
+      <p class="lede">Pourquoi cette grève ? En quoi la lutte des personnes sans papiers nous concernent toutes et tous ?</p>
+    </div>
   </section>
 
-  <section id="mineurs">
-    <h2>Mineur·e·s isolé·e·s : la France bafoue la Convention des Droits de l'Enfant</h2>
-    <p>En France, des milliers de jeunes étrangers vivent à la rue, faute de reconnaissance par l’Aide Sociale à l’Enfance. En 2024, plus de 3 200 mineur·e·s isolé·e·s ont été recensé·e·s en errance. <strong class="emphase">Leur sort dépend du département où ils se présentent</strong> : moins de 10 % des demandes sont acceptées dans certains territoires, contre plus de 50 % ailleurs.</p>
-    <p>En attendant un recours, beaucoup dorment dehors malgré l’obligation légale de protection immédiate. Même pris en charge, l’accompagnement est souvent minimal : chambres d’hôtel partagées, visites ponctuelles, absence de suivi éducatif. <strong class="emphase">Cette inégalité de traitement viole les principes élémentaires de la protection de l’enfance.</strong></p>
+  <!-- Contenu -->
+  <main>
 
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.infomie.net/" target="_blank" rel="noopener">Infomie — Observatoire des mineur·es isolé·es étrangers</a></li>
-    <li><a href="https://www.migreurop.org/article3121.html" target="_blank" rel="noopener">Migreurop — Enfants enfermés et laissés à la rue</a></li>
-    <li><a href="https://www.medecinsdumonde.org/fr/actualites/mineurs-isoles-errance" target="_blank" rel="noopener">Médecins du Monde — Mineurs isolés : errance et non-recours à la protection</a></li>
-  </ul>
-</details>
-  </section>
+    <section id="intro">
+      <p><strong class="emphase">Migrer n’est ni une lubie ni du tourisme : c’est souvent une nécessité.</strong>
+      Les raisons sont multiples et légitimes — <span class="emphase">climat</span>, <span class="emphase">guerres</span>,
+      <span class="emphase">persécutions politiques</span>, <span class="emphase">injustices économiques</span>,
+      <span class="emphase">regroupement familial</span>. La France et l’Union européenne portent une part de responsabilité
+      dans ces mouvements (politiques commerciales et militaires, extraction de ressources, accords de coopération
+      et de contrôle des frontières, contributions aux dérèglements climatiques).</p>
 
-  <section id="cra">
-    <h2>Centres de rétention et rafles : l’Histoire se répète</h2>
-    <p>Chaque année, des dizaines de milliers de personnes sont enfermées dans les <strong class="emphase">Centres de Rétention Administratifs (CRA)</strong>, véritables prisons où les droits fondamentaux sont bafoués. Ces lieux, dénoncés par les associations, se multiplient avec des conditions toujours plus indignes et des durées d’enfermement prolongées.</p>
-    <p>Dans les rues, les rafles ordonnées par Gérald Darmanin et Bruno Retailleau se multiplient. Elles visent les sans-papiers, souvent au faciès, pour « faire du chiffre ». <strong class="emphase">Ces pratiques de chasse aux migrant·e·s rappellent les heures les plus sombres de notre histoire.</strong></p>
+      <p><strong class="emphase">Les politiques migratoires et sociales actuelles fragilisent tout le monde.</strong>
+      Ce qui commence par la remise en cause des droits des personnes sans papiers ou étrangères
+      finit par <span class="emphase">affaiblir nos droits et libertés à toutes et tous</span>.
+      <strong class="emphase">Comprendre ce qui se joue aujourd’hui, c’est refuser la division et construire la solidarité pour faire face.</strong></p>
+    </section>
 
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.lacimade.org/publication/au-bout-de-lenfermement-rapport-sur-les-cra/" target="_blank" rel="noopener">La Cimade — Rapport annuel sur les CRA</a></li>
-    <li><a href="https://www.anafe.org/" target="_blank" rel="noopener">Anafé — Association nationale d’assistance aux frontières pour les étrangers</a></li>
-    <li><a href="https://www.migreurop.org/" target="_blank" rel="noopener">Migreurop — Réseau euro-africain contre l’enfermement des étranger·es</a></li>
-  </ul>
-</details>
+    <section id="regu">
+      <h2>Être régularisé devient impossible</h2>
+      <p>Alors que la régularisation par le travail, introduite pour les métiers « en tension », semblait offrir une ouverture, elle se heurte à des critères toujours plus stricts et à des pratiques préfectorales arbitraires. La circulaire du 23 janvier 2025, impulsée par Bruno Retailleau, exige désormais trois années de présence en France, douze mois d’ancienneté de travail et une maîtrise certifiée du français.</p>
+      <p>Ces critères sont appliqués de façon inégale selon les préfectures. Dans certains départements, la voie « métiers en tension » n’est même pas indiquée sur les sites officiels. Les refus se multiplient, souvent assortis d’une obligation de quitter le territoire (OQTF), y compris pour des personnes parfaitement intégrées et en emploi stable.</p>
+      <p>Des titres de séjour sont aussi retirés à des personnes déjà régularisées, sur la base de prétextes administratifs. <strong>Obtenir un rendez-vous en préfecture est de l'ordre de l'impossible,</strong> les rendez-vous se revendent au marché noir, les délais s'allongent et des préfectures ferment leurs portes pour n'offrir qu'un service « en ligne » complexe et inaccessible. <strong>Des familles entières se retrouvent ainsi séparées, précarisées, privées de droits et menacées d’expulsion.</strong></p>
 
-  </section>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.lacimade.org/publication/travail-sans-papiers-droits-entraves/" target="_blank" rel="noopener">La Cimade — Le travail sans papiers, des droits entravés</a></li>
+          <li><a href="https://www.gisti.org/spip.php?rubrique11" target="_blank" rel="noopener">Gisti — Régularisation, droit au séjour et travail</a></li>
+          <li><a href="https://www.resf.fr/" target="_blank" rel="noopener">Réseau Éducation Sans Frontières — Témoignages et actions</a></li>
+        </ul>
+      </details>
+    </section>
 
-  <section id="uk">
-    <h2>Complicité franco-britannique</h2>
-    <p>La France collabore avec le Royaume-Uni pour renforcer la répression des exilé·e·s. L’accord « one in, one out » prévoit qu’à chaque personne admise au Royaume-Uni correspond une personne renvoyée vers la France. <strong class="emphase">Cette logique cynique transforme les vies humaines en monnaie d’échange diplomatique.</strong></p>
-    <p>Sur le littoral, la violence s’intensifie : embarcations crevées, gaz lacrymogènes, campements détruits. <strong class="emphase">Au nom d’une politique de “zéro point de fixation”, la France devient le bras policier du Royaume-Uni.</strong></p>
+    <section id="mineurs">
+      <h2>Mineur·e·s isolé·e·s : la France bafoue la Convention des Droits de l'Enfant</h2>
+      <p>En France, des milliers de jeunes étrangers vivent à la rue, faute de reconnaissance par l’Aide Sociale à l’Enfance. En 2024, plus de 3 200 mineur·e·s isolé·e·s ont été recensé·e·s en errance. <strong class="emphase">Leur sort dépend du département où ils se présentent</strong> : moins de 10 % des demandes sont acceptées dans certains territoires, contre plus de 50 % ailleurs.</p>
+      <p>En attendant un recours, beaucoup dorment dehors malgré l’obligation légale de protection immédiate. Même pris en charge, l’accompagnement est souvent minimal : chambres d’hôtel partagées, visites ponctuelles, absence de suivi éducatif. <strong class="emphase">Cette inégalité de traitement viole les principes élémentaires de la protection de l’enfance.</strong></p>
 
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.utopia56.com/" target="_blank" rel="noopener">Utopia 56 — Défense des exilé·es à Calais et Grande-Synthe</a></li>
-    <li><a href="https://www.hrw.org/fr/news/2023/11/10/france-royaume-uni-des-politiques-qui-met-tent-en-danger-les-exiles" target="_blank" rel="noopener">Human Rights Watch — France/UK : politiques qui mettent en danger les exilé·es</a></li>
-    <li><a href="https://www.amnesty.fr/actualites/crise-migratoire-calais-grande-synthe" target="_blank" rel="noopener">Amnesty International — Calais et Grande-Synthe : violences et harcèlement</a></li>
-  </ul>
-</details>
-  </section>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.infomie.net/" target="_blank" rel="noopener">Infomie — Observatoire des MIE</a></li>
+          <li><a href="https://www.migreurop.org/article3121.html" target="_blank" rel="noopener">Migreurop — Enfants enfermés et laissés à la rue</a></li>
+          <li><a href="https://www.medecinsdumonde.org/fr/actualites/mineurs-isoles-errance" target="_blank" rel="noopener">Médecins du Monde — Errance et non-recours</a></li>
+        </ul>
+      </details>
+    </section>
 
-  <section id="palestine">
-    <h2>Refus d’accueillir les réfugié·e·s palestinien·ne·s</h2>
-    <p>Alors que le génocide à Gaza se poursuit, la France avait refusé d’accueillir des réfugié·e·s palestinien·ne·s et délivré des O.Q.T.F. à des palestinien.nes présent.es sur le sol français, y compris des enfants orphelins. Ce refus contredit les obligations internationales d’asile et révèle le cynisme d’un État qui prétend défendre les droits humains tout en fermant ses portes à celles et ceux qui fuient la guerre.</p>
+    <section id="cra">
+      <h2>Centres de rétention et rafles : l’Histoire se répète</h2>
+      <p>Chaque année, des dizaines de milliers de personnes sont enfermées dans les <strong class="emphase">Centres de Rétention Administratifs (CRA)</strong>, véritables prisons où les droits fondamentaux sont bafoués…</p>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.lacimade.org/publication/au-bout-de-lenfermement-rapport-sur-les-cra/" target="_blank" rel="noopener">La Cimade — Rapport CRA</a></li>
+          <li><a href="https://www.anafe.org/" target="_blank" rel="noopener">Anafé</a></li>
+          <li><a href="https://www.migreurop.org/" target="_blank" rel="noopener">Migreurop</a></li>
+        </ul>
+      </details>
+    </section>
 
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.amnesty.fr/actualites/israel-palestine-crimes-de-guerre-gaza" target="_blank" rel="noopener">Amnesty International — Crimes de guerre à Gaza</a></li>
-    <li><a href="https://www.france-palestine.org/" target="_blank" rel="noopener">Association France Palestine Solidarité — Analyses et communiqués</a></li>
-    <li><a href="https://www.ldh-france.org/tag/palestine/" target="_blank" rel="noopener">Ligue des Droits de l’Homme — Position sur la question palestinienne</a></li>
-  </ul>
-</details>
+    <section id="uk">
+      <h2>Complicité franco-britannique</h2>
+      <p>La France collabore avec le Royaume-Uni pour renforcer la répression des exilé·e·s…</p>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.utopia56.com/" target="_blank" rel="noopener">Utopia 56</a></li>
+          <li><a href="https://www.hrw.org/fr/news/2023/11/10/france-royaume-uni-des-politiques-qui-met-tent-en-danger-les-exiles" target="_blank" rel="noopener">HRW</a></li>
+          <li><a href="https://www.amnesty.fr/actualites/crise-migratoire-calais-grande-synthe" target="_blank" rel="noopener">Amnesty</a></li>
+        </ul>
+      </details>
+    </section>
 
-  </section>
+    <section id="palestine">
+      <h2>Refus d’accueillir les réfugié·e·s palestinien·ne·s</h2>
+      <p>…</p>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.amnesty.fr/actualites/israel-palestine-crimes-de-guerre-gaza" target="_blank" rel="noopener">Amnesty</a></li>
+          <li><a href="https://www.france-palestine.org/" target="_blank" rel="noopener">AFPS</a></li>
+          <li><a href="https://www.ldh-france.org/tag/palestine/" target="_blank" rel="noopener">LDH</a></li>
+        </ul>
+      </details>
+    </section>
 
-  <section id="foyers">
-    <h2>Foyers de travailleurs migrants : une disparition programmée</h2>
-    <p>Les foyers, souvent insalubres en raison du manque d'investissement des sociétés gestionnaires, sont transformés en « résidences sociales » dans le cadre d’une politique de restructuration qui aboutit à leur fermeture. Les résident·es subissent expulsions et sanctions arbitraires, sans les protections du droit commun. <strong class="emphase">Cette politique de précarisation menace directement le droit au logement et à l’autonomie.</strong></p>
+    <section id="foyers">
+      <h2>Foyers de travailleurs migrants : une disparition programmée</h2>
+      <p>…</p>
+      <details class="sources"><summary>En savoir +</summary>
+        <ul>
+          <li><a href="https://www.ldh-france.org/foyers-de-travailleurs-migrants-la-france-doit-respecter-les-droits-fondamentaux/" target="_blank" rel="noopener">LDH</a></li>
+          <li><a href="https://www.gisti.org/spip.php?article6322" target="_blank" rel="noopener">Gisti</a></li>
+          <li><a href="https://www.migrantvoice.org/" target="_blank" rel="noopener">Migrant Voice</a></li>
+        </ul>
+      </details>
+    </section>
 
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.ldh-france.org/foyers-de-travailleurs-migrants-la-france-doit-respecter-les-droits-fondamentaux/" target="_blank" rel="noopener">LDH — Foyers : respect des droits fondamentaux</a></li>
-    <li><a href="https://www.gisti.org/spip.php?article6322" target="_blank" rel="noopener">Gisti — Politique de transformation des foyers et droit au logement</a></li>
-    <li><a href="https://www.migrantvoice.org/" target="_blank" rel="noopener">Migrant Voice — Témoignages sur les conditions de logement des migrant·es</a></li>
-  </ul>
-</details>
+    <section id="frontex">
+      <h2>Frontex et la guerre aux frontières</h2>
+      <p>…</p>
 
-  </section>
-
-  <section id="frontex">
-    <h2>Frontex et la guerre aux frontières</h2>
-    <p>Alors que l’État prétend manquer de moyens pour la santé, l’éducation ou le logement, il finance massivement <strong class="emphase">Frontex</strong>, l’agence européenne de surveillance des frontières, dont le budget a explosé à près d’un milliard d’euros en 2024.</p>
-    <p>Drones, radars, navires et effectifs militaires traquent les exilé·e·s, au prix de milliers de vies perdues en Méditerranée et dans la Manche. Ces dix dernières années, au moins 25 000 personnes sont mortes en Méditerranée et 150 000 autres ont été renvoyées en Libye pour y être détenues, torturées, violées ou réduites en esclavage. <strong class="emphase">Cette militarisation montre la priorité politique donnée à la guerre contre les migrant·e·s plutôt qu’aux droits sociaux.</strong></p>
-
-    <details class="sources"><summary>En savoir +</summary>
-  <ul>
-    <li><a href="https://www.migreurop.org/article3170.html" target="_blank" rel="noopener">Migreurop — Frontex : la militarisation des frontières</a></li>
-    <li><a href="https://www.amnesty.fr/actualites/frontex-europe-violations-droit-migrant" target="_blank" rel="noopener">Amnesty International — Frontex et violations du droit des migrants</a></li>
-    <li><a href="https://www.borderforensics.org/fr/" target="_blank" rel="noopener">Border Forensics — Enquêtes sur les morts et violences aux frontières</a></li>
-  </ul>
-</details>
-
-    <!-- ===== ÉVOLUTION DU BUDGET DE FRONTEX : GRAPHIQUE ===== -->
-    <section id="frontex-budget" style="margin-top:24px">
-      <p class="lede" style="margin:.4rem 0 12px;color:#ee4943">⤵ Le budget de FRONTEX explose et l'Europe et la France financent la guerre aux frontières plutôt que la solidarité.</p>
-      <div style="max-width:900px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 2px 8px rgba(0,0,0,.05)">
-        <div style="position:relative;height:360px">
-          <canvas id="frontexChart"></canvas>
+      <!-- Graphique Frontex -->
+      <section id="frontex-budget" style="margin-top:24px">
+        <p class="lede" style="margin:.4rem 0 12px;color:#ee4943">
+          ⤵ Le budget de FRONTEX explose et l'Europe et la France financent la guerre aux frontières plutôt que la solidarité.
+        </p>
+        <div style="max-width:900px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 2px 8px rgba(0,0,0,.05)">
+          <div style="position:relative;height:360px">
+            <canvas id="frontexChart"></canvas>
+          </div>
         </div>
+      </section>
+    </section>
+
+    <!-- Bloc action -->
+    <section id="agir" style="background:var(--brand);color:#fff;text-align:center;padding:60px 24px;border-radius:20px;max-width:900px;margin:60px auto;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+      <div class="wrap" style="max-width:700px;margin:auto">
+        <p style="font-size:18px;line-height:1.7;margin-bottom:28px;">
+          <strong>Ces situations sont le résultat de choix politiques</strong>…<br>
+          <strong>La grève du 18 décembre est une réponse collective à ces politiques.</strong><br><br>
+          Le 18 décembre, <strong>journée internationale des migrant·es</strong>, faisons grève pour affirmer que
+          <span style="font-weight:800;">nous ne laisserons plus faire.</span>
+        </p>
+        <a href="https://mijnschatje.github.io/journeesansnous/index.html"
+           style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--brand);font-weight:700;padding:14px 28px;border-radius:12px;font-size:17px;text-decoration:none;transition:all .25s;"
+           onmouseover="this.style.background='var(--brand-600)';this.style.color='#fff'"
+           onmouseout="this.style.background='#fff';this.style.color='var(--brand)'">
+          <i class="fa-solid fa-bullhorn"></i> Rejoindre la mobilisation
+        </a>
       </div>
     </section>
-  </section>
-<section id="agir" style="
-  background:var(--brand);
-  color:#fff;
-  text-align:center;
-  padding:60px 24px;
-  border-radius:20px;
-  max-width:900px;
-  margin:60px auto;
-  box-shadow:0 4px 12px rgba(0,0,0,0.15);
-">
-  <div class="wrap" style="max-width:700px;margin:auto">
-    <p style="font-size:18px;line-height:1.7;margin-bottom:28px;">
-      <strong>Ces situations sont le résultat de choix politiques</strong> qui dessinent une stratégie globale de contrôle, de précarisation et de peur.<br>
-      <strong>La grève du 18 décembre est une réponse collective à ces politiques.</strong><br><br>
-      Le 18 décembre, <strong>journée internationale des migrant·es</strong>, faisons grève pour affirmer que
-      <span style="font-weight:800;">nous ne laisserons plus faire.</span>
-    </p>
 
-    <a href="https://mijnschatje.github.io/journeesansnous/index.html"
-       style="
-         display:inline-flex;
-         align-items:center;
-         gap:10px;
-         background:#fff;
-         color:var(--brand);
-         font-weight:700;
-         padding:14px 28px;
-         border-radius:12px;
-         font-size:17px;
-         text-decoration:none;
-         transition:all .25s;
-       "
-       onmouseover="this.style.background='var(--brand-600)';this.style.color='#fff'"
-       onmouseout="this.style.background='#fff';this.style.color='var(--brand)'">
-      <i class="fa-solid fa-bullhorn"></i> Rejoindre la mobilisation
-    </a>
-  </div>
-</section>
+  </main>
 
-</main>
-    <a href="https://mijnschatje.github.io/journeesansnous/index.html"
-       style="
-         display:inline-flex;
-         align-items:center;
-         gap:10px;
-         background:#fff;
-         color:var(--brand);
-         font-weight:700;
-         padding:14px 28px;
-         border-radius:12px;
-         font-size:17px;
-         text-decoration:none;
-         transition:all .25s;
-       "
-       onmouseover="this.style.background='var(--brand-600)';this.style.color='#fff'"
-       onmouseout="this.style.background='#fff';this.style.color='var(--brand)'">
-      <i class="fa-solid fa-bullhorn"></i> Rejoindre la mobilisation
-    </a>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
+    <div>
+      © Journée Sans Nous • Initiative de
+      <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
+        <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+      </a>
+      • 2025
+    </div>
+  </footer>
 
-</main>
+  <!-- Bouton de partage -->
+  <button class="share-button" id="shareButton">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="18" cy="5" r="3"></circle>
+      <circle cx="6" cy="12" r="3"></circle>
+      <circle cx="18" cy="19" r="3"></circle>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+    </svg>
+    <span>Partager</span>
+  </button>
 
-<footer>
-  <div>
-    © Journée Sans Nous • Initiative de
-    <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
-      <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
-    </a>
-    • 2025
-  </div>
-</footer>
-
-<!-- Partage -->
-<script>
-const shareText = "Le 18 décembre, ce sera sans moi. À mon avis on a tous et toutes de bonnes raisons de participer à la grève générale. #JournéeSansNous";
-const shareUrl = window.location.href;
-
-document.getElementById('shareTop').addEventListener('click', () => {
-  if (navigator.share) {
-    navigator.share({
-      title: "Journée Sans Nous — Comprendre la situation",
-      text: shareText,
-      url: shareUrl
-    });
-  } else {
-    navigator.clipboard.writeText(shareUrl).then(() => alert("📎 Lien copié dans le presse-papiers !"));
-  }
-});
-</script>
-
-<!-- Chart.js pour le graphique -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-(function(){
-  // Données Frontex
-  const labels = ['2005','2006','2014','2015','2020','2023','2024'];
-  const values = [ 6000000, 19166300, 98000000, 143000000, 460000000, 845000000, 922000000 ];
-  const color = getComputedStyle(document.documentElement).getPropertyValue('--brand')?.trim() || '#ee4943';
-
-  const ctx = document.getElementById('frontexChart').getContext('2d');
-  const chart = new Chart(ctx, {
-    type: 'line',
-    data: { labels: [], datasets: [{
-      label: 'Budget de Frontex (€)',
-      data: [],
-      borderColor: color,
-      backgroundColor: 'rgba(238,73,67,0.15)',
-      fill: true, tension: 0.25, borderWidth: 3,
-      pointRadius: 4, pointBackgroundColor: color
-    }]},
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      animation: { duration: 800, easing: 'easeOutQuart' },
-      plugins: { legend: { display:false },
-        tooltip: { callbacks: { label: (ctx)=> 'Budget : ' + ctx.parsed.y.toLocaleString('fr-FR') + ' €' } }
-      },
-      scales: {
-        x: { title:{display:true,text:'Année',color:'#475569',font:{weight:600}},
-             grid:{color:'rgba(0,0,0,0.05)'} },
-        y: { title:{display:true,text:'Budget (en €)',color:'#475569',font:{weight:600}},
-             grid:{color:'rgba(0,0,0,0.05)'},
-             ticks:{ callback:(v)=> (v/1_000_000)+' M€' } }
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+  (function(){
+    const labels = ['2005','2006','2014','2015','2020','2023','2024'];
+    const values = [6000000,19166300,98000000,143000000,460000000,845000000,922000000];
+    const color = getComputedStyle(document.documentElement).getPropertyValue('--brand')?.trim() || '#ee4943';
+    const ctx = document.getElementById('frontexChart').getContext('2d');
+    const chart = new Chart(ctx,{
+      type:'line',
+      data:{ labels:[], datasets:[{ label:'Budget de Frontex (€)', data:[], borderColor:color, backgroundColor:'rgba(238,73,67,0.15)', fill:true, tension:.25, borderWidth:3, pointRadius:4, pointBackgroundColor:color }]},
+      options:{ responsive:true, maintainAspectRatio:false, animation:{duration:800,easing:'easeOutQuart'},
+        plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:(c)=>'Budget : '+c.parsed.y.toLocaleString('fr-FR')+' €' } } },
+        scales:{ x:{ title:{display:true,text:'Année',color:'#475569',font:{weight:600}}, grid:{color:'rgba(0,0,0,.05)'} },
+                 y:{ title:{display:true,text:'Budget (en €)',color:'#475569',font:{weight:600}}, grid:{color:'rgba(0,0,0,.05)'}, ticks:{ callback:(v)=>(v/1_000_000)+' M€' } } }
       }
+    });
+    let played=false;
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function play(){ if(played) return; played=true; let i=0; const step=()=>{ if(i>=labels.length) return; chart.data.labels.push(labels[i]); chart.data.datasets[0].data.push(values[i]); chart.update(); i++; prefersReduced? (function(){ while(i<labels.length){ chart.data.labels.push(labels[i]); chart.data.datasets[0].data.push(values[i]); i++; } chart.update(); })() : setTimeout(step,500); }; step(); }
+    const sec = document.getElementById('frontex-budget');
+    if(sec){ const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ play(); io.unobserve(sec); } }); },{threshold:.35}); io.observe(sec); }
+  })();
+  </script>
+
+  <!-- Partage -->
+  <script>
+  document.getElementById('shareButton').addEventListener('click', function(){
+    const shareText = "Le 18 décembre, ce sera sans moi. Grève générale solidaire #JournéeSansNous";
+    const shareUrl = window.location.href;
+    if(navigator.share){
+      navigator.share({ title:"Journée Sans Nous — Comprendre la situation", text:shareText, url:shareUrl }).catch(()=>{});
+    }else{
+      const full = shareText + '\\n\\n' + shareUrl;
+      navigator.clipboard.writeText(full).then(()=>{
+        const btn=this, old=btn.innerHTML;
+        btn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copié !</span>';
+        setTimeout(()=>{ btn.innerHTML=old; }, 2000);
+      });
     }
   });
-
-  let hasPlayed = false;
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function playSequence(){
-    if (hasPlayed) return; hasPlayed = true;
-    let i = 0;
-    const step = () => {
-      if (i >= labels.length) return;
-      chart.data.labels.push(labels[i]);
-      chart.data.datasets[0].data.push(values[i]);
-      chart.update();
-      i++;
-      if (prefersReduced) {
-        while (i < labels.length) {
-          chart.data.labels.push(labels[i]);
-          chart.data.datasets[0].data.push(values[i]); i++;
-        }
-        chart.update();
-      } else {
-        setTimeout(step, 500);
-      }
-    };
-    step();
-  }
-
-  const section = document.getElementById('frontex-budget');
-  if (section) {
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if (entry.isIntersecting) { playSequence(); io.unobserve(section); }
-      });
-    }, { threshold: 0.35 });
-    io.observe(section);
-  }
-})();
-</script>
-<!-- bouton de partage À ajouter juste avant </body> -->
-<button class="share-button" id="shareButton">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="18" cy="5" r="3"></circle>
-    <circle cx="6" cy="12" r="3"></circle>
-    <circle cx="18" cy="19" r="3"></circle>
-    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-  </svg>
-  <span>Partager</span>
-</button>
-
-<style>
-.share-button {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  background: #ee4943;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(238, 73, 67, 0.4);
-  transition: all 0.3s ease;
-}
-
-.share-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(238, 73, 67, 0.6);
-  background: #d33e38;
-}
-
-.share-button:active {
-  transform: translateY(0);
-}
-
-.share-button svg {
-  width: 20px;
-  height: 20px;
-}
-
-@media (max-width: 768px) {
-  .share-button {
-    bottom: 16px;
-    right: 16px;
-    padding: 10px 16px;
-    font-size: 13px;
-  }
-  
-  .share-button svg {
-    width: 18px;
-    height: 18px;
-  }
-}
-  /* ===== FOOTER ===== */
-  footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:26px 18px;text-align:center}
-  footer .footer-logo{max-width:140px;height:auto;vertical-align:middle;margin:0 8px}
-</style>
-
-<script>
-document.getElementById('shareButton').addEventListener('click', function() {
-  const shareText = "18 décembre 2025, Journée Internationale des Migrant.e.s, mettons-nous en grève solidaire avec les personnes sans papiers pour agir contre les lois racistes et les discriminations ➜ JOURNÉE SANS NOUS, Si on s'arrête, tout s'arrête !";
-  const shareUrl = window.location.href;
-  
-  if (navigator.share) {
-    // API native de partage (mobile)
-    navigator.share({
-      title: 'Journée Sans Nous - 18 décembre 2025',
-      text: shareText,
-      url: shareUrl
-    }).catch(err => console.log('Partage annulé'));
-  } else {
-    // Fallback : copier dans le presse-papier
-    const fullText = shareText + '\n\n' + shareUrl;
-    navigator.clipboard.writeText(fullText).then(() => {
-      // Feedback visuel
-      const btn = document.getElementById('shareButton');
-      const originalText = btn.innerHTML;
-      btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copié !</span>';
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-      }, 2000);
-    });
-  }
-});
-</script>
+  </script>
 </body>
 </html>
