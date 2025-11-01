@@ -86,19 +86,44 @@ a:hover{text-decoration:underline}
 .card p{margin:0;color:var(--muted)}
 
 /* ========== Footer ========== */
-/* Footer logo sizing (override any generic img rules) */
-footer .footer-logo {
-  height: 28px !important;   /* adjust to taste (e.g., 32px) */
-  width: auto !important;
-  max-width: 180px !important;
-  object-fit: contain;
-  display: inline-block;
-  vertical-align: middle;
+/* ===== Footer plus clair ===== */
+footer {
+  background: #fdfdfd;              /* presque blanc */
+  border-top: 1px solid #e5e7eb;    /* fine ligne grise */
+  color: #475569;                   /* texte gris doux */
+  padding: 30px 18px;
+  text-align: center;
+}
+
+/* disposition du contenu du footer */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
-  footer .footer-logo { height: 32px !important; }
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
+
+/* logo bien centré et taille contrôlée */
+footer .footer-logo {
+  max-height: 34px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+footer .footer-logo:hover {
+  transform: scale(1.05);
+}
+
 
 /* ===== Footer logo ===== */
 .footer-logo-link {
