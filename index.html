@@ -78,21 +78,37 @@
     .btn--light{background:#fff;color:#d33e38;border-color:#fff}
     .btn--light:hover{background:#ffe7e5}
 
-  /* ===== Steps ===== */
-    .parcours{background:#fafafa;padding:80px 20px}
-    .parcours h2{text-align:center;font-size:clamp(32px,4vw,46px);color:#d43830;margin-bottom:48px;font-weight:800}
-    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;max-width:1200px;margin:auto}
-    .step-card{background:#fff;border:2px solid var(--line);border-radius:18px;padding:28px;text-align:center;transition:.3s}
-    .step-card:hover{transform:translateY(-5px);box-shadow:0 8px 24px rgba(238,73,67,.2)}
-    .step-num{width:54px;height:54px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 16px}
-    .step-title{font-size:22px;color:#d43830;font-weight:800;margin-bottom:10px}
-    .step-desc{color:var(--muted);font-size:15px;margin-bottom:18px}
-    .step-link{color:var(--brand);font-weight:700;font-size:15px;text-decoration:none}
-    .step-link:hover{text-decoration:underline}
-    .step-clickable {cursor: pointer;}
+/* ===== Steps ===== */
+.parcours {
+  background: #fafafa;
+  padding: 80px 20px;
+}
+.parcours h2 {
+  text-align: center;
+  font-size: clamp(32px, 4vw, 46px);
+  color: #d43830;
+  margin-bottom: 48px;
+  font-weight: 800;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: auto;
+}
+.step-card {
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* === Cartes entièrement cliquables === */
 .step-clickable {
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 .step-clickable:hover {
   background: #fff7f6;
@@ -102,6 +118,32 @@
 .step-clickable:active {
   background: #ffeae7;
   transform: translateY(0);
+}
+
+/* === Contenu des steps === */
+.step-num {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 16px;
+}
+.step-title {
+  font-size: 22px;
+  color: #d43830;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.step-desc {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 18px;
 }
 .step-link {
   display: inline-block;
@@ -113,8 +155,6 @@
 .step-clickable:hover .step-link {
   color: var(--brand-600);
 }
-
-
 
     /* ===== Témoignage ===== */
     .temoignage{background:linear-gradient(135deg,#fff2f1,#ffe8e6);padding:80px 20px;text-align:center}
