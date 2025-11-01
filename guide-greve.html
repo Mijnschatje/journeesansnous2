@@ -3,223 +3,207 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Journée Sans Nous - 18 décembre 2025</title>
-  <meta name="description" content="18 décembre 2025 : Journée Sans Nous. Grève générale solidaire contre les lois racistes et pour la dignité des personnes sans papiers." />
+  <title>Journée Sans Nous – Connaître ses droits</title>
+  <meta name="description" content="Grève générale solidaire du 18 décembre : connaître ses droits et organiser la solidarité." />
 
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/styles.css">
 
   <style>
-    /* ===== Correctifs globaux ===== */
-    html, body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      max-width: none !important;
-      overflow-x: hidden;
-    }
-
-    /* Sections pleine largeur */
-    header, .ticker, .hero, footer {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      max-width: none !important;
-    }
-
     :root{
-      --brand:#ee4943; --brand-600:#d33e38;
-      --ink:#0f172a; --muted:#475569; --line:#e5e7eb;
+      --brand:#ee4943;--brand-600:#d33e38;
+      --ink:#0f172a;--muted:#475569;--line:#e5e7eb;
+      --radius:16px;--warning:#f59e0b;
     }
+    html,body{width:100%;margin:0;padding:0;max-width:none!important;overflow-x:hidden}
+    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
+    a{color:var(--brand);text-decoration:none}
 
-    body{
-      font:16px/1.6 'Manrope',sans-serif;
-      color:var(--ink);
-      background:#fafafa;
-    }
+    /* ===== HEADER ===== */
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .wrap{max-width:1100px;margin:auto;padding:0 18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--brand);font-size:18px}
 
-    /* ===== Header ===== */
-    header{
-      position:sticky;top:0;z-index:50;
-      background:#fff;border-bottom:1px solid var(--line);
-      box-shadow:0 1px 3px rgba(0,0,0,.05);
-    }
-
-    .wrap{
-      width:100%;
-      max-width:1100px;
-      margin:0 auto;
-      padding:0 18px;
-    }
-
-    .topbar{
-      display:flex;justify-content:space-between;align-items:center;
-      height:64px;flex-wrap:wrap;gap:10px;
-    }
-
-    .brand{
-      font-weight:800;color:var(--brand);
-      font-size:18px;display:flex;align-items:center;gap:10px;
-    }
-
-    .btn{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:10px 14px;border-radius:12px;
-      border:1px solid var(--line);
-      background:#fff;color:var(--ink);
-      cursor:pointer;font-family:inherit;font-size:14px;
-      transition:all .2s;font-weight:600;
-    }
-    .btn:hover{background:#f8f9fa;transform:translateY(-1px)}
-    .btn.primary{background:var(--brand);border-color:var(--brand-600);color:#fff}
-    .btn.primary:hover{background:var(--brand-600)}
-
-    /* ===== Ticker ===== */
-    .ticker{
-      background:var(--brand);color:#fff;
-      overflow:hidden;white-space:nowrap;
-      font-weight:600;font-size:14px;
-    }
-    .ticker .track{
-      display:inline-block;
-      animation:scroll 60s linear infinite;
-      padding:8px 0;
-    }
+    /* ===== TICKER ===== */
+    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
+    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-    /* ===== Hero ===== */
-    .hero{
-      background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);
-      padding:60px 0;
-      border-bottom:1px solid var(--line);
-      position:relative;
-      overflow:hidden;
-    }
-    .hero::before{
-      content:'';
-      position:absolute;top:-50%;right:-10%;
-      width:500px;height:500px;
-      background:radial-gradient(circle,rgba(238,73,67,.1),transparent);
-      border-radius:50%;
-    }
-    .hero h1{
-      color:var(--brand);
-      font-size:clamp(28px,3.2vw,42px);
-      line-height:1.2;margin:0;font-weight:800;
-      display:flex;align-items:center;gap:14px;
-    }
+    /* ===== HERO ===== */
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800;display:flex;align-items:center;gap:14px}
     .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
-    .step-num{
-      display:inline-flex;align-items:center;justify-content:center;
-      width:48px;height:48px;background:var(--brand);
-      color:#fff;border-radius:50%;
-      font-size:22px;font-weight:800;flex-shrink:0;
-    }
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:var(--brand);color:#fff;border-radius:50%;font-size:22px;font-weight:800}
 
-    /* ===== Structure principale ===== */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-    }
+    /* ===== CONTENU ===== */
+    main{max-width:900px;margin:auto;padding:40px 18px}
 
-    /* ===== Typographie ===== */
-    h1, h2, h3 {
-      color: var(--brand);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-top: 1.6em;
-      margin-bottom: .6em;
-    }
+    section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:box-shadow .3s}
+    section:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    section h2{color:var(--brand);margin:0 0 20px;font-size:24px;font-weight:800;display:flex;align-items:center;gap:12px}
+    section h2 i{font-size:24px}
 
-    p {
-      margin-bottom: 1em;
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--ink);
-    }
+    .note{border-left:4px solid var(--brand);background:#fff2f1;padding:16px;border-radius:12px;margin:20px 0;position:relative}
+    .warning{border-left:4px solid var(--warning);background:#fffbeb;padding:16px;border-radius:12px;margin:20px 0}
+    .cards{display:grid;gap:16px}
+    @media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+    .card{background:linear-gradient(135deg,#fff7f6,#fff);border:1px solid #ffd5d3;border-radius:14px;padding:16px;transition:all .3s;position:relative;overflow:hidden;opacity:0;transform:translateY(30px)}
+    .card.animate-in{animation:slideInUp .6s ease forwards}
+    @keyframes slideInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    .card strong{color:var(--brand)}
 
-    ul, ol {
-      margin: 1em 0;
-      padding-left: 1.5em;
-    }
+    ul{padding-left:0;list-style:none}
+    ul li{padding:12px 0 12px 32px;position:relative;border-bottom:1px solid #f1f5f9}
+    ul li:last-child{border-bottom:none}
+    ul li::before{content:'⤷';position:absolute;left:0;top:12px;color:var(--brand);font-weight:800;font-size:18px}
 
-    blockquote {
-      border-left: 4px solid var(--brand);
-      background: #fff2f1;
-      padding: 10px 16px;
-      border-radius: 12px;
-      margin: 1.5em 0;
-      color: var(--muted);
-    }
+    .accordion-trigger{cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600;color:var(--brand);padding:12px;background:#f8f9fa;border-radius:8px;transition:background .2s;user-select:none}
+    .accordion-trigger:hover{background:#f1f3f5}
+    .accordion-trigger::after{content:'▼';font-size:12px;margin-left:auto;transition:transform .3s}
+    .accordion-trigger.open::after{transform:rotate(180deg)}
+    .accordion-content{max-height:0;overflow:hidden;transition:max-height .3s ease}
+    .accordion-content.open{max-height:500px;margin-top:12px}
 
-    /* ===== Notes / Encadrés ===== */
-    .note {
-      border-left: 4px solid var(--brand);
-      background: #fff5f4;
-      padding: 12px 18px;
-      border-radius: 10px;
-      margin: 24px 0;
-    }
+    /* ===== FOOTER ===== */
+    footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:26px 18px;text-align:center;margin-top:60px}
+    footer .footer-logo{max-width:140px;height:auto;vertical-align:middle;margin:0 8px}
 
-    .warning {
-      background: #fff3cd;
-      color: #856404;
-      border-left: 4px solid #ffecb5;
-      padding: 10px 16px;
-      border-radius: 10px;
-      margin: 24px 0;
-      font-size: 15px;
-    }
-
-    /* ===== Footer ===== */
-    footer{
-      background:#fdfdfd;
-      border-top:1px solid #e5e7eb;
-      color:#475569;
-      padding:26px 18px;
-      text-align:center;
-    }
-    footer .footer-logo{
-      max-width:140px;height:auto;vertical-align:middle;margin:0 8px;
-    }
+    /* ===== Bouton flottant ===== */
+    .share-button{position:fixed;bottom:24px;right:24px;z-index:9999;background:#ee4943;color:#fff;border:none;border-radius:50px;padding:12px 20px;display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(238,73,67,.4);transition:all .3s}
+    .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="wrap topbar">
-      <div class="brand"><span>Journée Sans Nous</span></div>
-    </div>
-  </header>
-
-  <div class="ticker"><div class="track">🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • Chaque lundi 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel • 🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris</div></div>
-
-  <div class="hero">
-    <div class="wrap">
-      <h1><span class="step-num">2</span> Connaître ses droits</h1>
-      <p class="lede">Faire grève légalement, avec ou sans syndicat, et s'organiser collectivement dans son établissement ou son entreprise.</p>
-    </div>
+<header>
+  <div class="wrap topbar">
+    <div class="brand"><span>Journée Sans Nous</span></div>
   </div>
+</header>
 
-  <main>
-    <!-- ... ton contenu inchangé ... -->
-  </main>
+<div class="ticker"><div class="track">🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • Chaque lundi 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel</div></div>
 
-  <footer>
-    <div>
-      © Journée Sans Nous • Initiative de
-      <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
-        <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
-      </a>
-      • 2025
+<section class="hero">
+  <div class="wrap">
+    <h1><span class="step-num">2</span> Connaître ses droits</h1>
+    <p class="lede">Faire grève légalement, avec ou sans syndicat, et s'organiser collectivement dans son établissement ou son entreprise.</p>
+  </div>
+</section>
+
+<main>
+  <aside class="toc">
+    <h3><i class="fa-solid fa-list"></i> Sommaire</h3>
+    <div class="toc-links">
+      <a href="#pourquoi"><i class="fa-solid fa-chevron-right"></i> Pourquoi ?</a>
+      <a href="#exemples"><i class="fa-solid fa-chevron-right"></i> Exemples</a>
+      <a href="#decide"><i class="fa-solid fa-chevron-right"></i> Je participe !</a>
+      <a href="#kit"><i class="fa-solid fa-chevron-right"></i> Kit</a>
     </div>
-  </footer>
+  </aside>
 
+  <section id="pourquoi">
+    <h2>Pourquoi se mettre en grève le 18 décembre ?</h2>
+    <p>Quand l’État fait passer des lois racistes, <strong>il teste notre silence et notre capacité de résistance.</strong> En réduisant les libertés et les droits des plus précarisé·es, <strong>il affaiblit ceux de tout le peuple.</strong></p>
+    <p class="note"><strong>La grève solidaire bénéficie à toutes et tous :</strong> elle affaiblit la sous-traitance abusive et conteste des politiques racistes.</p>
+  </section>
+
+  <section id="legal">
+    <h2><i class="fa-solid fa-balance-scale"></i> Est-ce légal ?</h2>
+    <p>Oui, si elle s'inscrit dans un cadre collectif et revendicatif clair. En France, le <strong>droit de grève est garanti par la Constitution</strong>, y compris pour des grèves de solidarité.</p>
+    <ul>
+      <li>Les syndicats représentatifs peuvent déposer un <strong>préavis de grève</strong>.</li>
+      <li>Les travailleur·euses non syndiqué·es peuvent <strong>se joindre à un préavis existant</strong>.</li>
+    </ul>
+    <div class="warning"><strong>⚠️ À savoir :</strong> Il est illégal de sanctionner un·e salarié·e pour fait de grève, mais l'employeur peut retenir le salaire correspondant.</div>
+
+    <div class="accordion-trigger" id="resourcesTrigger"><i class="fa-solid fa-book"></i><strong>Ressources juridiques</strong></div>
+    <div class="accordion-content" id="resourcesContent">
+      <ul class="no-bullets" style="padding-left:20px">
+        <li>📘 <a href="https://www.cgt.fr" target="_blank">CGT</a></li>
+        <li>📘 <a href="https://solidaires.org" target="_blank">Solidaires</a></li>
+        <li>📘 <a href="https://www.gisti.org" target="_blank">GISTI</a></li>
+        <li>📘 <a href="https://www.syndicat-avocats.com" target="_blank">SAF</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="exemples">
+    <h2><i class="fa-solid fa-bullhorn"></i> Exemples de grèves victorieuses</h2>
+    <div class="cards">
+      <div class="card"><strong>1936 :</strong> Accords de Matignon ➜ libertés syndicales, hausses de salaires.</div>
+      <div class="card"><strong>1995 :</strong> Plan Juppé ➜ recul du gouvernement.</div>
+      <div class="card"><strong>2006 :</strong> CPE ➜ retrait du projet.</div>
+      <div class="card"><strong>2023 :</strong> Travailleurs sans papiers ➜ régularisations collectives.</div>
+    </div>
+  </section>
+
+  <section id="decide">
+    <h2><i class="fa-solid fa-fist-raised"></i> Je me mets en grève !</h2>
+    <ol>
+      <li><strong>Informer les syndicats</strong> ➜ <a href="./outil-mails.html">Générer mon mail syndical</a>.</li>
+      <li><strong>Vérifier le cadre</strong> (préavis, service minimum…).</li>
+      <li><strong>Préparer un kit juridique</strong> avec tes documents et contacts d’associations.</li>
+      <li><strong>Encourager mes connaissances</strong> ➜ <button class="btn primary" id="shareBtn"><i class="fa-solid fa-share-nodes"></i> Partager</button></li>
+    </ol>
+  </section>
+
+  <section id="kit">
+    <h2><i class="fa-solid fa-toolbox"></i> Kit syndical express</h2>
+    <ol>
+      <li><strong>Vérifie le préavis</strong> — interpelle ton syndicat si besoin.</li>
+      <li><strong>Informe ton syndicat</strong> — <a href="./outil-mails.html">Génère ton mail</a>.</li>
+      <li><strong>Participe à la grève</strong> — arrêts collectifs, manifs, fermetures symboliques.</li>
+      <li><strong>Organise la solidarité</strong> — caisse de grève, cantines, entraide.</li>
+    </ol>
+  </section>
+</main>
+
+<footer>
+  © Journée Sans Nous • Initiative de
+  <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
+    <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+  </a>
+  • 2025
+</footer>
+
+<button class="share-button" id="shareButton">
+  <i class="fa-solid fa-share-nodes"></i> <span>Partager</span>
+</button>
+
+<script>
+  // Accordéon ressources juridiques
+  const trigger=document.getElementById('resourcesTrigger');
+  const content=document.getElementById('resourcesContent');
+  if(trigger&&content){
+    trigger.addEventListener('click',()=>{trigger.classList.toggle('open');content.classList.toggle('open');});
+  }
+
+  // Animation des cartes au scroll
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>{e.target.classList.add('animate-in');},i*100);
+      }
+    });
+  },{threshold:0.2});
+  document.querySelectorAll('.card').forEach(c=>observer.observe(c));
+
+  // Bouton de partage
+  document.getElementById('shareButton').addEventListener('click',function(){
+    const txt="18 décembre 2025 : Grève générale solidaire pour l’égalité des droits. #JournéeSansNous";
+    const url=window.location.href;
+    if(navigator.share){
+      navigator.share({title:"Journée Sans Nous",text:txt,url});
+    }else{
+      navigator.clipboard.writeText(txt+"\\n"+url).then(()=>{
+        this.innerHTML='<i class="fa-solid fa-check"></i> Copié !';
+        setTimeout(()=>this.innerHTML='<i class="fa-solid fa-share-nodes"></i> Partager',2000);
+      });
+    }
+  });
+</script>
 </body>
 </html>
