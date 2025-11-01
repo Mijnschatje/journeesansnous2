@@ -155,7 +155,28 @@
 .step-clickable:hover .step-link {
   color: var(--brand-600);
 }
+/* ===== Animation d'apparition des steps ===== */
+.step-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
+.step-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Petit délai progressif pour l’effet séquentiel */
+.step-card:nth-child(1).visible {
+  transition-delay: 0.1s;
+}
+.step-card:nth-child(2).visible {
+  transition-delay: 0.3s;
+}
+.step-card:nth-child(3).visible {
+  transition-delay: 0.5s;
+}
     /* ===== Témoignage ===== */
     .temoignage{background:linear-gradient(135deg,#fff2f1,#ffe8e6);padding:80px 20px;text-align:center}
     .temoignage-text{font-size:21px;font-style:italic;line-height:1.6;max-width:800px;margin:auto;color:var(--ink);margin-bottom:18px}
