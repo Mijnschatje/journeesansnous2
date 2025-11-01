@@ -32,18 +32,21 @@
     .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-    /* ===== HERO (dégradé rouge + logo animé) ===== */
+    /* ===== HERO ===== */
     .hero{
       background:linear-gradient(135deg,#f0493a 0%, #ff6b5b 100%);
-      padding:60px 0 80px;
+      padding:40px 0 60px; /* ↓ allégé pour remonter le contenu */
       border-bottom:1px solid var(--line);
       position:relative;
       overflow:hidden;
       color:#fff;
       text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-height:80vh; /* contenu centré verticalement sur grand écran */
     }
 
-    /* badge : fond noir, texte blanc */
     .pill{
       display:inline-block;
       background:#000;
@@ -58,7 +61,7 @@
 
     .hero-logo{
       width:min(90vw,820px);
-      margin:10px auto 10px;
+      margin:6px auto 8px;
       display:block;
       opacity:0;
       transform:translateY(14px);
@@ -68,7 +71,7 @@
 
     .hero-subtitle{
       font-size:clamp(18px,2.6vw,28px);
-      margin:8px 0 22px;
+      margin:10px 0 18px;
       font-weight:700;
       color:#fff;
       opacity:.95;
@@ -79,6 +82,7 @@
       gap:12px;
       justify-content:center;
       flex-wrap:wrap;
+      margin-top:10px;
     }
     .btn{
       display:inline-flex;
@@ -150,6 +154,7 @@
     .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
     .share-button svg{width:20px;height:20px}
     @media(max-width:768px){
+      .hero{padding:30px 0 50px}
       .share-button{bottom:16px;right:16px;padding:10px 16px;font-size:13px}
       .share-button svg{width:18px;height:18px}
     }
@@ -175,14 +180,8 @@
   <section class="hero">
     <div class="inner">
       <span class="pill">18 décembre 2025 • Journée Internationale des Migrant·e·s</span>
-
-      <!-- Logo SVG remonté -->
-      <img class="hero-logo"
-           src="assets/img/titre_journeesansnous-02.svg"
-           alt="Journée Sans Nous — Si on s'arrête, tout s'arrête !" loading="eager" style="margin-top:-10px">
-
+      <img class="hero-logo" src="assets/img/titre_journeesansnous-02.svg" alt="Journée Sans Nous — Si on s'arrête, tout s'arrête !" loading="eager">
       <p class="hero-subtitle">Grève générale solidaire contre les lois racistes</p>
-
       <div class="hero-cta">
         <a class="btn btn--light" href="#parcours">Comment participer</a>
         <a class="btn" href="#outil">Contacter mon syndicat</a>
@@ -193,53 +192,20 @@
   <!-- Stats -->
   <section class="stats" id="stats">
     <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-icon">✊</div>
-        <div class="stat-number">200+</div>
-        <div class="stat-label">Collectifs mobilisés</div>
-      </div>
-      <div class="stat">
-        <div class="stat-icon">📣</div>
-        <div class="stat-number">30</div>
-        <div class="stat-label">Ans de lutte</div>
-      </div>
-      <div class="stat">
-        <div class="stat-icon">✅</div>
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Légal & solidaire</div>
-      </div>
-      <div class="stat">
-        <div class="stat-icon">🌍</div>
-        <div class="stat-number">France</div>
-        <div class="stat-label">Échelle nationale</div>
-      </div>
+      <div class="stat"><div class="stat-icon">✊</div><div class="stat-number">200+</div><div class="stat-label">Collectifs mobilisés</div></div>
+      <div class="stat"><div class="stat-icon">📣</div><div class="stat-number">30</div><div class="stat-label">Ans de lutte</div></div>
+      <div class="stat"><div class="stat-icon">✅</div><div class="stat-number">100%</div><div class="stat-label">Légal & solidaire</div></div>
+      <div class="stat"><div class="stat-icon">🌍</div><div class="stat-number">France</div><div class="stat-label">Échelle nationale</div></div>
     </div>
   </section>
 
-  <!-- Parcours en 3 étapes -->
+  <!-- Parcours -->
   <section class="parcours" id="parcours">
     <h2>Comment participer en 3 étapes</h2>
     <div class="steps">
-      <article class="step-card">
-        <div class="step-num">1</div>
-        <h3 class="step-title">Comprendre</h3>
-        <p class="step-desc">Pourquoi cette grève ? En quoi la précarisation et la discrimination des personnes sans papiers nous concernent toutes et tous.</p>
-        <a class="step-link" href="#temoignage">Lire un témoignage</a>
-      </article>
-
-      <article class="step-card" id="guide">
-        <div class="step-num">2</div>
-        <h3 class="step-title">Connaître ses droits</h3>
-        <p class="step-desc">Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.</p>
-        <a class="step-link" href="outil-mails.html">Accéder au guide & outil</a>
-      </article>
-
-      <article class="step-card" id="outil">
-        <div class="step-num">3</div>
-        <h3 class="step-title">Agir</h3>
-        <p class="step-desc">Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.</p>
-        <a class="step-link" href="outil-mails.html">Je me lance</a>
-      </article>
+      <article class="step-card"><div class="step-num">1</div><h3 class="step-title">Comprendre</h3><p class="step-desc">Pourquoi cette grève ? En quoi la précarisation et la discrimination des personnes sans papiers nous concernent toutes et tous.</p><a class="step-link" href="#temoignage">Lire un témoignage</a></article>
+      <article class="step-card" id="guide"><div class="step-num">2</div><h3 class="step-title">Connaître ses droits</h3><p class="step-desc">Faire grève légalement, avec ou sans syndicat, et s’organiser collectivement dans son établissement ou son entreprise.</p><a class="step-link" href="outil-mails.html">Accéder au guide & outil</a></article>
+      <article class="step-card" id="outil"><div class="step-num">3</div><h3 class="step-title">Agir</h3><p class="step-desc">Génère en 2 minutes un mail clair et percutant à ton syndicat, ta fédé ou ton UD pour rejoindre la mobilisation.</p><a class="step-link" href="outil-mails.html">Je me lance</a></article>
     </div>
   </section>
 
@@ -262,16 +228,15 @@
     </div>
   </section>
 
-  <!-- Pied de page -->
   <footer>
     © Journée Sans Nous • Initiative de la
-    <a href="https://www.marchedessolidarites.org" target="_blank" rel="noreferrer noopener">Marche des Solidarités</a>
-    • <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">antiracisme-solidarite.org</a>
+    <a href="https://www.marchedessolidarites.org" target="_blank">Marche des Solidarités</a>
+    • <a href="https://www.antiracisme-solidarite.org" target="_blank">antiracisme-solidarite.org</a>
   </footer>
 
   <!-- Bouton flottant de partage -->
   <button id="shareButton" class="share-button" aria-label="Partager cette page">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="18" cy="5" r="3"></circle>
       <circle cx="6" cy="12" r="3"></circle>
       <circle cx="18" cy="19" r="3"></circle>
@@ -281,21 +246,12 @@
   </button>
 
   <script>
-    document.getElementById('shareButton').addEventListener('click', sharePage);
-
-    function sharePage(){
-      const shareText = "18 décembre 2025 — Grève générale solidaire avec les personnes sans papiers : Journée Sans Nous. « Si on s’arrête, tout s’arrête ! »";
-      const shareUrl = window.location.href;
-      if(navigator.share){
-        navigator.share({ title:'Journée Sans Nous - 18 décembre 2025', text:shareText, url:shareUrl }).catch(()=>{});
-      }else{
-        navigator.clipboard.writeText(shareText + '\\n' + shareUrl).then(()=>{
-          const btn = document.getElementById('shareButton');
-          btn.innerHTML = '✔️ Copié !';
-          setTimeout(()=>location.reload(),1500);
-        });
-      }
-    }
+    document.getElementById('shareButton').addEventListener('click', ()=>{
+      const text = "18 décembre 2025 — Grève générale solidaire avec les personnes sans papiers : Journée Sans Nous. « Si on s’arrête, tout s’arrête ! »";
+      const url = window.location.href;
+      if(navigator.share){ navigator.share({title:'Journée Sans Nous',text,url}); }
+      else{ navigator.clipboard.writeText(text + '\\n' + url).then(()=>alert("Lien copié ✅")); }
+    });
   </script>
 </body>
 </html>
