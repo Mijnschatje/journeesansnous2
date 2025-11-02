@@ -1,165 +1,87 @@
-/* menu.css - Styles pour le menu hamburger */
+// menu.js - Charge le menu hamburger automatiquement sur toutes les pages
 
-/* Style pour le bouton hamburger */
-.hamburger-menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    cursor: pointer;
+// Fonction pour créer le menu
+function createMenu() {
+    // Créer le HTML du menu
+    const menuHTML = `
+        <!-- Bouton Hamburger -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Fond sombre -->
+        <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+
+        <!-- Menu déroulant -->
+        <div class="menu-overlay" id="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="comprendre.html">Comprendre la situation</a></li>
+                    <li><a href="guide-greve.html">Comment faire grève ?</a></li>
+                    <li><a href="outil-mails.html">Écrire à un syndicat</a></li>
+                    <li><a href="appel.html">Lire et signer l'appel</a></li>
+                    <li><a href="liste-signataires.html">Liste des signataires</a></li>
+                </ul>
+            </nav>
+        </div>
+    `;
+
+    // Insérer le menu au début du body
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
 }
 
-.hamburger-icon {
-    width: 30px;
-    height: 25px;
-    position: relative;
-    transform: rotate(0deg);
-    transition: 0.5s ease-in-out;
-}
-
-.hamburger-icon span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #ee4943;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-}
-
-.hamburger-icon span:nth-child(1) {
-    top: 0px;
-}
-
-.hamburger-icon span:nth-child(2) {
-    top: 10px;
-}
-
-.hamburger-icon span:nth-child(3) {
-    top: 20px;
-}
-
-/* Animation quand le menu est ouvert */
-.hamburger-icon.open span:nth-child(1) {
-    top: 10px;
-    transform: rotate(135deg);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-    left: -60px;
-}
-
-.hamburger-icon.open span:nth-child(3) {
-    top: 10px;
-    transform: rotate(-135deg);
-}
-
-/* Style du menu déroulant */
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 320px;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: -2px 0 20px rgba(0,0,0,0.15);
-    transition: right 0.3s ease-in-out;
-    z-index: 999;
-    padding: 80px 30px 30px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-.menu-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('fond-menu.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15;
-    z-index: -1;
-}
-
-.menu-overlay.open {
-    right: 0;
-}
-
-.menu-overlay nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-overlay nav ul li {
-    margin: 24px 0;
-}
-
-.menu-overlay nav ul li a {
-    text-decoration: none;
-    color: #ee4943;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.2s;
-    display: block;
-    padding: 8px 0;
-    position: relative;
-}
-
-.menu-overlay nav ul li a:hover {
-    color: #d63d37;
-    transform: translateX(-5px);
-}
-
-.menu-overlay nav ul li a::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 2px;
-    background: #ee4943;
-    transition: width 0.2s;
-}
-
-.menu-overlay nav ul li a:hover::before {
-    width: 12px;
-}
-
-/* Fond sombre quand le menu est ouvert */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    z-index: 998;
-}
-
-.backdrop.open {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .menu-overlay {
-        width: 280px;
-    }
+// Fonction pour toggle le menu
+function toggleMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const backdrop = document.getElementById('backdrop');
     
-    .menu-overlay nav ul li a {
-        font-size: 16px;
-    }
+    hamburger.classList.toggle('open');
+    menu.classList.toggle('open');
+    backdrop.classList.toggle('open');
 }
+
+// Initialiser le menu quand le DOM est chargé
+document.addEventListener('DOMContentLoaded', function() {
+    createMenu();
+
+    // Fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.menu-overlay a').forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMenu();
+        });
+    });
+
+    // Fermer le menu avec la touche Échap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const menu = document.getElementById('menu');
+            if (menu && menu.classList.contains('open')) {
+                toggleMenu();
+            }
+        }
+    });
+
+    // Empêcher le scroll quand le menu est ouvert
+    const observer = new MutationObserver(() => {
+        const menu = document.getElementById('menu');
+        if (menu && menu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+
+    const menuElement = document.getElementById('menu');
+    if (menuElement) {
+        observer.observe(menuElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+    }
+});
