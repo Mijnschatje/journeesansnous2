@@ -70,7 +70,7 @@
     box-shadow: -2px 0 20px rgba(0,0,0,0.15);
     transition: right 0.3s ease-in-out;
     z-index: 999;
-    padding: 80px 30px 30px;
+    padding: 30px 30px 30px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .menu-overlay nav ul li {
-    margin: 24px 0;
+    margin: 20px 0;
 }
 
 .menu-overlay nav ul li a {
@@ -109,7 +109,7 @@
     font-weight: 500;
     transition: all 0.2s;
     display: block;
-    padding: 8px 0;
+    padding: 6px 0;
     position: relative;
 }
 
