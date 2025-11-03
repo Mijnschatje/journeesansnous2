@@ -288,8 +288,18 @@ img, svg {
   /* optionnel : évite toute marge/padding latéral qui ferait dépasser */
   padding-inline: 0;
 }
+  /* Désactive le scroll snap qui bloque le scroll naturel */
+html {
+  scroll-snap-type: none !important;
+}
 
+body, section {
+  scroll-snap-align: none !important;
+  scroll-snap-stop: normal !important;
+}
+  
 </style>
+
 </head>
 
 <body>
