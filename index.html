@@ -123,7 +123,7 @@
 /* Flèche “scroll” toujours visible */
 .scroll-indicator{
   position:absolute; left:50%; bottom:22px; transform:translateX(-50%);
-  width:44px; height:44px; border-radius:999px; display:grid; place-items:center;
+  width:50px; height:50px; border-radius:999px; display:grid; place-items:center;
   color:#fff; border:2px solid rgba(255,255,255,.45); background:rgba(255,255,255,.12);
   text-decoration:none; z-index:2; animation:bounce 1.6s ease-in-out infinite;
 }
@@ -131,15 +131,8 @@
 
 /* Animations */
 @keyframes fadeSlide{ to{ opacity:1; transform:translateY(0) } }
-@keyframes bounce{ 0%,100%{ transform:translate(-50%,0) } 50%{ transform:translate(-50%,6px) } }
+@keyframes bounce{ 0%,100%{ transform:translate(-70%,0) } 50%{ transform:translate(-70%,6px) } }
 @media (prefers-reduced-motion: reduce){ .scroll-indicator{ animation:none } }
-
-/* Mobile : réduit un peu la hauteur et garde la “peek” visible */
-@media (max-width:650px){
-  .hero{ min-height:calc(92dvh - var(--header-h, 110px)); padding-bottom:26px; }
-  .hero-media{ width:99vw; }
-  .hero-date{ width:75%; }
-}
 
 
 /* ===== Steps ===== */
@@ -296,6 +289,12 @@ html {
 body, section {
   scroll-snap-align: none !important;
   scroll-snap-stop: normal !important;
+}
+ /* Mobile : réduit un peu la hauteur et garde la “peek” visible */
+@media (max-width:650px){
+  .hero{ min-height:calc(92dvh - var(--header-h, 110px)); padding-bottom:26px; }
+  .hero-media{ width:99vw; }
+  .hero-date{ width:75%; }
 }
   
 </style>
