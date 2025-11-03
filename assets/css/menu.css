@@ -70,7 +70,7 @@
     box-shadow: -2px 0 20px rgba(0,0,0,0.15);
     transition: right 0.3s ease-in-out;
     z-index: 999;
-    padding: 30px 30px 30px;
+    padding: 20px 30px 30px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -99,7 +99,12 @@
 }
 
 .menu-overlay nav ul li {
-    margin: 20px 0;
+    margin: 18px 0;
+}
+
+/* Aligner le premier élément (Accueil) avec le X */
+.menu-overlay nav ul li:first-child {
+    margin-top: 0;
 }
 
 .menu-overlay nav ul li a {
