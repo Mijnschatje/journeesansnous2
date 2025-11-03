@@ -293,9 +293,20 @@ body, section {
  /* Mobile : réduit un peu la hauteur et garde la “peek” visible */
 @media (max-width:650px){
   .hero{ min-height:calc(92dvh - var(--header-h, 110px)); padding-bottom:26px; }
-  .hero-media{ width:99vw; }
-  .hero-date{ width:75%; }
-}
+  
+  .hero-media{ 
+    width:97vw !important; 
+    margin-left: auto !important;    /* ← Force le centrage */
+    margin-right: auto !important;   /* ← Force le centrage */
+  }
+  
+  .hero-date{ width:75% !important; }
+  
+  /* Centre le conteneur du hero */
+  .hero .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   
 </style>
 
