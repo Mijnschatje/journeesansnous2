@@ -63,7 +63,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 320px;
+    width: 350px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -84,7 +84,7 @@
     background-image: url('../img/fond-menu.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.25;
+    opacity: 0.29;
     z-index: -1;
 }
 
@@ -160,6 +160,6 @@
     }
     
     .menu-overlay nav ul li a {
-        font-size: 19px;
+        font-size: 20px;
     }
 }
