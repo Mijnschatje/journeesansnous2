@@ -1,241 +1,72 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="assets/css/menu.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Appel : Une Journée sans Nous — 18 décembre 2025</title>
-  <meta name="description" content="Appel à la Journée Sans Nous — 18 décembre : grève générale solidaire contre le racisme et pour l'égalité des droits." />
+  <meta name="description" content="Appel à la Journée Sans Nous — 18 décembre : grève générale solidaire." />
+
+  <!-- Ta feuille existante -->
+  <link rel="stylesheet" href="assets/css/menu.css">
+
+  <!-- Police texte + RTL (Noto Naskh Arabic & Amiri quand RTL) -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 
   <style>
-    :root{
-      --brand:#ee4943; --brand-600:#d33e38;
-      --ink:#0f172a; --muted:#475569;
-      --line:#e5e7eb; --bg:#fafafa; --card:#fff;
-      --accent:#b42727; --accent-2:#f0493a;
-    }
+    :root{--brand:#ee4943;--brand-600:#d33e38;--ink:#0f172a;--muted:#475569;--line:#e5e7eb;--bg:#fafafa;--card:#fff}
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font:16px/1.65 'Manrope',sans-serif;color:var(--ink);background:var(--bg)}
+    body{font:16px/1.65 'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--bg)}
     a{color:var(--brand);text-decoration:none}
 
-    /* ===== HEADER + TICKER ===== */
     header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
     .wrap{max-width:1100px;margin:auto;padding:0 18px}
     .topbar{display:flex;justify-content:space-between;align-items:center;height:64px}
     .brand{font-weight:800;color:var(--brand);font-size:18px}
+
     .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
     .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-    /* ===== HERO ===== */
-    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
-    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800}
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line)}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;font-weight:800}
     .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
 
-    /* ===== NOUVEAU SÉLECTEUR DE LANGUE MENU DÉROULANT ===== */
-    .language-selector-dropdown {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
-    }
-    .language-selector-dropdown h3 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--brand);
-      margin: 0 0 12px 0;
-    }
-    .dropdown-container {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .language-select {
-      flex: 1;
-      min-width: 250px;
-      padding: 12px 16px;
-      font-size: 15px;
-      font-family: 'Manrope', sans-serif;
-      color: var(--ink);
-      background: #fff;
-      border: 2px solid var(--line);
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ee4943' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      padding-right: 36px;
-    }
-    .language-select:hover {
-      border-color: var(--brand);
-    }
-    .language-select:focus {
-      outline: none;
-      border-color: var(--brand);
-      box-shadow: 0 0 0 3px rgba(238,73,67,.1);
-    }
-
-    /* ===== LECTEURS AUDIO MULTIPLES ===== */
-    .audio-players-container {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .audio-player {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #fff;
-      border: 2px solid var(--brand);
-      border-radius: 8px;
-      padding: 8px 14px;
-      margin: 0;
-      font-size: 13px;
-      color: var(--brand);
-      cursor: pointer;
-      transition: all 0.2s;
-      font-weight: 600;
-    }
-    .audio-player:hover {
-      background: #fff7f6;
-      border-color: var(--brand-600);
-      transform: translateY(-1px);
-    }
-    .audio-player.playing {
-      background: var(--brand);
-      color: #fff;
-    }
-    .audio-player i {
-      font-size: 14px;
-    }
-    .audio-label {
-      user-select: none;
-    }
-    
-    /* ===== ENCART JAUNE POUR LA PHRASE DE FIN ===== */
-    .join-us-box {
-      background: #fefce8;
-      border: 1px solid #fde047;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin: 24px 0 0 0;
-      font-style: italic;
-      color: #854d0e;
-      line-height: 1.7;
-    }
-    .join-us-box.rtl {
-      direction: rtl;
-      text-align: right;
-    }
-
-    /* ===== CONTENU APPEL ===== */
     .container{max-width:1100px;margin:40px auto;padding:0 18px}
     .appel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 22px}
-    .appel.rtl {
-      direction: rtl;
-      text-align: right;
-    }
-    .appel p{margin:0 0 14px;line-height:1.7}
+    .appel p{margin:0 0 14px}
     .appel ul{margin:10px 0 0 1.2rem}
-    .appel.rtl ul{margin:10px 1.2rem 0 0}
     .appel li{margin:10px 0}
-    .appel strong{color:var(--accent)}
+    .appel strong{color:#b42727}
     .sep{height:1px;background:var(--line);margin:28px 0}
 
-    /* ===== INTRO SECTION ===== */
-    .intro {
-      background: #fff7f6;
-      border-left: 4px solid var(--brand);
-      padding: 20px;
-      margin: 0 0 20px 0;
-      border-radius: 8px;
-    }
-    .intro.rtl {
-      border-left: none;
-      border-right: 4px solid var(--brand);
-    }
-    .intro p {
-      margin: 0 0 12px;
-    }
-    .intro p:last-child {
-      margin: 0;
-    }
+    /* RTL helpers */
+    .rtl{direction:rtl;text-align:right}
+    .rtl ul{margin:10px 1.2rem 0 0}
+    .rtl .intro{border-left:none;border-right:4px solid var(--brand)}
+    .rtl, .rtl *{font-family:'Noto Naskh Arabic','Amiri','Manrope',system-ui,serif}
 
-    /* ===== BOUTONS FORMULAIRES ===== */
+    .intro{background:#fff7f6;border-left:4px solid var(--brand);padding:20px;border-radius:8px;margin:0 0 20px}
+    .language-selector{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .dropdown{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    select.language{min-width:260px;padding:12px 16px;border:2px solid var(--line);border-radius:8px;appearance:none}
+    .audio-players{display:flex;gap:10px;flex-wrap:wrap}
+    .btn-audio{display:inline-flex;align-items:center;gap:6px;border:2px solid var(--brand);border-radius:8px;padding:8px 14px;font-weight:700;color:var(--brand);background:#fff;cursor:pointer}
+    .btn-audio.playing{background:var(--brand);color:#fff}
+
     .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
-    .form-trigger{
-      background:var(--card);border:2px solid var(--brand);border-radius:16px;
-      padding:24px; cursor:pointer; transition:.3s;
-      text-align:center;
-      box-shadow:0 4px 12px rgba(0,0,0,.04)
-    }
-    .form-trigger:hover{
-      box-shadow:0 8px 24px rgba(238,73,67,.25);
-      transform:translateY(-2px);
-      background:#fff7f6;
-    }
-    .form-trigger h3{font-size:22px;margin:0 0 8px;font-weight:800;color:var(--brand)}
-    .form-trigger p{margin:0;color:var(--muted);font-size:15px}
+    .form-trigger{background:var(--card);border:2px solid var(--brand);border-radius:16px;padding:24px;cursor:pointer;text-align:center;transition:.3s}
+    .form-trigger:hover{box-shadow:0 8px 24px rgba(238,73,67,.25);transform:translateY(-2px);background:#fff7f6}
+    .form-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 0;margin-top:20px;display:none}
+    .form-card.active{display:block}
+    .form-frame{width:100%;border:0;height:1150px;border-top:1px solid var(--line)}
 
-    /* ===== BLOCS FORMULAIRES ===== */
-    .form-card{
-      background:var(--card);border:1px solid var(--line);border-radius:16px;
-      padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04);
-      display:none;
-      margin-top:20px;
-    }
-    .form-card.active{
-      display:block;
-    }
-    .form-card h3{font-size:20px;margin:6px 6px 8px;font-weight:800;color:#b42727}
-    .form-card p{margin:0 6px 14px;color:var(--muted)}
-    .form-frame{
-      width:100%; border:0; display:block;
-      height:1200px;
-      border-top:1px solid var(--line)
-    }
-    @media (min-width:900px){
-      .form-frame{height:1150px}
-    }
-    @media (max-width:680px){
-      .forms-grid{grid-template-columns:1fr}
-      .form-trigger h3{font-size:19px}
-      .form-trigger p{font-size:14px}
-      .dropdown-container {
-        flex-direction: column;
-      }
-      .language-select {
-        width: 100%;
-      }
-    }
-
-    /* ===== FOOTER ===== */
     footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:30px 18px;text-align:center;margin-top:50px}
-    .footer-logo{max-width:120px;height:auto;vertical-align:middle;margin:0 8px}
-
-    /* ===== Bouton flottant partage ===== */
-    .share-button{
-      position:fixed;bottom:24px;right:24px;z-index:9999;
-      background:#ee4943;color:#fff;border:none;border-radius:50px;
-      padding:12px 20px;display:flex;align-items:center;gap:8px;
-      font-size:14px;font-weight:700;cursor:pointer;
-      box-shadow:0 4px 12px rgba(238,73,67,.4);transition:.3s
-    }
-    .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
+    .share-button{position:fixed;bottom:24px;right:24px;background:#ee4943;color:#fff;border:none;border-radius:50px;padding:12px 20px;font-weight:700;box-shadow:0 4px 12px rgba(238,73,67,.4);cursor:pointer}
   </style>
 </head>
-
 <body>
 
 <header>
@@ -243,485 +74,82 @@
     <a href="/" class="brand">Journée Sans Nous</a>
   </nav>
   <div class="ticker">
-    <div class="track">
-      ✊ 18 DÉCEMBRE 2025 • JOURNÉE SANS NOUS : SI ON S'ARRÊTE, TOUT S'ARRÊTE !&nbsp;&nbsp;&nbsp;
-      ✊ 18 DÉCEMBRE 2025 • JOURNÉE SANS NOUS : SI ON S'ARRÊTE, TOUT S'ARRÊTE !&nbsp;&nbsp;&nbsp;
-      ✊ 18 DÉCEMBRE 2025 • JOURNÉE SANS NOUS : SI ON S'ARRÊTE, TOUT S'ARRÊTE !&nbsp;&nbsp;&nbsp;
-    </div>
+    <div class="track">✊ 18 DÉCEMBRE 2025 • JOURNÉE SANS NOUS : SI ON S'ARRÊTE, TOUT S'ARRÊTE ! ✊ 18 DÉCEMBRE 2025 • JOURNÉE SANS NOUS : SI ON S'ARRÊTE, TOUT S'ARRÊTE ! ✊</div>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <h1>Appel : Une Journée sans Nous</h1>
-    <p class="lede">Si on s'arrête, tout s'arrête ! • 18 décembre 2025</p>
+    <h1 id="pageTitle">Appel : Une Journée sans Nous</h1>
+    <p class="lede" id="pageLede">Si on s'arrête, tout s'arrête ! • 18 décembre 2025</p>
   </div>
 </section>
 
 <main class="container">
-  <article class="appel" id="content">
-
-    <!-- SÉLECTEUR DE LANGUE AVEC MENU DÉROULANT -->
-    <div class="language-selector-dropdown">
-      <h3><i class="fa-solid fa-globe"></i> Choisir une langue / Choose a language / اختر لغة</h3>
-      <div class="dropdown-container">
-        <select id="languageSelect" class="language-select" onchange="changeLanguage()">
-          <optgroup label="🇫🇷 France">
-            <option value="fr">🇫🇷 Français</option>
-          </optgroup>
-          
-          <optgroup label="International">
-            <option value="en">🇬🇧 English</option>
-            <option value="ar">🌍 العربية (Arabe classique)</option>
-          </optgroup>
-          
-          <optgroup label="🇩🇿 Algérie">
-            <option value="dz-ar">🇩🇿 الدارجة الجزائرية (Darija algérienne)</option>
-            <option value="kab">🇩🇿 Taqbaylit (Kabyle)</option>
-          </optgroup>
-          
-          <optgroup label="🇲🇦 Maroc">
-            <option value="ma-ar">🇲🇦 الدارجة المغربية (Darija marocaine)</option>
-            <option value="tzm">🇲🇦 ⵜⴰⵎⴰⵣⵉⵖⵜ (Tamazight)</option>
-          </optgroup>
-          
-          <optgroup label="🇹🇳 Tunisie">
-            <option value="tn">🇹🇳 التونسي (Tunisien)</option>
-          </optgroup>
-          
-          <optgroup label="🇾🇹 Mayotte / 🇰🇲 Comores">
-            <option value="shimaore">🇾🇹 Shimaore</option>
-            <option value="shingazidja">🇰🇲 Shingazidja</option>
-          </optgroup>
-          
-          <optgroup label="🇨🇮 Côte d'Ivoire">
-            <option value="dyu">🇨🇮 Dioula (Jula)</option>
-            <option value="bci">🇨🇮 Baoulé</option>
-            <option value="bet">🇨🇮 Bété</option>
-          </optgroup>
-          
-          <optgroup label="🇸🇳 Sénégal">
-            <option value="wo">🇸🇳 Wolof</option>
-            <option value="ff">🇸🇳 Pulaar (Peul)</option>
-            <option value="srr">🇸🇳 Sérère</option>
-            <option value="dyo">🇸🇳 Joola (Diola)</option>
-            <option value="snk">🇸🇳 Soninké</option>
-          </optgroup>
-          
-          <optgroup label="🇨🇲 Cameroun">
-            <option value="ew">🇨🇲 Ewondo</option>
-            <option value="dua">🇨🇲 Duala</option>
-            <option value="bas">🇨🇲 Bassa</option>
-          </optgroup>
-          
-          <optgroup label="🇲🇱 Mali">
-            <option value="bm">🇲🇱 Bamanankan (Bambara)</option>
-            <option value="ff-ml">🇲🇱 Fulfulde (Peul)</option>
-            <option value="snk-ml">🇲🇱 Soninké</option>
-          </optgroup>
-          
-          <optgroup label="🇨🇩🇨🇬 Congo (RDC & Rep.)">
-            <option value="ln">🇨🇩 Lingala</option>
-            <option value="kg">🇨🇬 Kikongo</option>
-            <option value="lu">🇨🇩 Tshiluba</option>
-            <option value="sw">🇹🇿 Swahili</option>
-          </optgroup>
-          
-          <optgroup label="🇲🇬 Madagascar">
-            <option value="mg">🇲🇬 Malagasy</option>
-          </optgroup>
-          
-          <optgroup label="🇬🇳 Guinée">
-            <option value="sus">🇬🇳 Soussou (Susu)</option>
-            <option value="ff-gn">🇬🇳 Pulaar</option>
-            <option value="man">🇬🇳 Maninka (Malinké)</option>
-          </optgroup>
-          
-          <optgroup label="🇲🇺 Maurice">
-            <option value="mfe">🇲🇺 Kreol Morisien</option>
-          </optgroup>
-          
-          <optgroup label="🇪🇬 Égypte">
-            <option value="arz">🇪🇬 مصري (Égyptien)</option>
-          </optgroup>
-          
-          <optgroup label="🇧🇩 Bangladesh">
-            <option value="bn">🇧🇩 বাংলা (Bangla)</option>
-          </optgroup>
-          
-          <optgroup label="🇵🇰 Pakistan">
-            <option value="ur">🇵🇰 اردو (Urdu)</option>
-          </optgroup>
-          
-          <optgroup label="🇮🇳 Inde">
-            <option value="hi">🇮🇳 हिन्दी (Hindi)</option>
-          </optgroup>
-          
-          <optgroup label="🇱🇰 Sri Lanka">
-            <option value="ta">🇱🇰 தமிழ் (Tamoul)</option>
-          </optgroup>
-          
-          <optgroup label="🇨🇳 Chine">
-            <option value="zh">🇨🇳 中文 (Chinois)</option>
-          </optgroup>
+  <article class="appel" id="appelRoot">
+    <!-- Sélecteur + Audio -->
+    <div class="language-selector">
+      <h3><i class="fa-solid fa-globe"></i> <span id="uiChoose">Choisir une langue / Choose a language / اختر لغة</span></h3>
+      <div class="dropdown">
+        <!-- Le <select> peut rester statique OU être rempli dynamiquement via translations.js -->
+        <select id="languageSelect" class="language">
+          <!-- Les valeurs doivent correspondre aux clés TRANSLATIONS (ex: fr, en, ar, …) -->
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="ar">🌍 العربية (Arabe classique)</option>
+          <!-- Tu peux en ajouter d'autres (dz-ar, kab, hi, ur, zh, …) -->
         </select>
-        
-        <div class="audio-players-container">
-          <button class="audio-player" id="audioFR" onclick="toggleAudio('fr')" title="Écouter en français">
-            <i class="fa-solid fa-play" id="iconFR"></i>
-            <span class="audio-label">🇫🇷 FR</span>
-          </button>
-          
-          <button class="audio-player" id="audioEN" onclick="toggleAudio('en')" title="Listen in English">
-            <i class="fa-solid fa-play" id="iconEN"></i>
-            <span class="audio-label">🇬🇧 EN</span>
-          </button>
-          
-          <button class="audio-player" id="audioAR" onclick="toggleAudio('ar')" title="استمع بالعربية">
-            <i class="fa-solid fa-play" id="iconAR"></i>
-            <span class="audio-label">🌍 AR</span>
-          </button>
+
+        <div class="audio-players">
+          <button class="btn-audio" data-lang="fr" id="btn-audio-fr"><i class="fa-solid fa-play"></i> FR</button>
+          <button class="btn-audio" data-lang="en" id="btn-audio-en"><i class="fa-solid fa-play"></i> EN</button>
+          <button class="btn-audio" data-lang="ar" id="btn-audio-ar"><i class="fa-solid fa-play"></i> AR</button>
         </div>
       </div>
     </div>
 
-    <div id="contentText">
-      <!-- ✨ INTRO CONTEXTE -->
-      <div class="intro">
-        <p><strong>« La Journée Sans Nous : si on s'arrête, tout s'arrête »</strong>, est organisée à l'occasion de la <strong>Journée internationale des migrant·e·s, le 18 décembre 2025</strong>.</p>
-        <p>Cette journée d'action, initiée par les <strong>collectifs de personnes sans papiers et immigrées</strong>, appelle à une <strong>grève solidaire et politique</strong> contre le <strong>racisme d'État</strong>, la précarisation, et le recul des droits des personnes migrantes en France.</p>
-        <p>Nous pensons que <strong>cette lutte nous concerne toutes et tous</strong>, car les lois racistes et les politiques d'exclusion pavent la voie au fascisme et fragilisent les droits de chacun·e.</p>
-        <p>Des collectifs, syndicats, associations et mouvements sociaux se mobilisent dans toute la France pour construire ensemble cette journée historique.</p>
-      </div>
-
-      <!-- ✨ TEXTE DE L'APPEL -->
-      <p><strong>Voici le texte de notre appel :</strong></p>
-
-      <p>Ce pays ne marche pas sans immigré·e·s. Il n'existe pas sans l'immigration et en bénéficie à tous points de vue.</p>
-      <p>Ce n'est pas l'immigration qui le détruit, ce sont les politiques menées, le racisme et l'injustice.</p>
-      <p>Le 18 décembre, à l'occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
-      <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s'arrête, tout s'arrête ! ».</p>
-      <p>Avec ou sans papiers, immigré·e·s, enfants d'immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n'irons pas à l'école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
-
-      <ul>
-        <li><strong>Pour l'abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
-        <li><strong>Pour l'égalité des droits</strong> de toutes et tous, à l'école, au logement, à la santé, à la culture, au travail.</li>
-        <li><strong>Pour la régularisation</strong> des sans-papiers</li>
-        <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
-        <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
-      </ul>
-
-      <p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le formulaire, nous t'enverrons le programme.</p>
-    </div>
+    <!-- Contenu multilingue injecté -->
+    <div id="contentText"></div>
 
     <div class="sep"></div>
 
-    <!-- Boutons pour afficher les formulaires -->
+    <!-- Triggers formulaires -->
     <div class="forms-grid">
-      <!-- Trigger Collectifs -->
       <div class="form-trigger" onclick="toggleForm('collectif')">
         <h3>Je signe en tant que collectif</h3>
-        <p>Ce formulaire est destiné aux collectifs, syndicats, partis, assos, media…</p>
+        <p>Collectifs, syndicats, partis, assos, médias…</p>
       </div>
-
-      <!-- Trigger Individu -->
       <div class="form-trigger" onclick="toggleForm('individu')">
         <h3>Je m'engage en tant que personne</h3>
         <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
       </div>
     </div>
 
-    <!-- Formulaire Collectifs (caché par défaut) -->
     <div id="form-collectif" class="form-card">
       <h3>Formulaire pour collectifs</h3>
-      <p>Ce formulaire est destiné aux collectifs, syndicats, partis, assos, media…</p>
-      <iframe class="form-frame"
-        src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true"
-        title="Formulaire pour collectifs"></iframe>
+      <p>Collectifs, syndicats, partis, assos, médias…</p>
+      <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true" title="Formulaire pour collectifs"></iframe>
     </div>
 
-    <!-- Formulaire Individu (caché par défaut) -->
     <div id="form-individu" class="form-card">
       <h3>Formulaire pour individu·e·s</h3>
       <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
-      <iframe class="form-frame"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true"
-        title="Formulaire pour individu·e·s"></iframe>
+      <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true" title="Formulaire pour individu·e·s"></iframe>
     </div>
   </article>
 </main>
 
 <footer>
-  <div>
-    © Journée Sans Nous • Initiative de
-    <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
-      Marche des Solidarités
-    </a> • 2025
-  </div>
+  <div>© Journée Sans Nous • Initiative de <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">Marche des Solidarités</a> • 2025</div>
 </footer>
 
-<button id="shareButton" class="share-button">
-  <i class="fa-solid fa-share-nodes"></i> Partager
-</button>
+<button id="shareButton" class="share-button"><i class="fa-solid fa-share-nodes"></i> Partager</button>
 
-<!-- Audio player (hidden) -->
-<audio id="audioPlayer" style="display: none;"></audio>
+<!-- Lecteur audio invisible -->
+<audio id="audioPlayer" preload="metadata"></audio>
 
-<script>
-  // Traductions complètes
-  const translations = {
-    'fr': {
-      rtl: false,
-      audio: 'URL_AUDIO_FRANCAIS.mp3', // Remplacer par l'URL réelle
-      content: `<div class="intro">
-        <p><strong>« La Journée Sans Nous : si on s'arrête, tout s'arrête »</strong>, est organisée à l'occasion de la <strong>Journée internationale des migrant·e·s, le 18 décembre 2025</strong>.</p>
-        <p>Cette journée d'action, initiée par les <strong>collectifs de personnes sans papiers et immigrées</strong>, appelle à une <strong>grève solidaire et politique</strong> contre le <strong>racisme d'État</strong>, la précarisation, et le recul des droits des personnes migrantes en France.</p>
-        <p>Nous pensons que <strong>cette lutte nous concerne toutes et tous</strong>, car les lois racistes et les politiques d'exclusion pavent la voie au fascisme et fragilisent les droits de chacun·e.</p>
-        <p>Des collectifs, syndicats, associations et mouvements sociaux se mobilisent dans toute la France pour construire ensemble cette journée historique.</p>
-      </div>
-
-      <p><strong>Voici le texte de notre appel :</strong></p>
-
-      <p>Ce pays ne marche pas sans immigré·e·s. Il n'existe pas sans l'immigration et en bénéficie à tous points de vue.</p>
-      <p>Ce n'est pas l'immigration qui le détruit, ce sont les politiques menées, le racisme et l'injustice.</p>
-      <p>Le 18 décembre, à l'occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
-      <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s'arrête, tout s'arrête ! ».</p>
-      <p>Avec ou sans papiers, immigré·e·s, enfants d'immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n'irons pas à l'école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
-
-      <ul>
-        <li><strong>Pour l'abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
-        <li><strong>Pour l'égalité des droits</strong> de toutes et tous, à l'école, au logement, à la santé, à la culture, au travail.</li>
-        <li><strong>Pour la régularisation</strong> des sans-papiers</li>
-        <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
-        <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
-      </ul>
-
-      <p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le formulaire, nous t'enverrons le programme.</p>`
-    },
-    'en': {
-      rtl: false,
-      audio: 'URL_AUDIO_ENGLISH.mp3', // Remplacer par l'URL réelle
-      content: `<div class="intro">
-        <p><strong>"A Day Without Us: If We Stop, Everything Stops"</strong> is organised to mark <strong>International Migrants Day on the 18th of December 2025.</strong></p>
-        <p>This day of action, initiated by <strong>collectives of undocumented migrants and immigrants</strong>, calls for a <strong>political solidarity strike</strong> against <strong>state racism</strong>, precarity, and the erosion of migrants' rights in France.</p>
-        <p>We believe that <strong>this struggle concerns all of us</strong>, because racist laws and exclusionary policies pave the way for fascism and undermine everyone's rights.</p>
-        <p>Collectives, trade unions, associations, cultural spaces, and social movements are mobilising across France to build this historic day together.</p>
-      </div>
-
-      <p><strong>Here is our call to action:</strong></p>
-
-      <p>"This country cannot function without immigrants. It cannot exist without immigration and benefits from it in every way.</p>
-      <p>It is not immigration that is destroying this country. This country is being destroyed by the policies that are being implemented, racism and injustice.</p>
-      <p>On the 18th December, International Migrants Day, we call on everyone to protest.</p>
-      <p>We call on everyone to organise, in all our neighbourhoods and workplaces, "A Day Without us: if we stop, everything stops!".</p>
-      <p>Documented or undocumented, immigrants, children of immigrants, first-, second- and third-generation migrants, cousins, neighbours, colleagues, those involved in the Block Everything movement on the 10th of September, demonstrators and strikers from the 18th of September, we will not go to school, to work or to the shops. We will demonstrate together in every city across the country:</p>
-
-      <ul>
-        <li><strong>For the immediate repeal</strong> of the Darmanin law and the Retailleau memorandum</li>
-        <li><strong>For equal rights for all</strong>, in education, housing, healthcare, culture and employment</li>
-        <li><strong>For the processing</strong> of undocumented migrants</li>
-        <li><strong>For the closure</strong> of administrative detention centres (CRA)</li>
-        <li><strong>For social justice and solidarity</strong>, against racism and fascism</li>
-      </ul>
-
-      <p>If you would like to join us, click on the link below and fill in the form, and we will send you the programme."</p>`
-    },
-    'ar': {
-      rtl: true,
-      audio: 'URL_AUDIO_ARABIC.mp3', // Remplacer par l'URL réelle
-      content: `<div class="intro">
-        <p><strong>"يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!"</strong></p>
-        <p>نداء بمناسبة <strong>اليوم العالمي للمهاجرين والمهاجرات، يوم 18 دجنبر 2025.</strong></p>
-        <p>هذا اليوم الاحتجاجي مبادرة من طرف <strong>جمعيات و منظمات مهاجرين و مهاجرات</strong> يناضلون من اجل تعديل وضعيتهم الادارية، يدعون فيه إلى <strong>إضراب تضامني وسياسي</strong> ضدّ <strong>العنصرية المُمأسسة</strong>، وضدّ التهميش، وتراجع الحقوق والحريات الفردية للمهاجرين والمهاجرات في فرنسا.</p>
-        <p>و نعتقد أن <strong>هذه المعركة تهمّنا جميعًا</strong>، ألن القوانين العنصرية والسياسات الإقصائية تُمهِّد الطريق للظلم والفاشية وتُضعِف حقوق كلّ فرد.</p>
-        <p>عديد من جماعات، ونقابات، وجمعيات، وحركات اجتماعية، تتحرك في جميع أنحاء فرنسا لبناء هذا اليوم التاريخي معًا، فانضموا إلينا.</p>
-      </div>
-
-      <p><strong>نص النداء:</strong></p>
-
-      <p>هذا البلد لا يسير بدون المهاجرين. فهو لا وُجود له بدون الهجرة، ويستفيد منها من جميع الجوانب.</p>
-      <p>ليست الهجرة هي التي دمّرته، بل السياسات المتّبعة، والعنصرية، والظلم.</p>
-      <p>في 18 دجنبر، بمناسبة اليوم العالمي للمهاجرين، ندعو إلى القيام بإثبات ذلك.</p>
-      <p>ندعو إلى تنظيم "يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!" في جميع أحيائنا، وأماكن عملنا.</p>
-      <p>مهاجرون و مهاجرات حاصلين على أوراق أو بدون أوراق، بنات و أبناء المهاجرين، من الجيل الأول والثاني والثالث، أبناء أعمامهم وبنات خالاتهن، الجيران، الزملاء، المشاركين في إضرابات 10 شتنبر، والمتظاهرين والمضربين في 18 شتنبر، لن نذهب إلى المدرسة، ولا إلى العمل، ولا إلى المحلات التجارية. سنتظاهر معًا في جميع مدن البلاد:</p>
-
-      <ul>
-        <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان ومذكّرات ريتايو</li>
-        <li><strong>من أجل المساواة في الحقوق</strong> للجميع، في المدرسة، والسكن، والصحة، والثقافة، والعمل</li>
-        <li><strong>من أجل تسوية أوضاع</strong> غير الحاصلين على الأوراق</li>
-        <li><strong>من أجل إغلاق</strong> مراكز الاحتجاز الإداري</li>
-        <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
-      </ul>
-
-      <p>إذا رغبت في الانضمام إلينا. إضغط على الرابط أدناه وملء الاستمارة ليصلك البرنامج ✍️.</p>`
-    },
-    'dz-ar': {
-      rtl: true,
-      audio: null,
-      content: `<div class="intro">
-        <p><strong>النهار بلاّ بينا: كي نحبسو، كلش يحبس!</strong></p>
-        <p>هاد النهار متنظّم بمناسبة <strong>اليوم الدولي للمهاجرين، نهار 18 ديسمبر 2025.</strong></p>
-        <p>هاد الحركة، لي بدّاوها <strong>جمعيات الناس بلاّ وراق وناس مهاجرين</strong>، هي <strong>إضراب تضامني وسياسي</strong> ضدّ <strong>العنصرية تاع الدولة</strong>، والتهميش، وضياع الحقوق تاع الناس المهاجرين في فرنسا.</p>
-        <p>رانا نؤمنو بلي <strong>هاد النضال يهمّنا كامل</strong>، خاطش القوانين العنصرية والسياسات تاع الإقصاء يفتحو الطريق للفاشية ويضربو حقوق الجميع.</p>
-        <p>بزاف دي كولكتيف، نقابات، جمعيات، وحركات اجتماعية راهي تتنظم فـ كامل لفرنسا باش تبني معانا هاد النهار التاريخي.</p>
-      </div>
-
-      <p><strong>نداءنا ✊:</strong></p>
-
-      <p>هاد البلاد ما تخدمش بلاّ المهاجرين. هي ما كانتش رايحة توجد بلاّهم، وراهي تستافد منهم فـ كل حاجة.</p>
-      <p>ماشي الهجرة لي تدمر البلاد، بل السياسات، والعنصرية، والحقرة.</p>
-      <p>في 18 ديسمبر، بمناسبة اليوم الدولي للمهاجرين، نعيطون باش نوّريو هاد الحقيقة: « النهار بلاّ بينا: كي نحبسو، كلش يحبس! »</p>
-      <p>بلاّ وراق ولا بوراق، مهاجرين ولا والد مهاجرين، من الجيل الأول، الثاني، الثالث، جيران، صحاب، زملاء، عمال وطلبة، كامل رايحين نحبسو القراية، الخدمة، والتجارة، ونخرجو نمانيفيستو كامل فـ الشوارع:</p>
-
-      <ul>
-        <li><strong>باش نطالبو بإلغاء</strong> قانون دارمانين والدوريات تاع ريتايو</li>
-        <li><strong>باش نطالبو بالمساواة فـ الحقوق</strong>: فـ القراية، السكن، الصحة، الثقافة، والخدمة</li>
-        <li><strong>باش نطالبو بتسوية وضعية</strong> الناس بلاّ وراق</li>
-        <li><strong>باش نسكرو</strong> مراكز الحبس الإداري (CRA)</li>
-        <li><strong>باش نوقفو مع العدالة الاجتماعية والتضامن</strong>، ضدّ العنصرية والفاشية</li>
-      </ul>
-
-      <p>إلا حبيت تلتحق بينا، كاين الرابط لتحت، عمّر الفورم وراح يوصلك البرنامج ✍️</p>`
-    },
-    'kab': {
-      rtl: false,
-      audio: null,
-      content: `<div class="intro">
-        <p><strong>Ass Ulaɣ Ness : Ma Neḥbes, Akk Iḥbes !</strong></p>
-        <p>Ass-a yettusmḍen deg <strong>Ussan Agrawan n Imeɣranen, 18 Dujanbir 2025.</strong></p>
-        <p>Asenfaɣ-a yebda-d s <strong>yilemḍiyen n wid ur nesɛi ara ikaramen d wid iɣermanen</strong>, yessawel ar <strong>uɣen n tmedyazt d nettaḥda s wumuɣ n uzekka</strong>, mgal <strong>uɣaras n tnekkit n waddaden</strong>, d aggur n teɣzi n izerfan n imeɣranen deg Fransa.</p>
-        <p>Nexdem akken amek i yellan <strong>wagi yennes i yiman-nneɣ akk</strong>, imi ilugan n tenekka d tneqqiwin n usensi i d-yettawiɣen d afus i tmeɣtut, d wid i yettḥasen izerfan n yiman-nsen.</p>
-        <p>Aṭas n ikemmuḥen, sindikaten, tajmaɛt d timura n temɣarin la ttunefken deg meṛṛa tamurt i Fransa akken ad nebnu-d ass-a n umennuɣ-agi.</p>
-      </div>
-
-      <p><strong>Tinnubga-nneɣ ✊:</strong></p>
-
-      <p>Tamurt-agi ur teddu ara war imeɣranen. Ur tili ara illa war-asen, d imeɣranen i d-yefka-ten tazmert deg yal tama.</p>
-      <p>Mačči d tameslayt i yetexsren tamurt, maca d tiwiziwin n tnekkit, d tneɣrit, d ulac tangalt.</p>
-      <p>Deg 18 Dujanbir, deg wass agrawan n imeɣranen, neɛya ar ad d-sbeddem iḥedran-agi: "Ass Ulaɣ Ness : Ma Neḥbes, Akk Iḥbes !"</p>
-      <p>Ma telliḍ d win ur nesɛi ara ikaramen, d imeɣran, d mmi n imeɣran, n tallit yimezgi, tis snat neɣ tis kraḍ, d imdukkal, d iccura, d yixeddamen — ad neḥbes akk : tiḥerci, axeddim, ttzawla. Ad neffeɣ akk ar tiziwin deg meṛṛa tamurt:</p>
-
-      <ul>
-        <li><strong>I wugur n usenfaɣ</strong> n lqanun n Darmanin akked izerfan n Retailleau</li>
-        <li><strong>I wemgarrad n izerfan</strong> i yimanen merra : deg lmed, lxir, tesɛi, tazmert d uxeddim</li>
-        <li><strong>I uslelli</strong> n wid ur nesɛi ara ikaramen</li>
-        <li><strong>I usekkeṛ</strong> n yidlen n tenkra n tɣellist (CRA)</li>
-        <li><strong>I twizi d taseddast tamunt</strong>, mgal tnekkit d tfasiya</li>
-      </ul>
-
-      <p>Ma tebɣiḍ ad tettekkiḍ, ḥedd link n ddaw-a, ččar asen d imensi, ad k-d-nazen ulmad n usefrek. ✍️</p>`
-    }
-  };
-
-  // Gestion du changement de langue
-  function changeLanguage() {
-    const select = document.getElementById('languageSelect');
-    const selectedLang = select.value;
-    const selectedOption = select.options[select.selectedIndex];
-    const hasAudio = selectedOption.getAttribute('data-audio') === 'true';
-    const audioButton = document.getElementById('audioButton');
-    const contentText = document.getElementById('contentText');
-    const content = document.getElementById('content');
-    const audioPlayer = document.getElementById('audioPlayer');
-    
-    // Stop audio if playing
-    audioPlayer.pause();
-    audioPlayer.currentTime = 0;
-    resetAudioButton();
-    
-    // Enable/disable audio button
-    audioButton.disabled = !hasAudio;
-    
-    // Update content
-    if (translations[selectedLang]) {
-      contentText.innerHTML = translations[selectedLang].content;
-      
-      // Set RTL if needed
-      if (translations[selectedLang].rtl) {
-        content.classList.add('rtl');
-      } else {
-        content.classList.remove('rtl');
-      }
-      
-      // Update audio source
-      if (translations[selectedLang].audio) {
-        audioPlayer.src = translations[selectedLang].audio;
-      }
-    } else {
-      // Show message for languages not yet added
-      contentText.innerHTML = `
-        <div class="intro">
-          <p><strong>Traduction en cours</strong></p>
-          <p>Cette traduction sera bientôt disponible. En attendant, vous pouvez consulter la version française.</p>
-          <p style="text-align: center;">هذه الترجمة ستكون متاحة قريبًا.</p>
-        </div>
-      `;
-      content.classList.remove('rtl');
-    }
-  }
-
-  // Gestion du lecteur audio
-  let isPlaying = false;
-  const audioPlayer = document.getElementById('audioPlayer');
-  
-  function toggleAudio() {
-    const audioButton = document.getElementById('audioButton');
-    const audioIcon = document.getElementById('audioIcon');
-    const audioLabel = document.getElementById('audioLabel');
-    
-    if (!isPlaying) {
-      if (audioPlayer.src && audioPlayer.src !== window.location.href) {
-        audioPlayer.play();
-        isPlaying = true;
-        audioButton.classList.add('playing');
-        audioIcon.className = 'fa-solid fa-pause';
-        audioLabel.textContent = 'Pause';
-      } else {
-        alert('Audio disponible prochainement / Audio coming soon / الصوت متاح قريبا');
-      }
-    } else {
-      audioPlayer.pause();
-      isPlaying = false;
-      audioButton.classList.remove('playing');
-      audioIcon.className = 'fa-solid fa-play';
-      audioLabel.textContent = 'Écouter';
-    }
-  }
-  
-  function resetAudioButton() {
-    isPlaying = false;
-    document.getElementById('audioButton').classList.remove('playing');
-    document.getElementById('audioIcon').className = 'fa-solid fa-play';
-    document.getElementById('audioLabel').textContent = 'Écouter';
-  }
-  
-  // Reset button when audio ends
-  audioPlayer.addEventListener('ended', resetAudioButton);
-
-  // Gestion de l'affichage des formulaires
-  function toggleForm(type) {
-    const formCollectif = document.getElementById('form-collectif');
-    const formIndividu = document.getElementById('form-individu');
-    
-    if (type === 'collectif') {
-      formCollectif.classList.toggle('active');
-      formIndividu.classList.remove('active');
-      setTimeout(() => formCollectif.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    } else {
-      formIndividu.classList.toggle('active');
-      formCollectif.classList.remove('active');
-      setTimeout(() => formIndividu.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    }
-  }
-
-  // Bouton de partage
-  document.getElementById('shareButton').onclick=()=>{
-    const t="Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
-    const u=window.location.href;
-    if(navigator.share){navigator.share({title:'Appel — Journée Sans Nous',text:t,url:u})}
-    else{navigator.clipboard.writeText(`${t}\n${u}`).then(()=>alert('Lien copié ✅'))}
-  }
-</script>
-
+<!-- Scripts -->
+<script src="assets/js/translations.js" defer></script>
+<script src="assets/js/app.js" defer></script>
 </body>
 </html>
