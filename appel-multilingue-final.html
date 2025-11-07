@@ -57,11 +57,11 @@
     .btn-audio.playing{background:var(--brand);color:#fff}
 
     .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
-    .form-trigger{background:var(--card);border:2px solid var(--brand);border-radius:16px;padding:24px;cursor:pointer;text-align:center;transition:.3s}
-    .form-trigger:hover{box-shadow:0 8px 24px rgba(238,73,67,.25);transform:translateY(-2px);background:#fff7f6}
-    .form-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 0;margin-top:20px;display:none}
-    .form-card.active{display:block}
-    .form-frame{width:100%;border:0;height:1150px;border-top:1px solid var(--line)}
+.form-card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; margin-top:20px; }
+.form-card[hidden] { display:none; }
+.form-frame { width:100%; height:1150px; border:0; border-top:1px solid var(--line); }
+.form-trigger { background:var(--card); border:2px solid var(--brand); border-radius:16px; padding:24px; cursor:pointer; text-align:center; transition:.3s; }
+.form-trigger:hover { box-shadow:0 8px 24px rgba(238,73,67,.25); transform:translateY(-2px); background:#fff7f6; }
 
     footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:30px 18px;text-align:center;margin-top:50px}
     .share-button{position:fixed;bottom:24px;right:24px;background:#ee4943;color:#fff;border:none;border-radius:50px;padding:12px 20px;font-weight:700;box-shadow:0 4px 12px rgba(238,73,67,.4);cursor:pointer}
