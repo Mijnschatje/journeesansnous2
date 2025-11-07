@@ -113,29 +113,38 @@
 
     <div class="sep"></div>
 
-    <!-- Triggers formulaires -->
-    <div class="forms-grid">
-      <div class="form-trigger" onclick="toggleForm('collectif')">
-        <h3>Je signe en tant que collectif</h3>
-        <p>Collectifs, syndicats, partis, assos, médias…</p>
-      </div>
-      <div class="form-trigger" onclick="toggleForm('individu')">
-        <h3>Je m'engage en tant que personne</h3>
-        <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
-      </div>
-    </div>
+<!-- Boutons d’ouverture -->
+<div class="forms-grid">
+  <button type="button" class="form-trigger" data-target="#form-collectif">
+    <h3>Je signe en tant que collectif</h3>
+    <p>Collectifs, syndicats, partis, assos, médias…</p>
+  </button>
 
-    <div id="form-collectif" class="form-card">
-      <h3>Formulaire pour collectifs</h3>
-      <p>Collectifs, syndicats, partis, assos, médias…</p>
-      <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true" title="Formulaire pour collectifs"></iframe>
-    </div>
+  <button type="button" class="form-trigger" data-target="#form-individu">
+    <h3>Je m'engage en tant que personne</h3>
+    <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
+  </button>
+</div>
 
-    <div id="form-individu" class="form-card">
-      <h3>Formulaire pour individu·e·s</h3>
-      <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
-      <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true" title="Formulaire pour individu·e·s"></iframe>
-    </div>
+<!-- Cartes formulaires -->
+<div id="form-collectif" class="form-card" hidden>
+  <h3>Formulaire pour collectifs</h3>
+  <p>Collectifs, syndicats, partis, assos, médias…</p>
+  <iframe class="form-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true"
+          title="Formulaire pour collectifs"
+          loading="lazy"></iframe>
+</div>
+
+<div id="form-individu" class="form-card" hidden>
+  <h3>Formulaire pour individu·e·s</h3>
+  <p>Inscris-toi pour participer et recevoir les infos pratiques.</p>
+  <iframe class="form-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true"
+          title="Formulaire pour individu·e·s"
+          loading="lazy"></iframe>
+</div>
+
   </article>
 </main>
 
