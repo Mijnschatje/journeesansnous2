@@ -1,7 +1,7 @@
 // assets/js/translations.js
 // Toutes les traductions centralisées ici.
 // Ajoute simplement de nouveaux blocs {code: {label, rtl, audio, content}}.
-
+console.log("[i18n] translations.js bien chargé !");
 window.translations = {
   fr: {
     label: "Français",
