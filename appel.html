@@ -1366,11 +1366,29 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('shareButton').addEventListener('click', shareContent);
 });
 
-function changeLanguage() {
-  const select = document.getElementById('languageSelect');
-  const selectedLang = select.value;
-  const contentText = document.getElementById('contentText');
-  const content = document.getElementById('content');
+/* état audio + fonctions ... */
+
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    changeLanguage(); // tente de charger FR par défaut
+  } catch (e) {
+    const content = document.getElementById('contentText');
+    if (content) {
+      content.innerHTML = `<div class="intro"><p><strong>Oups…</strong> Un problème empêche l’affichage du texte.</p><p>Détail technique : ${e.message}</p></div>`;
+    }
+    console.error('Erreur dans le script:', e);
+  }
+
+  // branchements (protégés au cas où un id manquerait)
+  const byId = (id) => document.getElementById(id);
+  byId('languageSelect')?.addEventListener('change', changeLanguage);
+  byId('audioFR')?.addEventListener('click', () => toggleAudio('fr'));
+  byId('audioEN')?.addEventListener('click', () => toggleAudio('en'));
+  byId('audioAR')?.addEventListener('click', () => toggleAudio('ar'));
+  byId('triggerCollectif')?.addEventListener('click', () => toggleForm('collectif'));
+  byId('triggerIndividu')?.addEventListener('click', () => toggleForm('individu'));
+  byId('shareButton')?.addEventListener('click', shareContent);
+});
   
   stopAllAudios();
   
