@@ -70,7 +70,7 @@ window.TRANSLATIONS = {
   ar: {
     label: "العربية",
     rtl: true,
-    audio: "assets/audio/audio-arabic.mp3",
+    audio: "assets/audio/audio-arabeclassique.mp3",
     content: `
       <div class="intro" dir="rtl">
         <p><strong>"يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!"</strong></p>
