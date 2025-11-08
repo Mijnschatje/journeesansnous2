@@ -1010,34 +1010,6 @@ const translations = {
   </div>`
 }
 ,
-'snk': {
-  rtl: false,
-  audio: '',
-  content: `<div class="intro">
-    <p><strong>"Baa xa naxa ka taa, ka taa; baa xa naxa ka taa, dunyaa ka taa!"</strong></p>
-    <p><strong>18 Disamburu 2025</strong> ra, a laa <strong>Migrantóo bé fɛndin kilen</strong> laa, kafu <strong>“Bésu mennu bè: nte naxa taa, dunyaa naxa taa!”</strong>.</p>
-    <p>Gàa bɛɛ yɛrɛ ye <strong>Immigree e soxoree kaŋ tɛ a ɲaxu</strong> dii la, bɛɛ naxa fɔ <strong>ɛndu, kaŋ yè safara</strong> ngir <strong>lenyol e laawol dantare</strong> laa nɛn Faransi la.</p>
-    <p>Ŋa naxa dɔɔrɔ ni a yɛrɛ la: <strong>wɛrɛ luu kɛ nginɛ</strong>, sabu laawol e siyase bonnɔ nàxɛ dii dunyaa ma jàmmu, e naxɛ dɔɔrɔ sañ-sañu béé.</p>
-    <p>Sendika, ɲɔŋɔɔ, mbooloom liggéeykat e jamu béé naxa dii nɛn Faransi béé ngir yɛrɛ kafu béssu yii jàmmu.</p>
-  </div>
-  <p><strong>Ɛnna be kafu dii nɛn:</strong></p>
-  <p>Réew tɛ mɛn a bɛ ka kɛ bu amul Immigree. A tɛ mɛn a bɛ ka kɛ bu amul wa tɔn, sabu Immigree béé dii nɛn a ni diɲɛ.</p>
-  <p>Du Immigree bɛɛ dii réew mi. A laawol e siyase kaŋ naxɛ dɔɔrɔ lenyol e jàmmu dii nɛn a dɔɔrɔ.</p>
-  <p>Disamburu 18 ra, Migrantóo bé fɛndin kilen ra, yɛrɛ dii nɛn ngir yɛrɛ kaa la.</p>
-  <p>Yɛrɛ dii béé ngir yɛrɛ yɛrɛ jàmmu ci gox e liggéey, "<strong>Bésu mennu bè: nte naxa taa, dunyaa naxa taa!</strong>"</p>
-  <p>Immigree am papie ak amul, doom immigree, njaboot, wa gox, wa liggéey, ñu béé duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu jàmmu béé ci réew béé:</p>
-  <ul>
-    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
-    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
-    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
-    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
-    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
-  </ul>
-  <div class="join-us-box">
-    <p>Soo bè klé yɛrɛ dii béé, wè ka danne foom bi nɛn, wè bɛ sɛnbɛnɛ i e porogaraam bi ✍️.</p>
-  </div>`
-}
-
 'ln': {
   rtl: false,
   audio: '',
@@ -1367,6 +1339,8 @@ const translations = {
 
 };
 
+    /* … your big translations = { … } … */
+  window.translations = window.translations || translations;
 // =====================================================
 // Initialisation : FR par défaut + changement de langue
 // (aucune dépendance externe, compatible avec ton code)
@@ -1423,28 +1397,6 @@ const audioStates = {
   'en': { playing: false, player: null },
   'ar': { playing: false, player: null }
 };
-
-// Initialisation (audio + autres boutons) — SANS changeLanguage ici
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialiser audio
-  audioStates.fr.player = document.getElementById('audioPlayerFR');
-  audioStates.en.player = document.getElementById('audioPlayerEN');
-  audioStates.ar.player = document.getElementById('audioPlayerAR');
-
-  audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
-  audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
-  audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
-
-  // Boutons audio (on laisse « Écouter / Listen / استمع »)
-  document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
-  document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
-  document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
-
-  // Autres interactions (inchangées)
-  document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
-  document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
-  document.getElementById('shareButton').addEventListener('click', shareContent);
-});
 
 // ⛔️ SUPPRIMER l’ancienne fonction changeLanguage() — elle fait doublon
 // Mon script « traductions tout en dur » s’occupe d’afficher FR au chargement
