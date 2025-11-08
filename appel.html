@@ -269,36 +269,78 @@
 <main class="container">
   <article class="appel" id="content">
 
-    <div class="language-selector-dropdown">
-      <h3><i class="fa-solid fa-globe"></i> Choisir une langue / Choose a language / اختر لغة</h3>
-      <div class="dropdown-container">
-        <select id="languageSelect" class="language-select">
-          <option value="fr">🇫🇷 Français</option>
-          <option value="en">🇬🇧 English</option>
-          <option value="ar">🌍 العربية (Arabe classique)</option>
-          <option value="dz-ar">🇩🇿 الدارجة الجزائرية</option>
-          <option value="kab">🇩🇿 Taqbaylit (Kabyle)</option>
-          <option value="ma-ar">🇲🇦 الدارجة المغربية</option>
-        </select>
-        
-        <div class="audio-players-container">
-          <button class="audio-player" id="audioFR">
-            <i class="fa-solid fa-headphones" id="iconFR"></i>
-            <span>🇫🇷 Écouter en français</span>
-          </button>
-          
-          <button class="audio-player" id="audioEN">
-            <i class="fa-solid fa-headphones" id="iconEN"></i>
-            <span>🇬🇧 Listen in English</span>
-          </button>
-          
-          <button class="audio-player" id="audioAR">
-            <i class="fa-solid fa-headphones" id="iconAR"></i>
-            <span>🌍 استمع بالعربية</span>
-          </button>
-        </div>
-      </div>
+<div class="language-selector-dropdown">
+  <h3><i class="fa-solid fa-globe"></i> Choisir une langue / Choose a language / اختر لغة</h3>
+
+  <div class="dropdown-container">
+    <select id="languageSelect" class="language-select">
+      <!-- Europe / FR-EN -->
+      <option value="fr">🇫🇷 Français</option>
+      <option value="en">🇬🇧 English</option>
+
+      <!-- Arabe (classique + dialectes) -->
+      <option value="ar">🌍 العربية (Arabe classique)</option>
+      <option value="ar-dz">🇩🇿 الدارجة الجزائرية</option>
+      <option value="ar-ma">🇲🇦 الدارجة المغربية</option>
+      <option value="ar-tn">🇹🇳 العربية التونسية</option>
+      <option value="ar-egy">🇪🇬 العامية المصرية</option>
+
+      <!-- Amazigh / Tamazight -->
+      <option value="kab">🇩🇿 Taqbaylit (Kabyle)</option>
+      <option value="tzm-latn">ⵣ Tamazight (Latin)</option>
+      <option value="tzm-tfng">ⵣⵣ Tamazight (Tifinagh)</option>
+
+      <!-- Mayotte / Comores -->
+      <option value="shimaore">🇾🇹 Shimaore</option>
+      <option value="shingazidja">🇰🇲 Shingazidja</option>
+
+      <!-- Sénégalo-guinéo-ivoirien etc. -->
+      <option value="wo">🇸🇳 Wolof</option>
+      <option value="ff">🇸🇳 Pulaar</option>
+      <option value="serere">🇸🇳 Sérère</option>
+      <option value="diola-joola-fogny">🇸🇳 Joola (Fogny)</option>
+      <option value="snk">🇲🇱 Soninké</option>
+      <option value="soussou-susu">🇬🇳 Soussou</option>
+      <option value="malinke-maninka">🇬🇳 Malinké / Maninka</option>
+      <option value="dyu">🇨🇮 Dioula</option>
+      <option value="bci">🇨🇮 Baoulé</option>
+      <option value="btb">🇨🇮 Bété</option>
+
+      <!-- Congo / RDC / Cameroun -->
+      <option value="ln">🇨🇩 Lingala</option>
+      <option value="kg">🇨🇬 Kikongo</option>
+      <option value="lua">🇨🇩 Tshiluba</option>
+      <option value="ewo">🇨🇲 Ewondo</option>
+      <option value="dua">🇨🇲 Douala</option>
+      <option value="bas">🇨🇲 Bassa</option>
+
+      <!-- Est africain / Asie -->
+      <option value="sw">🇰🇪 Kiswahili</option>
+      <option value="bn">🇧🇩 বাংলা (Bangla)</option>
+      <option value="ur">🇵🇰 اردو (Urdu)</option>
+      <option value="hi">🇮🇳 हिन्दी (Hindi)</option>
+      <option value="si">🇱🇰 සිංහල (Sinhala)</option>
+      <option value="zh">🇨🇳 中文 (Chinese)</option>
+    </select>
+
+    <div class="audio-players-container">
+      <button class="audio-player" id="audioFR">
+        <i class="fa-solid fa-headphones" id="iconFR"></i>
+        <span>🇫🇷 Écouter</span>
+      </button>
+
+      <button class="audio-player" id="audioEN">
+        <i class="fa-solid fa-headphones" id="iconEN"></i>
+        <span>🇬🇧 Listen</span>
+      </button>
+
+      <button class="audio-player" id="audioAR">
+        <i class="fa-solid fa-headphones" id="iconAR"></i>
+        <span>🌍 استمع</span>
+      </button>
     </div>
+  </div>
+</div>
 
     <div id="contentText"></div>
 
@@ -347,8 +389,11 @@
 <audio id="audioPlayerAR" style="display: none;"></audio>
 
 <script>
-// Traductions
+// =====================================================
+// Traductions — tout en dur dans la page (à coller tel quel)
+// =====================================================
 const translations = {
+  /* ========= Textes complets ========= */
   'fr': {
     rtl: false,
     audio: 'assets/audio/audio-francais.mp3',
@@ -375,6 +420,7 @@ const translations = {
       <p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le formulaire, nous t'enverrons le programme.</p>
     </div>`
   },
+
   'en': {
     rtl: false,
     audio: 'assets/audio/audio-english.mp3',
@@ -401,6 +447,7 @@ const translations = {
       <p>If you would like to join us, click on the link below and fill in the form, and we will send you the programme.</p>
     </div>`
   },
+
   'ar': {
     rtl: true,
     audio: 'assets/audio/audio-arabeclassique.mp3',
@@ -427,9 +474,99 @@ const translations = {
     <div class="join-us-box rtl">
       <p>إذا رغبت في الانضمام إلينا. إضغط على الرابط أدناه وملء الاستمارة ليصلك البرنامج ✍️.</p>
     </div>`
-  }
+  },
+
+  /* ========= Autres langues (placeholder propre "Traduction en cours") ========= */
+  'ar-dz': { rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>ترجمة قيد الإعداد</strong></p><p>ستكون هذه الترجمة متاحة قريبًا.</p></div>` },
+  'ar-ma': { rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>الترجمة قيد الإعداد</strong></p><p>ستتوفر هذه الترجمة قريبًا.</p></div>` },
+  'ar-tn': { rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>الترجمة قيد الإعداد</strong></p><p>ستتوفر قريبًا.</p></div>` },
+  'ar-egy':{ rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>الترجمة بتتجهز</strong></p><p>قريبًا هتكون متاحة.</p></div>` },
+
+  'kab':      { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Taddukli ad yewweḍ ar tikkelt nniḍen.</p></div>` },
+  'tzm-latn': { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Ad yella sya sya.</p></div>` },
+  'tzm-tfng': { rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>ⵎⵉⵍⵍⵉ ⵏ ⵜⵔⴰⴳⵓⵜ</strong></p><p>ⴰⵎⵣⵣⵓⴷ ⵢⴰⵣⵎ.</p></div>` },
+
+  'shimaore':    { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Na mna haraka, itakuja karibuni.</p></div>` },
+  'shingazidja': { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Haki ya kuja haraka sana.</p></div>` },
+
+  'wo':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>Tekki na ci yoon</strong></p><p>Jëmmal na, dina ñëw ba pare.</p></div>` },
+  'ff':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Ngol firti maa arii ko jooni.</p></div>` },
+  'serere':{ rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Bi neex na, dina jot.</p></div>` },
+  'diola-joola-fogny': { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Dina ñëw ci kanam.</p></div>` },
+  'snk':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Kankelen be taa ka taa.</p></div>` },
+  'soussou-susu': { rtl:false, audio:'', content:`<div class="intro"><p><strong>Fɛ dɛngɛn</strong></p><p>Traduction en cours, bientôt disponible.</p></div>` },
+  'malinke-maninka': { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Ka taa sisan, ka na.</p></div>` },
+  'dyu':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>I bɛ na kɛnɛ.</p></div>` },
+  'bci':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>` },
+  'btb':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>` },
+
+  'ln':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>Kopesi naino</strong></p><p>Traduction en cours, ekozonga mosika te.</p></div>` },
+  'kg':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Kia yiza mpele.</p></div>` },
+  'lua':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Ekoya kala na ntango ya pɛpɔ.</p></div>` },
+
+  'ewo':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>I yeke di na bolɔ.</p></div>` },
+  'dua':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Idi a bɛla bɛ.</p></div>` },
+  'bas':  { rtl:false, audio:'', content:`<div class="intro"><p><strong>Traduction en cours</strong></p><p>Sa bo nyɛ, e be yi.</p></div>` },
+
+  'sw':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>Tafsiri inaendelea</strong></p><p>Itaonekana hapa punde.</p></div>` },
+
+  'bn':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>অনুবাদ প্রস্তুত হচ্ছে</strong></p><p>শীঘ্রই দেওয়া হবে।</p></div>` },
+  'ur':   { rtl:true,  audio:'', content:`<div class="intro rtl"><p><strong>ترجمہ تیار ہو رہا ہے</strong></p><p>جلد دستیاب ہوگا۔</p></div>` },
+  'hi':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>अनुवाद प्रगति पर है</strong></p><p>जल्द उपलब्ध होगा।</p></div>` },
+  'si':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>පරිවර්තනය සකස් වෙමින්</strong></p><p>එක කෙටියෙන් ලබා දෙනු ඇත.</p></div>` },
+  'zh':   { rtl:false, audio:'', content:`<div class="intro"><p><strong>翻译准备中</strong></p><p>稍后提供。</p></div>` }
 };
 
+// =====================================================
+// Initialisation : FR par défaut + changement de langue
+// (aucune dépendance externe, compatible avec ton code)
+// =====================================================
+
+// Normalise d’anciennes valeurs d’option si tu en as encore
+function normalizeKey(k){
+  const map = { 'dz-ar':'ar-dz', 'ma-ar':'ar-ma', 'tn-ar':'ar-tn' };
+  return map[k] || k;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const select = document.getElementById('languageSelect'); // ton <select>
+  const content = document.getElementById('content');       // carte blanche
+  const contentText = document.getElementById('contentText'); // conteneur texte
+
+  // 1) Français par défaut
+  if (select) select.value = 'fr';
+  renderLang('fr');
+
+  // 2) Changement de langue
+  if (select) {
+    select.addEventListener('change', (e) => {
+      renderLang(e.target.value);
+    });
+  }
+
+  function renderLang(rawKey){
+    const key = normalizeKey(rawKey || 'fr');
+    const t = translations[key] || translations.fr;
+
+    // Stoppe tes audios existants si besoin
+    if (typeof stopAllAudios === 'function') { try { stopAllAudios(); } catch(e){} }
+
+    // Direction / style RTL
+    document.documentElement.dir = t.rtl ? 'rtl' : 'ltr';
+    if (content && content.classList) {
+      if (t.rtl) content.classList.add('rtl');
+      else content.classList.remove('rtl');
+    }
+
+    // Rendu HTML
+    if (contentText) {
+      contentText.innerHTML = t.content || `<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>`;
+    }
+  }
+});
+</script>
+
+<script>
 // État audio
 const audioStates = {
   'fr': { playing: false, player: null },
@@ -437,61 +574,42 @@ const audioStates = {
   'ar': { playing: false, player: null }
 };
 
-// Initialisation
+// Initialisation (audio + autres boutons) — SANS changeLanguage ici
 document.addEventListener('DOMContentLoaded', function() {
-  // Charger français par défaut
-  changeLanguage();
-  
   // Initialiser audio
   audioStates.fr.player = document.getElementById('audioPlayerFR');
   audioStates.en.player = document.getElementById('audioPlayerEN');
   audioStates.ar.player = document.getElementById('audioPlayerAR');
-  
+
   audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
   audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
   audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
-  
-  // Event listeners
-  document.getElementById('languageSelect').addEventListener('change', changeLanguage);
+
+  // Boutons audio (on laisse « Écouter / Listen / استمع »)
   document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
   document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
   document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
+
+  // Autres interactions (inchangées)
   document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
   document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
   document.getElementById('shareButton').addEventListener('click', shareContent);
 });
 
-function changeLanguage() {
-  const select = document.getElementById('languageSelect');
-  const selectedLang = select.value;
-  const contentText = document.getElementById('contentText');
-  const content = document.getElementById('content');
-  
-  stopAllAudios();
-  
-  if (translations[selectedLang]) {
-    contentText.innerHTML = translations[selectedLang].content;
-    if (translations[selectedLang].rtl) {
-      content.classList.add('rtl');
-    } else {
-      content.classList.remove('rtl');
-    }
-  } else {
-    contentText.innerHTML = `<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>`;
-    content.classList.remove('rtl');
-  }
-}
+// ⛔️ SUPPRIMER l’ancienne fonction changeLanguage() — elle fait doublon
+// Mon script « traductions tout en dur » s’occupe d’afficher FR au chargement
+// et d’écouter le <select> pour changer de langue.
 
 function toggleAudio(lang) {
   const state = audioStates[lang];
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
-  
+
   if (!translations[lang] || !translations[lang].audio) {
     alert('Audio disponible prochainement');
     return;
   }
-  
+
   if (!state.playing) {
     stopAllAudios();
     state.player.src = translations[lang].audio;
@@ -522,7 +640,7 @@ function resetAudioButton(lang) {
   const state = audioStates[lang];
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
-  
+
   state.playing = false;
   button.classList.remove('playing');
   icon.className = 'fa-solid fa-headphones';
@@ -531,7 +649,7 @@ function resetAudioButton(lang) {
 function toggleForm(type) {
   const formCollectif = document.getElementById('form-collectif');
   const formIndividu = document.getElementById('form-individu');
-  
+
   if (type === 'collectif') {
     const isActive = formCollectif.classList.contains('active');
     formCollectif.classList.toggle('active');
@@ -559,6 +677,113 @@ function shareContent() {
   }
 }
 </script>
+
+  <script>
+
+// Initialisation (audio + autres boutons) — SANS changeLanguage ici
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialiser audio
+  audioStates.fr.player = document.getElementById('audioPlayerFR');
+  audioStates.en.player = document.getElementById('audioPlayerEN');
+  audioStates.ar.player = document.getElementById('audioPlayerAR');
+
+  audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
+  audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
+  audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
+
+  // Boutons audio (on laisse « Écouter / Listen / استمع »)
+  document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
+  document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
+  document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
+
+  // Autres interactions (inchangées)
+  document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
+  document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
+  document.getElementById('shareButton').addEventListener('click', shareContent);
+});
+
+// ⛔️ SUPPRIMER l’ancienne fonction changeLanguage() — elle fait doublon
+// Mon script « traductions tout en dur » s’occupe d’afficher FR au chargement
+// et d’écouter le <select> pour changer de langue.
+
+function toggleAudio(lang) {
+  const state = audioStates[lang];
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+
+  if (!translations[lang] || !translations[lang].audio) {
+    alert('Audio disponible prochainement');
+    return;
+  }
+
+  if (!state.playing) {
+    stopAllAudios();
+    state.player.src = translations[lang].audio;
+    state.player.play();
+    state.playing = true;
+    button.classList.add('playing');
+    icon.className = 'fa-solid fa-volume-high';
+  } else {
+    state.player.pause();
+    state.playing = false;
+    button.classList.remove('playing');
+    icon.className = 'fa-solid fa-headphones';
+  }
+}
+
+function stopAllAudios() {
+  Object.keys(audioStates).forEach(lang => {
+    const state = audioStates[lang];
+    if (state.playing) {
+      state.player.pause();
+      state.player.currentTime = 0;
+      resetAudioButton(lang);
+    }
+  });
+}
+
+function resetAudioButton(lang) {
+  const state = audioStates[lang];
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+
+  state.playing = false;
+  button.classList.remove('playing');
+  icon.className = 'fa-solid fa-headphones';
+}
+
+function toggleForm(type) {
+  const formCollectif = document.getElementById('form-collectif');
+  const formIndividu = document.getElementById('form-individu');
+
+  if (type === 'collectif') {
+    const isActive = formCollectif.classList.contains('active');
+    formCollectif.classList.toggle('active');
+    formIndividu.classList.remove('active');
+    if (!isActive) {
+      setTimeout(() => formCollectif.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  } else {
+    const isActive = formIndividu.classList.contains('active');
+    formIndividu.classList.toggle('active');
+    formCollectif.classList.remove('active');
+    if (!isActive) {
+      setTimeout(() => formIndividu.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }
+}
+
+function shareContent() {
+  const t = "Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
+  const u = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title: 'Appel — Journée Sans Nous', text: t, url: u });
+  } else {
+    navigator.clipboard.writeText(`${t}\n${u}`).then(() => alert('Lien copié ✅'));
+  }
+}
+</script>
+
 
 <script src="js/menu.js"></script>
 
