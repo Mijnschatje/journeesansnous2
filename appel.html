@@ -1407,14 +1407,14 @@ function toggleAudio(lang) {
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
 
-  if (!translations[lang] || !translations[lang].audio) {
+  if (!window.translations[lang] || !window.translations[lang].audio) {
     alert('Audio disponible prochainement');
     return;
   }
 
   if (!state.playing) {
     stopAllAudios();
-    state.player.src = translations[lang].audio;
+    state.player.src = window.translations[lang].audio;
     state.player.play();
     state.playing = true;
     button.classList.add('playing');
@@ -1513,14 +1513,14 @@ function toggleAudio(lang) {
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
 
-  if (!translations[lang] || !translations[lang].audio) {
+  if (window.translations[lang] || window.translations[lang].audio) {
     alert('Audio disponible prochainement');
     return;
   }
 
   if (!state.playing) {
     stopAllAudios();
-    state.player.src = translations[lang].audio;
+    state.player.src = window.translations[lang].audio;
     state.player.play();
     state.playing = true;
     button.classList.add('playing');
