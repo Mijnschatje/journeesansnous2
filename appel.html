@@ -1352,26 +1352,6 @@ function normalizeKey(k){
   return map[k] || k;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const select = document.getElementById('languageSelect'); // ton <select>
-  const content = document.getElementById('content');       // carte blanche
-  const contentText = document.getElementById('contentText'); // conteneur texte
-
-  // 1) Français par défaut
-  if (select) select.value = 'fr';
-  renderLang('fr');
-
-  // 2) Changement de langue
-  if (select) {
-    select.addEventListener('change', (e) => {
-      renderLang(e.target.value);
-    });
-  }
-
-  function renderLang(rawKey){
-    const key = normalizeKey(rawKey || 'fr');
-    const t = window.translations[key] || window.translations.fr;
-
     // Stoppe tes audios existants si besoin
     if (typeof stopAllAudios === 'function') { try { stopAllAudios(); } catch(e){} }
 
@@ -1407,10 +1387,11 @@ function toggleAudio(lang) {
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
 
+  // ✅ should be
   if (!window.translations[lang] || !window.translations[lang].audio) {
-    alert('Audio disponible prochainement');
-    return;
-  }
+  alert('Audio disponible prochainement');
+  return;
+}
 
   if (!state.playing) {
     stopAllAudios();
@@ -1491,10 +1472,10 @@ function toggleAudio(lang) {
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
 
-  if (window.translations[lang] || window.translations[lang].audio) {
-    alert('Audio disponible prochainement');
-    return;
-  }
+if (!window.translations[lang] || !window.translations[lang].audio) {
+  alert('Audio disponible prochainement');
+  return;
+}
 
   if (!state.playing) {
     stopAllAudios();
