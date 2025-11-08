@@ -2,7 +2,7 @@
 // Toutes les traductions centralisées ici.
 // Ajoute simplement de nouveaux blocs {code: {label, rtl, audio, content}}.
 
-window.TRANSLATIONS = {
+window.translations = {
   fr: {
     label: "Français",
     rtl: false,
