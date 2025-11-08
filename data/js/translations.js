@@ -2,1686 +2,1113 @@
 const translations = {
   'fr': {
     rtl: false,
-    audio: 'assets/audio/audio-fr.mp3',
-    content: `
-<div class="intro">
-  <p>« La Journée Sans Nous : si on s’arrête, tout s’arrête », est organisée à l’occasion de la Journée</p>
-  <p>internationale des migrant·e·s, le 18 décembre 2025.</p>
-  <p>Cette journée d’action, initiée par les collectifs de personnes sans papiers et immigrées, appelle</p>
-  <p>à une grève solidaire et politique contre le racisme d’État, la précarisation, et le recul des droits</p>
-  <p>des personnes migrantes en France.</p>
-  <p>Nous pensons que cette lutte nous concerne toutes et tous, car les lois racistes et les politiques</p>
-  <p>d’exclusion pavent la voie au fascisme et fragilisent les droits de chacun·e.</p>
-  <p>Des collectifs, syndicats, associations et mouvements sociaux se mobilisent dans toute la France</p>
-  <p>pour construire ensemble cette journée historique.</p>
-</div>
-<ul>
-  <li>Pour l’abrogation immédiate de la loi Darmanin et des circulaires Retailleau</li>
-  <li>Pour l’égalité des droits de toutes et tous, à l’école, au logement, à la santé, à la</li>
-  <li>Pour la régularisation des sans-papiers</li>
-  <li>Pour la fermeture des centres de rétention administrative (CRA)</li>
-  <li>Pour la justice sociale et la solidarité, contre le racisme et le fascisme</li>
-</ul>
-<p>Voici le texte de notre appel :</p>
-<p>« Ce pays ne marche pas sans immigré·e·s. Il n’existe pas sans l’immigration et en bénéﬁcie à tous</p>
-<p>points de vue.</p>
-<p>Ce n’est pas l’immigration qui le détruit, ce sont les politiques menées, le racisme et l’injustice.</p>
-<p>Le 18 décembre, à l’occasion de la Journée internationale des migrant·e·s, nous appelons à en faire</p>
-<p>la démonstration.</p>
-<p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si</p>
-<p>on s’arrête, tout s’arrête ! ».</p>
-<p>ère ème ème</p>
-<p>Avec ou sans papiers, immigré·e·s, enfants d’immigré·e·s, de 1 , 2 , 3  génération, cousin·e·s,</p>
-<p>voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre,</p>
-<p>nous n’irons pas à l’école, au travail, dans les commerces. Nous manifesterons ensemble dans</p>
-<p>toutes les villes du pays :</p>
-<p>culture, au travail.</p>
-<p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le</p>
-<p>formulaire, nous t’enverrons le programme.</p>
-<p>“</p>
-<p>󰏅󰑔</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
+    audio: 'assets/audio/audio-francais.mp3',
+    content: `<div class="intro">
+      <p><strong>« La Journée Sans Nous : si on s'arrête, tout s'arrête »</strong>, est organisée à l'occasion de la <strong>Journée internationale des migrant·e·s, le 18 décembre 2025</strong>.</p>
+      <p>Cette journée d'action, initiée par les <strong>collectifs de personnes sans papiers et immigrées</strong>, appelle à une <strong>grève solidaire et politique</strong> contre le <strong>racisme d'État</strong>, la précarisation, et le recul des droits des personnes migrantes en France.</p>
+      <p>Nous pensons que <strong>cette lutte nous concerne toutes et tous</strong>, car les lois racistes et les politiques d'exclusion pavent la voie au fascisme et fragilisent les droits de chacun·e.</p>
+      <p>Des collectifs, syndicats, associations et mouvements sociaux se mobilisent dans toute la France pour construire ensemble cette journée historique.</p>
+    </div>
+    <p><strong>Voici le texte de notre appel :</strong></p>
+    <p>Ce pays ne marche pas sans immigré·e·s. Il n'existe pas sans l'immigration et en bénéficie à tous points de vue.</p>
+    <p>Ce n'est pas l'immigration qui le détruit, ce sont les politiques menées, le racisme et l'injustice.</p>
+    <p>Le 18 décembre, à l'occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
+    <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s'arrête, tout s'arrête ! ».</p>
+    <p>Avec ou sans papiers, immigré·e·s, enfants d'immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n'irons pas à l'école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
+    <ul>
+      <li><strong>Pour l'abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
+      <li><strong>Pour l'égalité des droits</strong> de toutes et tous, à l'école, au logement, à la santé, à la culture, au travail.</li>
+      <li><strong>Pour la régularisation</strong> des sans-papiers</li>
+      <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
+      <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
+    </ul>
+    <div class="join-us-box">
+      <p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le formulaire, nous t'enverrons le programme.</p>
+    </div>`
   },
+
   'en': {
     rtl: false,
-    audio: 'assets/audio/audio-en.mp3',
-    content: `
-<div class="intro">
-  <p>Migrants Day on the 18th of December 2025.</p>
-  <p>This day of action, initiated by collectives of undocumented migrants and immigrants,</p>
-  <p>calls for a political solidarity strike against state racism, precarity, and the erosion of</p>
-  <p>migrants&#x27; rights in France.</p>
-  <p>We believe that this struggle concerns all of us, because racist laws and exclusionary</p>
-  <p>policies pave the way for fascism and undermine everyone&#x27;s rights.</p>
-  <p>Collectives, trade unions, associations, cultural spaces, and social movements are</p>
-  <p>mobilising across France to build this historic day together.</p>
-</div>
-<ul>
-  <li>For the immediate repeal of the Darmanin law and the Retailleau memorandum</li>
-  <li>For equal rights for all, in education, housing, healthcare, culture and employment</li>
-  <li>For the processing of undocumented migrants</li>
-  <li>For the closure of administrative detention centres (CRA)</li>
-  <li>For social justice and solidarity, against racism and fascism</li>
-</ul>
-<p>Here is our call to action:</p>
-<p>“This country cannot function without immigrants. It cannot exist without immigration and</p>
-<p>benefits from it in every way.</p>
-<p>It is not immigration that is destroying this country. This country is being destroyed by the</p>
-<p>policies that are being implemented, racism and injustice.</p>
-<p>On the 18th December, International Migrants Day, we call on everyone to protest.</p>
-<p>We call on everyone to organise, in all our neighbourhoods and workplaces, “A Day Without</p>
-<p>us: if we stop, everything stops!”.</p>
-<p>Documented or undocumented, immigrants, children of immigrants, first-, second- and</p>
-<p>third-generation migrants, cousins, neighbours, colleagues, those involved in the Block</p>
-<p>Everything movement on the 10th of September, demonstrators and strikers from the 18th of</p>
-<p>September, we will not go to school, to work or to the shops. We will demonstrate together in</p>
-<p>every city across the country:</p>
-<p>If you would like to join us, click on the link below and fill in the form, and we will send you</p>
-<p>the programme.”</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
+    audio: 'assets/audio/audio-english.mp3',
+    content: `<div class="intro">
+      <p><strong>"A Day Without Us: If We Stop, Everything Stops"</strong> is organised to mark <strong>International Migrants Day on the 18th of December 2025.</strong></p>
+      <p>This day of action, initiated by <strong>collectives of undocumented migrants and immigrants</strong>, calls for a <strong>political solidarity strike</strong> against <strong>state racism</strong>, precarity, and the erosion of migrants' rights in France.</p>
+      <p>We believe that <strong>this struggle concerns all of us</strong>, because racist laws and exclusionary policies pave the way for fascism and undermine everyone's rights.</p>
+      <p>Collectives, trade unions, associations, cultural spaces, and social movements are mobilising across France to build this historic day together.</p>
+    </div>
+    <p><strong>Here is our call to action:</strong></p>
+    <p>This country cannot function without immigrants. It cannot exist without immigration and benefits from it in every way.</p>
+    <p>It is not immigration that is destroying this country. This country is being destroyed by the policies that are being implemented, racism and injustice.</p>
+    <p>On the 18th December, International Migrants Day, we call on everyone to protest.</p>
+    <p>We call on everyone to organise, in all our neighbourhoods and workplaces, "A Day Without us: if we stop, everything stops!".</p>
+    <p>Documented or undocumented, immigrants, children of immigrants, first-, second- and third-generation migrants, cousins, neighbours, colleagues, those involved in the Block Everything movement on the 10th of September, demonstrators and strikers from the 18th of September, we will not go to school, to work or to the shops. We will demonstrate together in every city across the country:</p>
+    <ul>
+      <li><strong>For the immediate repeal</strong> of the Darmanin law and the Retailleau memorandum</li>
+      <li><strong>For equal rights for all</strong>, in education, housing, healthcare, culture and employment</li>
+      <li><strong>For the processing</strong> of undocumented migrants</li>
+      <li><strong>For the closure</strong> of administrative detention centres (CRA)</li>
+      <li><strong>For social justice and solidarity</strong>, against racism and fascism</li>
+    </ul>
+    <div class="join-us-box">
+      <p>If you would like to join us, click on the link below and fill in the form, and we will send you the programme.</p>
+    </div>`
   },
+
   'ar': {
     rtl: true,
-    audio: 'assets/audio/audio-ar.mp3',
-    content: `
-<div class="intro rtl">
-  <p>“ !ءﻲﺷ لﻛ فﻗوﺗﯾ ،ﺎﻧﻔﻗوﺗ اذإ :ﺎﻧﻧِ ودﺑ موﯾ&quot;</p>
-  <p>ّ ٌ</p>
-  <p>.2025 رﺑﻧﺟد 18 موﯾ ،تارﺟﺎﮭﻣﻟاو نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ءادﻧ</p>
-  <p>لﺟا نﻣ نوﻠﺿﺎﻧﯾ تارﺟﺎﮭﻣ و نﯾرﺟﺎﮭﻣ تﺎﻣظﻧﻣ و تﺎﯾﻌﻣﺟ فرط نﻣ ةردﺎﺑﻣ ﻲﺟﺎﺟﺗﺣﻻا موﯾﻟا اذھ</p>
-  <p>دّ ﺿو ،ﺔﺳﺳﺄﻣﻣُ ﻟا ﺔﯾرﺻﻧﻌﻟا دّ ﺿ ﻲﺳﺎﯾﺳو ﻲﻧﻣﺎﺿﺗ بارﺿإ ﻰﻟإ ﮫﯾﻓ نوﻋدﯾ ، ﺔﯾرادﻻا مﮭﺗﯾﻌﺿو لﯾدﻌﺗ</p>
-  <p>.ﺎﺳﻧرﻓ ﻲﻓ تارﺟﺎﮭﻣﻟاو نﯾرﺟﺎﮭﻣﻠﻟ ﺔﯾدرﻔﻟا تﺎﯾرﺣﻟاو قوﻘﺣﻟا ﻊﺟارﺗو ،شﯾﻣﮭﺗﻟا</p>
-  <p>ُ</p>
-  <p>مﻠظﻠﻟ قﯾرطﻟا دﮭﱢ ﻣَ ﺗ ﺔﯾﺋﺎﺻﻗﻹا تﺎﺳﺎﯾﺳﻟاو ﺔﯾرﺻﻧﻌﻟا نﯾﻧاوﻘﻟا نﻷ ،ﺎﻌً ﯾﻣﺟ ﺎﻧﻣّ ﮭﺗ ﺔﻛرﻌﻣﻟا هذھ نأ دﻘﺗﻌﻧ و</p>
-  <p>ُ</p>
-  <p>.درﻓ لّ ﻛ قوﻘﺣ فﻌِ ﺿﺗو ﺔﯾﺷﺎﻔﻟاو</p>
-  <p>اذھ ءﺎﻧﺑﻟ ﺎﺳﻧرﻓ ءﺎﺣﻧأ ﻊﯾﻣﺟ ﻲﻓ كرﺣﺗﺗ ،ﺔﯾﻋﺎﻣﺗﺟا تﺎﻛرﺣو ،تﺎﯾﻌﻣﺟو ،تﺎﺑﺎﻘﻧو ،تﺎﻋﺎﻣﺟ نﻣ دﯾدﻋ</p>
-  <p>.ﺎﻧﯾﻟإ اوﻣﺿﻧﺎﻓ ،ﺎﻌً ﻣ ﻲﺧﯾرﺎﺗﻟا موﯾﻟا</p>
-  <p>:ءادﻧﻟا صﻧ</p>
-  <p>تارﺟﺎﮭﻣﻟاو نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا رﺑﻧﺟد18</p>
-  <p>ّ ّ</p>
-  <p>&quot;!ءﻲﺷ لﻛ فﻗوﺗﯾ ،ﺎﻧﻔﻗوﺗ اذإ :ﺎﻧﻧِ ودﺑ موﯾ&quot;</p>
-  <p>ّ ٌ</p>
-  <p>.بﻧاوﺟﻟا ﻊﯾﻣﺟ نﻣ ﺎﮭﻧﻣ دﯾﻔﺗﺳﯾو ،ةرﺟﮭﻟا نودﺑ ﮫﻟ دوﺟوُ  ﻻ وﮭﻓ .نﯾرﺟﺎﮭﻣﻟا نودﺑ رﯾﺳﯾ ﻻ دﻠﺑﻟا اذھ</p>
-  <p>ّ ُ</p>
-  <p>.مﻠظﻟاو ،ﺔﯾرﺻﻧﻌﻟاو ،ﺔﻌﺑﺗﻣﻟا تﺎﺳﺎﯾﺳﻟا لﺑ ،هرﻣّ دﺗ ﻲﺗﻟا ﻲھ ةرﺟﮭﻟا تﺳﯾﻟ</p>
-  <p>.كﻟذ تﺎﺑﺛﺈﺑ مﺎﯾﻘﻟا ﻰﻟإ وﻋدﻧ ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ،رﺑﻧﺟد 18 ﻲﻓ</p>
-  <p>ّ ّ</p>
-  <p>.ﺎﻧﻠﻣﻋ نﻛﺎﻣأو ،ﺎﻧﺋﺎﯾﺣأ ﻊﯾﻣﺟ ﻲﻓ «!ءﻲﺷ لّ ﻛ فﻗوﺗﯾ ،ﺎﻧﻔﻗوﺗ اذإ :ﺎﻧﻧِ ودﺑ موﯾ» مﯾظﻧﺗ ﻰﻟإ وﻋدﻧ</p>
-  <p>ٍ</p>
-  <p>لوﻷا لﯾﺟﻟا نﻣ ،نﯾرﺟﺎﮭﻣﻟا ءﺎﻧﺑأ و تﺎﻧﺑ، قاروأ ندﺑ وأ قاروأ ﻰﻠﻋ نﯾﻠﺻﺎﺣ تارﺟﺎﮭﻣ و نورﺟﺎﮭﻣ</p>
-  <p>،رﺑﻧﺗﺷ 10 تﺎﺑارﺿإ ﻲﻓ نﯾﻛرﺎﺷﻣﻟا ،ءﻼﻣزﻟا ،نارﯾﺟﻟا ،نﮭﺗﻻﺎﺧ تﺎﻧﺑو مﮭﻣﺎﻣﻋأ ءﺎﻧﺑأ ،ثﻟﺎﺛﻟاو ﻲﻧﺎﺛﻟاو</p>
-  <p>تﻼﺣﻣﻟا ﻰﻟإ ﻻو ،لﻣﻌﻟا ﻰﻟإ ﻻو ،ﺔﺳردﻣﻟا ﻰﻟإ بھذﻧ نﻟ ،رﺑﻧﺗﺷ 18 ﻲﻓ نﯾﺑرﺿﻣﻟاو نﯾرھﺎظﺗﻣﻟاو</p>
-  <p>ُ</p>
-  <p>دﻼﺑﻟا ندﻣ ﻊﯾﻣﺟ ﻲﻓ ﺎﻌً ﻣ رھِ ﺎظﺗﻧﺳ .ﺔﯾرﺎﺟﺗﻟا</p>
-  <p>:</p>
-  <p>ّ</p>
-  <p>.وﯾﺎﺗﯾر تارﻛذﻣو نﺎﻧﺎﻣراد نوﻧﺎﻘﻟ يروﻔﻟا ءﺎﻐﻟﻹا لﺟأ نﻣ ●</p>
-  <p>.لﻣﻌﻟاو ،ﺔﻓﺎﻘﺛﻟاو ،ﺔﺣﺻﻟاو ،نﻛﺳﻟاو ،ﺔﺳردﻣﻟا ﻲﻓ ،ﻊﯾﻣﺟﻠﻟ قوﻘﺣﻟا ﻲﻓ ةاوﺎﺳﻣﻟا لﺟأ نﻣ ●</p>
-  <p>.قاروﻷا ﻰﻠﻋ نﯾﻠﺻﺎﺣﻟا رﯾﻏ عﺎﺿوأ ﺔﯾوﺳﺗ لﺟأ نﻣ ●</p>
-  <p>. يرادﻹا زﺎﺟﺗﺣﻻا زﻛارﻣ قﻼﻏإ لﺟأ نﻣ ●</p>
-  <p>.ﺔﯾﺷﺎﻔﻟاو ﺔﯾرﺻﻧﻌﻟا دّ ﺿو ،نﻣﺎﺿﺗﻟاو ﺔﯾﻋﺎﻣﺗﺟﻻا ﺔﻟادﻌﻟا لﺟأ نﻣ ●</p>
-  <p>✍.ﺞﻣﺎﻧرﺑﻟا كﻠﺻﯾﻟ ةرﺎﻣﺗﺳﻻا ءلﻣو هﺎﻧدأ طﺑارﻟا ﻰﻠﻋ طﻐﺿإ  .ﺎﻧﯾﻟإ مﺎﻣﺿﻧﻻا ﻲﻓ تﺑﻏر اذإ</p>
-  <p>󰎷</p>
-</div>
-    `
+    audio: 'assets/audio/audio-arabeclassique.mp3',
+    content: `<div class="intro rtl">
+      <p><strong>"يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!"</strong></p>
+      <p>نداء بمناسبة <strong>اليوم العالمي للمهاجرين والمهاجرات، يوم 18 دجنبر 2025.</strong></p>
+      <p>هذا اليوم الاحتجاجي مبادرة من طرف <strong>جمعيات و منظمات مهاجرين و مهاجرات</strong> يناضلون من اجل تعديل وضعيتهم الادارية، يدعون فيه إلى <strong>إضراب تضامني وسياسي</strong> ضدّ <strong>العنصرية المُمأسسة</strong>، وضدّ التهميش، وتراجع الحقوق والحريات الفردية للمهاجرين والمهاجرات في فرنسا.</p>
+      <p>و نعتقد أن <strong>هذه المعركة تهمّنا جميعًا</strong>، ألن القوانين العنصرية والسياسات الإقصائية تُمهِّد الطريق للظلم والفاشية وتُضعِف حقوق كلّ فرد.</p>
+      <p>عديد من جماعات، ونقابات، وجمعيات، وحركات اجتماعية، تتحرك في جميع أنحاء فرنسا لبناء هذا اليوم التاريخي معًا، فانضموا إلينا.</p>
+    </div>
+    <p><strong>نص النداء:</strong></p>
+    <p>هذا البلد لا يسير بدون المهاجرين. فهو لا وُجود له بدون الهجرة، ويستفيد منها من جميع الجوانب.</p>
+    <p>ليست الهجرة هي التي دمّرته، بل السياسات المتّبعة، والعنصرية، والظلم.</p>
+    <p>في 18 دجنبر، بمناسبة اليوم العالمي للمهاجرين، ندعو إلى القيام بإثبات ذلك.</p>
+    <p>ندعو إلى تنظيم "يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!" في جميع أحيائنا، وأماكن عملنا.</p>
+    <p>مهاجرون و مهاجرات حاصلين على أوراق أو بدون أوراق، بنات و أبناء المهاجرين، من الجيل الأول والثاني والثالث، أبناء أعمامهم وبنات خالاتهن، الجيران، الزملاء، المشاركين في إضرابات 10 شتنبر، والمتظاهرين والمضربين في 18 شتنبر، لن نذهب إلى المدرسة، ولا إلى العمل، ولا إلى المحلات التجارية. سنتظاهر معًا في جميع مدن البلاد:</p>
+    <ul>
+      <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان ومذكّرات ريتايو</li>
+      <li><strong>من أجل المساواة في الحقوق</strong> للجميع، في المدرسة، والسكن، والصحة، والثقافة، والعمل</li>
+      <li><strong>من أجل تسوية أوضاع</strong> غير الحاصلين على الأوراق</li>
+      <li><strong>من أجل إغلاق</strong> مراكز الاحتجاز الإداري</li>
+      <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
+    </ul>
+    <div class="join-us-box rtl">
+      <p>إذا رغبت في الانضمام إلينا. إضغط على الرابط أدناه وملء الاستمارة ليصلك البرنامج ✍️.</p>
+    </div>`
   },
+
+  /* ========= Autres langues (placeholder propre "Traduction en cours") ========= */
   'ar-dz': {
-    rtl: true,
-    audio: 'assets/audio/audio-ar-dz.mp3',
-    content: `
-<div class="intro rtl">
-  <p>󰎷</p>
-  <p>ّ</p>
-  <p>سﺑﺣﯾ شﻠﻛ ،وﺳﺑﺣﻧ ﻲﻛ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧﻟا !</p>
-  <p>ﱠ َ ْ َ</p>
-  <p>.2025 رﺑﻣﺳﯾد 18 رﺎﮭﻧ ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻟودﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ مظﻧﺗﺗ رﺎﮭﻧﻟا دﺎھ</p>
-  <p>،ﺔﻟودﻟا عﺎﺗ ﺔﯾرﺻﻧﻌﻟا دّ ﺿ ﻲﺳﺎﯾﺳو ﻲﻧﻣﺎﺿﺗ بارﺿإ ﻲھ ،نﯾرﺟﺎﮭﻣ سﺎﻧو قارو ّﻼﺑ سﺎﻧﻟا تﺎﯾﻌﻣﺟ ﺎھوادّ ﺑ ﻲﻟ ،ﺔﻛرﺣﻟا دﺎھ</p>
-  <p>.ﺎﺳﻧرﻓ ﻲﻓ نﯾرﺟﺎﮭﻣﻟا سﺎﻧﻟا عﺎﺗ قوﻘﺣﻟا عﺎﯾﺿو ،شﯾﻣﮭﺗﻟاو</p>
-  <p>قوﻘﺣ وﺑرﺿﯾو ﺔﯾﺷﺎﻔﻠﻟ قﯾرطﻟا وﺣﺗﻔﯾ ءﺎﺻﻗﻹا عﺎﺗ تﺎﺳﺎﯾﺳﻟاو ﺔﯾرﺻﻧﻌﻟا نﯾﻧاوﻘﻟا شطﺎﺧ ،لﻣﺎﻛ ﺎﻧﻣّ ﮭﯾ لﺎﺿﻧﻟا دﺎھ ﻲﻠﺑ وﻧﻣؤﻧ ﺎﻧار</p>
-  <p>ﻊﯾﻣﺟﻟا.</p>
-  <p>ﻲﺧﯾرﺎﺗﻟا رﺎﮭﻧﻟا دﺎھ ﺎﻧﺎﻌﻣ ﻲﻧﺑﺗ شﺎﺑ ﺎﺳﻧرﻔﻟ لﻣﺎﻛ ـﻓ مظﻧﺗﺗ ﻲھار ﺔﯾﻋﺎﻣﺗﺟا تﺎﻛرﺣو ،تﺎﯾﻌﻣﺟ ،تﺎﺑﺎﻘﻧ ،فﯾﺗﻛﻟوﻛ يد فازﺑ.</p>
-  <p>✊</p>
-  <p>ﺎﻧءادﻧ:</p>
-  <p>ّ</p>
-  <p>.نﯾرﺟﺎﮭﻣﻟا ﻼﺑ شﻣدﺧﺗ ﺎﻣ دﻼﺑﻟا دﺎھ</p>
-  <p>ّ</p>
-  <p>.ﺔﺟﺎﺣ لﻛ ـﻓ مﮭﻧﻣ دﻓﺎﺗﺳﺗ ﻲھارو ،مھﻼﺑ دﺟوﺗ ﺔﺣﯾار شﺗﻧﺎﻛ ﺎﻣ ﻲھ</p>
-  <p>ةرﻘﺣﻟاو ،ﺔﯾرﺻﻧﻌﻟاو ،تﺎﺳﺎﯾﺳﻟا لﺑ ،دﻼﺑﻟا رﻣدﺗ ﻲﻟ ةرﺟﮭﻟا ﻲﺷﺎﻣ .</p>
-  <p>ْ</p>
-  <p>:ﺔﻘﯾﻘﺣﻟا دﺎھ وﯾرّ وﻧ شﺎﺑ وطﯾﻌِ ﻧ ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻟودﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ،رﺑﻣﺳﯾد 18 ﻲﻓ</p>
-  <p>ّ</p>
-  <p>سﺑﺣﯾ شﻠﻛ ،وﺳﺑﺣﻧ ﻲﻛ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧﻟا »  ! »</p>
-  <p>ّ</p>
-  <p>لﻣﺎﻛ ،ﺔﺑﻠطو لﺎﻣﻋ ،ءﻼﻣز ،بﺎﺣﺻ ،نارﯾﺟ ،ثﻟﺎﺛﻟا ،ﻲﻧﺎﺛﻟا ،لوﻷا لﯾﺟﻟا نﻣ ،نﯾرﺟﺎﮭﻣ دﻻو ﻻو نﯾرﺟﺎﮭﻣ ،قاروﺑ ﻻو قارو ﻼﺑ</p>
-  <p>ْ</p>
-  <p>عراوﺷﻟا ـﻓ لﻣﺎﻛ وﺗﺳﯾﻔﯾﻧﺎﻣﻧ وﺟرﺧﻧ و ،ةرﺎﺟﺗﻟاو ،ﺔﻣدﺧﻟا ،ﺔﯾارﻘﻟا وﺳﺑﺣﻧ نﯾﺣﯾار:</p>
-</div>
-<ul>
-  <li>وﯾﺎﺗﯾر عﺎﺗ تﺎﯾرودﻟاو نﯾﻧﺎﻣراد نوﻧﺎﻗ ءﺎﻐﻟﺈﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>ﺔﻣدﺧﻟاو ،ﺔﻓﺎﻘﺛﻟا ،ﺔﺣﺻﻟا ،نﻛﺳﻟا ،ﺔﯾارﻘﻟا ـﻓ :قوﻘﺣﻟا ـﻓ ةاوﺎﺳﻣﻟﺎﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>قارو ﻼﺑ سﺎﻧﻟا ﺔﯾﻌﺿو ﺔﯾوﺳﺗﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>يرادﻹا سﺑﺣﻟا زﻛارﻣ ورﻛﺳﻧ شﺎﺑ (CRA)</li>
-  <li>ﺔﯾﺷﺎﻔﻟاو ﺔﯾرﺻﻧﻌﻟا دّ ﺿ ،نﻣﺎﺿﺗﻟاو ﺔﯾﻋﺎﻣﺗﺟﻻا ﺔﻟادﻌﻟا ﻊﻣ وﻔﻗوﻧ شﺎﺑ</li>
-</ul>
-<p>ّ</p>
-<p>✍</p>
-<p>ﺞﻣﺎﻧرﺑﻟا كﻠﺻوﯾ حارو مروﻔﻟا رﻣّ ﻋ ،تﺣﺗﻟ طﺑارﻟا نﯾﺎﻛ ،ﺎﻧﯾﺑ قﺣﺗﻠﺗ تﯾﺑﺣ ﻻإ</p>
-    `
-  },
-  'kab': {
-    rtl: false,
-    audio: 'assets/audio/audio-kab.mp3',
-    content: `
-<div class="intro">
-  <p>(cid:0) Ass Ulaɣ Ness : Ma Neḥbes, Akk Iḥbes !</p>
-  <p>Ass-a yettusmḍen deg Ussan Agrawan n Imeɣranen, 18 Dujanbir 2025.</p>
-  <p>Asenfaɣ-a yebda-d s yilemḍiyen n wid ur nesɛi ara ikaramen d wid iɣermanen, yessawel ar</p>
-  <p>uɣen n tmedyazt d nettaḥda s wumuɣ n uzekka, mgal uɣaras n tnekkit n waddaden, d aggur n</p>
-  <p>teɣzi n izerfan n imeɣranen deg Fransa.</p>
-  <p>Nexdem akken amek i yellan wagi yennes i yiman-nneɣ akk, imi ilugan n tenekka d tneqqiwin n</p>
-  <p>usensi i d-yettawiɣen d afus i tmeɣtut, d wid i yettḥasen izerfan n yiman-nsen.</p>
-  <p>Aṭas n ikemmuḥen, sindikaten, tajmaɛt d timura n temɣarin la ttunefken deg meṛṛa tamurt i</p>
-  <p>Fransa akken ad nebnu-d ass-a n umennuɣ-agi.</p>
-  <p>✊</p>
-  <p>Tinnubga-nneɣ :</p>
-  <p>Tamurt-agi ur teddu ara war imeɣranen.</p>
-  <p>Ur tili ara illa war-asen, d imeɣranen i d-yefka-ten tazmert deg yal tama.</p>
-  <p>Mačči d tameslayt i yetexsren tamurt, maca d tiwiziwin n tnekkit, d tneɣrit, d ulac tangalt.</p>
-  <p>Deg 18 Dujanbir, deg wass agrawan n imeɣranen, neɛya ar ad d-sbeddem iḥedran-agi:</p>
-  <p>“Ass Ulaɣ Ness : Ma Neḥbes, Akk Iḥbes !”</p>
-  <p>Ma telliḍ d win ur nesɛi ara ikaramen, d imeɣran, d mmi n imeɣran, n tallit yimezgi, tis snat neɣ</p>
-  <p>tis kraḍ, d imdukkal, d iccura, d yixeddamen — ad neḥbes akk : tiḥerci, axeddim, ttzawla. Ad</p>
-  <p>neffeɣ akk ar tiziwin deg meṛṛa tamurt:</p>
-</div>
-<ul>
-  <li>I wugur n usenfaɣ n lqanun n Darmanin akked izerfan n Retailleau</li>
-  <li>I wemgarrad n izerfan i yimanen merra : deg lmed, lxir, tesɛi, tazmert d uxeddim</li>
-  <li>I uslelli n wid ur nesɛi ara ikaramen</li>
-  <li>I usekkeṛ n yidlen n tenkra n tɣellist (CRA)</li>
-  <li>I twizi d taseddast tamunt, mgal tnekkit d tfasiya</li>
-</ul>
-<p>Ma tebɣiḍ ad tettekkiḍ, ḥedd link n ddaw-a, ččar asen d imensi, ad k-d-nazen ulmad n usefrek.</p>
-<p>✍</p>
-<p>󰏽</p>
-    `
-  },
-  'ar-ma': {
-    rtl: true,
-    audio: 'assets/audio/audio-ar-ma.mp3',
-    content: `
-<div class="intro rtl">
-  <p>󰏽</p>
-  <p>فﻗوﯾ ﻲﺷﻠﻛ ،ﺎﻧﺳﺑّ ﺣ ﻰﻟإ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧ !</p>
-  <p>ّ</p>
-  <p>.2025 رﺑﻧﺟد 18 ،نﯾرﺟﺎﮭﻣﻟا لﺎﯾد ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ مظﻧﺗﯾﻛ رﺎﮭﻧﻟا دﺎھ</p>
-  <p>،ﺔﻟودﻟا لﺎﯾد ﺔﯾرﺻﻧﻌﻟا دّ ﺿ ﻲﺳﺎﯾﺳو ﻲﻧﻣﺎﺿﺗ بارﺿإ ﻰﻟإ ﻲﻋدﺗﻛ ،قاروأ شﻣھدﻧﻋ ﺎﻣ ﻲﻠﻟا سﺎﻧﻟاو نﯾرﺟﺎﮭﻣﻟا ﺎھوادّ ﺑ ﻲﻠﻟا ﺔﻛرﺣﻟا دﺎھ</p>
-  <p>.ﺎﺳﻧرﻔﻓ نﯾرﺟﺎﮭﻣﻟا لﺎﯾد قوﻘﺣﻟا عﺎﯾّ ﺿو ،شﯾﻣﮭﺗﻟاو</p>
-  <p>لﺎﯾد قوﻘﺣﻟا برﺿﺗﻛو ﺔﯾﺷﺎﻔﻠﻟ قﯾرطﻟا لّ ﺣﺗﻛ ءﺎﺻﻗﻹا لﺎﯾد تﺎﺳﺎﯾﺳﻟاو ﺔﯾرﺻﻧﻌﻟا نﯾﻧاوﻘﻟا تﯾﺣ ،ﻊﯾﻣﺟﻟا ﻲﻧﻌﯾﻛ لﺎﺿﻧﻟا دﺎھ ﻲﻠﺑ وﻧﻣﺂﻧﻛ تﯾﺣ</p>
-  <p>نﯾﻠﻣﺎﻛ سﺎﻧﻟا.</p>
-  <p>ّ</p>
-  <p>ﻲﺧﯾرﺎﺗﻟا رﺎﮭﻧﻟا دﺎھ ﺎﻧﺎﻌﻣ وﯾﻧﺑﯾ شﺎﺑ ﺎﺳﻧرﻔﻓ ﺔﺻﻼﺑ لﻛﻓ وﻣظﻧﺗﯾﻛ ﺔﯾﻋﺎﻣﺗﺟﻻا تﺎﻛرﺣﻟاو ،تﺎﯾﻌﻣﺟﻟا ،تﺎﺑﺎﻘﻧﻟا ،تﺎﯾﻘﯾﺳﻧﺗﻟا لﺎﯾد فازﺑ.</p>
-  <p>✊</p>
-  <p>ﺎﻧﻟﺎﯾد ءادﻧﻟا:</p>
-  <p>.نﯾرﺟﺎﮭﻣﻟا ﻼﺑ شﻣدﺧﺗﻛ ﺎﻣ دﻼﺑﻟا دﺎھ</p>
-  <p>.ﺔﺟﺎﺣ لﻛﻓ مﮭﻧﻣ دﻓﺎﺗﺳﺗﻛو ،مھﻼﺑ نوﻛﺗ شردﻘﺗ ﺎﻣ</p>
-  <p>ةرﻘﺣﻟاو ،ﺔﯾرﺻﻧﻌﻟاو ،تﺎﺳﺎﯾﺳﻟا نﻛﻟو ،ةرﺟﮭﻟا ﻲﺷﺎﻣ دﻼﺑﻟا رﻣّ دﯾﻛ ﻲﻠﻟا .</p>
-  <p>:ﺔﻘﯾﻘﺣﻟا دﺎھ وﻧﯾّ ﺑﻧ شﺎﺑ وﯾﻋدﻧﻛ ،نﯾرﺟﺎﮭﻣﻟا لﺎﯾد ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ،رﺑﻧﺟد 18 ـﻓ</p>
-  <p>فﻗوﯾ ﻲﺷﻠﻛ ،ﺎﻧﺳﺑّ ﺣ ﻰﻟإ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧ »  ! »</p>
-  <p>لﺎﻣﻌﻟا ،ءﻼﻣزﻟا ،بﺎﺑﺣﻟا ،نارﯾﺟﻟا ،ثﻟﺎﺛﻟا ﻻو ﻲﻧﺎﺛﻟا ﻻو لوﻷا لﯾﺟﻟا نﻣ ،نﯾرﺟﺎﮭﻣﻟا دﻻو ،نﯾرﺟﺎﮭﻣ ،شﻣھدﻧﻋ ﺎﻣ ﻻو قاروأ مھدﻧﻋ سﺎﻧ</p>
-  <p>ْ</p>
-  <p>عراوﺷﻟﺎﻓ ﻊﯾﻣﺟ ورھﺎظﺗﻧ وﺟرﺧﻧ يدﺎﻏو ،ةرﺎﺟﺗﻟا ،ﺔﻣدﺧﻟا ،ﺔﯾارﻘﻟا وﺳﺑﺣْ ﻧ يدﺎﻏ — ﺔﺑﻠطﻟاو:</p>
-</div>
-<ul>
-  <li>وﯾﺎﺗﯾر لﺎﯾد تﺎﯾرودﻟاو نﺎﻧﺎﻣراد نوﻧﺎﻗ ءﺎﻐﻟﺈﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>ﺔﻣدﺧﻟاو ،ﺔﻓﺎﻘﺛﻟا ،ﺔﺣﺻﻟا ،نﻛﺳﻟا ،مﯾﻠﻌﺗﻟا ـﻓ :قوﻘﺣﻟا ـﻓ ةاوﺎﺳﻣﻟﺎﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>قاروأ شﻣھدﻧﻋ ﺎﻣ ﻲﻠﻟا سﺎﻧﻟا ﺔﯾﻌﺿو ﺔﯾوﺳﺗﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>يرادﻹا زﺎﺟﺗﺣﻻا زﻛارﻣ ودﺳﻧ شﺎﺑ (CRA)</li>
-  <li>ﺔﯾﺷﺎﻔﻟاو ﺔﯾرﺻﻧﻌﻟا دّ ﺿو ،نﻣﺎﺿﺗﻟاو ﺔﯾﻋﺎﻣﺗﺟﻻا ﺔﻟادﻌﻟا ﻊﻣ وﻔﻗوﻧ شﺎﺑ</li>
-</ul>
-<p>✍</p>
-<p>ﺞﻣﺎﻧرﺑﻟﺎﺑ كوﻠﺻوﻧ يدﺎﻏو رﯾﻠﯾﻣروﻔﻟا رﻣّ ﻋ ،تﺣﺗﻟ طﺑارﻟا نﯾﺎﻛ ،ﺎﻧﺎﻌﻣ كرﺎﺷﺗ ﻲﺗﯾﻐﺑ ﻼﯾإ</p>
-    `
-  },
-  'tzm-latn': {
-    rtl: false,
-    audio: 'assets/audio/audio-tzm-latn.mp3',
-    content: `
-<div class="intro">
-  <p>(cid:0) Ass war-neɣ : ma neḥbes, akk iḥbes !</p>
-  <p>Ass-a yettwasen deg Ussan agrawan n imeɣranen, 18 Dujanbir 2025.</p>
-  <p>Asenfaɣ-a yebda-d s wid ur nesɛi ara ikaramen d wid iɣermanen, yessawen ar uɣen n tmedyazt d</p>
-  <p>ttwizi mgal uɣaras n tnekkit n waddaden, d usenɣes n izerfan n imeɣranen deg Fransa.</p>
-  <p>Nexdem akken amek i yellan wagi i d-yennayen i yiman-nneɣ akk, imi ilugan n tnekkit d tneqqiwin n</p>
-  <p>usensi yettawiɣen d afus i tmeɣtut, d wid i yetḥasen izerfan n yiman-nsen.</p>
-  <p>Aṭas n ikemmuḥen, sindikaten, tajmaɛt d timura n temɣarin la ttunefken deg meṛṛa tamurt i Fransa</p>
-  <p>akken ad nebnu-d ass-a n umennuɣ-a.</p>
-  <p>✊</p>
-  <p>Tinnubga-nneɣ :</p>
-  <p>Tamurt-agi ur teddu ara war imeɣranen.</p>
-  <p>Ur tili ara illa war-asen, d imeɣranen i d-yefka-ten tazmert deg yal tama.</p>
-  <p>Mačči d tameslayt i yetexsren tamurt, maca d tnekkit, d tneɣrit, d ulac tangalt.</p>
-  <p>Deg 18 Dujanbir, deg wass agrawan n imeɣranen, neɛya ar ad d-sbeddem iḥedran-agi :</p>
-  <p>“Ass war-neɣ : ma neḥbes, akk iḥbes !”</p>
-  <p>Ma telliḍ d win ur nesɛi ara ikaramen, d imeɣran, d mmi n imeɣran, n tallit yimezgi, tis snat neɣ tis</p>
-  <p>kraḍ, d imdukkal, d iccura, d yixeddamen — ad neḥbes akk : tiḥerci, axeddim, ttzawla. Ad neffeɣ akk</p>
-  <p>ar tiziwin deg meṛṛa tamurt :</p>
-</div>
-<ul>
-  <li>I wugur n usenfaɣ n lqanun n Darmanin akked izerfan n Retailleau</li>
-  <li>I wemgarrad n izerfan i yimanen merra : deg lmed, lxir, tesɛi, tazmert d uxeddim</li>
-  <li>I uslelli n wid ur nesɛi ara ikaramen</li>
-  <li>I usekkeṛ n yidlen n tenkra n tɣellist (CRA)</li>
-  <li>I twizi d taseddast tamunt, mgal tnekkit d tfasiya</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) : (cid:0) (cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (CRA)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-</ul>
-<p>Ma tebɣiḍ ad tettekkiḍ, ḥedd link n ddaw-a, ččar asen d imensi, ad k-d-nazen ulmad n usefrek.</p>
-<p>✍</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (Tifinagh)</p>
-<p>(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) : (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) !</p>
-<p>(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), 18 (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) 2025.</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</p>
-<p>(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) — (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-<p>(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)-(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)-(cid:0).</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-<p>(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) 18 (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) :</p>
-<p>« (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0) : (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) ! »</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) :</p>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-<p>󰑋</p>
-    `
-  },
-  'tzm-tfng': {
-    rtl: false,
-    audio: 'assets/audio/audio-tzm-tfng.mp3',
-    content: `
-<div class="intro">
-  <p>(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) : (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) !</p>
-  <p>(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), 18 (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) 2025.</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</p>
-  <p>(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) — (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-  <p>(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)-(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)-(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)-(cid:0).</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0).</p>
-  <p>(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0) 18 (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) :</p>
-  <p>« (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)-(cid:0)(cid:0)(cid:0) : (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) ! »</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)</p>
-  <p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) :</p>
-</div>
-<ul>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) : (cid:0) (cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0)(cid:0),</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (CRA)</li>
-  <li>(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0), (cid:0)(cid:0)(cid:0)(cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</li>
-</ul>
-<p>(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0) (cid:0) (cid:0)(cid:0)(cid:0)(cid:0)(cid:0)(cid:0)</p>
-<p>󰑋</p>
-    `
-  },
-  'ar-tn': {
-    rtl: true,
-    audio: 'assets/audio/audio-ar-tn.mp3',
-    content: `
-<div class="intro rtl">
-  <p>󰑋</p>
-  <p>فﻗوﯾ ﻲﺷ لﻛ ،وﺳﺑﺣﻧ نﺎﻛ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧ !</p>
-  <p>ّ</p>
-  <p>.2025 رﺑﻣﺳﯾد 18 ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ مظﻧﺗﯾ اذھ رﺎﮭﻧﻟا</p>
-  <p>عﺎﺗﻣ ﺔﯾرﺻﻧﻌﻟا دّ ﺿ ﻲﺳﺎﯾﺳو ﻲﻧﻣﺎﺿﺗ بارﺿإ ـﻟ ﻲﻋدﺗ ،قاروأ شﻣھدﻧﻋ ﺎﻣ ﻲﻠﻟا سﺎﻧﻟاو نﯾرﺟﺎﮭﻣﻟا ﺎھوادّ ﺑ ﻲﻠﻟا ،يذھ ﺔﻛرﺣﻟا</p>
-  <p>.ﺎﺳﻧرﻓ ﻲﻓ نﯾرﺟﺎﮭﻣﻟا عﺎﺗﻣ قوﻘﺣﻟا عﺎﯾﺿو ،شﯾﻣﮭﺗﻟاو ،ﺔﻟودﻟا</p>
-  <p>اوﻔﻌّ ﺿﯾو ﺔﯾﺷﺎﻔﻠﻟ بﺎﺑﻟا اوﺣﺗﻔﯾ ءﺎﺻﻗﻹا عﺎﺗﻣ تﺎﺳﺎﯾﺳﻟاو ﺔﯾرﺻﻧﻌﻟا نﯾﻧاوﻘﻟا رطﺎﺧ ،لﻛﻟا ﺎﻧﺻّ ﺧﺗ يذھ ﺔﻛرﻌﻣﻟا ﻲﻠﻟا وﻧﻣﺂﻧ ﺎﻧﺣإ</p>
-  <p>ّ</p>
-  <p>لّ ﻛﻟا سﺎﻧﻟا عﺎﺗﻣ قوﻘﺣﻟا.</p>
-  <p>ّ</p>
-  <p>اذھ ﻲﺧﯾرﺎﺗﻟا رﺎﮭﻧﻟا مﮭﺿﻌﺑ ﻊﻣ وﯾﻧﺑﯾ شﺎﺑ لّ ﻛﻟا ﺎﺳﻧرﻓ ﻲﻓ اوﻣظﻧﺗﯾ نﯾدﻋﺎﻗ ﺔﯾﻋﺎﻣﺗﺟا تﺎﻛرﺣو ،تﺎﯾﻌﻣﺟ ،تﺎﺑﺎﻘﻧ ،تﺎﯾﻘﯾﺳﻧﺗ ﺔﺷرﺑ.</p>
-  <p>✊</p>
-  <p>ﺎﻧﻋﺎﺗﻣ ءادﻧﻟا :</p>
-  <p>.نﯾرﺟﺎﮭﻣﻟا ﻼﺑ شﯾﺷﻣﺗ ﺎﻣ يذھ دﻼﺑﻟا</p>
-  <p>.ﺔﺟﺎﺣ لّ ﻛ ﻲﻓ مﮭﻧﻣ دﻓﺎﺗﺳﺗ ﻲھو ،مھﻼﺑ شﯾﻌﺗ شﻣﺟﻧﺗ ﺎﻣ</p>
-  <p>ةرﻘﺣﻟاو ،ﺔﯾرﺻﻧﻌﻟاو ،تﺎﺳﺎﯾﺳﻟا ﺎﻣأ ،ةرﺟﮭﻟا شوھ ﺎﻣ دﻼﺑﻟا برّ ﺧﯾ ﻲﻠﻟا .</p>
-  <p>:يذھ ﺔﻘﯾﻘﺣﻟا وﻧﯾّ ﺑﻧ شﺎﺑ وﯾﻋدﻧ ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ،رﺑﻣﺳﯾد 18 ﻲﻓ</p>
-  <p>فﻗوﯾ ﻲﺷ لﻛ ،وﺳﺑﺣﻧ نﺎﻛ :ﺎﻧﯾﺑ ﻼﺑ رﺎﮭﻧ »  ! »</p>
-  <p>،ءﻼﻣز ،بﺎﺣﺻ ،نارﯾﺟ ،ثﻟﺎﺛﻟا ﻻو ﻲﻧﺎﺛﻟا ﻻو لوﻷا لﯾﺟﻟا نﻣ ،نﯾرﺟﺎﮭﻣﻟا دﻻوأ ،نﯾرﺟﺎﮭﻣ ،شﻣھدﻧﻋ ﺎﻣ ﻻو قاروأ مھدﻧﻋ سﺎﻧ</p>
-  <p>ّ ُ</p>
-  <p>عراوﺷﻟا ﻲﻓ ﺎﻧﺿﻌﺑ ﻊﻣ اورھﺎظﺗﻧِ  وﺟرﺧﻧو ،ةرﺎﺟﺗﻟاو ،ﺔﻣدﺧﻟا ،ﺔﯾارﻘﻟا وﺳﺑﺣﻧ شﺎﺑ لّ ﻛﻟا — بﻼطو لﺎﻣّ ﻋ:</p>
-</div>
-<ul>
-  <li>وﯾﺎﺗﯾر عﺎﺗﻣ تﺎﯾرودﻟاو نﺎﻧﺎﻣراد نوﻧﺎﻗ ءﺎﻐﻟﺈﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>ﺔﻣدﺧﻟاو ،ﺔﻓﺎﻘﺛﻟا ،ﺔﺣﺻﻟا ،نﻛﺳﻟا ،مﯾﻠﻌﺗﻟا ﻲﻓ :قوﻘﺣﻟا ﻲﻓ ةاوﺎﺳﻣﻟﺎﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>قاروأ شﻣھدﻧﻋ ﺎﻣ ﻲﻠﻟا سﺎﻧﻟا ﺔﯾﻌﺿو ﺔﯾوﺳﺗﺑ وﺑﻟﺎطﻧ شﺎﺑ</li>
-  <li>يرادﻹا زﺎﺟﺗﺣﻻا زﻛارﻣ ورﻛﺳﻧ شﺎﺑ (CRA)</li>
-  <li>ﺔﯾﺷﺎﻔﻟاو ﺔﯾرﺻﻧﻌﻟا دّ ﺿو ،نﻣﺎﺿﺗﻟاو ﺔﯾﻋﺎﻣﺗﺟﻻا ﺔﻟادﻌﻟا ﻊﻣ وﻔﻗوﻧ شﺎﺑ</li>
-</ul>
-<p>َ ✍</p>
-<p>ﺞﻣﺎﻧرﺑﻟﺎﺑ كوﻠﺻوﻧ ةودﻏو رﻼﯾﻣروﻔﻟا رﻣّ ﻋ ،تﺣﺗﻟ طﺑارﻟا ،ﺎﻧﺎﻌﻣ كرﺎﺷﺗ بّ ﺣﺗ اذإ</p>
-<p>󰖝</p>
-    `
-  },
-  'shimaore': {
-    rtl: false,
-    audio: 'assets/audio/audio-shimaore.mp3',
-    content: `
-<div class="intro">
-  <p>“Siku bila sisi : tukikoma, kila kitu kinakoma!”</p>
-  <p>Siku hii inafanyika kwa sababu ya Siku ya Dunia ya Wahamiaji, tarehe 18 Desemba 2025.</p>
-  <p>Hii ni harakati iliyoanzishwa na vikundi vya watu bila makaratasi na wahamiaji, wakitaka mgomo wa</p>
-  <p>umoja na wa kisiasa dhidi ya ubaguzi wa serikali, maisha magumu, na kuvunjwa kwa haki za</p>
-  <p>wahamiaji.</p>
-  <p>Tunaamini kuwa mapambano haya yanatuhusu wote, kwa sababu sheria za kibaguzi na siasa za</p>
-  <p>kutenga watu zinafungua njia kwa ufashisti na kuharibu haki za kila mtu.</p>
-  <p>Makundi, vyama, mashirika na watu wengi wanajiandaa kote Ufaransa kujenga siku hii ya kihistoria.</p>
-</div>
-<ul>
-  <li>Kufutwa kwa sheria ya Darmanin na maagizo ya Retailleau</li>
-  <li>Usawa wa haki kwa wote : elimu, nyumba, afya, utamaduni, kazi</li>
-  <li>Uhalalisho wa watu bila karatasi</li>
-  <li>Kufungwa kwa vituo vya kufungwa (CRA)</li>
-  <li>Haki ya kijamii, mshikamano, na kupinga ubaguzi na ufashisti</li>
-</ul>
-<p>Wito wetu:</p>
-<p>Nchi hii haiendi bila wahamiaji.</p>
-<p>Haiwezi kuwa bila uhamiaji, na inanufaika nao kila siku.</p>
-<p>Siyo wahamiaji wanaoiharibu, bali ni ubaguzi, siasa mbaya na ukosefu wa haki.</p>
-<p>Tarehe 18 Desemba, Siku ya Kimataifa ya Wahamiaji, tunaita watu wote waonyeshe ukweli huu:</p>
-<p>“Siku bila sisi – tukikoma, kila kitu kinakoma!”</p>
-<p>Watu wenye karatasi au bila karatasi, wahamiaji, watoto wa wahamiaji, kizazi cha kwanza, cha</p>
-<p>pili, cha tatu, majirani, marafiki, wafanyakazi, wanafunzi — tutakoma shule, kazi na biashara.</p>
-<p>Tutashuka barabarani pamoja.</p>
-<p>Tunapigania :</p>
-<p>Kama unataka kujiunga nasi, bonyeza kiungo chini, jaza fomu, tutakutumia programu ya</p>
-<p>✍</p>
-<p>harakati.</p>
-<p>󰏫</p>
-    `
-  },
-  'shingazidja': {
-    rtl: false,
-    audio: 'assets/audio/audio-shingazidja.mp3',
-    content: `
-<div class="intro">
-  <p>“Siku ya siye: tukihima, ntsi ha itsindza!”</p>
-  <p>Siku ya 18 Disemba 2025, Siku ya Ulimwengu ya Wahamiaji,</p>
-  <p>harakati hii yandruha na vikundi vya wandru wahe wa bila karatasi na wahe wahamiaji.</p>
-  <p>Inaita kwa mgomo wa mshikamano na wa kisiasa kinyume na ubaguzi wa ntsi,</p>
-  <p>udhalimu, na kudhoofika kwa haki za wandru wahamiaji.</p>
-  <p>Tunaamini kuwa mapambano haya ni yetu wote, kwa sababu sheria za ubaguzi na siasa</p>
-  <p>za kutenga zifungua njia kwa ufashisti na ziharibu haki za kila mntu.</p>
-  <p>Vikundi, vyama, mashirika, na harakati za kijamii ziko kujiunga kote ntsi ya Fransa kujenga</p>
-  <p>siku hii ya kihistoria.</p>
-</div>
-<ul>
-  <li>Kufutwa kwa sheria ya Darmanin na mizunguko ya Retailleau</li>
-  <li>Usawa wa haki kwa wandru wosi : elimu, nyumba, afya, utamaduni, kazi</li>
-  <li>Uhalalisho wa wandru wa bila karatasi</li>
-  <li>Kufungwa kwa mashamba ya kufungwa (CRA)</li>
-  <li>Haki ya kijamii, mshikamano, na upinga ubaguzi na ufashisti</li>
-</ul>
-<p>Wito wetu:</p>
-<p>Ntsi ha itsindza bila wandru wahamiaji.</p>
-<p>Haipo bila wao, na inafaidika nao kila siku.</p>
-<p>Siyo uhamiaji wo haribu ntsi, bali ni siasa, ubaguzi, na udhalimu.</p>
-<p>Tarehe 18 Disemba, Siku ya Ulimwengu ya Wahamiaji, tunaita watu wote wasimame</p>
-<p>pamoja:</p>
-<p>“Siku ya siye – tukihima, ntsi ha itsindza!”</p>
-<p>Wandru wa na karatasi na bila karatasi, wahamiaji, wana wa wahamiaji, wa ngazi ya</p>
-<p>kwanza, ya pili, ya tatu, majirani, marafiki, wafanyakazi, wanafunzi — tutahima kazi, shule,</p>
-<p>biashara, tutavya barabarani pamoja.</p>
-<p>Tunadema :</p>
-<p>Ukedaha kujiunga nasi, gonga kiungo chiye, jaza fomu, nasi tutaambisa programu ya</p>
-<p>✍</p>
-<p>harakati.</p>
-<p>󰎥</p>
-    `
-  },
-  'dyu': {
-    rtl: false,
-    audio: 'assets/audio/audio-dyu.mp3',
-    content: `
-<div class="intro">
-  <p>“Juma ka bɛ an yèrɛ la : ni an taara, ka bɛ taa !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Juma yé kɛ ka fɛɛrɛ Siniya Doni la, 18 décembre 2025, fɔ ka sɔrɔ Siniya Kɛlɛya la</p>
-  <p>̀</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Juma yé bɔli fɛ baara kɛla kɛnɛya ni politikiya fɛ, fɔ ka sɛbɛya fɛ an kɔrɔya ni a kɔnɔya,</p>
-  <p>̀ ̀ ̀</p>
-  <p>ni ka taa raasi ni fɛn kɛlɛya.</p>
-  <p>An b’a fɔ bɛɛ : fɛn ye bɛɛ la, an tɛ kɛ a sisan b’a fɛɛrɛ, a bɛ yɛrɛ ka taa ka fɔrɔ bɛn dɔ.</p>
-  <p>Kɛlɛ ni kɛlɛ bɛɛ bɛ kɛ ni an taara, bɛɛ bɛ taara !</p>
-  <p>Ala ka wèrè, kɛlɛgɛ bɛɛ, jamu bɛɛ, baara kɛlɛ bɛɛ, denw bɛɛ — an bɛ taara baara la, sugu</p>
-  <p>la, sukula la, an bɛ taa ka fɛɛnɛ fɛ an na.</p>
-  <p>An b’a fɔ :</p>
-</div>
-<ul>
-  <li>Ka wuli Darmanin la lɔ ni Retailleau la lɔ</li>
-  <li>Ka sira hakɛ minɛna bɛɛ la : sukula, sugu, hɛrɛ, nyuman ni baara la</li>
-  <li>Ka sɛbɛya jɔgɔw min bɛ tɛ sɔrɔ makɔrɔtasi</li>
-  <li>Ka da CRA la (ka tugu dɔ la min bɛ da)</li>
-  <li>Ka taa hakɛ ni sariya, ka sɔrɔ fɛn fɛ ka taa mɛnkan ni fɛn sɔn bɛɛ</li>
-</ul>
-<p>̀</p>
-<p>̀</p>
-<p>✍</p>
-<p>Ni i b’a fɛ, ka bɔ link dɔ kɔfɛ, ka fɔrmilɛri fɔ, an bɛ i na programu la.</p>
-    `
-  },
-  'bci': {
-    rtl: false,
-    audio: 'assets/audio/audio-bci.mp3',
-    content: `
-<div class="intro">
-  <p>“Blôklô an mô ni : ni an kpô, blôklô be kpô !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Blôklô yi kɛ n’zié 18 décembre 2025, n’na Journée internationale des migrant·e·s.</p>
-  <p>Blôklô yi kɛ n’gban n’bô fɔkɔ mlanmô fê bôli wô wôklô blê, ni bôli mlanmô fê gnanman</p>
-  <p>yaa ni klôa blê.</p>
-  <p>An kpê yé kô yé : blôklô yi hô an bôli klôklô an mô !</p>
-  <p>N’ba ni bôli blê bô na ngbanhoun ya ni yéklê a klô yé, blôklô yi kɛ an mô bô kôbôli n’sêklê.</p>
-  <p>Bôklô ni gbanhoun ni syndicats ni association bô hônn houê France blê bô kô bôli blôklô yi</p>
-  <p>fê.</p>
-</div>
-<ul>
-  <li>Ka wuli Darmanin blê ni Retailleau blê</li>
-  <li>Ka kô ya haké blê klôklô bôli fê : sukula, yôhou, yéklê, klôhoun ni baara blê</li>
-  <li>Ka gban mlanmô min tê sô makrâtasi</li>
-  <li>Ka blô CRA blê (fê min bô n’gban mlanmô)</li>
-  <li>Ka kô ya yôhounmô, blôklô ni anouhounmô, ni kô ya klô sèklô ni klô n’sêklê</li>
-</ul>
-<p>An mô bôli :</p>
-<p>Amuè blê tê kô ya n’siêkpa mlanmô fê.</p>
-<p>N’siêkpa yi tê kô ya n’su klô, ni mlanmô fê bô klô mlanmô ni yaa.</p>
-<p>Sè mlanmô tê kô klô ya n’su, n’su yi kô ya n’sêklê blê, n’siè n’sônmô ni anouhounmô.</p>
-<p>N’zié 18 décembre, bô mlanmô bôli klô :</p>
-<p>“Blôklô an mô ni : ni an kpô, blôklô be kpô !”</p>
-<p>Mlanmô bô makrâtasi ni bô makrâtasi tê, mlanmô bô blôklô, an wôklô bôli fê, n’siêkpa yé kô</p>
-<p>yé, an mô bô kô bôli klô : n’su sukula, n’su baara, n’su makiti, an mô bô blôklô an mô.</p>
-<p>An mô bô klô :</p>
-<p>✍</p>
-<p>Ni i bôli bô klô an mô, ka bô link dɔ kô, ka fôrmilɛri fô, an mô bô i na programu.</p>
-    `
-  },
-  'btb': {
-    rtl: false,
-    audio: 'assets/audio/audio-btb.mp3',
-    content: `
-<div class="intro">
-  <p>“Glé ya ta an lè : bloua ta, glé ta !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Glé ya ta an lè kɛ 18 décembre 2025, li Journée internationale des migrant·e·s.</p>
-  <p>Li glé ya ta yôbô li wè bloua gnan gninhoua ni bloua sran, li ta madohô li bloua wôkpô</p>
-  <p>ni glé gnin gninhoua.</p>
-  <p>An bè gninhoua ta klé : li glé ya ta an lè, li glé ya ta bô an blé.</p>
-  <p>Li glé ya kloua nôhô li wè bloua sran, li bloua gninhoua li tê klôa bô li an yéklê.</p>
-  <p>Wè gninhoua, syndica ni association bô sranhoua li France, bô kléa gnin li glé ya ta an lè.</p>
-  <p>An glé ya ta :</p>
-  <p>Li klôa tê kpê klê gninhoua sran.</p>
-  <p>Li klôa tê sranhoua yé klôa, li gninhoua bloua tê klôa kpê klê gninhoua.</p>
-  <p>Li gninhoua sran tê kôa klôa, klôa sran ni gninhoua bloua ni glé gnin gninhoua.</p>
-  <p>Li 18 décembre, an bè gninhoua bô ta kléa gnin li :</p>
-  <p>“Glé ya ta an lè : bloua ta, glé ta !”</p>
-  <p>Bloua bô makrâtasi ni bô tê makrâtasi, bloua sran, gninhoua sran, bloua ya 1er génération,</p>
-  <p>2e, 3e, gninhoua bô gbanhoua, bô ziahoua, bô baara ni bô sukula — an bô ta klé gninhoua</p>
-  <p>bô sran, bô glé gninhoua sran.</p>
-  <p>An bè gninhoua ta klé :</p>
-</div>
-<ul>
-  <li>Ka wuli Darmanin glé ni Retailleau glé</li>
-  <li>Ka ta ya haké gninhoua kpê : sukula, yôhoua, yéklê, klôhoun ni baara</li>
-  <li>Ka gninhoua bloua min tê sô makrâtasi</li>
-  <li>Ka blô CRA glé (bloua min gninhoua tê kpê)</li>
-  <li>Ka ta ya gninhoua gnin gninhoua, klôa ni gninhoua sran, ni ta ya klôa sèklô ni</li>
-</ul>
-<p>klô gninhoua blé.</p>
-<p>✍</p>
-<p>Ni i bè gninhoua bôli an lè, ka bô link kô, ka fôrmilɛri fô, an bè i na programu.</p>
-<p>󰐺</p>
-    `
-  },
-  'wo': {
-    rtl: false,
-    audio: 'assets/audio/audio-wo.mp3',
-    content: `
-<div class="intro">
-  <p>“Bés bi ñu amul ñu : bu ñu dindi sunu liggéey, lépp dina taxaw !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Bés bi dafay am ci 18 décembre 2025, ngir Bésu Àdduna bu Ñuul yi (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Bés bi dafa taxaw ci jàmmu ak liggéeyu ndimbal, ngir fattu ci ngor gi ñuul gi, lii di</p>
-  <p>njaxlaf ak yàqu xel yi, ak lii di taxawal ci seen doole ak seeni doxalin ci Farans.</p>
-  <p>Nun ñépp, danu xam ne lutte bii, sunu lutte la, ndax sàmmakat yi ak politig yi xees,</p>
-  <p>ñoom lañu wara fattu, ndax ñoom lañuy tekki jàmm ak njàmm, di taxaale sunu doole.</p>
-  <p>Aji-jàmm, syndicá, jaarjaar yi ak aji-mbokk yu bari lañu di jëfandikoo bés bi, ngir dëgg-dëgg</p>
-  <p>defar bés bu mag bi.</p>
-</div>
-<ul>
-  <li>Ñu dindi séy Darmanin ak yeneen ndigëlu Retailleau</li>
-  <li>Ñu jàppale ndimbal ak doole bu mel ne sunu ñépp, ci jàng, kër, dund, cosaan, ak</li>
-  <li>Ñu def doxalin bu dëgg ngir ñu amul ndombo yi</li>
-  <li>Ñu tëj kajoori nguur gi (CRA)</li>
-  <li>Ñu taxaw ngir njàmm, wàllu askan wi, ak fattu ci gor-góorlu ak xees gi</li>
-</ul>
-<p>Sunuy wax:</p>
-<p>Réew mii du dox ndax ñuul yi.</p>
-<p>Du am itam ndax du yitteelu, te du am njariñ ci mbir mu nekk.</p>
-<p>Du ñuul yi ñuy dagg réew mii, waaye lii mooy politig yi, ngor gu ñuul gi ak loolu di</p>
-<p>njàmmu doole.</p>
-<p>Ci 18 décembre, ci Bésu Àdduna bu Ñuul yi, danu naan :</p>
-<p>“Bés bi ñu amul ñu : bu ñu dindi sunu liggéey, lépp dina taxaw !”</p>
-<p>Ñu am ak ñu amul ndombo, ñuul yi, doom yu ñuul yi, ci taali bu jëkk, ci ñaareel, ci ñetteel,</p>
-<p>aji-nawle, aji-mbokk, aji-liggéey, aji-jàngkat — danu dëpp liggéey, jàng, jaay, ngir génn ci</p>
-<p>yoon bi.</p>
-<p>Danu jàngale :</p>
-<p>liggéey</p>
-<p>Bu soo bëggee bokk ak nun, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun</p>
-<p>✍</p>
-<p>di la yóbbu program bi.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'ff': {
-    rtl: false,
-    audio: 'assets/audio/audio-ff.mp3',
-    content: `
-<div class="intro">
-  <p>“Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Ñalnde nde nde waɗi 18 décembre 2025, ko Ñalnde aduna nde e jeegooɓe (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Ko ɗum waɗi ɓurnde e jammaaji e politig, ɗum waɗi ngam ɓe waɗi waɗugol e ɓataaki</p>
-  <p>nguurndam, e maayde, e hakkeeji jeegooɓe e Farayse.</p>
-  <p>Minen ɗiɗo njahdi : liggey ngal e jokkere ngal ena jokkondir e amen fow, ndaar</p>
-  <p>laamateeri e politig ceerii waɗi ko ɓataaki e neenɗo ngam ndokkude hakkunde e ndimu.</p>
-  <p>Goɗɗi ɗiɗo, sindikaaji, jaaɓe, e heewɓe moƴƴi ena heddii e Farayse ngam waɗde e nder</p>
-  <p>ɗiɗo ngal ñalnde mawɗo.</p>
-</div>
-<ul>
-  <li>Waɗtu leyɗe Darmanin e Retailleau</li>
-  <li>Jokkitir hakkunde heen e ɗoɓɓe fow : e jango, e galle, e jom cewɗe, e al’ada, e</li>
-  <li>Hollude dowka jeegooɓe ɓe wonaa makaratase</li>
-  <li>Udditde cewre nguurndam (CRA)</li>
-  <li>Feddirde e hakkunde e jam, e wakkilal, e ndeenɗo, e fenaare ɓataaki ak fascisme</li>
-</ul>
-<p>Kalam amen :</p>
-<p>Leydi nde waawaani e hoore mum so wonaa jeegooɓe.</p>
-<p>Leydi nde waawaani e hoore mum so wonaa ɓe, ndaar e jeegooɓe ko waɗi wonande</p>
-<p>moƴƴere.</p>
-<p>Ko wonaa jeegooɓe waɗi leydi nde njahda, waaye ko politig, laamateeri e neenɗo</p>
-<p>ɗiɗo.</p>
-<p>Ñalnde 18 décembre, e ñalnde aduna nde e jeegooɓe, minen ɗiɗo njahdi :</p>
-<p>“Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !”</p>
-<p>Jeegooɓe e ɓe wonaa makaratase, ɓe nden, jowɗo jeegooɓe, ɓe taɓo, ɓe aduno, ɓe</p>
-<p>jiɓinirde — minen ɗiɗo njahdi e duuɓi, e baɗte, e wurooɓe, ngam waɗde galle ɗiɗo.</p>
-<p>Minen ɗiɗo ɗaɓɓi :</p>
-<p>liggey</p>
-<p>So a yiɗi heɓde e amen, ɗooɗtu e link ngal, rew e formilaar ngal, minen ɗiɗo nanndi-ma</p>
-<p>✍</p>
-<p>program ngal.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'serere': {
-    rtl: false,
-    audio: 'assets/audio/audio-serere.mp3',
-    content: `
-<div class="intro">
-  <p>“Ngéén jaamu ji ñu amul : bu ñu jooy, lépp dina jooy !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Ngéén jaamu ji ñu amul dafay am ci 18 décembre 2025, ngir ngéén aduna bu ñuul yi</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Ngéén jaamu ji ñu amul dafay tànn mbir mu jëmm ak politig, ngir jooy ci doole ju xees,</p>
-  <p>jafe-jafe ak mbugal ci njàng, nguur ak dund ci Farãs.</p>
-  <p>Ñu ngi faale ne : lii mooy sunu mbir bopp, ndax mboolem njiitu nguur ak politig yu xees</p>
-  <p>dañuy def lu yàq sañ-sañu ñuul yi ak sañ-sañu askan wi yépp.</p>
-  <p>Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko bés bu mag bu</p>
-  <p>jàmm ak doole.</p>
-</div>
-<ul>
-  <li>Ñu dindi loi Darmanin ak Retailleau</li>
-  <li>Ñu jàppale ndimbal ak doole bu mel ne sunu ñépp, ci jàng, kër, dund, jàmm, ak</li>
-  <li>Ñu def sañ-sañ bu dëgg ngir ñu amul ndombo yi</li>
-  <li>Ñu tëj kajoori nguur gi (CRA)</li>
-  <li>Ñu jëf ngir jàmm, doole ak sago askan wi, ak fattu ci xees ak fascisme</li>
-</ul>
-<p>Sunuy wax :</p>
-<p>Réew mii du dox ndax ñuul yi.</p>
-<p>Du am itam so du jël sa doole ci ñoom.</p>
-<p>Du ñuul yi ñuy dagg réew mii, waaye politig ak jafe-jafe lañu tax.</p>
-<p>Ci 18 décembre, bésu aduna bu ñuul yi, danu naan :</p>
-<p>“Ngéén jaamu ji ñu amul : bu ñu jooy, lépp dina jooy !”</p>
-<p>Ñu am ak ñu amul ndombo, ñuul yi, doom yu ñuul yi, ñaari taali, ñetteel, aji-jàngkat,</p>
-<p>aji-liggéey, aji-sell — danu dëpp liggéey, jàng, jaay, ngir génn ci yoon bi ak sunu bopp.</p>
-<p>Danu tàbbi :</p>
-<p>liggéey</p>
-<p>So bëgg nga bokk, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun di la</p>
-<p>✍</p>
-<p>yóbbu program bi.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'diola-joola-fogny': {
-    rtl: false,
-    audio: 'assets/audio/audio-diola-joola-fogny.mp3',
-    content: `
-<div class="intro">
-  <p>“Abaŋ aneŋ ñi : kaŋ ankaŋ, baŋ ankaŋ !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Abaŋ aneŋ ñi aŋul beŋ 18 décembre 2025, eneŋ Abaŋ a dunia e baŋu-mbaŋ (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Abaŋ aneŋ ñi, eŋu di afañ e kanyin baŋu, afañ e politiki, ngir baŋu kufu, kanyin, ak</p>
-  <p>kasum e saŋa yi.</p>
-  <p>Eŋu fiŋ eneŋ : baŋu yaŋ eneŋ ñi, baŋu yaŋ eneŋ ñi bubaŋ !</p>
-  <p>Abaŋ aneŋ ñi eŋu di afañ ngir kaw e joola yi, ak ñi bubaŋ beŋ Francia, ngir eŋu kuñul,</p>
-  <p>kaŋ ankaŋ ak bubaŋ.</p>
-  <p>Ñi eŋu buñu, ak sindika, ak kuñul yi beŋ Francia, eŋu baŋu ngir di akeneŋ e abaŋ aneŋ ñi bu</p>
-  <p>mag.</p>
-  <p>Ankaŋ aŋu :</p>
-  <p>Baŋu kasum beŋu ñi bubaŋ yi.</p>
-  <p>Kasum aŋul beŋ ñi bubaŋ, eŋu ñi bubaŋ aŋu naŋu kasum.</p>
-  <p>Ñi bubaŋ aŋul beŋ baŋu kufu kasum, baŋu kufu ñi aŋu ñi bubaŋ, ak politiki yi.</p>
-  <p>Beŋ 18 décembre, abaŋ a dunia e baŋu-mbaŋ, eŋu baŋu :</p>
-  <p>“Abaŋ aneŋ ñi : kaŋ ankaŋ, baŋ ankaŋ !”</p>
-  <p>Ñi bubaŋ ak ñi amul karatasi, ñi bubaŋ yi, ñi baŋu-mbaŋ yi, ñi taali yi, ñi akaneŋ ak ñi liggey</p>
-  <p>— eŋu kaŋ ankaŋ e baŋu sukul, e liggey, e kasum, eŋu baŋu baŋu-mbaŋ.</p>
-  <p>Eŋu baŋu :</p>
-</div>
-<ul>
-  <li>Kaŋu loi Darmanin ak Retailleau</li>
-  <li>Kaŋu hakë beŋ ñi bubaŋ ñi ñi yépp, e sukul, e kasum, e jam, e kultura, e liggey</li>
-  <li>Kaŋu hakë ñi amul karatasi yi</li>
-  <li>Kaŋu tey jofe yi (CRA)</li>
-  <li>Kaŋu hakë jam, baŋu beŋ ñi bubaŋ, eŋu kuñul, ak kasum e xees ak fascisme</li>
-</ul>
-<p>✍</p>
-<p>So aŋul beŋ naŋu, kaŋ link baŋ beŋ, fut formileer, eŋu baŋu ñi jool program bi.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'snk': {
-    rtl: false,
-    audio: 'assets/audio/audio-snk.mp3',
-    content: `
-<div class="intro">
-  <p>“Janna ka n’a te an ma : n’an ta, le bɛ ta !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Janna n’a be ta 18 décembre 2025, ka taa Duniya ka janna ta iɲaŋu (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Janna n’a n’a be naamu ka toɔma ani politiki ka naamu, ka fɔ dankunyaa ani laahuraa,</p>
-  <p>ka ɗa a jaŋɛ ka faaŋe ani a naamuya e Faransi.</p>
-  <p>An be fɔ : n’a la be an bɛɛ ka taa, an n’a be naamu ka taa.</p>
-  <p>Laha n’a be taa n’a jaamu ta iɲaŋu la, ndax a ye ngoro ani laahuraa n’a bɛ ka da faaŋe ka</p>
-  <p>laahuraa.</p>
-  <p>Tilenmu, sindika ani jamu be Faransi la, n’a be n’aamu ka janna n’a ta ka naamu.</p>
-</div>
-<ul>
-  <li>Ka Darmanin ani Retailleau ka sɛbɛ</li>
-  <li>Ka hakɛ la be bɛɛ la : sukuru, so, hɛrɛ, kulturu ani baara</li>
-  <li>Ka iɲaŋu min tɛ makaratasi ka faaŋe</li>
-  <li>Ka CRA ka sɛbɛ (ka taa dɔnna min naamu)</li>
-  <li>Ka hakɛ ani laahuraa, ka taa jamu ani laahuraa, ka faaŋe xees ani fascismu.</li>
-</ul>
-<p>An naamu :</p>
-<p>Duniya la mɛn tɛ taa bila iɲaŋu.</p>
-<p>A tɛ be taa bila an naamuya la, ani an bɛɛ be faaŋe a la.</p>
-<p>A tɛ iɲaŋu be naamu duniya la, waaye politiki ani laahuraa n’a be faaŋe.</p>
-<p>18 décembre, duniya ka janna ta iɲaŋu la, an be fɔ :</p>
-<p>“Janna ka n’a te an ma : n’an ta, le bɛ ta !”</p>
-<p>Iɲaŋu ani n’a be makaratasi, n’a be iɲaŋu la, iɲaŋu denmɛ ta 1er, 2ème ani 3ème kelen,</p>
-<p>jamu, sɛnɛkɛ, mɔgɔw ani jamanaw — an be ta baara, sukuru ani suguba, ka taa sɛbɛɛnɛ.</p>
-<p>An be naamu :</p>
-<p>✍</p>
-<p>N’a i be se be taa an na, duguma linku la, furu formilɛɛri la, an be i na programu la.</p>
-<p>󰎨</p>
-<p>CAMEROUN</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'ewo': {
-    rtl: false,
-    audio: 'assets/audio/audio-ewo.mp3',
-    content: `
-<div class="intro">
-  <p>“Mvog mè an yi : nda an ba’a, mè bɛ̂  ba’a !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Mvog mè an yi é mininga 18 décembre 2025, mè nloé Journée internationale des</p>
-  <p>migrant·e·s.</p>
-  <p>Mvog a yi ndé nloé mbong o ndingan a sɔŋ e meyené, ngir bɔlo e ndingan a nganan e</p>
-  <p>mvet, e meyené nloé eton e nkukuma nloé France.</p>
-</div>
-<ul>
-  <li>Nda a ba’a loi Darmanin é Retailleau</li>
-  <li>Nda meyené e ndingan meyené a sɔŋ, é mvet, e nkukuma, e mbolo, e meyené</li>
-  <li>Nda meyené é ngɔ e nnam nloé é bɛ̂  bɔlo</li>
-  <li>Nda nkukuma é ngɔ e mvet (CRA)</li>
-  <li>Nda meyené e ndingan a sɔŋ, e meyené a ndingan a ngɔ e nnam, é bɛ̂  bɔg é</li>
-</ul>
-<p>An bɔg e naŋ : a mbɔg maŋa mininga an bɔg a yi an bɔg bɛn !</p>
-<p>É bɛ̂  meyené e nganan, é bɔlo meyené a bɔg, é yèm a ngɔ e mvet, a nganan é bɛ̂  meyené</p>
-<p>e ndingan a nlong.</p>
-<p>Ngumba, syndicà, meyené e mefo, e nkukuma nloé France, é nloé meyené é bɛ̂  bɔg e mvog</p>
-<p>mè a yi.</p>
-<p>Meyené mè an bɔg :</p>
-<p>Nnam ndé a tɛ kɛ é ndingan meyené.</p>
-<p>́ ́</p>
-<p>A tɛ bɛ̂  kɛ é sɔŋ, é meyené bɛ̂  nloé a ngɔ e nkukuma.</p>
-<p>́ ́</p>
-<p>A bɛ̂  meyené é ngɔ e nkukuma, wa meyené é bɛ̂  e meyené a bɔlo.</p>
-<p>Nloé 18 décembre, é meyené nloé e meyené é ngɔ e nkukuma, an bɔg :</p>
-<p>“Mvog mè an yi : nda an ba’a, mè bɛ̂  ba’a !”</p>
-<p>Meyené é nloé e bɛ̂  é bɔlo, é meyené é ngɔ e nnam, é bɛ̂  é ngɔ e nkukuma nloé : meyené é</p>
-<p>jɔ mvet, e ndingan, e nkukuma, é bɛ̂  bɔg é meyené é nloé.</p>
-<p>́</p>
-<p>An bɔg :</p>
-<p>meyené a ngɔ e mvet e meyené e nganan.</p>
-<p>✍</p>
-<p>So a bɔg a ngɔ é nnam, fɔ link nloé, si formilɛɛr, an bɛ̂  a yɔ programme.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'dua': {
-    rtl: false,
-    audio: 'assets/audio/audio-dua.mp3',
-    content: `
-<div class="intro">
-  <p>“Mokolo ma wɛna biso te : soki biso to kende, nyonso e kende !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Mokolo ma wɛna biso te ma koki 18 décembre 2025, mpo na mokolo ya bato ya mboka</p>
-  <p>mosusu (Journée internationale des migrant·e·s).</p>
-  <p>Mokolo oyo ezali na boyokani mpe politika, mpo na kobunda na mobulu ya etat, pasi ya</p>
-  <p>mosala mpe kobebisama ya makoki ya bato ya mboka mosusu na France.</p>
-  <p>Biso nyonso to yebi : kobunda oyo ezali mpo na biso nyonso, pamba te makambo ya</p>
-  <p>mobulu mpe politike ya kopengola bato ezali kobebisa boyokani mpe makoki ya bato</p>
-  <p>nyonso.</p>
-  <p>Bato mingi, basindika, mpe mabongisi ya bato bazali kozwa mosala mpo na kosala mokolo</p>
-  <p>oyo ya monene elongo.</p>
-</div>
-<ul>
-  <li>Kolongola mibeko Darmanin mpe makambo ya Retailleau</li>
-  <li>Kobatela makoki ya bato nyonso : kelasi, ndako, bokolɔ, makambo ya culture mpe</li>
-  <li>Kopesa bapapiɛ na bato oyo bazali na te</li>
-  <li>Koboma bisika ya kofunda bato (CRA)</li>
-  <li>Kosala mpo na boyokani, bomoko mpe kobunda na mobulu mpe fascisme</li>
-</ul>
-<p>Maloba na biso :</p>
-<p>Mboka oyo ekoki te kozala te soki bato ya mboka mosusu te.</p>
-<p>Ezali na bango nde mboka ezali kobika, mpe mboka ezali komona bolamu na bango.</p>
-<p>Ezali te bango bato bazali kobebisa mboka, kasi ezali politike mpe mobulu.</p>
-<p>Na 18 décembre, na mokolo ya bato ya mboka mosusu, to lobeli :</p>
-<p>“Mokolo ma wɛna biso te : soki biso to kende, nyonso e kende !”</p>
-<p>Bato bazali na bapapiɛ mpe oyo bazali na te, bato ya mboka mosusu, bana ya bato ya</p>
-<p>mboka mosusu, ya liboso, ya mibale, ya misato, baninga, bavandi, basali, bayekoli —</p>
-<p>tokoboya kelasi, mosala, zando, mpe tokokende kosala manifestation elongo.</p>
-<p>Tosɛngi :</p>
-<p>mosala</p>
-<p>Soki olingi kozala elongo na biso, finá na lien oyo, tála formilɛr, mpe tokotindela yo</p>
-<p>✍</p>
-<p>programme.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'bas': {
-    rtl: false,
-    audio: 'assets/audio/audio-bas.mp3',
-    content: `
-<div class="intro">
-  <p>“Mɛŋɛ ma nɔ an : ni an dɔ, bɛŋɛ ma dɔ !”</p>
-  <p>̀</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Mɛŋɛ ma nɔ an yi 18 décembre 2025, po mɛŋɛ nji bɔ ǹdiŋ bô njambɛ (Journée</p>
-  <p>̀</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Mɛŋɛ nɔ an yi ngɔnyɛ ni mbom, po ndé mɛ njɔŋ, mɛ ǹdiŋ ni mbôm, ni mɛ lɛ bɔli njambɛ</p>
-  <p>̀</p>
-  <p>bô France.</p>
-  <p>An bô nyi : mɛŋɛ nɔ an yi an nyi, mɛŋɛ nɔ an yi an dɔ !</p>
-  <p>̀ ̀</p>
-  <p>Ndé njambɛ bô njambɛ, mɛ njɔŋ ni mɛ ǹdiŋ yi bô, njambɛ ǹdiŋ yi bô, mɛ njɔŋ bô mɛn, a ǹdiŋ</p>
-  <p>ǹdiŋ, a bô lɛ ǹdiŋ bô njambɛ.</p>
-  <p>Bô njambɛ, syndicà, mbombog ni mbôm njambɛ bô France yi bô ngɔnyɛ ni mɛŋɛ nɔ an yi.</p>
-  <p>̀</p>
-  <p>Nyambe an yi :</p>
-  <p>Ǹlo bô tɛ bô njambɛ ǹdiŋ.</p>
-  <p>́</p>
-  <p>A tɛ bô njambɛ ǹdiŋ, mɛ njambɛ ǹdiŋ yi bô lɛ mɛn.</p>
-  <p>́</p>
-  <p>Mɛ njambɛ ǹdiŋ yi bô lɛ mɛn, wa mɛ njɔŋ ni mɛ ǹdiŋ yi bô njambɛ.</p>
-  <p>Ǹlo 18 décembre, mɛŋɛ nji bô njambɛ, an yi :</p>
-  <p>“Mɛŋɛ ma nɔ an : ni an dɔ, bɛŋɛ ma dɔ !”</p>
-  <p>̀</p>
-  <p>Njambɛ bô njambɛ ni njambɛ ǹdiŋ, njambɛ ǹdiŋ bô njambɛ, njambɛ mɛn yi ngɔnyɛ, njambɛ bô</p>
-  <p>nyi bô njambɛ, njambɛ ǹdiŋ yi bô njambɛ, a ǹdiŋ bô lɛ ǹdiŋ bô njambɛ : an bô dɔ bô njambɛ,</p>
-  <p>bô mbôm, bô mbɔm, an yi lɛ bô njambɛ.</p>
-  <p>An yi bô :</p>
-</div>
-<ul>
-  <li>Bô kôli mɛ lɛ Darmanin ni Retailleau</li>
-  <li>Bô nyi lɛ njambɛ ǹdiŋ bô njambɛ bô njambɛ : mbôm, mbɔm, mbombog, mbôm</li>
-  <li>Bô nyi njambɛ ǹdiŋ bô njambɛ bô njambɛ bô njambɛ bô njambɛ ǹdiŋ</li>
-  <li>Bô nyi mɛ CRA (mbôm njambɛ ǹdiŋ)</li>
-  <li>Bô nyi lɛ njambɛ, mbôm ni mbombog njambɛ, bô njambɛ ǹdiŋ ni njambɛ ni mɛ</li>
-</ul>
-<p>ni mɛ njambɛ</p>
-<p>njambɛ ǹdiŋ.</p>
-<p>✍</p>
-<p>Ni a bô ngɔ nyi njambɛ an yi, fɛ link bô, fɔrmilɛr bô, an yi a ǹdiŋ bô programme.</p>
-<p>󰐄</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'bambara-bamanankan': {
-    rtl: false,
-    audio: 'assets/audio/audio-bambara-bamanankan.mp3',
-    content: `
-<div class="intro">
-  <p>“Don o be an ye : ni an taara, fɛ ka taa !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Don o be yɛrɛma 18 décembre 2025, ka taa Duniya don kan ka yɛrɛma (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Don o ye bɛɛ sininɛ fɔlɔw ka daminɛ ni i ni kɛla bɛɛ ka tɔrɔ, fɔ ka b’a fɛ b’a dɔ kunu ye,</p>
-  <p>ka b’a bɔ nyɛman na, ni ka sigida yɛrɛma ka fɛɛrɛya Faransi la.</p>
-  <p>An b’a fɔ bɛɛ : don o ye an don, an b’a fɔ bɛɛ la !</p>
-  <p>Ni a ye so, politike ni faamuya kɛ b’a la fɔ ka jigin fɔ n’u bɛɛ, a bɛ sɔrɔ la ka bɔ n’i hakɛ ni</p>
-  <p>kɛlɛya la.</p>
-  <p>Sindika, jamuw ni fɛɛnɛ kɛla bɛɛ be b’a yɛrɛma Faransi la, bɛɛ be b’a fɛ ka kɛ don o ka</p>
-  <p>yɛrɛma, don ba kɛrɛkɛrɛ.</p>
-  <p>An fɔlɔya :</p>
-  <p>Dɔw ye tɛ se ka sɔrɔ bila yɛrɛma.</p>
-  <p>A tɛ be taa bila i ni yɛrɛma la, a be nɔgɔya ni fɛɛrɛ sɔrɔ b’a la.</p>
-  <p>A tɛ yɛrɛma ye b’a bɔ nyɛman na, waaye politike ni hakɛya min b’a kɛ.</p>
-  <p>Ka 18 décembre, ka don kan ka yɛrɛma la, an b’a fɔ :</p>
-  <p>“Don o be an ye : ni an taara, fɛ ka taa !”</p>
-  <p>Yɛrɛma ni yɛrɛma min tɛ makaratasi, denw min bɛɛ ye yɛrɛma denw, taali fɔlɔ, taali fila, taali</p>
-  <p>saba, jamu, fɛɛnɛ, baara kɛla ni sɛbɛnniw — an b’a taara baara la, sɛbɛnni la, sugu la, ka</p>
-  <p>taa sigida la kɛrɛkɛrɛ.</p>
-  <p>An b’a fɔ :</p>
-</div>
-<ul>
-  <li>Ka bo loi Darmanin ni Retailleau</li>
-  <li>Ka yɛrɛ hakɛ bɛɛ la : sɛbɛnni, so, dɔgɔkun, kulture ni baara</li>
-  <li>Ka yɛrɛma min tɛ makaratasi ka sɛbɛya</li>
-  <li>Ka da tɔɔrɔso (CRA)</li>
-  <li>Ka kɛ hakɛ ni kɛlɛya, ni jamu ni fɔlɔya fɔ ka fɛɛrɛya ni fashisimu ta.</li>
-</ul>
-<p>Ni i b’a fɛ ka b’a yɛrɛma an na, ka sɛbɛn linku min bɛ kɔfɛ, ka sɛbɛn formilɛri, an bɛ i na</p>
-<p>programu la.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'ln': {
-    rtl: false,
-    audio: 'assets/audio/audio-ln.mp3',
-    content: `
-<div class="intro">
-  <p>“Mokolo ya biso te : soki biso to tiká mosala, nyonso e tiká !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Mokolo oyo ekozala 18 décembre 2025, mpo na mokolo ya bato ya mboka mosusu</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Mokolo oyo esalami mpo na kosɛnga boyokani mpe greve ya politiki, mpo na kobunda</p>
-  <p>na boyibi ya makoki, na mobulu ya etat, mpe na ndenge oyo bato ya mboka mosusu</p>
-  <p>bazali kobebisama na France.</p>
-  <p>Biso nyonso toyebi ete likambo oyo ezali mpo na biso nyonso, pamba te mobulu mpe</p>
-  <p>mobeko ya kopengola bato ebotaka bokasi ya bato nyonso mpe ebotaka nzela ya</p>
-  <p>fascisme.</p>
-  <p>Bato ya misala, syndicá, lisanga, mpe bato ya culture bazali kotala ndenge ya kosala elongo</p>
-  <p>mokolo oyo ya monene.</p>
-</div>
-<ul>
-  <li>Kolongola mobeko Darmanin mpe ba circulaire ya Retailleau</li>
-  <li>Kopesa bato nyonso makoki moko : na kelasi, ndako, nzoto malamu, culture</li>
-  <li>Kopesa bapapié na bato oyo bazali na yango te</li>
-  <li>Koboma ba centre ya kokanga bato (CRA)</li>
-  <li>Kosala mpo na bosembo, boyokani, mpe kobunda na mobulu mpe fascisme.</li>
-</ul>
-<p>Maloba na biso :</p>
-<p>Mboka oyo ekoki te kozala soki bato ya mboka mosusu te.</p>
-<p>Ezali bango nde bakotisi bomoi, mayele mpe makasi na mboka.</p>
-<p>Ezali te bango bazali kobebisa mboka, kasi ezalaki politiki mabe, mobulu mpe</p>
-<p>bosembo te.</p>
-<p>Na mokolo ya 18 décembre, na mokolo ya bato ya mboka mosusu, biso tolingi kolakisa</p>
-<p>boye :</p>
-<p>“Mokolo ya biso te : soki biso to tiká mosala, nyonso e tiká !”</p>
-<p>Bato nyonso — ba oyo bazali na papye to te, bana ya bato ya mboka mosusu, mibali, basi,</p>
-<p>ba oyo bazali na mibu ebele o mboka, bayekoli, basali — tokotika kelasi, mosala, mpe</p>
-<p>zando, mpo tokende kolakisa esika nyonso.</p>
-<p>Tosɛngi :</p>
-<p>mpe mosala</p>
-<p>Soki olingi kozala elongo na biso, finá link oyo awa, kotá formilɛr, mpe tokotindela yo</p>
-<p>✍</p>
-<p>program ya mokolo yango.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'kg': {
-    rtl: false,
-    audio: 'assets/audio/audio-kg.mp3',
-    content: `
-<div class="intro">
-  <p>“Bansi ya beto te : bila beto tuvua, makambu yonso me vuvama !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Bansi yai me salama na 18 décembre 2025, sambu na Bansi ya Banguna ya Mfinda</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Bansi yai ke lombaka kisalu ya kimvuka mpi ya politiki, sambu na kubundisa luvunu ya</p>
-  <p>bukongo, ntwala ya ngangu ya nsi mpi kubebisa makoki ya banguna ya mfinda na</p>
-  <p>France.</p>
-  <p>Beto nyonso to yindula nde luzingu yai ke tangula beto nyonso, sambu mibeko ya</p>
-  <p>luvunu mpi bampangi ya kupwisana bantu ke bumbaka nzila ya fashisimu mpi ke</p>
-  <p>matisa luvunu ya bantu nyonso.</p>
-  <p>Bampangi ya kisalu, basindika, banzila ya kimvuka mpi ba-association ya bukanda ke</p>
-  <p>lombaka kusala sambu beto nyonso tubaka bansi yai ya nkaka.</p>
-  <p>Mambu ma beto :</p>
-  <p>Nsi yai ke lembaka bila banguna ya mfinda ve.</p>
-  <p>Ake lombaka banguna yai sambu na kisalu mpi kisadi.</p>
-  <p>Banguna yai ke bebisa ve nsi, kansi mibeko mabe mpi luvunu ya batu.</p>
-  <p>Na 18 décembre, na Bansi ya Banguna ya Mfinda, beto ke yindula boye :</p>
-  <p>“Bansi ya beto te : bila beto tuvua, makambu yonso me vuvama !”</p>
-  <p>Banguna ya makanda, ya mpasi, bantu ya mboka, bana ya banguna ya mfinda, baleke,</p>
-  <p>bafuku, bampangi, basadi, balume, baoyo ke sala kisalu, bayekoli — beto ta vutula kisalu,</p>
-  <p>kisikola mpi zandu sambu tubunda kimvuka.</p>
-  <p>Beto ke lomba :</p>
-</div>
-<ul>
-  <li>Kumona na mambu ma Darmanin mpi ma Retailleau</li>
-  <li>Kupesa makoki ma mosi na bantu nyonso : na kisikola, ndaku, nitu, mambu ma</li>
-  <li>Kuyindula bantu ya nsi ke na papié ve</li>
-  <li>Kuvanda ba CRA (centres ya kukanga bantu)</li>
-  <li>Kusala sambu na kimvuka, luzingu mpi kubundisa luvunu mpi fashisimu.</li>
-</ul>
-<p>nkanda mpi kisalu</p>
-<p>Soki nge ke zola kuvanda na beto, landa link yai awa, samba formilɛri, mpi beto ta tuma</p>
-<p>✍</p>
-<p>nge program ya kisalu.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'lua': {
-    rtl: false,
-    audio: 'assets/audio/audio-lua.mp3',
-    content: `
-<div class="intro">
-  <p>“Dîba dijîtu dîetu te : neetu tuima, bintu bionso biima !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Dîba dijîtu dîetu dijîka mu 18 décembre 2025, dîba dîa bantu batushîmi ku mîpîa</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Dîba yîyi dijîka ngand’a budikadîla ne ngand’a politiki, ku bikadila bukuba bwa ditunga,</p>
-  <p>busansha bwa bantu, ne kudibula dîba dia makoki a bantu bashîmi ku France.</p>
-  <p>Bisu bionso tu yîka ne tudîba dinû dîetu, mu kashintuluka ka bupûmba bwa bantu</p>
-  <p>batushîmi ke bulembo bwa bisu bionso.</p>
-  <p>Mibeko ya kashintuluka ne politiki dîa busansha bantu diatshikîda nzila ya fashisimu</p>
-  <p>ne disansha makoki a bantu bionso.</p>
-  <p>Bantu ba misala, ba sindika, ba nganda, ne ba dikanda di bukanda bionso bashîmi, batu</p>
-  <p>bâyi ku dîba dîyi mu muoyo, mu kuimuna ne mu kumona.</p>
-  <p>Ditabuja dîetu :</p>
-  <p>Ditunga diayi diikala te bila bantu bashîmi.</p>
-  <p>Bantu bashîmi be batungula ditunga, be bapesha makalenge ne muoyo.</p>
-  <p>Kabîla ke bantu bashîmi be babebesha ditunga, waaye mibeko ne politiki ya</p>
-  <p>busansha bantu.</p>
-  <p>Mu 18 décembre, mu dîba dîa bantu bashîmi, bisu tu bîka :</p>
-  <p>“Dîba dijîtu dîetu te : neetu tuima, bintu bionso biima !”</p>
-  <p>Bantu bashîmi, ba badi na mapapié ne ba badi na te, bana ba bantu bashîmi, mikoka ya</p>
-  <p>ntuadî, ya muakalanyi, ya musatu, bena dîba, balume ne basadi, bana ba misala, banyîmi</p>
-  <p>ba biletu — tutshipa ku misala, ku mashikola ne ku bisika bia kusombesha, ne tuimuna</p>
-  <p>ne tuima dîba dîa bukanda.</p>
-  <p>Tu bîka :</p>
-</div>
-<ul>
-  <li>Kusenzula mibeko ya Darmanin ne ma circulaire a Retailleau</li>
-  <li>Kupesha makoki a muoyo ku bantu bionso : ku mashikola, mu ndaku, mu</li>
-  <li>Kupesha mapapié ku bantu bashîmi abadi na te</li>
-  <li>Kukaba bipanda bia kukanga bantu (CRA)</li>
-  <li>Kubaka bua bupole, budikadîla ne busosô bwa bantu, ne kubunda busansha</li>
-</ul>
-<p>mukole, mu dikanda, mu misala</p>
-<p>bantu ne fashisimu.</p>
-<p>Ne udi ne mîkanda ya kubikala ne bisu, fut’a linku yîyi, fut’a formilɛri, ne tuaku tumina</p>
-<p>✍</p>
-<p>program ya dîba dîyi.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'sw': {
-    rtl: false,
-    audio: 'assets/audio/audio-sw.mp3',
-    content: `
-<div class="intro">
-  <p>“Siku bila sisi : tukisimama, kila kitu kinasimama !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Siku hii itafanyika tarehe 18 Desemba 2025, kwa heshima ya Siku ya Kimataifa ya</p>
-  <p>Wahamiaji (Journée internationale des migrant·e·s).</p>
-  <p>Siku hii ni mwito wa mgomo wa umoja na wa kisiasa, kupinga ubaguzi wa serikali,</p>
-  <p>maisha magumu, na kuporomoka kwa haki za wahamiaji nchini Ufaransa.</p>
-  <p>Sisi sote tunaamini kwamba mapambano haya yanatuhusu wote, maana sheria za</p>
-  <p>kibaguzi na siasa za kutenga watu zinafungua njia ya ufashisti na kudhoofisha haki za</p>
-  <p>kila mtu.</p>
-  <p>Vyama, mashirika, na watu wa sekta zote wanajiandaa nchini Ufaransa kujenga siku hii ya</p>
-  <p>kihistoria pamoja.</p>
-  <p>Kauli Yetu :</p>
-  <p>Nchi hii haiwezi kuendelea bila wahamiaji.</p>
-  <p>Haiwezi kuishi bila wao, na inanufaika nao kila siku.</p>
-  <p>Si wahamiaji wanaoiharibu, bali ni siasa mbaya, ubaguzi na ukosefu wa haki.</p>
-  <p>Tarehe 18 Desemba, katika Siku ya Kimataifa ya Wahamiaji, tunasema :</p>
-  <p>“Siku bila sisi : tukisimama, kila kitu kinasimama !”</p>
-  <p>Watu wenye makaratasi au wasio nayo, wahamiaji, watoto wa wahamiaji, kizazi cha kwanza,</p>
-  <p>cha pili, cha tatu, majirani, marafiki, wafanyakazi na wanafunzi — tutasimama kazi, shule,</p>
-  <p>biashara, na tutatoka kwa maandamano pamoja.</p>
-  <p>Tunapigania :</p>
-</div>
-<ul>
-  <li>Kufutwa kwa sheria ya Darmanin na maagizo ya Retailleau</li>
-  <li>Usawa wa haki kwa wote : katika elimu, makazi, afya, utamaduni na kazi</li>
-  <li>Kuhalalishwa kwa watu wasio na makaratasi</li>
-  <li>Kufungwa kwa vituo vya kizuizi (CRA)</li>
-  <li>Haki ya kijamii, mshikamano, na kupinga ubaguzi na ufashisti</li>
-</ul>
-<p>Kama unataka kujiunga nasi, bonyeza kiungo chini, jaza fomu, nasi tutakutumia mpango</p>
-<p>✍</p>
-<p>wa siku hiyo.</p>
-<p>󰐁</p>
-    `
-  },
-  'mg': {
-    rtl: false,
-    audio: 'assets/audio/audio-mg.mp3',
-    content: `
-<div class="intro">
-  <p>MALAGASY</p>
-  <p>“Andro tsy misy izahay : raha mijanona izahay, dia mijanona ny</p>
-  <p>zava-drehetra !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Ity hetsika ity dia hatao amin’ny 18 Desambra 2025, ho fankalazana ny Andro</p>
-  <p>Iraisam-pirenena ho an’ny Mpifindra-monina (Journée internationale des migrant·e·s).</p>
-  <p>Ity andro ity dia antso ho amin’ny fitokonana iray mifototra amin’ny firaisankina sy ny</p>
-  <p>politika, manohitra ny fanjakan’ny fanavakavaham-bolon-koditra, ny fahantrana ary ny</p>
-  <p>famerana ny zon’ny mpifindra-monina any Frantsa.</p>
-  <p>Izahay rehetra dia mino fa ity tolona ity dia an’ny tsirairay sy ny rehetra, satria ny lalàna</p>
-  <p>sy ny politika manavakavaka dia mametraka lalana ho amin’ny jadona sy manimba ny</p>
-  <p>zon’ny olon-drehetra.</p>
-  <p>Fikambanana, sendika, hetsika ara-kolontsaina sy ara-tsosialy maro no mivondrona</p>
-  <p>manerana an’i Frantsa mba hananganana miaraka ity andro lehibe ity.</p>
-  <p>Ny Antso ataonay :</p>
-  <p>Tsy afaka mandeha ity firenena ity raha tsy eo ny mpifindra-monina.</p>
-  <p>Tsy misy izy raha tsy misy ny fifindra-monina, ary mandray soa amin’izany isan’andro izy.</p>
-  <p>Tsy ny fifindra-monina no manimba azy, fa ny politika ratsy, ny fanavakavahana ary</p>
-  <p>ny tsy rariny.</p>
-  <p>Amin’ny 18 Desambra, amin’ny Andro Iraisam-pirenena ho an’ny Mpifindra-monina, dia</p>
-  <p>miantso izahay hoe :</p>
-  <p>“Andro tsy misy izahay : raha mijanona izahay, dia mijanona ny zava-drehetra !”</p>
-  <p>Na manana taratasy na tsia, mpifindra-monina, zanaky ny mpifindra-monina, taranaka</p>
-  <p>voalohany, faharoa, fahatelo, mpiara-monina, namana, mpiasa, mpianatra — tsy hiditra</p>
-  <p>an-tsekoly, tsy hiasa, tsy hisokatra ny fivarotana, fa hivoaka an-dalambe isika rehetra.</p>
-  <p>Izahay dia miady :</p>
-</div>
-<ul>
-  <li>Ho fanafoanana avy hatrany ny lalàna Darmanin sy ny didy Retailleau</li>
-  <li>Ho fitovian-jo ho an’ny rehetra : amin’ny fanabeazana, ny trano, ny</li>
-  <li>Ho fanomezana ara-dalàna ho an’ireo tsy manana taratasy</li>
-  <li>Ho fanakatonana ny foibe fitazonana mpifindra-monina (CRA)</li>
-  <li>Ho rariny ara-tsosialy, firaisankina, sy amin’ny fanoherana ny fanavakavahana</li>
-</ul>
-<p>fahasalamana, ny kolontsaina ary ny asa</p>
-<p>sy ny fasista.</p>
-<p>Raha te-hiditra miaraka aminay ianao, tsindrio ny rohy etsy ambany, fenoy ny taratasy</p>
-<p>✍</p>
-<p>fisoratana anarana, ary halefanay aminao ny fandaharan’asa.</p>
-<p>󰏍</p>
-    `
-  },
-  'soussou-susu': {
-    rtl: false,
-    audio: 'assets/audio/audio-soussou-susu.mp3',
-    content: `
-<div class="intro">
-  <p>Nde fe an bɛ : bɔrɔ an bata, fɔrɔ bɛ bata !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Nde yé n’a fɛɛnɛ 18 décembre 2025, nde don fe duniya ndee kɛ fɔ n’a maayanka</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Nde yé n’a fɔ maayanka e xureya fɔlɔ e politiki, ka futtiya fan xurunya e fɔlɔya e</p>
-  <p>hakɛya maayanka e France.</p>
-  <p>An bɛ n’a fɔ : nde fe an bɛ, nde yé an bɛɛ !</p>
-  <p>Duniya nde bɛɛ ye an tɛ n’a ta — hakɛya e sɛnniya n’a xureya bɛɛ be tondi n’a</p>
-  <p>fashisimu, be sɔnni n’a an hakɛya.</p>
-  <p>Nden, sindika, xureya e bantanyi be n’a tondi e France ka fɔ fɛɛnɛ nde fɛ.</p>
-  <p>An fɔlɔ :</p>
-  <p>Duniya nde tɛ kɛ bila maayanka.</p>
-  <p>A tɛ kɛ bila maayanka, a be xaxari n’a maayanka yé.</p>
-  <p>A tɛ maayanka be fun dunia nde, a be politik bɛɛ e xureya n’a fan.</p>
-  <p>Ka 18 décembre, duniya ndee kɛ fɔ maayanka, an bɛ n’a fɔ :</p>
-  <p>“Nde fe an bɛ : bɔrɔ an bata, fɔrɔ bɛ bata !”</p>
-  <p>Maayanka bɛɛ — n’a bɛɛ na karatasi to n’a tɛ, maayanka, denma maayanka, taali fɔlɔ, fila,</p>
-  <p>saba, bɔrɔ, fanan, baara kɛla, sɛbɛnni — an bɛ bata baara, bata sɛbɛnni, bata sugu, ka</p>
-  <p>taa kɛnɛfɛ fɔlɔya.</p>
-  <p>An bɛ fɔ :</p>
-</div>
-<ul>
-  <li>Ka dɔ Darmanin e Retailleau la</li>
-  <li>Ka sɛbɛ hakɛya bɛɛ la : sɛbɛnni, so, hɛrɛ, kulture, baara</li>
-  <li>Ka sɛbɛya maayanka min tɛ karatasi</li>
-  <li>Ka da CRA (fɔrɔ min be kanga maayanka)</li>
-  <li>Ka yɛrɛ hakɛya, jamaa e fanan, ka bundu fashisimu e xureya.</li>
-</ul>
-<p>Ni i b’a fɛ ka b’a yɛrɛma an na, ka sɛbɛn link min bɛ kɔfɛ, ka sɛbɛn formilɛri, an bɛ i na</p>
-<p>✍</p>
-<p>program la.</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'malinke-maninka': {
-    rtl: false,
-    audio: 'assets/audio/audio-malinke-maninka.mp3',
-    content: `
-<div class="intro">
-  <p>“Don di an ye : n’an taara, fɛ ka taa !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Don di yɛrɛma 18 décembre 2025, ka taa Duniya don kan ka yɛrɛma (Journée</p>
-  <p>internationale des migrant·e·s).</p>
-  <p>Don di ye bɛɛ sininɛ fɔlɔw ka daminɛ ni fɛɛnɛ ka tɔrɔ, ka bundu ka fɔlɔya ni hakɛya, ni</p>
-  <p>ka taa sɛnɛ fɔ n’a yɛrɛma ka fɛɛrɛya Faransi la.</p>
-  <p>An bɛ fɔ : don di an don, an bɛɛ la !</p>
-  <p>Duniya di tɛ se ka taa bila yɛrɛma, politikɛni mɔgɔw min bɛ sɛbɛya kɛ ka banbali hakɛya</p>
-  <p>be n’a fashisimu la ni fɔlɔya.</p>
-  <p>Sindika, jamuw ni fɛɛnɛ kɛla bɛɛ bɛ yɛrɛma Faransi la ka fɛ ka kɛ don di ka yɛrɛma, don ba</p>
-  <p>kɛrɛkɛrɛ.</p>
-  <p>An fɔlɔ :</p>
-  <p>Dɔw ye tɛ se ka sɔrɔ bila yɛrɛma.</p>
-  <p>A tɛ be taa bila an yɛrɛma la, a be nɔgɔya ni fɛɛrɛ sɔrɔ b’a la.</p>
-  <p>A tɛ yɛrɛma ye b’a bɔ nyɛman na, waaye politike ni hakɛya min b’a kɛ.</p>
-  <p>Ka 18 décembre, ka don kan ka yɛrɛma la, an bɛ fɔ :</p>
-  <p>“Don di an ye : n’an taara, fɛ ka taa !”</p>
-  <p>Yɛrɛma ni yɛrɛma min tɛ makaratasi, denw min bɛɛ ye yɛrɛma denw, taali fɔlɔ, fila, saba,</p>
-  <p>jamu, fɛɛnɛ, baara kɛla ni sɛbɛnniw — an bɛ taara baara la, sɛbɛnni la, sugu la, ka taa</p>
-  <p>sigida la kɛrɛkɛrɛ.</p>
-  <p>An bɛ fɔ :</p>
-</div>
-<ul>
-  <li>Ka bo loi Darmanin ni Retailleau</li>
-  <li>Ka yɛrɛ hakɛ bɛɛ la : sɛbɛnni, so, hɛrɛ, kulture, baara</li>
-  <li>Ka yɛrɛma min tɛ makaratasi ka sɛbɛya</li>
-  <li>Ka da tɔɔrɔso (CRA)</li>
-  <li>Ka kɛ hakɛ ni kɛlɛya, ni jamu ni fɔlɔya fɔ ka fɛɛrɛya ni fashisimu ta.</li>
-</ul>
-<p>Ni i b’a fɛ ka b’a yɛrɛma an na, ka sɛbɛn linku min bɛ kɔfɛ, ka sɛbɛn formilɛri, an bɛ i na</p>
-<p>✍</p>
-<p>programu la.</p>
-<p>󰐌</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'mu': {
-    rtl: false,
-    audio: 'assets/audio/audio-mu.mp3',
-    content: `
-<div class="intro">
-  <p>Kreol Morisien</p>
-  <p>“Zourné san nou : si nou aret, tou aret !”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>Sa zourné-la pou fer le 18 Desam 2025, dan kad Zourné Internasional bann Migran</p>
-  <p>(Journée internationale des migrant·e·s).</p>
-  <p>Zourné-la finn lanse par bann kolektif dimunn san papie ek migran, pou fer enn grèv</p>
-  <p>solidarite ek politik kont rasism Leta, lamizer ek dimounn pe perdi zot drwa dan</p>
-  <p>Lafrans.</p>
-  <p>Nou krwar sa lalit-la konsern nou tou, parski bann lalwa rasis ek politik ki diviz dimunn pe</p>
-  <p>ouver sime pou fasism, ek pe febli drwa sak dimounn.</p>
-  <p>Bann kolektif, sindika, lasosyasyon ek mouvman sosyal pe mobilize partou dan Lafrans pou</p>
-  <p>batir ansam sa zourné istorik-la.</p>
-  <p>Nou lapel :</p>
-  <p>Sa pei-la pa kapav mars san bann migran.</p>
-  <p>Li pa egziste san zot, ek li benefisye ar zot sak zour.</p>
-  <p>Se pa bann migran ki pe detrir pei-la, me se bann politik inziris ek rasis.</p>
-  <p>Le 18 Desam, pou Zourné Internasional bann Migran, nou pe dir :</p>
-  <p>“Zourné san nou : si nou aret, tou aret !”</p>
-  <p>Migran ki ena papie kouma bann san papie, zanfan bann migran, premie, deziem, trwaziem</p>
-  <p>zenerasion, pros, vwazin, koleg, travayer, etidian — nou pou pa al travay, pa al lekol, pa</p>
-  <p>ouver laboutik. Nou pou sorti ansam dan lari.</p>
-  <p>Nou pe lager :</p>
-</div>
-<ul>
-  <li>Pou anil lalwa Darmanin ek bann sirkiler Retailleau</li>
-  <li>Pou egalite drwa pou tou dimounn : dan lekol, lakaz, lasante, kiltir ek travay</li>
-  <li>Pou regularizasion bann san papie</li>
-  <li>Pou ferm bann sant retansion administratif (CRA)</li>
-  <li>Pou lazistis sosyal ek solidarite, kont rasism ek fasism.</li>
-</ul>
-<p>Si to anvi zwenn nou, klik lor link-la anba, ranpli formiler-la, ek nou pou avoy twa program</p>
-<p>✍</p>
-<p>zourné-la.</p>
-<p>󰎺</p>
-<div class="join-us-box">
-  <p>Si tu le souhaites, tu peux nous rejoindre. Clique sur le lien ci‑dessous et remplis le formulaire ; nous t’enverrons le programme.</p>
-</div>
-    `
-  },
-  'ar-egy': {
-    rtl: true,
-    audio: 'assets/audio/audio-ar-egy.mp3',
-    content: `
-<div class="intro rtl">
-  <p>&quot;فﻗوﺗھ ﺔﺟﺎﺣ لﻛ ،ﺎﻧﻔﻗو وﻟ :ﺎﻧرﯾﻏ نﻣ موﯾ!&quot;</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>.نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﺔﺑﺳﺎﻧﻣﺑ ،٢٠٢٥ رﺑﻣﺳﯾد ١٨ موﯾ نوﻛﯾھ هد موﯾﻟا</p>
-  <p>دﺿ ﻲﺳﺎﯾﺳو ﻲﻧﻣﺎﺿﺗ بارﺿإ نوﻛﯾ نﺎﺷﻠﻋ ،قاروأ رﯾﻏ نﻣ ﻲﻠﻟا سﺎﻧﻟاو نﯾرﺟﺎﮭﻣﻟا تﺎﻋوﻣﺟﻣ نﻣ ةوﻋدﺑ مظﻧﺗا هد موﯾﻟا</p>
-  <p>ﺎﺳﻧرﻓ ﻲﻓ نﯾرﺟﺎﮭﻣﻟا قوﻘﺣ عﺎﯾﺿو ،ﻲﻋﺎﻣﺗﺟﻻا مﻠظﻟاو ،ﺔﯾﻣوﻛﺣﻟا ﺔﯾرﺻﻧﻌﻟا.</p>
-  <p>فﻌﺿﺗﺑو ،ﺔﯾﺷﺎﻔﻠﻟ قﯾرطﻟا دﮭﻣﺗﺑ سﺎﻧﻟا ﻲﺻﻘﺗﺑ ﻲﻠﻟا تﺎﺳﺎﯾﺳﻟاو ﺔﯾرﺻﻧﻌﻟا نﯾﻧاوﻘﻟا نﻷ ،ﺎﻧﻠﻛ ﺎﻧﺻّ ﺧﯾ هد لﺎﺿﻧﻟا نإ نﯾﻔﯾﺎﺷ ﺎﻧﺣإ</p>
-  <p>ﺎﻧﯾﻓ دﺣاو لﻛ قوﻘﺣ.</p>
-  <p>اوﺳ هد ﻲﺧﯾرﺎﺗﻟا موﯾﻟا ﻲﻧﺑﻧ نﺎﺷﻠﻋ ﺎﺳﻧرﻓ ﻲﻓ اوﻛرﺣﺗﯾﺑ رﯾﺗﻛ ﺔﯾﻓﺎﻘﺛو ﺔﯾﻋﺎﻣﺗﺟا تﺎﻛرﺣو ،تﺎﯾﻌﻣﺟو ،تﺎﺑﺎﻘﻧ.</p>
-  <p>ﺎﻧءادﻧ:</p>
-  <p>.نﯾرﺟﺎﮭﻣﻟا رﯾﻏ نﻣ شﯾﺷﻣﺗ ﺎﻣ يد دﻠﺑﻟا</p>
-  <p>.موﯾ لﻛ ﺎﮭﻧﻣ دﯾﻔﺗﺳﺗﺑ ﻲھو ،ةرﺟﮭﻟا رﯾﻏ نﻣ هدﻛ ﻰﻘﺑﺗھ شﺗﻧﺎﻛ ﺎﻣ ﻲھ</p>
-  <p>ﺔﯾرﺻﻧﻌﻟا تﺎﺳﺎﯾﺳﻟاو مﻠظﻟا هد ،دﻠﺑﻟا اوﺑرﺧﯾﺑ ﻲﻠﻟا نﯾرﺟﺎﮭﻣﻟا شﻣ .</p>
-  <p>:لوﻘﻧﺑ ،نﯾرﺟﺎﮭﻣﻠﻟ ﻲﻣﻟﺎﻌﻟا موﯾﻟا ﻲﻓ ،رﺑﻣﺳﯾد ١٨ موﯾ</p>
-  <p>فﻗوﺗھ ﺔﺟﺎﺣ لﻛ ،ﺎﻧﻔﻗو وﻟ :ﺎﻧرﯾﻏ نﻣ موﯾ&quot; !&quot;</p>
-  <p>،لﺎﻣﻌﻟا ،ءﺎﻗدﺻﻷا ،نارﯾﺟﻟا ،تﻟﺎﺗﻟاو ﻲﻧﺎﺗﻟاو لوﻷا لﯾﺟﻟا نﻣ ،نﯾرﺟﺎﮭﻣﻟا دﻻوأ ،نﯾرﺟﺎﮭﻣﻟا ،رﯾﻏ نﻣ ﻲﻠﻟاو قاروأ مھﺎﻌﻣ ﻲﻠﻟا</p>
-  <p>اوﺳ عرﺎﺷﻟا لزﻧﻧھ .تﻼﺣﻣﻟا ﺢﺗﻔﻧ ﻻو ،ﺔﺳردﻣﻟا ﻻو ،لﻐﺷﻟا حورﻧھ شﻣ — ﺔﺑﻠطﻟا.</p>
-  <p>ـﺑ بﻟﺎطﻧﺑ ﺎﻧﺣإ:</p>
-</div>
-<ul>
-  <li>وﯾّ ﺗﯾر ﺔﻋﺎﺗﺑ تاروﺷﻧﻣﻟاو نﯾﻧﺎﻣراد نوﻧﺎﻗ ءﺎﻐﻟإ</li>
-  <li>لﻐﺷﻟاو ،ﺔﻓﺎﻘﺛﻟاو ،ﺔﺣﺻﻟاو ،نﻛﺳﻟاو ،مﯾﻠﻌﺗﻟا ﻲﻓ :سﺎﻧﻟا لﻛﻟ قوﻘﺣﻟا ﻲﻓ ةاوﺎﺳﻣﻟا</li>
-  <li>قاروأ رﯾﻏ نﻣ ﻲﻠﻟا سﺎﻧﻟا عﺎﺿوأ ﺔﯾوﺳﺗ</li>
-  <li>نﯾرﺟﺎﮭﻣﻟا زﺎﺟﺗﺣا زﻛارﻣ قﻼﻏإ (CRA)</li>
-  <li>ﺔﯾﺷﺎﻔﻟاو ﺔﯾرﺻﻧﻌﻟا دﺿو ،نﻣﺎﺿﺗﻟاو ﺔﯾﻋﺎﻣﺗﺟﻻا ﺔﻟادﻌﻟا.</li>
-</ul>
-<p>✍</p>
-<p>موﯾﻟا ﺞﻣﺎﻧرﺑ كﻠﺗﻌﺑﻧھ ﺎﻧﺣإو ،ةرﺎﻣﺗﺳﻻا ﻸﻣا ،تﺣﺗ كﻧﯾﻠﻟا ﻰﻠﻋ طﻐﺿا ،ﺎﻧﯾﻟ مﺿﻧﺗ ة/بﺑﺎﺣ وﻟ.</p>
-<p>󰎏</p>
-    `
-  },
-  'bn': {
-    rtl: false,
-    audio: 'assets/audio/audio-bn.mp3',
-    content: `
-<div class="intro">
-  <p>“      :      ,        !”</p>
-  <p>আমােদর ছাড়া একিদন আমরা যিদ থািম তাহেল সবিকছু  থেম যােব</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>,        ,</p>
-  <p>১৮ িডেসম্বর ২০২৫ আন্তজ  ািতক অিভবাসী িদবেসর উপলেক্ষ</p>
-  <p>“     ” —</p>
-  <p>আমরা একসােথ আেয়াজন করিছ আমােদর ছাড়া একিদন একটি সংহিত ও রাজৈনিতক আে ালেনর িদন।</p>
-  <p>,</p>
-  <p>এই িদনটি আহ্বান জানায় রাষ্ট্রীয় বণব  াদ অিবচার ও অিভবাসীেদর অিধকার হরেণর িবরুে  একিত্রত হওয়ার জন্য।</p>
-  <p>—        ,</p>
-  <p>এই লড়াই শুধু অিভবাসীেদর নয় এটি আমােদর সবার লড়াই কারণ বণব  াদী আইন ও  বষম্যমলূ ক নীিত</p>
-  <p>,</p>
-  <p>সমাজেক িবভক্ত কের</p>
-  <p>অন্যােয়র পথ  তির কের এবং আমােদর সবার অিধকার দবু  ল কের।</p>
-  <p>,  ,              ,</p>
-  <p>আজ ফ্রাে  শত শত সংগঠন ইউিনয়ন সামািজক ও সাংস্কৃ িতক আে ালন একসােথ কাজ করেছ</p>
-  <p>—</p>
-  <p>এই ঐিতহািসক িদেনর প্রস্তুিত িনেত এবং এক কে  বলার জন্য</p>
-  <p>“     ,        !”</p>
-  <p>যিদ আমরা থািম তাহেল সবিকছু  থেম যােব</p>
-  <p>:</p>
-  <p>আমােদর আহ্বান</p>
-  <p>এই  দশ অিভবাসীেদর ছাড়া চলেত পাের না।</p>
-  <p>,</p>
-  <p>অিভবাসন ছাড়া এই  দশ অিস্তত্বই রাখেত পাের না এবং প্রিতিদনই অিভবাসীরা এই সমােজ অবদান রাখেছ।</p>
-  <p>,        ,</p>
-  <p>অিভবাসীরা  দশ ধ্বংস করেছ না বরং ধ্বংস করেছ বণব  াদ অন্যায় ও  বষম্য।</p>
-  <p>,      ,           —</p>
-  <p>১৮ িডেসম্বর আন্তজ  ািতক অিভবাসী িদবেস আমরা সবাই িমেল আহ্বান জানাই</p>
-  <p>“      :      ,        !”</p>
-  <p>আমােদর ছাড়া একিদন আমরা যিদ থািম তাহেল সবিকছু  থেম যােব</p>
-  <p>,  ,    ,  ,  ,    ,</p>
-  <p>কাগজপত্র থাক বা না থাক অিভবাসী অিভবাসীেদর সন্তান প্রথম ি তীয় তৃ তীয় প্রজন্ম</p>
-  <p>,  ,  ,  ,  ,   —</p>
-  <p>আত্মীয়স্বজন প্রিতেবশী সহকম  ছাত্রছাত্রী শ্রিমক িশক্ষক</p>
-  <p>,      ,</p>
-  <p>আমরা স্কু েল যাব না কােজ যাব না  দাকান খুলব না।</p>
-  <p>আমরা সবাই একসােথ রাস্তায় নামব।</p>
-  <p>:</p>
-  <p>আমােদর দািব</p>
-</div>
-<ul>
-  <li></li>
-  <li>:  ,  ,  ,</li>
-  <li></li>
-  <li>(CRA)</li>
-  <li>,</li>
-</ul>
-<p>ডামা  িনন আইন ও  রতাইেয়া সা   লার বািতল করেত হেব।</p>
-<p>সমান অিধকার িদেত হেব সবার জন্য িশক্ষা বাসস্থান স্বাস্থ্য সংস্কৃ িত ও কােজর  ক্ষেত্র।</p>
-<p>কাগজিবহীন অিভবাসীেদর  বধতা িদেত হেব।</p>
-<p>অিভবাসী আটক  কন্দ্র বন্ধ করেত হেব।</p>
-<p>সামািজক ন্যায়িবচার সংহিত ও বণব  াদ ও ফ্যািসবােদর িবরুে  ঐক্য গেড় তু লেত হেব।</p>
-<p>:</p>
-<p>আমােদর সে   যাগ িদন</p>
-<p>,</p>
-<p>তু িম যিদ চাও তু িম আমােদর সে   যাগ িদেত পােরা।</p>
-<p>✍</p>
-<p>,</p>
-<p>িনেচর িলংেক ি ক কেরা এবং ফমটি  পূরণ কেরা আমরা  তামার কােছ পুেরা কমস  ূিচ পাঠিেয়  দেবা।</p>
-<p>󰐣</p>
-    `
-  },
-  'ur': {
-    rtl: true,
-    audio: 'assets/audio/audio-ur.mp3',
-    content: `
-<div class="intro rtl">
-  <p>ہﻣﺟرﺗ ودرا bangla</p>
-  <p>&quot;ﺎﮔ ﮯﺋﺎﺟ کر ﮭﭼﮐ بﺳ ،ںﯾﺋﺎﺟ کر مﮨ رﮔا :ند ﮏﯾا رﯾﻐﺑ ےرﺎﻣﮨ!&quot;</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>&quot;۔ﮯﮨ ﺎﮨر ﺎﺟ ﺎﯾﮐ رﭘ ﻊﻗوﻣ ﮯﮐ ند ﯽﻣاوﻗﻻا نﯾﺑ ﮯﮐ نﯾرﺟﺎﮩﻣ وﮐ ٢٠٢۵ رﺑﻣﺳد ١٨ مﺎﻣﺗﮨا ﺎﮐ &quot;ند ﮏﯾا رﯾﻐﺑ ےرﺎﻣﮨ</p>
-  <p>،ﺎﯾﮔ ﺎﯾﮐ عورﺷ ﮯﺳ فرط ﯽﮐ ںودﺎﺣﺗا ﯽﻋﺎﻣﺗﺟا ﮯﮐ نﯾرﺟﺎﮩﻣ روا دارﻓا ﮯﮐ تاذﻏﺎﮐ رﯾﻐﺑ وﺟ ،ند ہﯾ</p>
-  <p>ﯽﻣﮐ ںﯾﻣ قوﻘﺣ ﮯﮐ نﯾرﺟﺎﮩﻣ روا رﺎﮔزور ﯽﻧﯾﻘﯾ رﯾﻏ ،ﯽﺗﺳرﭘ لﺳﻧ ﯽﺗﺳﺎﯾر — ﮯﮨ ﺎﺗﯾد توﻋد ﯽﮐ لﺎﺗڑﮨ ﯽﺳﺎﯾﺳ روا ﯽﺗﮩﺟﮑﯾ</p>
-  <p>۔فﻼﺧ ﮯﮐ</p>
-  <p>راوﻣﮨ هار ﯽﮐ مزﺷﺎﻓ ںﺎﯾﺳﯾﻟﺎﭘ یزﺎﯾﺗﻣا روا نﯾﻧاوﻗ ہﻧﺎﺗﺳرﭘ لﺳﻧ ہﮑﻧوﯾﮐ ،ﮯﮨ دﮩﺟودﺟ ﯽﮐ بﺳ مﮨ دﮩﺟودﺟ ہﯾ ہﮐ ںﯾﮨ ﮯﺗﮭﺟﻣﺳ مﮨ</p>
-  <p>ںﯾﮨ ﯽﺗرﮐ</p>
-  <p>۔ںﯾﮨ ﯽﺗﺎﻧﺑ روزﻣﮐ وﮐ قوﻘﺣ ﮯﮐ بﺳ روا</p>
-  <p>ںﯾﮑﯾرﺣﺗ ﯽﺟﺎﻣﺳ روا ےرادا ﯽﺗﻓﺎﻘﺛ ،ںﯾﻣﯾظﻧﺗ ،زﻧﯾﻧوﯾ ،تﺎﻋﺎﻣﺗﺟا ںﯾﻣ رﮭﺑ سﻧارﻓ</p>
-  <p>۔ںﯾﮨ کرﺣﺗﻣ ﮯﯾﻟ ﮯﮐ ﮯﻧﺎﻧﺑ رﮐ لﻣ وﮐ ند ﯽﺧﯾرﺎﺗ سا</p>
-  <p>مﺎﻐﯾﭘ ارﺎﻣﮨ:</p>
-  <p>۔ﺎﺗﮑﺳ لﭼ ںﯾﮩﻧ رﯾﻐﺑ ﮯﮐ نﯾرﺟﺎﮩﻣ ﮏﻠﻣ ہﯾ</p>
-  <p>۔ﮯﮨ ﺎﺗﺎﮭﭨا هدﺋﺎﻓ ﮯﺳ سا ﮯﺳ ظﺎﺣﻟ رﮨ روا ،ﺎﯾآ ںﯾﮩﻧ ںﯾﻣ دوﺟو رﯾﻐﺑ ﮯﮐ ترﺟﮨ ﮏﻠﻣ ہﯾ</p>
-  <p>۔ںﯾﮨ ﯽﮨر رﮐ ﯽﻓﺎﺻﻧاﺎﻧ روا ﯽﺗﺳرﭘ لﺳﻧ ،ںﺎﯾﺳﯾﻟﺎﭘ ﯽﮐ تﻣوﮑﺣ ہﮑﻠﺑ ،ﮯﮨر رﮐ ںﯾﮩﻧ نﯾرﺟﺎﮩﻣ هﺎﺑﺗ وﮐ ﮏﻠﻣ</p>
-  <p>١٨ :ںﯾﮨ ﮯﺗﻼﺑ ﮯﯾﻟ ﮯﮐ ﮯﻧرﮐ رﮨﺎظ وﮐ تﻘﯾﻘﺣ سا رﮐ لﻣ بﺳ مﮨ ،رﭘ ﻊﻗوﻣ ﮯﮐ نﯾرﺟﺎﮩﻣ موﯾ ﯽﻣاوﻗﻻا نﯾﺑ ،وﮐ رﺑﻣﺳد</p>
-  <p>ِ</p>
-  <p>ﺎﮔ ﮯﺋﺎﺟ کر ﮭﭼﮐ بﺳ ،ںﯾﺋﺎﺟ کر مﮨ رﮔا :ند ﮏﯾا رﯾﻐﺑ ےرﺎﻣﮨ&quot; !&quot;</p>
-  <p>— ںوﮨ ہﻧ ﺎﯾ ںوﮨ تاذﻏﺎﮐ سﺎﭘ ےرﺎﻣﮨ ﮯﮨﺎﭼ</p>
-  <p>،لﺳﻧ یرﺳﯾﺗ ،یرﺳود ،ﯽﻠﮩﭘ ،ﮯﭼﺑ ﮯﮐ نﯾرﺟﺎﮩﻣ ،نﯾرﺟﺎﮩﻣ</p>
-  <p>،دارﻓا ﮏﯾرﺷ ںﯾﻣ جﺎﺟﺗﺣا ﮯﮐ رﺑﻣﺗﺳ ١٠ ،ﯽﮭﺗﺎﺳ ،تﺳود ،ﮯﺋﺎﺳﻣﮨ ،راد ہﺗﺷر</p>
-  <p>— ءﺎﮐرﺷ ﮯﮐ ںوﻟﺎﺗڑﮨ روا ںورﮨﺎظﻣ ﮯﮐ رﺑﻣﺗﺳ ١٨</p>
-  <p>،ﮯﮔ ںﯾﺋﺎﺟ ںﯾﮩﻧ رﭘ مﺎﮐ ،ﮯﮔ ںﯾﺋﺎﺟ ںﯾﮩﻧ لوﮑﺳا مﮨ</p>
-  <p>۔ﮯﮔ ںﯾﻠﮑﻧ رﭘ ںوﮐڑﺳ رﮐ لﻣ بﺳ مﮨ ۔ﮯﮔ ںﯾﺋﺎﺟ ںﯾﮩﻧ رﭘ ںوﻧﺎﮐد</p>
-  <p>تﺎﺑﻟﺎطﻣ یرﺎﻣﮨ:</p>
-</div>
-<ul>
-  <li>۔ﮯﺋﺎﺟ ﺎﯾﮐ خوﺳﻧﻣ رﭘ روط یروﻓ وﮐ زرﻠﮐرﺳ وﯾﺎﭨﯾر روا نوﻧﺎﻗ نﯾﻧﻣراڈ</li>
-  <li>۔ںﯾﻣ مﺎﮐ روا تﻓﺎﻘﺛ ،تﺣﺻ ،شﺋﺎﮨر ،مﯾﻠﻌﺗ :قوﻘﺣ ﮯﮐ رﺑارﺑ ﮯﯾﻟ ﮯﮐ ںوﮔوﻟ مﺎﻣﺗ</li>
-  <li>۔ﮯﺋﺎﺟ ید تﯾﺛﯾﺣ ﯽﻧوﻧﺎﻗ وﮐ نﯾرﺟﺎﮩﻣ ﮯﮐ تاذﻏﺎﮐ رﯾﻐﺑ</li>
-  <li>زﮐارﻣ ﯽﺗﺳارﺣ ﯽﻣﺎظﺗﻧا (CRA) ۔ﮯﺋﺎﺟ ﺎﯾﮐ دﻧﺑ وﮐ</li>
-  <li>۔فﻼﺧ ﮯﮐ مزﺷﺎﻓ روا ﯽﺗﺳرﭘ لﺳﻧ ،ﮯﯾﻟ ﮯﮐ ﯽﺗﮩﺟﮑﯾ روا فﺎﺻﻧا ﯽﺟﺎﻣﺳ</li>
-</ul>
-<p>۔ںﯾﮨ ﮯﺗﮑﺳ وﮨ لﻣﺎﺷ ﮭﺗﺎﺳ ےرﺎﻣﮨ پآ وﺗ ںﯾﮨﺎﭼ پآ رﮔا</p>
-<p>،ںﯾد رﮭﺑ مرﺎﻓ ،ںﯾرﮐ ﮏﻠﮐ رﭘ ﮏﻧﻟ ﮯﺋﮔ ﮯﯾد ﮯﭼﯾﻧ</p>
-<p>۔ﮯﮔ ںﯾد ﺞﯾﮭﺑ مارﮔورﭘ وﮐ پآ مﮨ</p>
-<p>✍</p>
-<p>󰏝</p>
-    `
-  },
-  'hi': {
-    rtl: false,
-    audio: 'assets/audio/audio-hi.mp3',
-    content: `
-<div class="intro">
-  <p> हन्दी अनवाद</p>
-  <p>ु</p>
-  <p>&quot;       :        ,          !&quot;</p>
-  <p>हमारे  बना एक  दन अगर हम रुक जाएँ तो सब कछ रुक जाएगा</p>
-  <p>ु</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>१८  दसम्बर २०२५ को अतं रराष्ट्रीय प्रवासी  दवस के अवसर पर</p>
-  <p>— “       ”,</p>
-  <p>हम सब  मलकर आयोिजत कर रहे हैं हमारे  बना एक  दन</p>
-  <p>जो एकजटु ता और राजनी तक सघं ष  का  दन है।</p>
-  <p>—      ,</p>
-  <p>यह  दन एक आह्वान है राज्य के नस्लवाद असरु क्षा और प्रवासी लोगों के अ धकारों में कटौती के</p>
-  <p> ख़लाफ़।</p>
-  <p>,</p>
-  <p>हम मानते हैं  क यह लड़ाई हम सबकी लड़ाई है क्यों क</p>
-  <p>भेदभावपणू   क़ाननू और नी तयाँ फासीवाद का रास्ता बनाती हैं और सबके अ धकारों को कमज़ोर करती हैं।</p>
-  <p>,  ,</p>
-  <p>आज फ्रांस में सकै ड़ों सगं ठन य ू नयन सामािजक और सांस्कृ  तक आदं ोलन</p>
-  <p>—</p>
-  <p>इस ऐ तहा सक  दन को  मलकर बनाने और एक स्वर में कहने के  लए तयै ार हो रहे हैं</p>
-  <p>&quot;       ,          !&quot;</p>
-  <p>अगर हम रुक जाएँ तो सब कछ रुक जाएगा</p>
-  <p>ु</p>
-  <p>:</p>
-  <p>हमारा सदं ेश</p>
-  <p>यह देश प्रवा सयों के  बना नहीं चल सकता।</p>
-  <p>,</p>
-  <p>यह देश प्रवासन के  बना अिस्तत्व में नहीं आया और हर  दन उनसे लाभ उठाता है।</p>
-  <p>,        ,</p>
-  <p>देश को नष्ट प्रवासी नहीं कर रहे बि क सरकार की नी तयाँ नस्लवाद और अन्याय कर रहे हैं।</p>
-  <p>,            ,           —</p>
-  <p>१८  दसम्बर अतं रराष्ट्रीय प्रवासी  दवस के अवसर पर हम सब  मलकर पकु ारते हैं</p>
-  <p>&quot;       :        ,          !&quot;</p>
-  <p>हमारे  बना एक  दन अगर हम रुक जाएँ तो सब कछ रुक जाएगा</p>
-  <p>ु</p>
-  <p>—</p>
-  <p>चाहे हमारे पास कागज़ात हों या न हों</p>
-  <p>,      ,  ,  ,    ,</p>
-  <p>प्रवासी प्रवा सयों के बच्चे पहली दसू री तीसरी पीढ़ी</p>
-  <p>,  ,  ,  ,                ,</p>
-  <p> रश्तदे ार पड़ोसी दोस्त सहकम  १०  सतम्बर के  वरोध में भाग लेने वाले</p>
-  <p>—</p>
-  <p>१८  सतम्बर के प्रदशन  और हड़तालों में शा मल साथी</p>
-  <p>,        ,</p>
-  <p>हम स्कल नहीं जाएँगे काम पर नहीं जाएँगे</p>
-  <p>ू</p>
-  <p>दकु ानें नहीं खोलेंगे। हम सब  मलकर सड़कों पर उतरेंगे।</p>
-  <p>:</p>
-  <p>हमारी माँगें</p>
-</div>
-<ul>
-  <li></li>
-  <li>:  ,  ,  ,</li>
-  <li></li>
-  <li>(CRA)</li>
-  <li>,</li>
-</ul>
-<p>डाम   नन क़ाननू और रेतयै ो सकु  लर को तरु ंत रद्द  कया जाए।</p>
-<p>सभी के  लए समान अ धकार  शक्षा आवास स्वास्थ्य सस्ं क त और काम में।</p>
-<p>ृ</p>
-<p> बना कागज़ात वाले प्रवा सयों को वधै दजा   दया जाए।</p>
-<p>नज़रबदं ी कें द्रों को बदं  कया जाए।</p>
-<p>सामािजक न्याय और एकजटु ता के  लए नस्लवाद और फासीवाद के  ख़लाफ़।</p>
-<p>अगर आप चाहें तो हमारे साथ जड़ सकते हैं।</p>
-<p>ु</p>
-<p>,    ,</p>
-<p>नीचे  दए गए  लकं पर िक्लक करें फॉम  भरें</p>
-<p>✍</p>
-<p>हम आपको कायक्र  म भेज देंगे।</p>
-<p>󰏶󰏝</p>
-    `
-  },
-  'si': {
-    rtl: false,
-    audio: 'assets/audio/audio-si.mp3',
-    content: `
-<div class="intro">
-  <p>தமிழ்</p>
-  <p>“       :    ,</p>
-  <p>எங்கைள இல்லாமல் ஒரு நாள் நாங்கள் நின்றால் எல்லாம்</p>
-  <p>!”</p>
-  <p>நின்றுவிடும்</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>18, 2025,       (Journée internationale des</p>
-  <p>டிசம்பர் சர்வேதச குடிேயற்ற நாள்</p>
-  <p>migrant·e·s)</p>
-  <p>என்பதற்காக</p>
-  <p>“       ”</p>
-  <p>நாங்கள் ஒன்றிைணந்து எங்கைள இல்லாமல் ஒரு நாள் என்ற தினத்ைத</p>
-  <p>—</p>
-  <p>அைமத்துள்ேளாம்</p>
-  <p>.</p>
-  <p>இது ஒற்றுைம மற்றும் அரசியல் ேபாராட்டத்தின் நாள்</p>
-  <p>,</p>
-  <p>இந்த நாள் அரசின் இனெவறி அநியாயம் மற்றும் பிரான்சில் குடிேயற்ற</p>
-  <p>.</p>
-  <p>மக்களின் உரிைமகள் குைறவது ஆகியவற்றிற்கு எதிரான அைழப்பாகும்</p>
-  <p>—</p>
-  <p>இது குடிேயற்ற மக்களின் ேபாராட்டம் மட்டும் அல்ல இது நம்ைம</p>
-  <p>,</p>
-  <p>எல்ேலாைரயும் பற்றிய ேபாராட்டம்</p>
-  <p>,</p>
-  <p>ஏெனனில் இனெவறி சட்டங்களும் தவிர்க்கும் ெகாள்ைககளும்</p>
-  <p>பாசிசத்திற்கான பாைதைய அைமக்கின்றன</p>
-  <p>.</p>
-  <p>ேமலும் அைனவரின் உரிைமகைளயும் பலவனீ ப்படுத்துகின்றன</p>
-  <p>,  ,  ,</p>
-  <p>பிரான்ஸ் முழுவதும் கூட்டைமப்புகள் ெதாழிற்சங்கங்கள் அைமப்புகள்</p>
-  <p>பண்பாட்டு மற்றும் சமூக இயக்கங்கள்</p>
-  <p>.</p>
-  <p>இந்த வரலாற்று நாைள ஒன்றிைணந்து உருவாக்கி வருகின்றன</p>
-  <p>:</p>
-  <p>எங்கள் அைழப்பு</p>
-  <p>.</p>
-  <p>இந்த நாடு குடிேயற்ற மக்களில்லாமல் இயங்க முடியாது</p>
-  <p>,</p>
-  <p>குடிேயற்றமில்லாமல் இது உருவாகவில்ைல ேமலும் இது அவர்களின்</p>
-  <p>.</p>
-  <p>பங்களிப்பால் தினமும் பலன் அைடகிறது</p>
-  <p>,      ,</p>
-  <p>நாட்ைட அழிப்பது குடிேயற்ற மக்கள் அல்ல ஆனால் அரசின் ெகாள்ைககள்</p>
-  <p>.</p>
-  <p>இனெவறி மற்றும் அநியாயம்</p>
-  <p>18,      ,</p>
-  <p>டிசம்பர் சர்வேதச குடிேயற்ற நாளில் நாங்கள் அைனவரும் ஒன்றிைணந்து</p>
-  <p>—</p>
-  <p>அைழக்கிேறாம்</p>
-  <p>“       :    ,    !”</p>
-  <p>எங்கைள இல்லாமல் ஒரு நாள் நாங்கள் நின்றால் எல்லாம் நின்றுவிடும்</p>
-  <p>—</p>
-  <p>காகிதங்களுடன் இருந்தாலும் இல்லாவிட்டாலும்</p>
-  <p>,    ,  ,  ,</p>
-  <p>குடிேயற்ற மக்கள் அவர்களின் குழந்ைதகள் முதல் இரண்டாம் மூன்றாம்</p>
-  <p>,</p>
-  <p>தைலமுைற</p>
-  <p>,  ,  ,  ,   —</p>
-  <p>உறவினர்கள் அயல்வாசிகள் நண்பர்கள் ெதாழிலாளர்கள் மாணவர்கள்</p>
-  <p>,      ,</p>
-  <p>நாங்கள் பள்ளிக்குச் ெசல்ல மாட்ேடாம் ேவைலக்குச் ெசல்ல மாட்ேடாம்</p>
-  <p>.</p>
-  <p>கைடகைளத் திறக்க மாட்ேடாம் நாங்கள் அைனவரும் ேசர்ந்து ெதருக்களில்</p>
-  <p>.</p>
-  <p>இறங்குேவாம்</p>
-  <p>:</p>
-  <p>எங்கள் ேகாரிக்ைககள்</p>
-</div>
-<ul>
-  <li></li>
-  <li>:  ,  ,</li>
-  <li></li>
-  <li>(CRA)    .</li>
-  <li>—</li>
-</ul>
-<p>டார்மானின் சட்டமும் ெரட்ைடேயா சுற்றறிக்ைககளும் உடனடியாக</p>
-<p>.</p>
-<p>ரத்து ெசய்யப்பட ேவண்டும்</p>
-<p>அைனவருக்கும் சம உரிைமகள் வழங்கப்பட ேவண்டும் கல்வி வடுீ</p>
-<p>,          .</p>
-<p>சுகாதாரம் பண்பாடு மற்றும் ேவைல ஆகிய துைறகளில்</p>
-<p>காகிதமற்ற குடிேயற்ற மக்களுக்கு சட்டபூர்வ அந்தஸ்து வழங்கப்பட</p>
-<p>.</p>
-<p>ேவண்டும்</p>
-<p>குடிேயற்ற தடுத்து ைவக்கும் ைமயங்கள் மூடப்பட ேவண்டும்</p>
-<p>சமூக நீதியும் ஒற்றுைமயும் நிைலநிறுத்தப்பட ேவண்டும் இனெவறி</p>
-<p>.</p>
-<p>மற்றும் பாசிசத்துக்கு எதிராக</p>
-<p>,    .</p>
-<p>நீங்கள் விரும்பினால் எங்களுடன் ேசரலாம்</p>
-<p>,    ,</p>
-<p>கீேழ உள்ள இைணப்ைபச் ெசாடுக்கி படிவத்ைத நிரப்புங்கள்</p>
-<p>✍</p>
-<p>.</p>
-<p>நாங்கள் உங்களுக்கு நிகழ்ச்சி விவரங்கைள அனுப்புேவாம்</p>
-<p>󰎩</p>
-    `
-  },
-  'zh': {
-    rtl: false,
-    audio: 'assets/audio/audio-zh.mp3',
-    content: `
-<div class="intro">
-  <p>中文翻 体中文</p>
-  <p>Chinois  译 简</p>
-  <p>“没有我们的一天：如果我们停下，一切都会停下！”</p>
-  <p>(La Journée Sans Nous : si on s’arrête, tout s’arrête !)</p>
-  <p>在 2025年12月18日国际移民日 之际，</p>
-  <p>我们共同组织了 “没有我们的一天” ——</p>
-  <p>这是一个 团结与政治行动的日子。</p>
-  <p>这一天是一个呼吁，号召大家 团结起来反对国家的种族歧视、不公正和对移民权利的削弱。</p>
-  <p>我们相信，这场斗争与我们所有人都息息相关，</p>
-  <p>因为 种族主义的法律和排斥性的政策为法西斯主义铺平了道路，</p>
-  <p>也削弱了每个人的权利。</p>
-  <p>在整个法国，各类集体、工会、协会、文化空间和社会运动</p>
-  <p>都在联合行动，共同建设这个具有历史意义的日子。</p>
-  <p>我们的呼吁：</p>
-  <p>没有移民，这个国家就无法运转。</p>
-  <p>没有移民，这个国家就不会存在，而且每天都在从移民的劳动中受益。</p>
-  <p>毁掉这个国家的，不是移民，而是歧视的政策、种族主义和不公正。</p>
-  <p>在 12月18日国际移民日 这一天，</p>
-  <p>我们呼吁大家共同展示这个事实：</p>
-  <p>“没有我们的一天：如果我们停下，一切都会停下！”</p>
-  <p>无论有没有身份文件，移民、移民的子女，</p>
-  <p>第一、第二、第三代的家庭成员、邻居、朋友、同事、</p>
-  <p>参加过9月10日封锁、9月18日游行与罢工的伙伴们——</p>
-  <p>我们不会去上学，不会去工作，不会开门做生意，</p>
-  <p>我们将一起走上街头。</p>
-  <p>我们的诉求：</p>
-</div>
-<ul>
-  <li>立即废除达尔马宁法案和雷泰约通告。</li>
-  <li>为所有人争取平等权利：在教育、住房、健康、文化和工作中。</li>
-  <li>让无证移民合法化。</li>
-  <li>关闭行政拘留中心（CRA）。</li>
-  <li>为了社会正义与团结，反对种族主义和法西斯主义。</li>
-</ul>
-<p>如果你愿意，你可以加入我们。</p>
-<p>点击下方链接，填写表格，</p>
-<p>✍</p>
-<p>我们会将活动的全部信息发送给你。</p>
-    `
-  },
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>« بلاّ بينا: كي نحبسو، يحبّس كلش! »</strong></p>
+    <p>هاد النهار كيتنظّم بمناسبة <strong>اليوم الدولي للمهاجرين، نهار 18 ديسمبر 2025</strong>.</p>
+    <p>هاذ الحركة بادرة من <strong>تنسيقيات وجمعيات ديال المهاجرين وناس بلاّ وراق</strong>، وتدعو إلى <strong>إضراب تضامني وسياسي</strong> ضد <strong>العنصرية تاع الدولة</strong>، التهميش، وتراجع الحقوق تاع المهاجرين في فرنسا.</p>
+    <p>نؤمنو بلي <strong>هاذ المعركة تهمّنا كامل</strong>، خاطر القوانين العنصرية وسياسات الإقصاء تفتح الطريق للفاشية وتضعّف حقوق الجميع.</p>
+    <p>كاين بزاف تنسيقيات، نقابات، جمعيات وحركات اجتماعية راهم يتنظّموا عبر كامل فرنسا باش نبنيو هاذ النهار التاريخي مع بعضنا.</p>
+  </div>
+  <p><strong>نداؤنا:</strong></p>
+  <p>البلاد هاذي ما تمشيش بلاّ المهاجرين. وما كانش وجودها بلاّ الهجرة، وهي تستافد منها في كل جهة.</p>
+  <p>موش الهجرة اللي خرّبات البلاد، <strong>السياسات</strong> هي، <strong>العنصرية</strong> و<strong>الحقرة</strong>.</p>
+  <p>نهار 18 ديسمبر، بمناسبة اليوم الدولي للمهاجرين، نعيطو باش نورّيو الحقيقة.</p>
+  <p>نعيطو باش ننظّمو، في كل أحيائنا ومناصب الخدمة تاعنا: «<strong>نَهار بلاّ بينا: كي نحبسو، يحبّس كلش!</strong>».</p>
+  <p>بوراق أو بلاّ وراق، مهاجرين وأولاد المهاجرين، من الجيل الأول، الثاني ولا الثالث، القرايب، الجيران، الزملاء، الناس اللي شاركوا فـ«بلّوكو كلش» نهار 10 سبتمبر، والمظاهِرين والمضربين نهار 18 سبتمبر — ما نروحولاش للمدرسة، لا للخدمة، لا للتجارة. نخرجو كامل نْتظاهرو فكل مدن البلاد:</p>
+  <ul>
+    <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان والدوريات تاع ريتايو</li>
+    <li><strong>من أجل المساواة في الحقوق للجميع</strong>: فالقراية، السكن، الصحة، الثقافة والخدمة</li>
+    <li><strong>من أجل تسوية وضعية</strong> الناس اللي بلاّ وراق</li>
+    <li><strong>من أجل غلق</strong> مراكز الحبس الإداري (CRA)</li>
+    <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>إذا حبّيت تلتحق بينا، كاين الرابط لتحت: عمّر الفورم، ونبعثولك البرنامج ✍️.</p>
+  </div>`
+}
+,
+'ar-ma': {
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>« نهار بلا بينا: إيلا وقفنا، يوقف كلشي! »</strong></p>
+    <p>هاد النهار كيتنظّم بمناسبة <strong>اليوم العالمي ديال المهاجرين، 18 دجنبر 2025</strong>.</p>
+    <p>هاد اليوم ديال النضال جا من <strong>تنسيقيات وجمعيات ديال المهاجرين والمهاجرات</strong> اللي كيناضلو باش يتحسّن الوضع ديالهم، وكيدْعيو إلى <strong>إضراب تضامني وسياسي</strong> ضد <strong>العنصرية ديال الدولة</strong>، التهميش، وتراجع الحقوق ديال المهاجرين ففرنسا.</p>
+    <p>كنآمنو بلي <strong>هاد المعركة كتهمّنا كاملين</strong>، حيت القوانين العنصرية والسياسات ديال الإقصاء كتحلّ الطريق للفاشية وكْتضرب الحقوق ديال الجميع.</p>
+    <p>بزاف ديال التنسيقيات، النقابات، الجمعيات والحركات الاجتماعية كيتحرّكو فكل فرنسا باش يبنيو هاد النهار التاريخي مع بعضياتهم.</p>
+  </div>
+  <p><strong>النداء ديالنا:</strong></p>
+  <p>هاد البلاد ما تقدرش تمشي بلا المهاجرين. ما كايناش بلا الهجرة، وكتستافد منها من جميع الجهات.</p>
+  <p>ماشي الهجرة اللي خرّبات البلاد، ولكن <strong>السياسات</strong>، <strong>العنصرية</strong> و<strong>الظلم</strong>.</p>
+  <p>نهار 18 دجنبر، بمناسبة اليوم العالمي ديال المهاجرين، كندعيو باش نورّيو الحقيقة.</p>
+  <p>كنْدعيو الناس ينظّمو فكل الأحياء، والمدارس، وخدمة ديالهم «<strong>نهار بلا بينا: إيلا وقفنا، يوقف كلشي!</strong>».</p>
+  <p>بوراق أو بلا وراق، مهاجرين وأولاد المهاجرين، من الجيل الأول، الثاني ولا الثالث، الحباب، الجيران، الزملاء، الناس اللي شاركو فـ«بلّوكو كلشي» نهار 10 شتنبر، والمضربين والمتظاهرين ديال 18 شتنبر — ما غاديش نمشيو للمدرسة، لا للخدمة، لا للتجارة. غادي نخرجو كاملين نْتظاهرو فكل المدن:</p>
+  <ul>
+    <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان والمناشير ديال ريتايو</li>
+    <li><strong>من أجل المساواة فْالحقوق</strong> للجميع، فالتعليم، السكن، الصحة، الثقافة، والخدمة</li>
+    <li><strong>من أجل تسوية الوضعية</strong> ديال الناس اللي بلا وراق</li>
+    <li><strong>من أجل غلق</strong> مراكز الاحتجاز الإداري (CRA)</li>
+    <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>إيلا بغيتي تلتحق بينا، كاين الرابط لتحت: عمّر الفورم، ونبعثولك البرنامج ✍️.</p>
+  </div>`
+}
+,
+'ar-tn': {
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>« نهار بلا بينا: كي نقفوا، يوقف كل شي! »</strong></p>
+    <p>النهار هذا يتنظّم بمناسبة <strong>اليوم العالمي للمهاجرين، نهار 18 ديسمبر 2025</strong>.</p>
+    <p>النهار هذا بادروا بيه <strong>تنسيقيات وجمعيات المهاجرين والمهاجرات</strong> اللي يناضلوا باش يتحسّن وضعهم القانوني، ويدعيو إلى <strong>إضراب تضامني وسياسي</strong> ضدّ <strong>العنصرية المُمأسسة</strong>، التهميش، وتراجع الحقوق في فرنسا.</p>
+    <p>نؤمنوا بلي <strong>المعركة هذي تهمّنا الكل</strong>، خاطر القوانين العنصرية والسياسات الإقصائية تفتح الباب للفاشية وتضعّف حقوق الناس الكل.</p>
+    <p>برشة تنسيقيات، نقابات، جمعيات، وحركات اجتماعية يتحرّكوا في كامل فرنسا باش يبنيو النهار هذا مع بعضهم.</p>
+  </div>
+  <p><strong>النداء متاعنا:</strong></p>
+  <p>البلاد هذي ما تمشيش بلا المهاجرين. ما فماش وجودها بلا الهجرة، وتستافد منها في كل المجالات.</p>
+  <p>ماهيش الهجرة اللي خرّبت البلاد، أما <strong>السياسات</strong>، <strong>العنصرية</strong> و<strong>الظلم</strong>.</p>
+  <p>نهار 18 ديسمبر، بمناسبة اليوم العالمي للمهاجرين، ندعيو الناس باش يبرزو الحقيقة.</p>
+  <p>ندعيو الناس الكل باش ينظّمو في الأحياء وأماكن الخدمة: «<strong>نهار بلا بينا: كي نقفوا، يوقف كل شي!</strong>».</p>
+  <p>بوراق ولا بلا وراق، مهاجرين وأولاد المهاجرين، من الجيل الأول، الثاني ولا الثالث، القرايب، الجيران، الزملاء، الناس اللي شاركوا في «بلّوكو كل شي» نهار 10 ديسمبر، والمضربين والمتظاهرين نهار 18 ديسمبر — ما نمشيوش للمدرسة، لا للخدمة، لا للتجارة. نخرجوا كامل باش نتظاهرو في كل المدن:</p>
+  <ul>
+    <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان والمناشير متاع ريتايو</li>
+    <li><strong>من أجل المساواة في الحقوق</strong> للناس الكل، في التعليم، السكن، الصحة، الثقافة، والخدمة</li>
+    <li><strong>من أجل تسوية وضعية</strong> اللي ما عندهمش وراق</li>
+    <li><strong>من أجل غلق</strong> مراكز الاحتجاز الإداري (CRA)</li>
+    <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>إذا تحبّ تشارك معانا، تنجّم تضغط على الرابط لتحت وتعمر الفورم، ونبعثولك البرنامج ✍️.</p>
+  </div>`
+}
+,
+'ar-egy': {
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>« يوم من غيرنا: لو وقفنا، كله يقف! »</strong></p>
+    <p>اليوم ده معمول بمناسبة <strong>اليوم العالمي للمهاجرين، يوم 18 ديسمبر 2025</strong>.</p>
+    <p>اليوم ده اتنظم من <strong>تنسيقيات وجمعيات للمهاجرين والمهاجرات</strong> اللي بيناضلوا عشان حقوقهم، وبيدعوا إلى <strong>إضراب تضامني وسياسي</strong> ضد <strong>العنصرية المُمأسسة</strong>، التهميش، وتراجع حقوق المهاجرين في فرنسا.</p>
+    <p>إحنا مؤمنين إن <strong>المعركة دي تخصّنا كلنا</strong>، لأن القوانين العنصرية وسياسات الإقصاء بتفتح الطريق للفاشية وبتضعف حقوق الكل.</p>
+    <p>كتير من النقابات والجمعيات والحركات الاجتماعية في فرنسا بيتنظموا سوا عشان يبنوا اليوم ده ويخلوه يوم تاريخي.</p>
+  </div>
+  <p><strong>نداؤنا:</strong></p>
+  <p>البلد دي ما تمشيش من غير المهاجرين. هي أصلاً ما كانتش هتقوم من غير الهجرة، والهجرة دي اللي بتبنيها وبتخليها تمشي.</p>
+  <p>اللي خرب البلد مش المهاجرين، لكن <strong>السياسات</strong>، <strong>العنصرية</strong> و<strong>الظلم</strong>.</p>
+  <p>يوم 18 ديسمبر، في اليوم العالمي للمهاجرين، بندعو الناس كلها تبين الحقيقة.</p>
+  <p>بندعو الكل ينظم نفسه في الأحياء والشغل والمدارس: «<strong>يوم من غيرنا: لو وقفنا، كله يقف!</strong>».</p>
+  <p>بوراق أو من غير وراق، مهاجرين أو أولاد مهاجرين، من الجيل الأول أو الثاني أو التالت، القرايب، الجيران، الزملاء، اللي شاركوا في «بلّوكو كل حاجة» يوم 10 ديسمبر، والمضربين والمتظاهرين يوم 18 ديسمبر — مانروحش المدرسة، ولا الشغل، ولا التجارة. نخرج كلنا نتظاهر في كل المدن:</p>
+  <ul>
+    <li><strong>عشان نلغي فورًا</strong> قانون دارمانان والمنشورات بتاعة ريتايو</li>
+    <li><strong>عشان المساواة في الحقوق</strong> لكل الناس: في التعليم، السكن، الصحة، الثقافة، والشغل</li>
+    <li><strong>عشان نسوّي وضع</strong> الناس اللي من غير أوراق</li>
+    <li><strong>عشان نقفل</strong> مراكز الاحتجاز الإداري (CRA)</li>
+    <li><strong>عشان العدالة الاجتماعية والتضامن</strong> وضد العنصرية والفاشية</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>لو عايز تشارك معانا، دوس على اللينك اللي تحت، املا الفورم، وإحنا هنبعتلك التفاصيل ✍️.</p>
+  </div>`
+}
+,
+
+'kab': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>“Ass war nekni: ma nekni nḥebsen, ad yeḥbesen akk!”</strong></p>
+    <p>Ass-a yettwal d  <strong>ussan n imensiwen, 18 dujember 2025</strong>.</p>
+    <p>Ass-a d amezwaru i d-yettunefken seg <strong>tiddukla d tugduyin n imensiwen</strong> i yettḥebsen ɣef yiman-nsen, i yefkan-d <strong>amuhad n lemḥala d ussiyas</strong> mgal <strong>tanɣult n tewriqt n tmurt</strong>, tisuraf n usefrek, d tigawt n tigejdit n yizerfan n imensiwen deg Fransa.</p>
+    <p>Nwaman belli <strong>tamurt-a d taɣara n wacu i tḥebbes s usnirem-a</strong>, imi ilugan n temɛiwin n tewriqt d usewḥel n imensiwen ad yefkan adrar i tewfašiyya, ad sfaren tizerfan i medden meṛṛa.</p>
+    <p>Deqs n tiddukla, inekkad, d yirgan n tmurt n Fransa bdan ad ttwaḥrzen akken ad sbeddan ass-a i d-yekka d ass n lmuhad d usirem.</p>
+  </div>
+  <p><strong>Asmi nnekni:</strong></p>
+  <p>Tamurt-a ur teddun ara war imensiwen. Mačči d tamurt ara i tella war imigraṣiyen, imi imensiwen d wid i d-yefkan iman-nsen, i d-yefkan taɣaṛa i tmeddit.</p>
+  <p>Mačči imigraṣiyen i xesren tamurt, maca d <strong>tawsa d uselkim</strong>, d <strong>urti n tewriqt</strong>, d <strong>lḥogra</strong>.</p>
+  <p>Ass n 18 dujember, deg ussan n imensiwen, ad neqqar akken d wacu i d-tella tideffir.</p>
+  <p>Ad neqqar i yimdanen akk ad ttwaḥrzen deg taddart, deg lekraḍ, deg timmadin: “<strong>Ass war nekni: ma nekni nḥebsen, ad yeḥbesen akk!</strong>”.</p>
+  <p>Imensiwen d wid n teslamiwin, wid n djil amezwaru, wis sin, wis tlata, yemdanen i yeddan deg ussan n “Blocko kulli cci” n 10 dujember, wid i yettḥebsen, wid i yedran tanfiwin n 18 dujember — ur nelli d-lexla, ur nelli d-lexdim, ur nelli d-tasga. Ad nili akk ad neggar deg yidukan:</p>
+  <ul>
+    <li><strong>I wesefsex amezwaru</strong> n lqanun n Darmanin akked tedrimt n Retayo</li>
+    <li><strong>I wemgarrad n yizerfan i yimanen meṛṛa</strong>: deg ulemmad, takna, tesga, tasekla d lexdem</li>
+    <li><strong>I wesekseḍ n tegduda</strong> i wid ur nelli d-iserfan</li>
+    <li><strong>I wemdel</strong> n yiɣerman n userḥu n yimmḍanen (CRA)</li>
+    <li><strong>I tasedda d tasedda n tmurt</strong> akked tasedda n wexxam, d mgal tewriqt d tewfašiyya</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ma tebɣiḍ ad teqqneḍ yid-nneɣ, tzemreḍ ad tessekcem tafrant i ddawen, ad temleḍ tafrayt, ad ak-nazen leḥbaren n uss-a ✍️.</p>
+  </div>`
+}
+,'tzm-latn': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Ass war nekni: ma nekni nḥebsen, ad yeḥbesen akk!"</strong></p>
+    <p>Ass-a yettwaseggas i <strong>Ussan Agrawan n Imensiwen, 18 Dujember 2025</strong>.</p>
+    <p>Ass-a i d-yettunefken seg <strong>tiddukla n imensiwen d wid ur nesɛi ara ikaramen</strong>, i yebɣan ad yerrun <strong>amuhad n lmḥala d usiyas</strong> mgal <strong>tanɣult n tewriqt n tmurt</strong>, tisuraf n tḥuza, d usnirem n yizerfan n imensiwen deg Fransa.</p>
+    <p>Neqqar belli <strong>tamurt-a ur tezmir ara ad teddun war imensiwen</strong>, imi ilugan n temɛiwin n tewriqt d usewḥel n imensiwen ad d-ttawin adrar i tewfašiyya, ad sferken tizerfan n medden meṛṛa.</p>
+    <p>Deqs n tiddukla, inekkad d yirgan deg Fransa bdan ad ttwaḥrzen akken ad sbeddan ass-a i d-yekka d ass n lmuhad d usirem.</p>
+  </div>
+  <p><strong>Asmi nnekni:</strong></p>
+  <p>Tamurt-a ur teddun ara war imensiwen. Mačči d tamurt i yellan war imigraṣiyen, imi imensiwen d wid i d-yefkan iman-nsen, i d-yefkan taɣara i tmeddit.</p>
+  <p>Mačči imigraṣiyen i xesren tamurt, maca d <strong>tawsa d uselkim</strong>, d <strong>urti n tewriqt</strong>, d <strong>lḥogra</strong>.</p>
+  <p>Ass n 18 Dujember, deg Ussan Agrawan n Imensiwen, ad neqqar akken d wacu i d-tella tideffir.</p>
+  <p>Ad neqqar i yimdanen akk ad ttwaḥrzen deg taddart, deg lekraḍ, deg timmadin: “<strong>Ass war nekni: ma nekni nḥebsen, ad yeḥbesen akk!</strong>”.</p>
+  <p>Imensiwen d wid n teslamiwin, wid n djil amezwaru, wis sin, wis tlata, yemdanen i yeddan deg “Blocko kulli cci” n 10 Dujember, wid i yettḥebsen, wid i yedran tanfiwin n 18 Dujember — ur nelli d-lexla, ur nelli d-lexdim, ur nelli d-tasga. Ad nili akk ad neggar deg yidukan:</p>
+  <ul>
+    <li><strong>I wesefsex amezwaru</strong> n lqanun n Darmanin akked tedrimt n Retayo</li>
+    <li><strong>I wemgarrad n yizerfan i yimanen meṛṛa</strong>: deg ulemmad, takna, tesga, tasekla d lexdem</li>
+    <li><strong>I wesekseḍ n tegduda</strong> i wid ur nelli d-iserfan</li>
+    <li><strong>I wemdel</strong> n yiɣerman n userḥu n yimmḍanen (CRA)</li>
+    <li><strong>I tasedda d tasedda n tmurt</strong> akked tasedda n wexxam, d mgal tewriqt d tewfašiyya</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ma tebɣiḍ ad teqqneḍ yid-nneɣ, tzemreḍ ad tessekcem tafrant i ddawen, ad temleḍ tafrayt, ad ak-nazen leḥbaren n uss-a ✍️.</p>
+  </div>`
+}
+,
+'tzm-tfng': {
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>ⴰⵙ ⵓⴰⵔ ⵏⵏⴽⵏⵉ : ⵎⴰ ⵏⵏⴽⵏⵉ ⵏⵃⴱⵙⴻⵏ, ⴰⴷ ⵢⴻⵃⴱⴻⵙⴻⵏ ⴰⴽⴽ!</strong></p>
+    <p>ⴰⵙⵙⴰ ⵢⴻⵜⵜⵡⴰⵙⴳⴰⵙ ⵉ ⵓⵙⵙⴰⵏ ⴰⴳⵔⴰⵡⴰⵏ ⵏ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ, 18 ⴷⵓⵊⴻⵎⴱⴻⵔ 2025.</p>
+    <p>ⴰⵙⵙⴰ ⴰⵏⴻⵙ ⵉⴷ ⵉⴷ ⵢⴻⵜⵜⵓⵏⴻⴼⴽⴻⵏ ⵙ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⴰⴷ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⵙ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⵙ ⴷ ⵡⴻⴷ ⵓⵔ ⵏⵙⵙⵉⴳⴰⵏ ⵉⴽⴰⵔⴰⵎⴻⵏ, ⵉⴳⴻⵔⴻⵏ ⵉ ⴷⴰⵏ ⵙ ⵉⴷⴰⵏ ⵏ ⵎⵓⵃⴰⴷ ⵏ ⵍⵎⵃⴰⵍⴰ ⴷ ⵓⵙⵉⵢⴰⵙ ⵙⵙⵉⴽⵓⵏ ⵙ ⵜⴰⵏⵖⵓⵍⵜ ⵏ ⵜⴰⵡⵉⵔⵉⵇⵜ ⵏ ⵜⵎⵓⵔⵜ, ⵜⵉⵙⵓⵔⴰⴼ ⵏ ⵜⵉⵣⴻⵔⴼⴰⵏ, ⴷ ⵜⵉⴳⴰⵡⵜ ⵏ ⵜⵉⴳⴻⵊⴷⵉⵜ ⵏ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⴷ ⵉⵙⴻⵙⴻⵏ ⵙ ⴼⵔⴰⵏⵙⴰ.</p>
+    <p>ⵏⵡⴰⵎⴰⵏ ⴱⴻⵍⵍⵉ ⵜⴰⵎⵓⵔⵜ-ⴰ ⵓⵔ ⵜⴻⵙⵎⵉⵔ ⴰⵔⴰ ⴰⴷ ⵜⴻⴷⴷⵓⵏ ⵡⴰⵔ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ, ⵉⵎⵉ ⵉⵍⵓⴳⴰⵏ ⵏ ⵜⴻⵎⵄⵉⵡⵉⵏ ⵏ ⵜⴰⵡⵉⵔⵉⵇⵜ ⴷ ⵓⵙⴻⵡⵃⴻⵍ ⵏ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⴰⴷ ⵉⴼⴽⴰⵏ ⴰⴷⵔⴰⵔ ⵉ ⵜⴻⵡⴼⴰⵙⵉⵢⵉⴰ, ⴷ ⴰⴷ ⵙⴼⴻⵔⴻⴽⵓⵏ ⵜⵉⵣⴻⵔⴼⴰⵏ ⵏ ⵎⴻⴷⴷⴰⵏ ⵎⴻⵕⵕⴰ.</p>
+    <p>ⴷⴻⴳⴽⵙ ⵏ ⵜⵉⴷⴻⴷⴽⵍⴰ, ⵉⵏⴻⴽⴽⴰⴷ ⴷ ⵉⵢⵉⵔⴳⴰⵏ ⵙ ⵜⵎⵓⵔⵜ ⴰⵏⴻⴼⴽⴰⵏ ⴰⴷ ⵜⵜⵡⴰⵃⵔⵣⴻⵏ ⴰⴽⴽⴻⵏ ⴰⴷ ⵙⴱⴻⴷⴷⴰⵏ ⴰⵙⴰ ⵉ ⴷ-ⵢⴻⴽⴽⴰ ⴰⴷ ⴰⵙ ⵏ ⵍⵎⵓⵃⴰⴷ ⴷ ⵓⵙⵉⵔⴻⵎ.</p>
+  </div>
+  <p><strong>ⴰⵙⵎⵉ ⵏⵏⴽⵏⵉ:</strong></p>
+  <p>ⵜⴰⵎⵓⵔⵜ-ⴰ ⵓⵔ ⵜⴻⴷⴷⵓⵏ ⴰⵔⴰ ⵡⴰⵔ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ. ⵎⴰⵛⵛⵉ ⴷ ⵜⴰⵎⵓⵔⵜ ⴰⵏⴻⴷ ⴰⵔ ⵜⵍⴰ ⵡⴰⵔ ⵉⵎⵉⴳⵔⴰⵣⵉⵢⴻⵏ, ⵉⵎⵉ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⴰⴷ ⵉⴷ ⵉⴼⴽⴰⵏ ⴰⴷⵔⴰⵔ ⵉ ⵜⴻⵎⴷⴻⴷⵉⵜ.</p>
+  <p>ⵎⴰⵛⵛⵉ ⵉⵎⵉⴳⵔⴰⵣⵉⵢⴻⵏ ⵉ ⵅⴻⵙⵔⴻⵏ ⵜⴰⵎⵓⵔⵜ, ⵎⴰⵛⵉ ⴷ <strong>ⵜⴰⵡⵙⴰ ⴷ ⵓⵙⴻⵍⴽⵉⵎ</strong>, ⴷ <strong>ⵓⵔⵜⵉ ⵏ ⵜⴰⵡⵉⵔⵉⵇⵜ</strong>, ⴷ <strong>ⵍⵃⵓⴳⵔⴰ</strong>.</p>
+  <p>ⴰⵙ ⵏ 18 ⴷⵓⵊⴻⵎⴱⴻⵔ, ⴷ ⵓⵙⵙⴰⵏ ⴰⴳⵔⴰⵡⴰⵏ ⵏ ⵉⵎⴻⵏⵙⵉⵡⴻⵏ, ⴰⴷ ⵏⴻⵇⵇⴰⵔ ⴰⴽⴽⴻⵏ ⴷ ⵡⴰⵛⵛⵉ ⵉ ⴷ-ⵜⴻⵍⵍⴰ ⵜⵉⴷⴻⴼⴼⵉⵔ.</p>
+  <p>ⴰⴷ ⵏⴻⵇⵇⴰⵔ ⵉ ⵢⵉⵎⴷⴰⵏⴻⵏ ⴰⴽⴽ ⴰⴷ ⵜⵜⵡⴰⵃⵔⵣⴻⵏ ⴷⴻⴳ ⵜⴰⴷⴷⴰⵔⵜ, ⴷⴻⴳ ⵍⴽⵔⴰⴹ, ⴷⴻⴳ ⵜⵉⵎⵎⴰⴷⵉⵏ: “<strong>ⴰⵙ ⵓⴰⵔ ⵏⵏⴽⵏⵉ: ⵎⴰ ⵏⵏⴽⵏⵉ ⵏⵃⴱⵙⴻⵏ, ⴰⴷ ⵢⴻⵃⴱⴻⵙⴻⵏ ⴰⴽⴽ!</strong>”.</p>
+  <p>ⵉⵎⴻⵏⵙⵉⵡⴻⵏ ⴷ ⵡⵉⴷ ⵏ ⵜⴻⵙⵍⴰⵎⵉⵡⵉⵏ, ⵡⵉⴷ ⵏ ⵊⵉⵍ ⴰⵎⴻⵣⵡⴰⵔⵓ, ⵡⵉⵙ ⵙⵉⵏ, ⵡⵉⵙ ⵟⵍⴰⵟⴰ, ⵢⴻⵎⴷⴰⵏⴻⵏ ⵉⵢⴻⴷⴷⴰⵏ ⴷ ⵓⵙⵙⴰⵏ ⵏ “Blocko kulli cci” ⴰⴷ 10 ⴷⵓⵊⴻⵎⴱⴻⵔ, ⵡⵉⴷ ⵉⵢⴻⵜⵜⵃⴻⴱⵙⴻⵏ, ⵡⵉⴷ ⵉⵢⴻⴷⵔⴰⵏ ⵜⴰⵏⴼⵉⵡⵉⵏ ⴰⴷ 18 ⴷⵓⵊⴻⵎⴱⴻⵔ — ⵓⵔ ⵏⴻⵍⵍⵉ ⴷ-ⵍⴻⵅⵍⴰ, ⵓⵔ ⵏⴻⵍⵍⵉ ⴷ-ⵍⴻⵅⴷⵉⵎ, ⵓⵔ ⵏⴻⵍⵍⵉ ⴷ-ⵜⴰⵙⵖⴰ. ⴰⴷ ⵏⵉⵍⵉ ⴰⴽⴽ ⴰⴷ ⵏⴻⴳⴳⴰⵔ ⴷⴻⴳ ⵢⵉⴷⵓⴽⴰⵏ:</p>
+  <ul>
+    <li><strong>ⵉ ⵡⴻⵙⴻⴼⵙⴻⵅ ⴰⵎⴻⵣⵡⴰⵔⵓ</strong> ⵏ ⵍⵇⴰⵏⵓⵏ ⵏ Darmanin ⴰⴽⴽⴻⴷ ⵜⴻⴷⵔⵉⵎⵜ ⵏ Retayo</li>
+    <li><strong>ⵉ ⵡⴻⵎⴳⴰⵔⵔⴰⴷ ⵏ ⵜⵉⵣⴻⵔⴼⴰⵏ</strong> ⵉ ⵢⵉⵎⴰⵏⴻⵏ ⵎⴻⵕⵕⴰ: ⴷⴻⴳ ⵓⵍⵍⴻⵎⴰⴷ, ⵜⴰⴽⵏⴰ, ⵜⴻⵙⴳⴰ, ⵜⴰⵙⴽⴻⵍⴰ ⴷ ⵍⴻⴽⴷⴻⵎ</li>
+    <li><strong>ⵉ ⵡⴻⵙⴻⴽⴻⵙⴻⴹ ⵏ ⵜⴻⴳⴷⵓⴷⴰ</strong> ⵉ ⵡⵉⴷ ⵓⵔ ⵏⴻⵍⵍⵉ ⴷ-ⵉⵙⴻⵔⴼⴰⵏ</li>
+    <li><strong>ⵉ ⵡⴻⵎⴷⴻⵍ</strong> ⵏ ⵢⵉⵖⴻⵔⵎⴰⵏ ⵏ ⵓⵙⴻⵔⵃⵓ ⵏ ⵢⵉⵎⵎⴹⴰⵏⴻⵏ (CRA)</li>
+    <li><strong>ⵉ ⵜⴰⵙⴻⴷⴷⴰ ⴷ ⵜⴰⵙⴻⴷⴷⴰ ⵏ ⵜⵎⵓⵔⵜ</strong> ⴰⴽⴽⴻⴷ ⵜⴰⵙⴻⴷⴷⴰ ⵏ ⵡⴻⵅⵅⴰⵎ, ⴷ ⵎⴳⴰⵍ ⵜⴻⵡⵉⵔⵉⵇⵜ ⴷ ⵜⵓⵙⴻⴼⴰⵛⵉⵢⴰ</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>ⴰⵎⴻⵣⵣⵓⴷ ⵢⴰⵣⵎ ⴰⴷ ⵜⵙⵙⴻⵇⴽⴻⵎⵜ ɣⴻⵔⵏⵉⵏ, ⵜⴻⵙⵙⴻⵇⴽⴻⵎ ⵜⴰⴼⵔⴰⵏⵜ ⵉ ⴷⴰⵡⴻⵏ ⴷ ⵜⵙⴻⵎⵍⴻⵜ ⵜⴰⴼⵔⴰⵢⵜ, ⴰⴷ ⴰⴽ-ⵏⴰⵣⴻⵏ ⵍⵃⴱⴰⵔⴰⵏ ⵏ ⵓⵙⵙ-ⴰ ✍️.</p>
+  </div>`
+}
+,
+'shimaore': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Mujo wa hatruha: kahatsi hatruha!"</strong></p>
+    <p>Mujo huu wa hatruha unatendwa kwa heshima ya <strong>Siku ya Wamuhajiri wa Dunia, Disemba 18, 2025.</strong></p>
+    <p>Ni mujo wa vitendo ulioanzishwa na <strong>vikundi vya watu wasio na makaratasi na wahamiaji</strong>, wakialika <strong>mgomo wa kisiasa wa umoja</strong> dhidi ya <strong>ubaguzi wa kitaifa</strong>, hali ya umasikini, na kupotea kwa haki za wahamiaji nchini Ufaransa.</p>
+    <p>Tunaamini kwamba <strong>mapambano haya yanatuhusu sisi wote</strong>, kwa sababu sheria za kibaguzi na sera za utoaji nje zinafungua njia kwa ufashisti na zinadhoofisha haki za kila mtu.</p>
+    <p>Vikundi, vyama vya wafanyakazi, mashirika, na vuguvugu za kijamii vinaungana kote Ufaransa kujenga pamoja siku hii ya kihistoria.</p>
+  </div>
+  <p><strong>Maneno ya mwito wetu:</strong></p>
+  <p>Nchi hii haiwezi kuendelea bila wahamiaji. Haipo bila uhamiaji, na inanufaika nao kwa kila njia.</p>
+  <p>Si uhamiaji unaoiharibu, bali ni <strong>siasa, ubaguzi na ukosefu wa haki</strong>.</p>
+  <p>Tarehe 18 Disemba, kwa heshima ya Siku ya Wamuhajiri wa Dunia, tunaita kila mtu kuonyesha ukweli huo.</p>
+  <p>Tunaita kupanga, katika mitaa na sehemu za kazi zetu zote, "<strong>Siku bila sisi: tukisimama, kila kitu kinasimama!</strong>"</p>
+  <p>Wenye makaratasi au bila, wahamiaji, watoto wa wahamiaji, wa kizazi cha kwanza, pili, tatu, ndugu, majirani, marafiki, wale waliogoma Septemba 10, na wale waliogoma au kuandamana Septemba 18 — hatutaenda shule, kazini, wala sokoni. Tutandamana pamoja katika miji yote:</p>
+  <ul>
+    <li><strong>Kwa kufutwa mara moja</strong> kwa sheria ya Darmanin na waraka wa Retailleau</li>
+    <li><strong>Kwa usawa wa haki</strong> kwa wote: katika elimu, makazi, afya, utamaduni na kazi</li>
+    <li><strong>Kwa kurasimishwa</strong> kwa wale wasio na makaratasi</li>
+    <li><strong>Kwa kufungwa</strong> kwa vituo vya kizuizi vya kiutawala (CRA)</li>
+    <li><strong>Kwa haki ya kijamii na umoja</strong>, dhidi ya ubaguzi na ufashisti</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ukiona ni vizuri, unaweza kujiunga nasi. Bonyeza kiungo kilicho hapa chini na ujaze fomu, tutakutumia taarifa za siku hiyo ✍️.</p>
+  </div>`
+}
+,
+'shingazidja': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Siku ya hatsiye: tukahatsi, hata dunia inahatsi!"</strong></p>
+    <p>Siku hiya inafanywa kwa heshima ya <strong>Siku ya Wamuhajiri wa Dunia, Disemba 18, 2025</strong>.</p>
+    <p>Ni siku ya vitendo iliyoanzishwa na <strong>vikundi vya wahamiaji na watu wasio na makaratasi</strong>, vinavyotaka <strong>mgomo wa kisiasa wa umoja</strong> dhidi ya <strong>ubaguzi wa kiserikali</strong>, umasikini, na kupotezwa kwa haki za wahamiaji nchini Ufaransa.</p>
+    <p>Tunaamini kwamba <strong>mapambano haya ni yetu sote</strong>, kwa sababu sheria za kibaguzi na sera za kutoa nje zinafungua njia ya ufashisti na kudhoofisha haki za wote.</p>
+    <p>Vikundi, vyama vya wafanyakazi, mashirika, na vuguvugu vya kijamii vinaandaa pamoja siku hii ya kihistoria kote Ufaransa.</p>
+  </div>
+  <p><strong>Huu ndio mwito wetu:</strong></p>
+  <p>Nchi hiya haiwezi kusimama bila wahamiaji. Haiwezi kuwa bila uhamiaji, na inanufaika nao kwa kila upande.</p>
+  <p>Si uhamiaji unaoiharibu nchi, bali <strong>siasa, ubaguzi na ukosefu wa haki</strong>.</p>
+  <p>Tarehe 18 Disemba, siku ya Wamuhajiri wa Dunia, tunaita kila mtu kuonyesha ukweli huu.</p>
+  <p>Tunaita kupanga katika mitaa na sehemu za kazi, "<strong>Siku bila sisi: tukahatsi, hata dunia inahatsi!</strong>"</p>
+  <p>Wenye makaratasi au bila, wahamiaji, watoto wa wahamiaji, wa kizazi cha kwanza, pili, tatu, ndugu, majirani, wafanyakazi wenzetu, waliokuwa kwenye migomo ya Septemba 10 na waandamanaji wa Septemba 18 — hatutaenda shule, hatutaenda kazi, hatutaenda sokoni. Tutandamana pamoja katika miji yote:</p>
+  <ul>
+    <li><strong>Kwa kufutwa mara moja</strong> kwa sheria ya Darmanin na barua za Retailleau</li>
+    <li><strong>Kwa haki sawa kwa wote</strong> — katika elimu, makazi, afya, utamaduni na kazi</li>
+    <li><strong>Kwa kurasimishwa</strong> kwa watu wasio na makaratasi</li>
+    <li><strong>Kwa kufungwa</strong> kwa vituo vya kizuizi vya kiutawala (CRA)</li>
+    <li><strong>Kwa haki ya kijamii na mshikamano</strong>, dhidi ya ubaguzi na ufashisti</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ukitaka kushiriki, bonyeza kiungo kilicho chini, ujaze fomu, na tutakutumia taarifa zote ✍️.</p>
+  </div>`
+}
+,
+'wo': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Benn bes ci nun: bu nuy taxaw, lépp dina taxaw!"</strong></p>
+    <p>Benn bes bii di ñu settantal ci <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025.</strong></p>
+    <p>Bésub liggéey bii dafa taxaw ci <strong>ñeeñu waaj-immigree ak ñeeñu amul papie</strong>, di woowoo <strong>gàddaay bu politig bu njàmm ak njàmmu nit</strong> ci kow <strong>ñàkk njàngoro ak liggéeyu réew mi</strong>, njàkk jàmm ak li ñu di bàyyi doole ci immigree yi ci Farans.</p>
+    <p>Nun gëm nañu ne <strong>lutti bi mooy lu bokk ci sunu bopp</strong>, ndaxte yooni réew yi ak sañ-sañu wecc nañu, te moo wara yore lëndëm ak aada yu xóot, te moo tax ñàkk sañ-sañ ci ñépp.</p>
+    <p>Ci réew mu nekk, da ñuy jàppale ak jëfandikooko <strong>ndimbalikat, liggéeykat, njàngkat, ndimbaykat, ak mboolo mi</strong> ngir sàkkal bésub rewmi bii.</p>
+  </div>
+  <p><strong>Lii mooy sunu ndigël:</strong></p>
+  <p>Réew bii du dox ndaree bu amul immigree yi. Réew du nekk dara bu amul ay ñeeñu delloo, te moo jàmmal dara ci ñépp.</p>
+  <p>Du immigree yi ñu war a bañ, waaye <strong>li ñu di def, njàkk sañ-sañ, ak nàkk jàmm</strong>.</p>
+  <p>Ci 18 Disàmbar, ci bésu Àdduna bu Immigree yi, nu ngi woowoo ñépp ndax ñu wone ne duñu jaay sunu bopp.</p>
+  <p>Nu ngi woowoo ñépp ngir ànd ci sunu kër, ci sunu yoonu liggéey ak sunu gox, "<strong>Benn bes ci nun: bu nuy taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie walla ñeeñu amul, immigree, doom-immigree, ci àdduna, ci diggante njaboot, xale, xarit, nijaay, neneen, ñépp ci ñépp — duñu dem njàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ngir taxaw ak jàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir simmali léegi lépp</strong> ci yoonu Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada, ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> xaalis ak càmm ak jàmmu réew yi (CRA)</li>
+    <li><strong>Ngir njàmmu mbooloo ak jàmmu nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo bëggee bokk, nga bësal ci biir jëmmal bii, nga fal foom bi te nu la yónnee porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'ff': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Ñalnde kala waɗi amen: so min waɗi, kala waɗi!"</strong></p>
+    <p>Ñalnde ndee ko ɗi tawii ngam <strong>Ñalnde Adunaare e Immigré, 18 diisambaru 2025</strong>.</p>
+    <p>Ko ñalnde ɓeydii ɗi waɗii e <strong>ɗeeɗi jokkondiraaɓe ɗe waɗi e waɗɓe waɗi alaa papiiri</strong>, ɗe waɗi ɗi huutoraa <strong>golle jogii ɗum e jom siyasaare e jom ngorgu</strong> ngal ɗi ɗoɓɓude <strong>lenyol ngal e dow heeri ngam ngal e dowlere</strong>.</p>
+    <p>Minen njogii miɗo waɗi e ɗum ko minen fow ɗum, sabu laawol ɗi ngol e siyasaaji ɓurnde tiiɗnde waɗi ɗi ɗoɓɓude haalaaji e hakkunde kalaaɗi.</p>
+    <p>Ko jokkondiraaɓe, sendikaaji, waɗi assoosieji, e waɗi ɗe hoolnoo hakkunde ngal ñalnde ndee e Gine e Farayse ngal ɗi waɗi e waɗi yaltude ngal ñalnde majjum.</p>
+  </div>
+  <p><strong>Ko ɗum ɗi waɗi goonga ngal e hakkunde amen:</strong></p>
+  <p>Ɗoole ndee waawaa waɗde tawa alaa Immigré. Ndee ngal jeyaa ko woni kala tawa ngalaa immigreeji, tee ngal njogii keɓe e ɗum.</p>
+  <p>Ko Immigréji ɗe waɗi waɗde ngal, waaye ko <strong>siyasaaji ɗi, lenyol ngal e baɗɗal</strong> ɗi waɗi ngal waɗde ngal.</p>
+  <p>Ñalnde 18 diisambaru, ko ñalnde Adunaare e Immigré, minen ɗi huutoraa fow e dow ngal ngam minen waɗi ngal heɓude ɗum.</p>
+  <p>Minen ɗi huutoraa e waɗi nguurndam, ci laaɓi amen e goxoy amen fow, "<strong>Ñalnde kala waɗi amen: so min waɗi, kala waɗi!</strong>"</p>
+  <p>Ɗe waɗi papiiri e ɗe waɗi alaa papiiri, Immigré, piɗɗo Immigré, dow aduna tati, ɓe goonga, ɓe les, kelle, doggu, mbaroodi, ɓe waɗi e ɗee ɓe waɗi jokkondiraaɓe 10 di septàmburu e ɓe waɗi e ñalnde 18 di septàmburu — min waawaa yahde e lekki, e golle, e marché. Min waɗi fow waɗi e ñalnde e dow gallee kala:</p>
+  <ul>
+    <li><strong>Ngam momtude ɗum kala ɗoo</strong> laawol Darmanin e gandal Retailleau</li>
+    <li><strong>Ngam waɗde hakkunde fow</strong> — e njangol, leydi, ñaamande, laawol, e golle</li>
+    <li><strong>Ngam waɗde njangu</strong> e waɗɓe waɗi alaa papiiri</li>
+    <li><strong>Ngam uddugol</strong> galle jeygol ɓurnde ɗi waɗi ɗum CRA</li>
+    <li><strong>Ngam ɗum e dow laawol e hakkunde mbooɗum</strong>, ngal ɗi waɗi ɗi ɗoɓɓude lenyol e dow faaɗaare</li>
+  </ul>
+  <div class="join-us-box">
+    <p>So aɗa yiɗi waɗde e amen, ɗum waɗi ngam a njokkondiri e min, na a ɗaɓɓitii dow link ngal e njokkondiri foom ngal, minen ɗi naatnoy a jeyaa ngal porogaraam ✍️.</p>
+  </div>`
+}
+,
+'serere': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!"</strong></p>
+    <p>Béss boo di def ngir <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025</strong>.</p>
+    <p>Béss boo dafa nekk ngir <strong>ñeeñu Immigree ak ñeeñu amul papie</strong> ñu taxaw ngir <strong>gàddaay bu njàmm ak bu politig</strong> ngir jàppale <strong>ndimbalu nit ñépp</strong>, ngir fippu ci <strong>ubbeeñu njàmm ak njàngoro</strong> ci Farans.</p>
+    <p>Nun séreer gëm nañu ne <strong>liggéeyu njàmm ak nguur gi</strong> mooy lu bokk ci ñépp, te so amee njàkk sañ-sañ ak lu jaay ndimbal, duñu taxaw ci jàmm.</p>
+    <p>Ngir ndimbal, jokkondiraaɓe, liggéeykat, ndimbaykat ak mboolo mi ñu bokk ci yeneen réew ñu ngi defar béss boo ci Farans.</p>
+  </div>
+  <p><strong>Lii mooy sunu ndigël:</strong></p>
+  <p>Réew du dox bu amul Immigree. Réew du nekk dara bu amul Immigree, ndaxte ñoom la mu bëgg di doon.</p>
+  <p>Du Immigree yi ñu taxaw a bañ réew mi, waaye <strong>li ñu di def, njàkk sañ-sañ, ak njàkk jàmm</strong>.</p>
+  <p>Ci 18 Disàmbar, ci bésu Àdduna bu Immigree yi, nu ngi woowoo ñépp ngir ñu taxaw.</p>
+  <p>Nu ngi woowoo ñépp ci sunu gox ak sunu liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom-immigree, jëmm, nijaay, njaboot, njabootu ndaw, jàngkat, liggéeykat — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ngir jàppale ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir simmali léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada, ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm, mbooloom nit ak ngérëm</strong>, te ngir fippu ci arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo bëggee bokk ci jàmm bii, nga fal foom bi ci suuf, te nu la yónnee porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'diola-joola-fogny': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Ala beŋ eneŋ eŋa: naŋ a beŋ eneŋ, a beŋ eneŋ a beŋ!"</strong></p>
+    <p>Bésu ñu ngi def ci <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025</strong>.</p>
+    <p>Bésu liggéey bii dafa taxaw ci <strong>ñeeñu Immigree ak ñeeñu amul papie</strong>, ñu ngi woowoo <strong>njàngu bu politig ak bu njàmm</strong> ngir jàppale <strong>ndimbal, jàmm ak sañ-sañ</strong> ci Farans.</p>
+    <p>Nun Joola gëm nañu ne <strong>lutti bii mooy sunu lu fow</strong>, ndaxte laawol ak siyasa yu juum dañuy feeñ ci bépp bopp, te moo war a jàpp ñépp ci doole.</p>
+    <p>Ñu ngi dawal seen dox, ndimbalikat, mbooloom liggéeykat ak mbooloom jàngkat ci réew mépp ngir defar béssu jàmm bii ak bennoo.</p>
+  </div>
+  <p><strong>Lii mooy sunu ndigël:</strong></p>
+  <p>Réew du dox bu amul Immigree. Réew du nekk dara bu amul ñeeñu delloo, ndaxte ñoom la mu bëgg di doxal.</p>
+  <p>Du Immigree yi ñu taxaw a bañ réew mi, waaye <strong>li ñu di def ak laawol njàkk sañ-sañ</strong> laa di feeñ.</p>
+  <p>Ci 18 Disàmbar, ci bésu Àdduna bu Immigree yi, nu ngi woowoo ñépp ngir ñu jàppale ci taxaw bii.</p>
+  <p>Nu ngi woowoo ñépp ngir ànd ci sunu gox ak sunu liggéey, "<strong>Bés bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom-immigree, njaboot, wa ker, wa gox, wa liggéey, ñépp ñu bokk — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir simmali</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo bëggee bokk, nga fal foom bi ci suuf te nu la yónnee porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'snk': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"A da taa waati, a da taa kulu!"</strong></p>
+    <p>Naŋ béé 18 diisamburu 2025, ko <strong>waati kafu immigree</strong>, bésu àdduna bu ñeeñu immigree ak ñeeñu amul papie.</p>
+    <p>Waati kafu woo dafa ñaaw e <strong>immigree ak ñeeñu amul papie</strong> ñu ngi taxaw ngir <strong>fippu ci lenyol, njàkk sañ-sañ ak ñàkk njàmm</strong> ci Farans.</p>
+    <p>Min kaŋ ŋa to, minnaŋ gàndee ne <strong>liggéey bii mooy sunu liggéey béé</strong>, ndaxte laawol ak lenyol bu ñu defandi la ñuy bonde kala.</p>
+    <p>Waɗe, sendikaaji, mbooloom jàngkat ak liggéeykat da ñu ngi jàppale ci bépp réew ngir defar béss boo bu gàddo ak doole.</p>
+  </div>
+  <p><strong>Lii mooy sunu ndigël:</strong></p>
+  <p>Réew du dox bu amul Immigree. A la waati ye, réew du nekk bu amul ñeeñu delloo, ndaxte ñoom la mu nàmp nekk.</p>
+  <p>Du Immigree yi ñu taxaw a bañ réew mi, waaye <strong>li ñu di def, lenyol, njàkk sañ-sañ ak njàkk njàmm</strong> laa di feeñ.</p>
+  <p>Ci 18 diisamburu, ci bésu àdduna bu immigree, minnaŋ dii huutoraa béé ngir ñu taxaw ci jàmm.</p>
+  <p>Minnaŋ dii huutoraa béé ci sunu gox, ci sunu liggéey, "<strong>Bés bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, ñaari, ñetti generasioŋ, mbokk, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ngir jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir fippu ci njàkk njàmm ak lenyol</li>
+  </ul>
+  <div class="join-us-box">
+    <p>So a fẹ ka bokk e min, nga danne dow foom bi, min naŋ naatnoy a jeyaa porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'soussou-susu': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"N xɛtɛ dɛn, alaa n xɛtɛ — alaa n xɛtɛ, alaa gbɛn!"</strong></p>
+    <p>Bɛs yi n xɔnma nɛ, 18 Disamburu 2025, n tan n ma sɔtɔ <strong>Journée internationale des migrant·e·s</strong>.</p>
+    <p>Bɛs yii na nɛ n ma xɔrɔnɛ <strong>migranxi e yamanxine naxanye fa wɛni papie</strong>, n ma kɛ <strong>naxan kɔlɔ e siyase dɔxɔrɔ</strong> ngir <strong>balanxina e hakilina</strong> nɛn a lu sɔtɔ France.</p>
+    <p>N to a to, n mɛna, n xɛtɛ n ma a yɛrɛ, n ma naxan bɔ a mu nɛn — sabu laawol e siyase xurusee ma naxan yɛtɛ e sɛnbɛmɛ nɛn.</p>
+    <p>Mɔnxin, sendika, fonikee e liggeeykat to France fɔxɔ ra, n ma gbo ngir n dawal bɛs yii e nɔɔn.</p>
+  </div>
+  <p><strong>Lii n ma dii nɛn:</strong></p>
+  <p>Réew du dox bu amul Immigree. France mɛna nɛn bɔ naxan n yɛtɛ immigré yi, n fan nɛ yɔngɔ sɔtɔ ɛ tan nɛn.</p>
+  <p>Du Immigree yi naxan fɔxɔ nɛn, waaye <strong>laawol, siyase e lenyol xunxun</strong> na n kɛ nɛn a gbangbanxi.</p>
+  <p>Ci 18 Disamburu, n ma dii nɛn béé ngir n taxaw, sabu bɛs yii bɛs àdduna bu Immigree.</p>
+  <p>N ma dii béé ngir n jokkondirɛ ci sunu gox ak liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>So i yɛrɛ i n ma nɛn, nga fal foom bi nɛn, n ma sɛnbɛnɛ i e porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'malinke-maninka': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"N ka taa, n ka taa; n ka taa, kɛlɛ be taa!"</strong></p>
+    <p>Bɛs yii, 18 Disamburu 2025, n na taa ngir <strong>Journée internationale des migrant·e·s</strong>.</p>
+    <p>Bɛs yii yɛrɛ na nɛ <strong>immigree e faamuyaŋw ye minnu amu papie</strong>, n dii yɛrɛ naxan <strong>kanu e kɛlɛ politiki</strong> ngir <strong>fɔlɔlenya e lenyolɲɛ</strong> nɛn Faransi la.</p>
+    <p>Minnaŋ mɛn nɛ, n dii nɛ <strong>lutti yii be minnu kɛ nɛ</strong>, sabu laawol e siyase ɲumaya be wuli di tɛɛrɛlenya nɛn, e naxan dɔɔrɔlen hakilina béé.</p>
+    <p>Sendika, mɔnxin, mbooloom liggéeykat e mbooloom doxosiyaw be taa dii béé ngir n sariya béssu bɛɛ be faamuya.</p>
+  </div>
+  <p><strong>Lii n dii nɛ:</strong></p>
+  <p>Réew tɛ mɛn a kɛ bu amul Immigree. A tɛ mɛn a kɛ bu amul faamuya, sabu Immigree be kɛ dooni béé.</p>
+  <p>Immigree tɛ mɛn a bɔ réew mi, waaye <strong>laawol e siyase e lenyolɲɛ</strong> laa di nɛn a dɔɔrɔ.</p>
+  <p>Ci 18 Disamburu, ci bésu àdduna bu Immigree, n dii béé ngir n taxaw ci jàmm.</p>
+  <p>N dii béé ngir n sariya ci sunu gox e liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo be nɛ n yɛrɛ dii béé, nga danne foom bi nɛn, n ma sɛnbɛnɛ i e porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'dyu': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"An ka taa, i ka taa; an ka taa, dun ka taa!"</strong></p>
+    <p>Bɛs yii, 18 Disamburu 2025, n na taa ngir <strong>Journée internationale des migrant·e·s</strong>.</p>
+    <p>Bɛs yii yɛrɛ na nɛ <strong>immigree ak ñeeñu amul papie</strong>, n ma kɛ <strong>njàmmu e kanu politiki</strong> ngir <strong>lenyol, kɛlɛ ak sañ-sañ</strong> ci Faransi la.</p>
+    <p>An bɛ kɛ ka fɔ ne <strong>liggéey yii bɛ an bɛɛ la</strong>, sabu laawol e siyase ɲumaya bɛ di dɔɔrɔ hakilina e lenyol béé.</p>
+    <p>Sendika, mɔnxin, mbooloom liggéeykat e mbooloom doxosiyaw bɛ taa dii béé ngir an sariya béssu bɛɛ ka dooni jàmmu.</p>
+  </div>
+  <p><strong>Lii n ma dii nɛn:</strong></p>
+  <p>Réew tɛ mɛn a kɛ bu amul Immigree. A tɛ mɛn a kɛ bu amul faamuya, sabu Immigree bɛ kɛ dooni béé.</p>
+  <p>Du Immigree yi naxan bɔ réew mi, waaye <strong>laawol e siyase e lenyolɲɛ</strong> laa di nɛn a dɔɔrɔ.</p>
+  <p>Ci 18 Disamburu, ci bésu àdduna bu Immigree, n dii béé ngir n taxaw ci jàmm.</p>
+  <p>N dii béé ngir n sariya ci sunu gox e liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo bɛ nɛ bɛ bokk, i ka danne foom bi nɛn, an bɛ sɛnbɛnɛ i e porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'bci': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Mi tɔ lɔ, mi tɔ lɔ; mi tɔ lɔ, blé bɛ tɔ!"</strong></p>
+    <p>Blé n'da kɛ 18 Disamburu 2025, n'da yɛrɛ <strong>Journée internationale des migrant·e·s</strong>.</p>
+    <p>Blé n'da yɛrɛ mɛn nɛ <strong>migran e wa tɔn amu papie</strong>, mɛn kɛ <strong>kɛlɛ e njàmmu politiki</strong> ngir <strong>lenyol, sañ-sañ e jàmmu</strong> nɛn Faransi la.</p>
+    <p>Mi bé fɔ ne <strong>lutti yii mi béɛ la</strong>, sabu laawol e siyase bonnɔ bɛ di dɔɔrɔ hakilina e lenyol béé.</p>
+    <p>Sendika, mɔnxin, mbooloom liggéeykat e mbooloom doxosiyaw bɛ taa dii béé ngir mi sariya béssu bɛɛ kɛ faamuya e njàmmu.</p>
+  </div>
+  <p><strong>Lii mi bé dii nɛ:</strong></p>
+  <p>Réew tɛ mɛn a kɛ bu amul Immigree. A tɛ mɛn a kɛ bu amul ñeeñu delloo, sabu ñoom la mu nàmp nekk.</p>
+  <p>Du Immigree yi naxan bɔ réew mi, waaye <strong>laawol e siyase e lenyolɲɛ</strong> laa di nɛn a dɔɔrɔ.</p>
+  <p>Ci 18 Disamburu, ci bésu àdduna bu Immigree, mi dii béé ngir mi taxaw ci jàmm.</p>
+  <p>Mi dii béé ngir mi sariya ci sunu gox e liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo béɛ nɛ be bokk, i ka danne foom bi nɛn, mi bɛ sɛnbɛnɛ i e porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'btb': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Wè zra klé, wè zra klé; wè zra klé, gla klé!"</strong></p>
+    <p>Gla 18 Disamburu 2025, wè klé ngra ngir <strong>Journée internationale des migrant·e·s</strong>.</p>
+    <p>Gla yii wè klé naxan <strong>migran ak wa tɔn amu papie</strong>, wè klé na <strong>kɛlɛ e njàmmu politiki</strong> ngir <strong>lenyol e sañ-sañ</strong> nɛn Faransi la.</p>
+    <p>Wè klé fɔ ne <strong>lutti yii wè bɛɛ la</strong>, sabu laawol e siyase bonnɔ bɛ di dɔɔrɔ hakilina e lenyol béé.</p>
+    <p>Sendika, mɔnxin, mbooloom liggéeykat e mbooloom doxosiyaw bɛ taa dii béé ngir wè klé yɛrɛ dii béssu yii be jàmmu.</p>
+  </div>
+  <p><strong>Lii wè klé dii nɛ:</strong></p>
+  <p>Réew tɛ mɛn a kɛ bu amul Immigree. A tɛ mɛn a kɛ bu amul wa tɔn, sabu Immigree bɛɛ bɔ nɛn a ni dooni.</p>
+  <p>Du Immigree yi naxan bɔ réew mi, waaye <strong>laawol e siyase e lenyolɲɛ</strong> laa di nɛn a dɔɔrɔ.</p>
+  <p>Ci 18 Disamburu, ci bésu àdduna bu Immigree, wè dii béé ngir wè taxaw ci jàmm.</p>
+  <p>Wè dii béé ngir wè sariya ci sunu gox e liggéey, "<strong>Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!</strong>"</p>
+  <p>Ñeeñu am papie ak ñeeñu amul, Immigree, doom immigree, njaboot, wa gox, wa liggéey — duñu dem jàng, duñu dem liggéey, duñu dem marse. Ñu bokk lépp ci jàmm ak njàmm ci réew mépp:</p>
+  <ul>
+    <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
+    <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
+    <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
+    <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
+    <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soo bè klé yɛrɛ dii béé, wè ka danne foom bi nɛn, wè bɛ sɛnbɛnɛ i e porogaraam bi ✍️.</p>
+  </div>`
+}
+,
+'ln': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Mokolo moko na biso te: soki to tikí, nyonso e tikí!"</strong></p>
+    <p>Ezali mokolo ya <strong>18 décembre 2025</strong>, mpo na <strong>mokolo ya bato ya bafutamaka te to migran</strong>, oyo ba kolanda na <strong>mokolo ya misala te ya boyokani mpe ya politiki</strong> mpo na <strong>kobunda ekolo-racisme</strong>, mpasi ya bomoi mpe kobeba ya makoki ya bato nyonso ya bayekoli mpe ya bafutamaka te.</p>
+    <p>To lingi koloba ete <strong>kobunda oyo ezali mpo na biso nyonso</strong>, mpo mikano mpe mibeko ya kopona moto ezali nzela ya mobulu mpe ezali kobebisa makoki ya bato nyonso.</p>
+    <p>Basanga, basindika, mpe bato ya mabongisi nyonso bazali kokende elongo na mokili mobimba ya Faransa mpo na kobakisa lokumu ya mokolo oyo ya makasi.</p>
+  </div>
+  <p><strong>Tango oyo ezali lokasa na biso ya kobenga:</strong></p>
+  <p>Mokili oyo ekoki te kosala na kozanga bato ya mboka mosusu. Ezali na bato ya immigré nde ekoki kozala mpe ezali kozwa litomba na bango na nyonso.</p>
+  <p>Ezali te bato ya immigré nde bazali kobebisa mokili oyo, kasi ezala politiki mpe mobulu ya ndenge ya kolanda moto nde ezali kobebisa yango.</p>
+  <p>Na mokolo ya 18 décembre, na mokolo ya bato ya migran, to bengisi bino nyonso mpo na kolakisa yango.</p>
+  <p>To lingi kosala yango na ba quartier mpe bisika ya misala nyonso — "<strong>Mokolo moko na biso te: soki to tikí, nyonso e tikí!</strong>"</p>
+  <p>Ba immigré, ba sans papiers, bana ya ba immigré, bato nyonso ya molongo, ndeko, baninga ya mosala, bana-ndeko ya 1ère, 2ème, 3ème génération — to kende te na kelasi, te na mosala, te na ndako ya kosomba biloko. Tokosangana mpo na kobimisa mongongo na biso:</p>
+  <ul>
+    <li><strong>Po na koboya mbala moko</strong> mibeko ya Darmanin mpe mikanda ya Retailleau</li>
+    <li><strong>Po na boyokani ya makoki</strong> ya bato nyonso — na kelasi, ndako, nzoto, elaka mpe mosala</li>
+    <li><strong>Po na ko regulariser</strong> bato nyonso ya sans-papiers</li>
+    <li><strong>Po na kofunga</strong> bisika ya kofanda bato na nguvu (CRA)</li>
+    <li><strong>Po na bosembo mpe boyokani</strong>, mpo na kobunda na koboya bato mpe fascisme</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soki olingi kosangana na biso, kende na lien oyo na se, kotánga formulaire mpe tokomema yo programme na biso ✍️.</p>
+  </div>`
+}
+,
+'kg': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Kilumbu ka beto ve: bila beto suka, nitu nyonso suka!"</strong></p>
+    <p>Kilumbu yai, <strong>ya 18 décembre 2025</strong>, kele <strong>kilumbu ya bantu ya migran</strong> na ntima ya <strong>nguba ya kisalu ve ya kimvuka</strong> mpo na <strong>kubunda nitu ya racisme ya mboka</strong>, mpasi ya bomoyi mpe kuluta ya bampasi ya makoki ya bantu ya mboka ya nkaka.</p>
+    <p>Beto zolinga kulanda nde <strong>luzolo yai kele ya bantu nyonso</strong>, sambu nde mambu ya kuvutula bantu na makani ya nitu ya ndambu kele tsiela ya bampasi mpe kele kuzaba makoki ya muntu nyonso.</p>
+    <p>Ba mvuka, ba sindika, ba nzo ya bampangi mpe ba mvula ya kimvuka kele ku bundisa na mboka mobimba ya Faranse sambu na kusala kilumbu yai ya ntina.</p>
+  </div>
+  <p><strong>Beno yoka malongi ma beto:</strong></p>
+  <p>Mboka yai me kutanaka ve na bantu ya nkaka ve. Mpe mboka yai ke sala kaka sambu bantu ya migré kele. Yandi ke vila na bango na ndenge nyoso.</p>
+  <p>Mboka yai ke lutama ve na bantu ya migré, kansi na makani ya nitu ya mboka, na racisme mpe na buzoba.</p>
+  <p>Na kilumbu ya 18 décembre, na kilumbu ya bantu ya migré, beto ke benga beno nyonso sambu na kulanda kimvuka yai.</p>
+  <p>Beto ke benga sambu na kusala na ba quartier, na bisika ya kisalu, "<strong>Kilumbu ka beto ve: bila beto suka, nitu nyonso suka!</strong>"</p>
+  <p>Bantu ya migré, bantu ya sans papiers, bana ya bantu ya migré, bantu ya mbandu, bana mvuka, baninga ya kisalu — beto ta kwenda ve na kisalu, ve na kelasi, ve na mbanza ya kusomba biloko. Beto ta butuka mpe kubunda na Faranse mobimba:</p>
+  <ul>
+    <li><strong>Po na kuboma mbala mosi</strong> mimbeka ya Darmanin mpe mikanda ya Retailleau</li>
+    <li><strong>Po na makoki ya bantu nyonso</strong> — na kisalu, kelasi, ndako, nzoto mpe mambu ya kimvuka</li>
+    <li><strong>Po na kukabula makanda</strong> na bantu nyonso ya sans-papiers</li>
+    <li><strong>Po na kufunga</strong> bisika ya kuta bantu na ngolo (CRA)</li>
+    <li><strong>Po na kimvuka mpe bosembo</strong>, po na kubunda racisme mpe fascisme</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soki nge ke zolaka ku zaba beto, zwa lien na nse, kumatisa formulaire, mpe beto ta simbisa nge na programme ✍️.</p>
+  </div>`
+}
+,
+'lua': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Dibalu dietu dimue te: neetu tuikale, bintu bionso biikale!"</strong></p>
+    <p>Diambula yai ya <strong>18 décembre 2025</strong> kele <strong>mukolo wa bantu ba migran</strong>, mu <strong>mukanda wa kudibikila ne mu nsombelu wa politiki</strong> mpo na <strong>kubunda bu-racisme bwa mboka</strong>, buswalu bwa bulelela mpe kupungana kwa bupatula bwa makokeshi a bantu ba migran ku France.</p>
+    <p>Tubuela ne <strong>mubundu yai mu makasa a bintu bionso</strong>, sambu bupatula bwa bantu ne milonga ya ku lelaluka kele nzila ya muvumbi ne bupinganyi bwa makokeshi a bantu bionso.</p>
+    <p>Ba nganda, ba sendika, ba mvwangi, ne ba muvanzu ya kimvuka kele mu kusolola mu France yonsu mpo na kudibikila mukolo yai wa bulelela.</p>
+  </div>
+  <p><strong>Dibunga dietu di makani kele:</strong></p>
+  <p>Mboka ayi katunguluka ve bila bantu ba nkaka. Mboka ayi kele na bantu ba migré ne kele ku lumingu na bango mu nzelu yonso.</p>
+  <p>Bantu ba migré ve ba kele ku boma mboka, kansi milonga ya ba politiki mpe bu-racisme di ke boma yango.</p>
+  <p>Na 18 décembre, mu mukolo wa bantu ba migré, tubuela bantu bionso mpo na kulandula yango.</p>
+  <p>Tubuela bantu bionso mu ba quartier ne mu bisika ya kisalu, "<strong>Dibalu dietu dimue te: neetu tuikale, bintu bionso biikale!</strong>"</p>
+  <p>Bantu ba migré, ba sans papiers, bana ba migré, ba ndandu, ba mvwangi, ba sendika — tu ta kwenda ve ku kisalu, ve ku kelasi, ve ku zando. Tu ta salangana mu France yonsu:</p>
+  <ul>
+    <li><strong>Po na kubomola mbala mosi</strong> mibeko ya Darmanin mpe mikanda ya Retailleau</li>
+    <li><strong>Po na bupatula bwa makokeshi</strong> — mu kelasi, ndaku, mu nsombelu, mu nsomi ne mu kisalu</li>
+    <li><strong>Po na ku regulariser</strong> bantu ba sans-papiers</li>
+    <li><strong>Po na kufungola</strong> ba centre ya kufunda bantu (CRA)</li>
+    <li><strong>Po na bulelela ne bumanyikanyi</strong>, mpo na kubunda bu-racisme ne bu-fascisme</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ne olinga ku salangana na betu, zwa lien mu nse, tatela formulaire, betu ta lumanyisa nge mu programme ✍️.</p>
+  </div>`
+}
+,
+'ewo': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Nsú be ô nnam: me ndé asú, mvet ôsú!"</strong></p>
+    <p>Kilôg mbom yí, <strong>18 décembre 2025</strong>, ké <strong>mvet ô bôso bo nyɛlɔ mi migrant</strong>. Ô ké <strong>mvet ô súk nsôŋ a mimbil</strong> mpo na <strong>kû nnam a racism a mboka</strong>, éboga é nkukuma, na kôbô a mikôlô mi nyɛlɔ.</p>
+    <p>Minyé mbôa bôlô: <strong>nsôŋ a yí ké ma nyɛlɔ bôa mi nyɛlɔ</strong>, nnam a racism na mimbil éké mon me ngôŋ na bôso a ndôŋ a mbilô na mi bôa mi nyɛlɔ.</p>
+    <p>Bôlô bôso bo nyɛlɔ, mi sendika, mi mvog, na mi nyɛlɔ mi sosyete ké mimbil na Falanse ô yí mpo na kô kû mvet yí ôsú.</p>
+  </div>
+  <p><strong>Nsôŋ a bôlô a betô:</strong></p>
+  <p>Mboka ôsú té mvet nnam me nyɛlɔ mi nkakô. Mboka ôsú ké mvet nnam me nyɛlɔ mi migrant, na ké éboga ébega na mi nyɛlɔ bôso.</p>
+  <p>Mboka ôsú ké mon me nyɛlɔ me migran me kô boma yí, kansi éké mimbil a racism na nnam a mpem na é boma yí.</p>
+  <p>Na 18 décembre, na mvet ô bôso bo nyɛlɔ mi migran, betô ké bôlô bôso mpo na kô kû éboga yí.</p>
+  <p>Betô ké bôlô bôso na mvog, na bisika bi kisalu: "<strong>Nsú be ô nnam: me ndé asú, mvet ôsú!</strong>"</p>
+  <p>Mi migran, mi sans-papiers, mi bôa me migran, mi mvog, mi mbilô, mi sendika — betô ta ka na kelasi, ve na kisalu, ve na zando. Betô ta kû mimbil na Falanse yônsô:</p>
+  <ul>
+    <li><strong>Pô na kû ndé</strong> mimbil a Darmanin na mikanda a Retailleau</li>
+    <li><strong>Pô na ndôŋ a makoki</strong> ma bôa mi nyɛlɔ — na kelasi, ndaku, nzô, na kisalu</li>
+    <li><strong>Pô na kû ndé makanda</strong> ma mi sans-papiers</li>
+    <li><strong>Pô na kufunga</strong> bisika bi kofunda bantu (CRA)</li>
+    <li><strong>Pô na bulelela na bumanyikanyi</strong>, mpo na kubunda racism na fascism</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Só olinga kû kô bôlô na betô, zwa lien a nse, tatela formulaire, betô ta ndinga nge na programme ✍️.</p>
+  </div>`
+}
+,
+'dua': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Mokolo wo wa beto te: soki beto ke bika, mambu nyonso ke bika!"</strong></p>
+    <p>Mokolo yai ya <strong>18 décembre 2025</strong> ke mokolo ya <strong>bantu ba migran</strong>, mpe ke <strong>mokolo ya kuta kimvuka mpe kisalu ve</strong> mpo na <strong>kubunda racism ya mboka</strong>, pasi ya bomoyi mpe kupanzana ya makoki ya bantu ya mboka ya nkaka.</p>
+    <p>Beto ke mona nde <strong>ndinga yai ke ya bantu nyonso</strong>, sambu milonga ya kubombisa bantu mpe racisme ke melemba makoki ya bantu nyonso mpe ke pesa nzila na fascisme.</p>
+    <p>Ba mvuka, ba sendika, ba nzembo ya kimvuka mpe ba nzo ya bampangi ke bundisa na Falanse mobimba mpo na kuta mokolo yai ya ntina.</p>
+  </div>
+  <p><strong>Mambu ma beto ke benga:</strong></p>
+  <p>Mba yai ke salaka ve soki bantu ya mboka ya nkaka ke bika ve. Mba yai ke belela mingi na bantu ba migré mpe ke mona bolamu na bango na ndenge nyonso.</p>
+  <p>Mboka yai ke lutama ve na bantu ba migré, kansi na milonga ya mboka, racisme mpe buzoba.</p>
+  <p>Na mokolo ya 18 décembre, mokolo ya bantu ba migré, beto ke benga beno nyonso mpo na kuta kimvuka.</p>
+  <p>Beto ke benga bantu nyonso na ba quartier, na bisika ya kisalu: "<strong>Mokolo wo wa beto te: soki beto ke bika, mambu nyonso ke bika!</strong>"</p>
+  <p>Bantu ya migré, bantu ya sans papiers, bana ya migré, ba mvuka, ba sendika, ba moninga — beto ta kwenda ve na kisalu, ve na kelasi, ve na zando. Beto ta bundisa mpe kuta kimvuka na Falanse mobimba:</p>
+  <ul>
+    <li><strong>Po na kufuta mbala mosi</strong> mibeko ya Darmanin mpe mikanda ya Retailleau</li>
+    <li><strong>Po na makoki ya bantu nyonso</strong> — na kelasi, ndaku, nzoto, mpe kisalu</li>
+    <li><strong>Po na ku regulariser</strong> bantu ba sans-papiers</li>
+    <li><strong>Po na kufunga</strong> ba CRA (centre ya kufunda bantu)</li>
+    <li><strong>Po na bosembo mpe kimvuka</strong>, mpe po na kubunda racisme mpe fascisme</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soki olingi kuta kimvuka na beto, zwa lien na nse, tatela formulaire, mpe beto ta pesa nge programme ✍️.</p>
+  </div>`
+}
+,
+'bas': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Njé ñu mi bésô: ma ñu lé ndé, bésô bôso lé ndé!"</strong></p>
+    <p>Mokolo ma <strong>18 décembre 2025</strong> ké <strong>njé ñu ma nyɛlɔ mi migran</strong>. É ké <strong>mvet ma súk nsôŋ a kimvuka na kisalu ve</strong> mpo na <strong>kubunda racism a mboka</strong>, buswalu bwa bomoyi, mpe kupungana bwa makokeshi a bantu mi migran.</p>
+    <p>Beto ke mona nde <strong>mambu yai ké ma bantu bôso</strong>, sambu nde racisme na milonga ya kuvutula bantu ké yel mboka mu nzila ya nnam mpe ké bwama makoki a bantu bôso.</p>
+    <p>Ba sendika, ba mvwangi, ba mvuka na ba nzo ya kimvuka ké mimbil na Falanse mobimba mpo na kuta njé ñu yai ya ntina.</p>
+  </div>
+  <p><strong>Nsôŋ a betô:</strong></p>
+  <p>Mboka ô ké mon me migré ve, ké sala ve. Yé ké bénga na bantu ya migré, na ké nyɛ bolamu na bango mu nzela bôso.</p>
+  <p>Mboka ô ké boma na racisme mpe milonga ya buzoba, ve na bantu ya migré.</p>
+  <p>Na 18 décembre, na njé ñu ma nyɛlɔ mi migré, betô ké bôlô bôso mpo na kû lomba yango.</p>
+  <p>Betô ké bôlô bôso na ba quartier, ba kisalu: "<strong>Njé ñu mi bésô: ma ñu lé ndé, bésô bôso lé ndé!</strong>"</p>
+  <p>Bantu ba migré, ba sans-papiers, bana ba migré, ba mvuka, ba sendika — betô ta kwenda ve na kisalu, ve na kelasi, ve na zando. Betô ta kû mimbil na Falanse yônsô:</p>
+  <ul>
+    <li><strong>Po na kufuta mbala mosi</strong> mibeko ya Darmanin mpe mikanda ya Retailleau</li>
+    <li><strong>Po na makoki ya bantu bôso</strong> — na kelasi, ndaku, nsomi, mpe kisalu</li>
+    <li><strong>Po na ku regulariser</strong> bantu ba sans-papiers</li>
+    <li><strong>Po na kufunga</strong> ba centre ya kufunda bantu (CRA)</li>
+    <li><strong>Po na bosembo mpe kimvuka</strong>, mpe po na kubunda racisme mpe fascisme</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Soki olingi kuta kimvuka na beto, zwa lien na nse, tatela formulaire, mpe beto ta pesa nge programme ✍️.</p>
+  </div>`
+}
+,
+'sw': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"Siku bila sisi: tukisimama, kila kitu kinasimama!"</strong></p>
+    <p>Tarehe <strong>18 Desemba 2025</strong> ni <strong>Siku ya Wahamiaji Duniani</strong>. Ni <strong>siku ya mgomo wa pamoja na mshikamano</strong> kupinga <strong>ubaguzi wa rangi na sera za kibaguzi</strong> ambazo zinaharibu haki za watu wote na kutishia umoja wa jamii.</p>
+    <p>Tunasema wazi kuwa <strong>mapambano haya ni ya wote</strong>, kwa sababu ubaguzi wa rangi na sera za kuwabagua wahamiaji vinapunguza uhuru na haki za kila mtu, na vinatengeneza njia kwa ukatili wa kifashisti.</p>
+    <p>Vyama vya wafanyakazi, mashirika, na vikundi vya kijamii kote Ufaransa vinajiunga kufanya siku hii ya kihistoria.</p>
+  </div>
+  <p><strong>Tunadai:</strong></p>
+  <p>Nchi hii haiwezi kuendelea bila wahamiaji. Wao ndiyo wanaofanya kazi, kujenga, na kusaidia maisha ya kila siku.</p>
+  <p>Wahamiaji hawaleti matatizo, bali sera za kibaguzi ndizo zinazoleta mateso na mgawanyiko.</p>
+  <p>Tarehe 18 Desemba, Siku ya Wahamiaji Duniani, tunaita kila mtu kushiriki katika vitendo vya mshikamano.</p>
+  <p>Tutakutana mitaani, mashuleni, na sehemu za kazi kwa wito huu: "<strong>Siku bila sisi: tukisimama, kila kitu kinasimama!</strong>"</p>
+  <p>Wahamiaji, watu wasio na makaratasi, watoto wa wahamiaji, vyama vya kijamii na wafanyakazi — tutakataa kwenda kazini, shule, au sokoni. Tutakusanyika kote Ufaransa:</p>
+  <ul>
+    <li><strong>Kupinga</strong> sheria za Darmanin na mipango ya Retailleau</li>
+    <li><strong>Kudai haki sawa</strong> kwa wote — katika elimu, makazi, afya, na kazi</li>
+    <li><strong>Kupatia vibali vya ukaazi</strong> kwa watu wote wasio na makaratasi</li>
+    <li><strong>Kufunga</strong> vituo vya kuwafungia wahamiaji (CRA)</li>
+    <li><strong>Kusimama kwa mshikamano na usawa</strong> dhidi ya ubaguzi na ufashisti</li>
+  </ul>
+  <div class="join-us-box">
+    <p>Ikiwa ungependa kushiriki nasi, bofya kiungo kilicho hapa chini, jaza fomu, na tutakutumia taarifa za ratiba ✍️.</p>
+  </div>`
+}
+,
+'bn': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"আমাদের ছাড়া একদিন: আমরা থামলে, সব থেমে যায়!"</strong></p>
+    <p><strong>১৮ ডিসেম্বর ২০২৫</strong> হলো <strong>আন্তর্জাতিক অভিবাসী দিবস</strong>। এটি <strong>বর্ণবৈষম্য ও অন্যায়ের বিরুদ্ধে সংহতি ও ধর্মঘটের দিন</strong> — এমন এক দিন যা আমাদের সবাইকে একত্রে দাঁড়াতে আহ্বান জানায়।</p>
+    <p>আমরা বলি, <strong>এই লড়াই সবার লড়াই</strong>, কারণ বর্ণবাদ ও অভিবাসী-বিরোধী আইন কেবল তাদের নয়, বরং আমাদের সবার অধিকার ও স্বাধীনতার উপর আঘাত হানে।</p>
+    <p>ফ্রান্সজুড়ে ট্রেড ইউনিয়ন, সংগঠন ও আন্দোলনের দলসমূহ ঐক্যবদ্ধভাবে এই গুরুত্বপূর্ণ দিনে অংশ নিচ্ছে।</p>
+  </div>
+  <p><strong>আমাদের দাবিগুলো:</strong></p>
+  <p>এই দেশ অভিবাসীদের ছাড়া চলতে পারে না। তারা কাজ করে, গড়ে তোলে, এবং সমাজকে সচল রাখে।</p>
+  <p>অভিবাসীরা সমস্যা নয় — বৈষম্যমূলক নীতি ও বর্ণবাদই সমাজের বিভাজন তৈরি করছে।</p>
+  <p>১৮ ডিসেম্বর, আন্তর্জাতিক অভিবাসী দিবসে, আমরা সবাইকে একত্রে আন্দোলনে যোগ দিতে আহ্বান জানাচ্ছি।</p>
+  <p>আমরা রাস্তায়, স্কুলে, কর্মস্থলে মিলিত হব এই আহ্বান নিয়ে: "<strong>আমাদের ছাড়া একদিন: আমরা থামলে, সব থেমে যায়!</strong>"</p>
+  <p>অভিবাসী, কাগজবিহীন মানুষ, অভিবাসীদের সন্তান, সামাজিক আন্দোলন ও শ্রমিক সংগঠন — আমরা কাজ, স্কুল ও বাজারে যাব না। আমরা ফ্রান্সজুড়ে একত্রে দাঁড়াব:</p>
+  <ul>
+    <li><strong>ডার্মানিন আইনের</strong> ও <strong>রিটাইও পরিকল্পনার</strong> বিরুদ্ধে</li>
+    <li><strong>সমান অধিকার</strong> — শিক্ষা, বাসস্থান, স্বাস্থ্য ও কাজের ক্ষেত্রে</li>
+    <li><strong>সব কাগজবিহীন মানুষদের</strong> বৈধতা প্রদান</li>
+    <li><strong>অভিবাসী আটক কেন্দ্র</strong> (CRA) বন্ধ করা</li>
+    <li><strong>একতা ও ন্যায়ের</strong> জন্য দাঁড়ানো — বর্ণবাদ ও ফ্যাসিবাদের বিরুদ্ধে</li>
+  </ul>
+  <div class="join-us-box">
+    <p>যদি আপনি আমাদের সঙ্গে যোগ দিতে চান, নিচের লিঙ্কে ক্লিক করুন, ফর্মটি পূরণ করুন এবং আমরা আপনাকে কার্যক্রমের তথ্য পাঠাব ✍️।</p>
+  </div>`
+}
+,
+'ur': {
+  rtl: true,
+  audio: '',
+  content: `<div class="intro rtl">
+    <p><strong>"ایک دن ہمارے بغیر: اگر ہم رک جائیں، سب کچھ رک جاتا ہے!"</strong></p>
+    <p><strong>18 دسمبر 2025</strong> <strong>عالمی یومِ مہاجرین</strong> ہے — <strong>نسل پرستی اور امتیازی پالیسیوں کے خلاف یکجہتی اور ہڑتال کا دن</strong>، ایک ایسا دن جب ہم سب ایک ساتھ کھڑے ہوں گے۔</p>
+    <p>ہم کہتے ہیں کہ <strong>یہ جدوجہد سب کی ہے</strong>، کیونکہ نسل پرستی اور مہاجر دشمن قوانین صرف چند افراد کو نہیں بلکہ سب کے حقوق اور آزادیوں کو نقصان پہنچاتے ہیں۔</p>
+    <p>پورے فرانس میں یونینز، تنظیمیں اور تحریکیں اس دن یکجہتی کے ساتھ شامل ہو رہی ہیں۔</p>
+  </div>
+  <p><strong>ہماری مطالبات:</strong></p>
+  <p>یہ ملک مہاجرین کے بغیر نہیں چل سکتا۔ وہی ہیں جو کام کرتے ہیں، تعمیر کرتے ہیں، اور روزمرہ زندگی کو ممکن بناتے ہیں۔</p>
+  <p>مہاجرین مسئلہ نہیں ہیں — امتیازی پالیسیوں اور نسل پرستی نے ہی معاشرے کو تقسیم کیا ہے۔</p>
+  <p>18 دسمبر، عالمی یومِ مہاجرین کے دن، ہم سب کو اپیل کرتے ہیں کہ متحد ہو جائیں اور جدوجہد میں شامل ہوں۔</p>
+  <p>ہم سڑکوں، اسکولوں اور کام کی جگہوں پر جمع ہوں گے اس نعرے کے ساتھ: "<strong>ایک دن ہمارے بغیر: اگر ہم رک جائیں، سب کچھ رک جاتا ہے!</strong>"</p>
+  <p>مہاجرین، بغیر کاغذات والے افراد، مہاجر خاندانوں کے بچے، تنظیمیں اور مزدور یونینز — ہم کام، اسکول اور بازار نہیں جائیں گے۔ ہم پورے فرانس میں متحد ہوں گے:</p>
+  <ul>
+    <li><strong>ڈارمینن قانون</strong> اور <strong>ریٹائیو منصوبے</strong> کے خلاف</li>
+    <li><strong>تمام افراد کے مساوی حقوق</strong> — تعلیم، رہائش، صحت، اور کام میں</li>
+    <li><strong>تمام بغیر کاغذات والے افراد کی قانونی حیثیت</strong> کو تسلیم کیا جائے</li>
+    <li><strong>مہاجر حراستی مراکز</strong> (CRA) کو بند کیا جائے</li>
+    <li><strong>اتحاد اور انصاف</strong> کے لیے — نسل پرستی اور فاشزم کے خلاف</li>
+  </ul>
+  <div class="join-us-box rtl">
+    <p>اگر آپ ہمارے ساتھ شامل ہونا چاہتے ہیں تو نیچے دیے گئے لنک پر کلک کریں، فارم پُر کریں، اور ہم آپ کو پروگرام کی تفصیلات بھیجیں گے ✍️۔</p>
+  </div>`
+}
+,
+'hi': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"हमारे बिना एक दिन: अगर हम रुक जाएँ, तो सब कुछ रुक जाता है!"</strong></p>
+    <p><strong>18 दिसंबर 2025</strong> <strong>अंतरराष्ट्रीय प्रवासी दिवस</strong> है — यह <strong>नस्लवाद और भेदभावपूर्ण नीतियों के खिलाफ एकजुटता और हड़ताल का दिन</strong> है, जब हम सब मिलकर आवाज़ उठाएँगे।</p>
+    <p>हम कहते हैं कि <strong>यह संघर्ष हम सभी का है</strong>, क्योंकि प्रवासियों के खिलाफ बनाए गए नस्लवादी कानून और नीतियाँ न सिर्फ़ उन्हें, बल्कि हर व्यक्ति की आज़ादी और अधिकारों को कमजोर करती हैं।</p>
+    <p>फ्रांस भर में यूनियनें, संगठन और सामाजिक आंदोलन इस ऐतिहासिक दिन में भाग ले रहे हैं।</p>
+  </div>
+  <p><strong>हमारी माँगें:</strong></p>
+  <p>यह देश प्रवासियों के बिना नहीं चल सकता। वही हैं जो काम करते हैं, निर्माण करते हैं, और जीवन को संभव बनाते हैं।</p>
+  <p>प्रवासी समस्या नहीं हैं — भेदभावपूर्ण नीतियाँ और नस्लवाद ही समाज को बाँटते हैं।</p>
+  <p>18 दिसंबर, अंतरराष्ट्रीय प्रवासी दिवस पर, हम सबको एकजुट होकर इस आंदोलन में शामिल होने का आह्वान करते हैं।</p>
+  <p>हम सड़कों, स्कूलों और कार्यस्थलों पर मिलेंगे इस नारे के साथ: "<strong>हमारे बिना एक दिन: अगर हम रुक जाएँ, तो सब कुछ रुक जाता है!</strong>"</p>
+  <p>प्रवासी, बिना कागज़ात वाले लोग, प्रवासी परिवारों के बच्चे, सामाजिक संगठन और श्रमिक संघ — हम काम पर नहीं जाएँगे, स्कूल नहीं जाएँगे, न ही बाज़ार। हम पूरे फ्रांस में एकजुट होंगे:</p>
+  <ul>
+    <li><strong>डार्मनिन कानून</strong> और <strong>रेटायो परिपत्र</strong> को रद्द किया जाए</li>
+    <li><strong>सभी के लिए समान अधिकार</strong> — शिक्षा, आवास, स्वास्थ्य और रोजगार में</li>
+    <li><strong>सभी बिना कागज़ात वाले लोगों को</strong> वैध दर्जा दिया जाए</li>
+    <li><strong>प्रशासनिक हिरासत केंद्रों</strong> (CRA) को बंद किया जाए</li>
+    <li><strong>न्याय और एकता</strong> के लिए — नस्लवाद और फासीवाद के खिलाफ</li>
+  </ul>
+  <div class="join-us-box">
+    <p>यदि आप हमारे साथ जुड़ना चाहते हैं, तो नीचे दिए गए लिंक पर क्लिक करें, फॉर्म भरें, और हम आपको कार्यक्रम की जानकारी भेजेंगे ✍️।</p>
+  </div>`
+}
+,
+'si': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>"අප නොමැති දිනයක්: අපි නවතන විට, සෑමදේම නවතෙයි!"</strong></p>
+    <p><strong>2025 දෙසැම්බර් 18</strong> වන දින <strong>ජාත්‍යන්තර ගැමි දින</strong> ලෙස සමරනු ලැබේ — <strong>ජාතිවාදය සහ විෂමතා පාලන නීතිවලට විරුද්ධව ඒකාබද්ධතාවය හා වැඩවිරමණ දිනයක්</strong> ලෙස මෙය සැලකේ।</p>
+    <p>අපි විශ්වාස කරන්නේ <strong>මෙම සටන සියල්ලන්ටම අදාල ය</strong>, මන්ද විෂමතා සහ ගැමි විරුද්ධ නීති සෑම පුද්ගලයෙකුගේම අයිතිවාසිකම් සහ නිදහස අවම කරයි.</p>
+    <p>ප්‍රංශය පුරා සංගම්, සංවිධාන සහ සමාජ චලන මේ ඉතිහාසමය දිනය සඳහා එකතු වෙමින් සිටී.</p>
+  </div>
+  <p><strong>අපගේ ඉල්ලීම්:</strong></p>
+  <p>මෙම රට ගැමියන් නොමැතිව ක්‍රියාත්මක විය නොහැක. ඔවුහු කටයුතු කරන්නේය, ගොඩනගන්නේය, ජීවිතය ඉදිරියට ගෙන යන්නේය.</p>
+  <p>ගැමියන් ප්‍රශ්නයක් නොවේ — විෂමතා සහ ජාතිවාදය මගින් සමාජය බෙදී යයි.</p>
+  <p>දෙසැම්බර් 18, ජාත්‍යන්තර ගැමි දිනේ දී, අපි සියල්ලන්ට එකතු වීමට සහ සටනට එක්වීමට අමතමු.</p>
+  <p>අපි විදිහටම මනාව තේරෙන මේ නාරය සමඟ එක්වමු: "<strong>අප නොමැති දිනයක්: අපි නවතන විට, සෑමදේම නවතෙයි!</strong>"</p>
+  <p>ගැමියන්, ලිපි රහිත පුද්ගලයින්, ගැමි පවුල්වල දරුවන්, සමාජ සංවිධාන සහ කම්කරුවන් — අපි පාසල්, වැඩ හා වෙළඳසැල්වලට නොයන්නෙමු. අපි ප්‍රංශය පුරා එකමුතු වන්නෙමු:</p>
+  <ul>
+    <li><strong>ඩාර්මනින් නීතිය</strong> සහ <strong>රෙටයිලෝ අණපත්</strong> අවලංගු කරන ලෙස ඉල්ලමු</li>
+    <li><strong>සියලු දෙනාට සමාන අයිතිවාසිකම්</strong> — අධ්‍යාපනය, නවාතැන්, සෞඛ්‍යය සහ රැකියා ක්ෂේත්‍රවල</li>
+    <li><strong>ලිපි රහිත පුද්ගලයින්ට</strong> නීතිගත තත්ත්වයක් ලබාදීම</li>
+    <li><strong>පරිපාලන අත්අඩංගුවේ මධ්‍යස්ථාන</strong> (CRA) වසා දැමීම</li>
+    <li><strong>ඒකාබද්ධතාවය සහ සමාජ නීතිය</strong> සඳහා — ජාතිවාදය සහ ෆැසිසමයට විරුද්ධව</li>
+  </ul>
+  <div class="join-us-box">
+    <p>ඔබ අප සමඟ එක්වීමට කැමති නම්, පහත සබැඳිය ක්ලික් කර, පෝරමය පුරවා, වැඩසටහන ගැන විස්තර අපි ඔබට එවන්නෙමු ✍️.</p>
+  </div>`
+}
+,
+'zh': {
+  rtl: false,
+  audio: '',
+  content: `<div class="intro">
+    <p><strong>“没有我们的⼀天：如果我们停下，⼀切都会停下！”</strong></p>
+    <p>这⼀倡议发⽣在<strong>2025年12⽉18⽇国际移⺠⽇</strong>，由<strong>无证与移⺠群体组织</strong>发起，呼吁发起⼀场<strong>政治性团结罢⼯</strong>，以抗议<strong>国家种族主义、社会不平等以及对移⺠权利的削弱</strong>。</p>
+    <p>我们相信，<strong>这场斗争与我们所有⼈都息息相关</strong>，因为种族主义法律和排他性政策为法西斯主义铺平道路，并削弱每⼀个⼈的权利。</p>
+    <p>全法各地的组织、⼯会、协会和社会运动正携⼿共建这⼀历史性的⽇⼦。</p>
+  </div>
+  <p><strong>我们的呼吁：</strong></p>
+  <p>没有移⺠，这个国家无法运转。没有移⺠，它也不会存在。移⺠在各个层⾯都为这个国家作出了贡献。</p>
+  <p>毁掉国家的不是移⺠，⽽是当前的政策、种族主义与不公。</p>
+  <p>在12⽉18⽇国际移⺠⽇这天，我们号召所有⼈⽴刻⾏动。</p>
+  <p>我们号召大家在各个社区、各个⼯作场所组织起来——<strong>“没有我们的⼀天：如果我们停下，⼀切都会停下！”</strong></p>
+  <p>有证与⽆证的移⺠、移⺠的⼦⼥、第⼀代、第二代、第三代移⺠、亲友、邻⾥、同事——我们不会去上学、不会去⼯作、不会去购物。我们将在全国各地共同游⾏：</p>
+  <ul>
+    <li><strong>⽴即废除</strong> 达尔马南法案与雷泰约通告</li>
+    <li><strong>争取所有⼈的平等权利</strong> ——在教育、住房、医疗、⽂化与劳动中</li>
+    <li><strong>为⽆证移⺠</strong> 实现合法化</li>
+    <li><strong>关闭</strong> ⾏政拘留中⼼（CRA）</li>
+    <li><strong>争取社会正义与团结</strong>，反对种族主义与法西斯主义</li>
+  </ul>
+  <div class="join-us-box">
+    <p>如果您希望加⼊我们，请点击下⽅链接并填写表格，我们将向您发送详细⽇程 ✍️。</p>
+  </div>`
 };
+const LANGUAGE_LABELS = {
+  fr: "Français",
+  en: "English",
+  ar: "العربية",
+  "ar-dz": "Algérien (دارجة)",
+  "ar-ma": "Marocain (دارجة)",
+  "ar-tn": "Tunisien",
+  "ar-egy": "مصري",
+  kab: "Kabyle",
+  "tzm-latn": "Tamazight (Latn)",
+  "tzm-tfng": "ⵜⴰⵎⴰⵣⵉⵖⵜ (Tifinagh)",
+  wo: "Wolof",
+  ff: "Fula",
+  "shimaore": "Shimaore",
+  "shingazidja": "Shingazidja",
+  ln: "Lingála",
+  kg: "Kikongo",
+  lua: "Tshiluba (Luba-Kasai)",
+  ewo: "Ewondo",
+  dua: "Duala",
+  bas: "Basaá",
+  sw: "Kiswahili",
+  bn: "বাংলা",
+  ur: "اردو",
+  hi: "हिन्दी",
+  si: "සිංහල",
+  zh: "中文",
+  // …ajoute d’autres libellés au besoin
+};
+
+/* =========================
+   2) Options par défaut
+   ========================= */
+const I18N_OPTIONS = {
+  defaultLang: "fr",              // langue par défaut si rien n’est précisé
+  selectorId: "lang",             // <select> pour choisir la langue
+  contentId: "content",           // conteneur où injecter le HTML traduit
+  rememberChoice: true,           // mémorise le choix dans localStorage
+  storageKey: "appel.lang",       // clé de stockage
+};
+
+/* =========================
+   3) Helpers
+   ========================= */
+
+// Récupérer une langue initiale (URL ?lang=xx, #lang=xx, localStorage, navigator, sinon default)
+function getInitialLang(opts) {
+  const url = new URL(window.location.href);
+  const qLang = url.searchParams.get("lang");
+  if (qLang && translations[qLang]) return qLang;
+
+  // hash type #lang=xx ou #xx
+  if (location.hash) {
+    const m = location.hash.match(/lang=([A-Za-z0-9-_.]+)/);
+    const h = m ? m[1] : location.hash.replace(/^#/, "");
+    if (h && translations[h]) return h;
+  }
+
+  if (opts.rememberChoice) {
+    const saved = localStorage.getItem(opts.storageKey);
+    if (saved && translations[saved]) return saved;
+  }
+
+  // Déduire depuis le navigateur (ex: "fr-FR" -> "fr")
+  const nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+  const cand = nav.split("-")[0];
+  if (cand && translations[cand]) return cand;
+
+  // fallback
+  if (translations[opts.defaultLang]) return opts.defaultLang;
+
+  // si defaultLang absent, prendre la première langue dispo
+  const first = Object.keys(translations)[0];
+  return first || null;
+}
+
+// Appliquer direction RTL/LTR (html dir + classe sur #content)
+function applyDirection(isRtl, contentEl) {
+  document.documentElement.setAttribute("dir", isRtl ? "rtl" : "ltr");
+  contentEl.classList.toggle("rtl", !!isRtl);
+}
+
+// Construire le sélecteur depuis `translations`
+function buildSelector(selectEl) {
+  selectEl.innerHTML = ""; // reset si besoin
+  Object.keys(translations).forEach((code) => {
+    const opt = document.createElement("option");
+    opt.value = code;
+    opt.textContent = LANGUAGE_LABELS[code] || code;
+    selectEl.appendChild(opt);
+  });
+}
+
+// Changer de langue
+function setLang(code, opts) {
+  const t = translations[code];
+  if (!t) return;
+
+  const contentEl = document.getElementById(opts.contentId);
+  if (!contentEl) return;
+
+  // Injecte le HTML
+  contentEl.innerHTML = t.content || "";
+
+  // Direction
+  applyDirection(!!t.rtl, contentEl);
+
+  // Accessibilité
+  document.documentElement.setAttribute("lang", code);
+
+  // Mémorisation
+  if (opts.rememberChoice) {
+    try { localStorage.setItem(opts.storageKey, code); } catch (_) {}
+  }
+}
+
+// Synchroniser le sélecteur avec la langue en cours
+function syncSelector(selectEl, lang) {
+  if (!selectEl) return;
+  if (lang && selectEl.value !== lang) {
+    selectEl.value = lang;
+  }
+}
+
+/* =========================
+   4) Initialisation
+   ========================= */
+(function initI18n() {
+  const opts = I18N_OPTIONS;
+
+  // Sanity checks
+  if (!translations || !Object.keys(translations).length) {
+    console.warn("[i18n] Aucune traduction trouvée. Colle tes blocs dans `translations`.");
+    return;
+  }
+  const selectEl  = document.getElementById(opts.selectorId);
+  const contentEl = document.getElementById(opts.contentId);
+  if (!selectEl || !contentEl) {
+    console.warn("[i18n] Assure-toi d’avoir <select id='lang'></select> et <div id='content'></div> dans ta page.");
+    return;
+  }
+
+  // Construit le menu
+  buildSelector(selectEl);
+
+  // Détermine la langue initiale
+  const initial = getInitialLang(opts);
+  if (!initial) {
+    console.warn("[i18n] Impossible de déterminer une langue initiale.");
+    return;
+  }
+
+  // Applique la langue initiale
+  setLang(initial, opts);
+  syncSelector(selectEl, initial);
+
+  // Écoute les changements
+  selectEl.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    if (translations[lang]) {
+      setLang(lang, opts);
+    }
+  });
+
+  // Support des changements d’URL (ex. on modifie #lang=xx après coup)
+  window.addEventListener("hashchange", () => {
+    const m = location.hash.match(/lang=([A-Za-z0-9-_.]+)/);
+    const h = m ? m[1] : location.hash.replace(/^#/, "");
+    if (h && translations[h]) {
+      setLang(h, opts);
+      syncSelector(selectEl, h);
+    }
+  });
+})();
