@@ -1340,7 +1340,7 @@ window.translations = {
 };
 
     /* … your big translations = { … } … */
-  window.translations = window.translations || translations;
+  const t = translations[key] || translations.fr;
 // =====================================================
 // Initialisation : FR par défaut + changement de langue
 // (aucune dépendance externe, compatible avec ton code)
@@ -1370,7 +1370,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function renderLang(rawKey){
     const key = normalizeKey(rawKey || 'fr');
-    const t = translations[key] || translations.fr;
+    const t = window.translations[key] || window.translations.fr;
 
     // Stoppe tes audios existants si besoin
     if (typeof stopAllAudios === 'function') { try { stopAllAudios(); } catch(e){} }
@@ -1481,28 +1481,6 @@ function shareContent() {
 </script>
 
   <script>
-
-// Initialisation (audio + autres boutons) — SANS changeLanguage ici
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialiser audio
-  audioStates.fr.player = document.getElementById('audioPlayerFR');
-  audioStates.en.player = document.getElementById('audioPlayerEN');
-  audioStates.ar.player = document.getElementById('audioPlayerAR');
-
-  audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
-  audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
-  audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
-
-  // Boutons audio (on laisse « Écouter / Listen / استمع »)
-  document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
-  document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
-  document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
-
-  // Autres interactions (inchangées)
-  document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
-  document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
-  document.getElementById('shareButton').addEventListener('click', shareContent);
-});
 
 // ⛔️ SUPPRIMER l’ancienne fonction changeLanguage() — elle fait doublon
 // Mon script « traductions tout en dur » s’occupe d’afficher FR au chargement
