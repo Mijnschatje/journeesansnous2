@@ -1332,70 +1332,26 @@ const translations = {
   }
 };
 
-// État audio
+<script>
+// ... translations = { ... } (une seule clé 'en')
+
 const audioStates = {
-  'fr': { playing: false, player: null },
-  'en': { playing: false, player: null },
-  'ar': { playing: false, player: null }
+  fr: { playing:false, player:null },
+  en: { playing:false, player:null },
+  ar: { playing:false, player:null }
 };
 
-// Initialisation
-document.addEventListener('DOMContentLoaded', function() {
-  // Charger français par défaut
-  changeLanguage();
-  
-  // Initialiser audio
-  audioStates.fr.player = document.getElementById('audioPlayerFR');
-  audioStates.en.player = document.getElementById('audioPlayerEN');
-  audioStates.ar.player = document.getElementById('audioPlayerAR');
-  
-  audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
-  audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
-  audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
-  
-  // Event listeners
-  document.getElementById('languageSelect').addEventListener('change', changeLanguage);
-  document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
-  document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
-  document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
-  document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
-  document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
-  document.getElementById('shareButton').addEventListener('click', shareContent);
-});
+function changeLanguage() {
+  const select = document.getElementById('languageSelect');
+  const selectedLang = select.value;
+  const contentText = document.getElementById('contentText');
+  const content = document.getElementById('content');
 
-/* état audio + fonctions ... */
-
-document.addEventListener('DOMContentLoaded', function () {
-  try {
-    changeLanguage(); // tente de charger FR par défaut
-  } catch (e) {
-    const content = document.getElementById('contentText');
-    if (content) {
-      content.innerHTML = `<div class="intro"><p><strong>Oups…</strong> Un problème empêche l’affichage du texte.</p><p>Détail technique : ${e.message}</p></div>`;
-    }
-    console.error('Erreur dans le script:', e);
-  }
-
-  // branchements (protégés au cas où un id manquerait)
-  const byId = (id) => document.getElementById(id);
-  byId('languageSelect')?.addEventListener('change', changeLanguage);
-  byId('audioFR')?.addEventListener('click', () => toggleAudio('fr'));
-  byId('audioEN')?.addEventListener('click', () => toggleAudio('en'));
-  byId('audioAR')?.addEventListener('click', () => toggleAudio('ar'));
-  byId('triggerCollectif')?.addEventListener('click', () => toggleForm('collectif'));
-  byId('triggerIndividu')?.addEventListener('click', () => toggleForm('individu'));
-  byId('shareButton')?.addEventListener('click', shareContent);
-});
-  
   stopAllAudios();
-  
+
   if (translations[selectedLang]) {
     contentText.innerHTML = translations[selectedLang].content;
-    if (translations[selectedLang].rtl) {
-      content.classList.add('rtl');
-    } else {
-      content.classList.remove('rtl');
-    }
+    content.classList.toggle('rtl', !!translations[selectedLang].rtl);
   } else {
     contentText.innerHTML = `<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>`;
     content.classList.remove('rtl');
@@ -1406,12 +1362,12 @@ function toggleAudio(lang) {
   const state = audioStates[lang];
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
-  
-  if (!translations[lang] || !translations[lang].audio) {
+
+  if (!translations[lang]?.audio) {
     alert('Audio disponible prochainement');
     return;
   }
-  
+
   if (!state.playing) {
     stopAllAudios();
     state.player.src = translations[lang].audio;
@@ -1428,22 +1384,20 @@ function toggleAudio(lang) {
 }
 
 function stopAllAudios() {
-  Object.keys(audioStates).forEach(lang => {
-    const state = audioStates[lang];
-    if (state.playing) {
-      state.player.pause();
-      state.player.currentTime = 0;
-      resetAudioButton(lang);
+  Object.keys(audioStates).forEach(l => {
+    const s = audioStates[l];
+    if (s.playing) {
+      s.player.pause();
+      s.player.currentTime = 0;
+      resetAudioButton(l);
     }
   });
 }
 
 function resetAudioButton(lang) {
-  const state = audioStates[lang];
   const button = document.getElementById('audio' + lang.toUpperCase());
   const icon = document.getElementById('icon' + lang.toUpperCase());
-  
-  state.playing = false;
+  audioStates[lang].playing = false;
   button.classList.remove('playing');
   icon.className = 'fa-solid fa-headphones';
 }
@@ -1451,36 +1405,179 @@ function resetAudioButton(lang) {
 function toggleForm(type) {
   const formCollectif = document.getElementById('form-collectif');
   const formIndividu = document.getElementById('form-individu');
-  
   if (type === 'collectif') {
     const isActive = formCollectif.classList.contains('active');
     formCollectif.classList.toggle('active');
     formIndividu.classList.remove('active');
-    if (!isActive) {
-      setTimeout(() => formCollectif.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    }
+    if (!isActive) setTimeout(() => formCollectif.scrollIntoView({behavior:'smooth', block:'start'}), 100);
   } else {
     const isActive = formIndividu.classList.contains('active');
     formIndividu.classList.toggle('active');
     formCollectif.classList.remove('active');
-    if (!isActive) {
-      setTimeout(() => formIndividu.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    }
+    if (!isActive) setTimeout(() => formIndividu.scrollIntoView({behavior:'smooth', block:'start'}), 100);
   }
 }
 
 function shareContent() {
   const t = "Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
   const u = window.location.href;
-  if (navigator.share) {
-    navigator.share({ title: 'Appel — Journée Sans Nous', text: t, url: u });
+  if (navigator.share) navigator.share({ title:'Appel — Journée Sans Nous', text:t, url:u });
+  else navigator.clipboard.writeText(`${t}\n${u}`).then(() => alert('Lien copié ✅'));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    // players
+    audioStates.fr.player = document.getElementById('audioPlayerFR');
+    audioStates.en.player = document.getElementById('audioPlayerEN');
+    audioStates.ar.player = document.getElementById('audioPlayerAR');
+
+    audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
+    audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
+    audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
+
+    // langue par défaut
+    changeLanguage();
+
+    // événements UI
+    document.getElementById('languageSelect')?.addEventListener('change', changeLanguage);
+    document.getElementById('audioFR')?.addEventListener('click', () => toggleAudio('fr'));
+    document.getElementById('audioEN')?.addEventListener('click', () => toggleAudio('en'));
+    document.getElementById('audioAR')?.addEventListener('click', () => toggleAudio('ar'));
+    document.getElementById('triggerCollectif')?.addEventListener('click', () => toggleForm('collectif'));
+    document.getElementById('triggerIndividu')?.addEventListener('click', () => toggleForm('individu'));
+    document.getElementById('shareButton')?.addEventListener('click', shareContent);
+  } catch(e) {
+    const content = document.getElementById('contentText');
+    if (content) content.innerHTML = `<div class="intro"><p><strong>Oups…</strong> Un problème empêche l’affichage du texte.</p><p>Détail technique : ${e.message}</p></div>`;
+    console.error(e);
+  }
+});
+<script>
+// ... translations = { ... } (une seule clé 'en')
+
+const audioStates = {
+  fr: { playing:false, player:null },
+  en: { playing:false, player:null },
+  ar: { playing:false, player:null }
+};
+
+function changeLanguage() {
+  const select = document.getElementById('languageSelect');
+  const selectedLang = select ? select.value : 'fr';
+  const contentText = document.getElementById('contentText');
+  const content = document.getElementById('content');
+
+  if (!content || !contentText) return;
+
+  stopAllAudios();
+
+  if (translations[selectedLang]) {
+    contentText.innerHTML = translations[selectedLang].content;
+    content.classList.toggle('rtl', !!translations[selectedLang].rtl);
   } else {
-    navigator.clipboard.writeText(`${t}\n${u}`).then(() => alert('Lien copié ✅'));
+    contentText.innerHTML = `<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>`;
+    content.classList.remove('rtl');
   }
 }
+
+function toggleAudio(lang) {
+  const state = audioStates[lang];
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+
+  if (!translations[lang]?.audio) { alert('Audio disponible prochainement'); return; }
+
+  if (!state.playing) {
+    stopAllAudios();
+    state.player.src = translations[lang].audio;
+    state.player.play();
+    state.playing = true;
+    button?.classList.add('playing');
+    if (icon) icon.className = 'fa-solid fa-volume-high';
+  } else {
+    state.player.pause();
+    state.playing = false;
+    button?.classList.remove('playing');
+    if (icon) icon.className = 'fa-solid fa-headphones';
+  }
+}
+
+function stopAllAudios() {
+  Object.keys(audioStates).forEach(l => {
+    const s = audioStates[l];
+    if (s.playing && s.player) {
+      s.player.pause();
+      s.player.currentTime = 0;
+      resetAudioButton(l);
+    }
+  });
+}
+
+function resetAudioButton(lang) {
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+  audioStates[lang].playing = false;
+  button?.classList.remove('playing');
+  if (icon) icon.className = 'fa-solid fa-headphones';
+}
+
+function toggleForm(type) {
+  const formCollectif = document.getElementById('form-collectif');
+  const formIndividu = document.getElementById('form-individu');
+  if (!formCollectif || !formIndividu) return;
+  if (type === 'collectif') {
+    const isActive = formCollectif.classList.contains('active');
+    formCollectif.classList.toggle('active');
+    formIndividu.classList.remove('active');
+    if (!isActive) setTimeout(() => formCollectif.scrollIntoView({behavior:'smooth', block:'start'}), 100);
+  } else {
+    const isActive = formIndividu.classList.contains('active');
+    formIndividu.classList.toggle('active');
+    formCollectif.classList.remove('active');
+    if (!isActive) setTimeout(() => formIndividu.scrollIntoView({behavior:'smooth', block:'start'}), 100);
+  }
+}
+
+function shareContent() {
+  const t = "Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
+  const u = window.location.href;
+  if (navigator.share) navigator.share({ title:'Appel — Journée Sans Nous', text:t, url:u });
+  else navigator.clipboard.writeText(`${t}\n${u}`).then(() => alert('Lien copié ✅'));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    audioStates.fr.player = document.getElementById('audioPlayerFR');
+    audioStates.en.player = document.getElementById('audioPlayerEN');
+    audioStates.ar.player = document.getElementById('audioPlayerAR');
+
+    audioStates.fr.player?.addEventListener('ended', () => resetAudioButton('fr'));
+    audioStates.en.player?.addEventListener('ended', () => resetAudioButton('en'));
+    audioStates.ar.player?.addEventListener('ended', () => resetAudioButton('ar'));
+
+    changeLanguage();
+
+    document.getElementById('languageSelect')?.addEventListener('change', changeLanguage);
+    document.getElementById('audioFR')?.addEventListener('click', () => toggleAudio('fr'));
+    document.getElementById('audioEN')?.addEventListener('click', () => toggleAudio('en'));
+    document.getElementById('audioAR')?.addEventListener('click', () => toggleAudio('ar'));
+    document.getElementById('triggerCollectif')?.addEventListener('click', () => toggleForm('collectif'));
+    document.getElementById('triggerIndividu')?.addEventListener('click', () => toggleForm('individu'));
+    document.getElementById('shareButton')?.addEventListener('click', shareContent);
+  } catch(e) {
+    const content = document.getElementById('contentText');
+    if (content) content.innerHTML = `<div class="intro"><p><strong>Oups…</strong> Un problème empêche l’affichage du texte.</p><p>Détail technique : ${e.message}</p></div>`;
+    console.error(e);
+  }
+});
 </script>
 
 <script src="js/menu.js"></script>
-
 </body>
 </html>
+
+</script>
+
+<script>
+
