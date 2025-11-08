@@ -349,6 +349,57 @@
 <script src="assets/js/translations.js?v=5"></script>
 
 <script src="js/menu.js"></script>
+<script src="assets/js/translations.js?v=6"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $select =
+    document.getElementById('languageSelect') ||
+    document.getElementById('langSelect');
+  const $content =
+    document.getElementById('contentText') ||
+    document.getElementById('appelContent');
+  const $card =
+    document.getElementById('content') || document.body;
+
+  const normalizeKey = (k) => {
+    if (!k) return 'fr';
+    const map = {
+      'dz-ar': 'ar-dz',
+      'ma-ar': 'ar-ma',
+      'tn-ar': 'ar-tn',
+      'arabe': 'ar',
+      'ar-classique': 'ar'
+    };
+    return map[k] || k;
+  };
+
+  if (!window.translations || typeof window.translations !== 'object') {
+    if ($content) $content.innerHTML = '<p><em>Traductions indisponibles.</em></p>';
+    return;
+  }
+
+  function render(langKey) {
+    const key = normalizeKey(langKey);
+    const t = window.translations[key] || window.translations.fr || {};
+    document.documentElement.dir = t.rtl ? 'rtl' : 'ltr';
+    if ($card && $card.classList) $card.classList.toggle('rtl', !!t.rtl);
+    if ($content) {
+      $content.innerHTML = t.content || '<p><em>Contenu indisponible pour cette langue.</em></p>';
+    }
+  }
+
+  if ($select) {
+    const hasFr = Array.from($select.options).some(o => o.value === 'fr');
+    if (hasFr) $select.value = 'fr';
+  }
+  render('fr');
+
+  if ($select) {
+    $select.addEventListener('change', (e) => render(e.target.value));
+  }
+});
+</script>
 
 </body>
 </html>
