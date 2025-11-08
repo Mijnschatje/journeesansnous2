@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="assets/css/menu.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Appel : Une Journée sans Nous — 18 décembre 2025</title>
@@ -33,20 +34,34 @@
     /* ===== HERO ===== */
     .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
-    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0 0 12px;font-weight:800}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0;font-weight:800}
+    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
 
-    /* Bloc contrôles dans le hero */
-    .hero-controls{
-      display:flex;gap:12px;align-items:center;flex-wrap:wrap;
-      background:#fff;border:1px solid var(--line);border-radius:12px;
-      padding:12px 14px; box-shadow:0 2px 8px rgba(0,0,0,.06);
+    /* ===== SÉLECTEUR DE LANGUE ===== */
+    .language-selector-dropdown {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
     }
-
-    /* ===== SÉLECTEUR DE LANGUE (réutilisé) ===== */
+    .language-selector-dropdown h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 0 0 12px 0;
+    }
+    .dropdown-container {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .language-select {
       flex: 1;
-      min-width: 240px;
-      padding: 10px 14px;
+      min-width: 250px;
+      padding: 12px 16px;
       font-size: 15px;
       font-family: 'Manrope', sans-serif;
       color: var(--ink);
@@ -61,33 +76,88 @@
       background-position: right 12px center;
       padding-right: 36px;
     }
-    .language-select:hover { border-color: var(--brand); }
-    .language-select:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(238,73,67,.1); }
+    .language-select:hover {
+      border-color: var(--brand);
+    }
+    .language-select:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(238,73,67,.1);
+    }
 
-    /* ===== MINI PLAYER ===== */
-    .mini-player {
-      display: flex; align-items: center; gap: 10px;
-      background: var(--card);
-      border: 1px solid var(--line);
+    /* ===== LECTEURS AUDIO ===== */
+    .audio-players-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .audio-player {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #fff 0%, #fff7f6 100%);
+      border: 2px solid var(--brand);
       border-radius: 12px;
-      padding: 8px 10px;
-      box-shadow: 0 2px 6px rgba(238,73,67,0.08);
+      padding: 10px 16px;
+      margin: 0;
+      font-size: 14px;
+      color: var(--brand);
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(238,73,67,.1);
     }
-    .mini-player__btn {
-      background: var(--brand);
-      color: #fff; border: none; border-radius: 8px;
-      padding: 8px 10px; cursor: pointer; transition: .2s;
-      display:flex;align-items:center;justify-content:center;
+    .audio-player:hover {
+      background: linear-gradient(135deg, #fff7f6 0%, #ffe8e6 100%);
+      border-color: var(--brand-600);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(238,73,67,.2);
     }
-    .mini-player__btn:hover { background: var(--brand-600); transform: translateY(-1px); }
-    .mini-player__btn i { font-size:14px }
-    .mini-player__seek{ flex:1; min-width:140px; accent-color:var(--brand); cursor:pointer }
-    .mini-player__time{ font-size:13px; color:var(--muted); min-width:42px; text-align:right; font-variant-numeric:tabular-nums }
+    .audio-player.playing {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-600) 100%);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(238,73,67,.4);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+    .audio-player i {
+      font-size: 16px;
+    }
+    .audio-player.playing i {
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* ===== ENCART JAUNE ===== */
+    .join-us-box {
+      background: #fefce8;
+      border: 1px solid #fde047;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 24px 0 0 0;
+      font-style: italic;
+      color: #854d0e;
+      line-height: 1.7;
+    }
+    .join-us-box.rtl {
+      direction: rtl;
+      text-align: right;
+    }
 
     /* ===== CONTENU ===== */
     .container{max-width:1100px;margin:40px auto;padding:0 18px}
     .appel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 22px}
-    .appel.rtl { direction: rtl; text-align: right; }
+    .appel.rtl {
+      direction: rtl;
+      text-align: right;
+    }
     .appel p{margin:0 0 14px;line-height:1.7}
     .appel ul{margin:10px 0 0 1.2rem}
     .appel.rtl ul{margin:10px 1.2rem 0 0}
@@ -95,37 +165,82 @@
     .appel strong{color:var(--accent)}
     .sep{height:1px;background:var(--line);margin:28px 0}
 
-    .intro { background: #fff7f6; border-left: 4px solid var(--brand); padding: 20px; margin: 0 0 20px 0; border-radius: 8px; }
-    .intro.rtl { border-left: none; border-right: 4px solid var(--brand); }
-    .intro p { margin: 0 0 12px; }
-    .intro p:last-child { margin: 0; }
+    .intro {
+      background: #fff7f6;
+      border-left: 4px solid var(--brand);
+      padding: 20px;
+      margin: 0 0 20px 0;
+      border-radius: 8px;
+    }
+    .intro.rtl {
+      border-left: none;
+      border-right: 4px solid var(--brand);
+    }
+    .intro p {
+      margin: 0 0 12px;
+    }
+    .intro p:last-child {
+      margin: 0;
+    }
 
     /* ===== BOUTONS FORMULAIRES ===== */
     .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
-    .form-trigger{ background:var(--card);border:2px solid var(--brand);border-radius:16px; padding:24px; cursor:pointer; transition:.3s; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,.04) }
-    .form-trigger:hover{ box-shadow:0 8px 24px rgba(238,73,67,.25); transform:translateY(-2px); background:#fff7f6; }
+    .form-trigger{
+      background:var(--card);border:2px solid var(--brand);border-radius:16px;
+      padding:24px; cursor:pointer; transition:.3s;
+      text-align:center;
+      box-shadow:0 4px 12px rgba(0,0,0,.04)
+    }
+    .form-trigger:hover{
+      box-shadow:0 8px 24px rgba(238,73,67,.25);
+      transform:translateY(-2px);
+      background:#fff7f6;
+    }
     .form-trigger h3{font-size:22px;margin:0 0 8px;font-weight:800;color:var(--brand)}
     .form-trigger p{margin:0;color:var(--muted);font-size:15px}
 
     /* ===== FORMULAIRES ===== */
-    .form-card{ background:var(--card);border:1px solid var(--line);border-radius:16px; padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04); display:none; margin-top:20px; }
-    .form-card.active{ display:block; }
+    .form-card{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:16px 16px 0; box-shadow:0 8px 24px rgba(0,0,0,.04);
+      display:none;
+      margin-top:20px;
+    }
+    .form-card.active{
+      display:block;
+    }
     .form-card h3{font-size:20px;margin:6px 6px 8px;font-weight:800;color:#b42727}
     .form-card p{margin:0 6px 14px;color:var(--muted)}
-    .form-frame{ width:100%; border:0; display:block; height:1200px; border-top:1px solid var(--line) }
-    @media (min-width:900px){ .form-frame{height:1150px} }
+    .form-frame{
+      width:100%; border:0; display:block;
+      height:1200px;
+      border-top:1px solid var(--line)
+    }
+    @media (min-width:900px){
+      .form-frame{height:1150px}
+    }
     @media (max-width:680px){
       .forms-grid{grid-template-columns:1fr}
       .form-trigger h3{font-size:19px}
       .form-trigger p{font-size:14px}
-      .hero-controls{flex-direction:column; align-items:stretch}
-      .language-select{width:100%}
+      .dropdown-container {
+        flex-direction: column;
+      }
+      .language-select {
+        width: 100%;
+      }
     }
 
     footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:30px 18px;text-align:center;margin-top:50px}
 
-    .share-button{ position:fixed;bottom:24px;right:24px;z-index:9999;background:#ee4943;color:#fff;border:none;border-radius:50px;padding:12px 20px;display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;cursor:pointer; box-shadow:0 4px 12px rgba(238,73,67,.4);transition:.3s }
-    .share-button:hover{ transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38 }
+    .share-button{
+      position:fixed;bottom:24px;right:24px;z-index:9999;
+      background:#ee4943;color:#fff;border:none;border-radius:50px;
+      padding:12px 20px;display:flex;align-items:center;gap:8px;
+      font-size:14px;font-weight:700;cursor:pointer;
+      box-shadow:0 4px 12px rgba(238,73,67,.4);transition:.3s
+    }
+    .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
   </style>
 </head>
 
@@ -147,27 +262,44 @@
 <section class="hero">
   <div class="wrap">
     <h1>Appel : Une Journée sans Nous</h1>
-
-    <!-- Sélecteur de langue + mini player DANS LE HERO -->
-    <div class="hero-controls">
-      <select id="languageSelect" class="language-select" aria-label="Choisir une langue"></select>
-
-      <div class="mini-player">
-        <button id="audioPlayPause" class="mini-player__btn" aria-label="Lecture/Pause">
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <input id="audioSeek" class="mini-player__seek" type="range" min="0" value="0" step="1" aria-label="Position"/>
-        <span id="audioTime" class="mini-player__time">0:00</span>
-        <button id="audioMute" class="mini-player__btn" aria-label="Muet">
-          <i class="fa-solid fa-volume-high"></i>
-        </button>
-      </div>
-    </div>
+    <p class="lede">Si on s'arrête, tout s'arrête ! • 18 décembre 2025</p>
   </div>
 </section>
 
 <main class="container">
   <article class="appel" id="content">
+
+    <div class="language-selector-dropdown">
+      <h3><i class="fa-solid fa-globe"></i> Choisir une langue / Choose a language / اختر لغة</h3>
+      <div class="dropdown-container">
+        <select id="languageSelect" class="language-select">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="ar">🌍 العربية (Arabe classique)</option>
+          <option value="dz-ar">🇩🇿 الدارجة الجزائرية</option>
+          <option value="kab">🇩🇿 Taqbaylit (Kabyle)</option>
+          <option value="ma-ar">🇲🇦 الدارجة المغربية</option>
+        </select>
+        
+        <div class="audio-players-container">
+          <button class="audio-player" id="audioFR">
+            <i class="fa-solid fa-headphones" id="iconFR"></i>
+            <span>🇫🇷 Écouter en français</span>
+          </button>
+          
+          <button class="audio-player" id="audioEN">
+            <i class="fa-solid fa-headphones" id="iconEN"></i>
+            <span>🇬🇧 Listen in English</span>
+          </button>
+          
+          <button class="audio-player" id="audioAR">
+            <i class="fa-solid fa-headphones" id="iconAR"></i>
+            <span>🌍 استمع بالعربية</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div id="contentText"></div>
 
     <div class="sep"></div>
@@ -210,117 +342,225 @@
   <i class="fa-solid fa-share-nodes"></i> Partager
 </button>
 
-<!-- Un seul player audio caché -->
-<audio id="audioPlayer" preload="metadata" style="display:none"></audio>
-
-<!-- Charge l’objet translations -->
-<script src="assets/js/translations.js?v=2"></script>
+<audio id="audioPlayerFR" style="display: none;"></audio>
+<audio id="audioPlayerEN" style="display: none;"></audio>
+<audio id="audioPlayerAR" style="display: none;"></audio>
 
 <script>
-/* ====== Rendu textes + sélecteur depuis translations ====== */
-(function(){
-  // libellés (optionnel)
-  const LABELS = {
-    fr:"🇫🇷 Français", en:"🇬🇧 English", ar:"🌍 العربية (Arabe classique)",
-    "ar-dz":"🇩🇿 الدارجة الجزائرية", kab:"🇩🇿 Taqbaylit (Kabyle)",
-    "ar-ma":"🇲🇦 الدارجة المغربية", "ar-tn":"🇹🇳 العربية التونسية",
-    "tzm-latn":"ⵣ Tamazight (Latin)", "tzm-tfng":"ⵣ Tamazight (Tifinagh)"
-  };
-
-  const select = document.getElementById('languageSelect');
-  const contentText = document.getElementById('contentText');
-  const contentCard = document.getElementById('content');
-
-  // Remplir le select
-  const keys = Object.keys(translations);
-  select.innerHTML = keys.map(k => `<option value="${k}">${LABELS[k] || k}</option>`).join('');
-
-  function applyLang(lang) {
-    const t = translations[lang] || translations.fr;
-    document.documentElement.dir = t.rtl ? 'rtl' : 'ltr';
-    contentCard.classList.toggle('rtl', !!t.rtl);
-    contentText.innerHTML = t.content;
-    // si la piste audio existe, on la prépare
-    if (t.audio) audio.src = t.audio;
+// Traductions
+const translations = {
+  'fr': {
+    rtl: false,
+    audio: 'assets/audio/audio-francais.mp3',
+    content: `<div class="intro">
+      <p><strong>« La Journée Sans Nous : si on s'arrête, tout s'arrête »</strong>, est organisée à l'occasion de la <strong>Journée internationale des migrant·e·s, le 18 décembre 2025</strong>.</p>
+      <p>Cette journée d'action, initiée par les <strong>collectifs de personnes sans papiers et immigrées</strong>, appelle à une <strong>grève solidaire et politique</strong> contre le <strong>racisme d'État</strong>, la précarisation, et le recul des droits des personnes migrantes en France.</p>
+      <p>Nous pensons que <strong>cette lutte nous concerne toutes et tous</strong>, car les lois racistes et les politiques d'exclusion pavent la voie au fascisme et fragilisent les droits de chacun·e.</p>
+      <p>Des collectifs, syndicats, associations et mouvements sociaux se mobilisent dans toute la France pour construire ensemble cette journée historique.</p>
+    </div>
+    <p><strong>Voici le texte de notre appel :</strong></p>
+    <p>Ce pays ne marche pas sans immigré·e·s. Il n'existe pas sans l'immigration et en bénéficie à tous points de vue.</p>
+    <p>Ce n'est pas l'immigration qui le détruit, ce sont les politiques menées, le racisme et l'injustice.</p>
+    <p>Le 18 décembre, à l'occasion de la Journée internationale des migrant·e·s, nous appelons à en faire la démonstration.</p>
+    <p>Nous appelons à organiser, dans tous nos quartiers, nos lieux de travail, « une journée sans nous : si on s'arrête, tout s'arrête ! ».</p>
+    <p>Avec ou sans papiers, immigré·e·s, enfants d'immigré·e·s, de 1ère, 2ème, 3ème génération, cousin·e·s, voisin·e·s, collègues, bloqueur·se·s du 10 septembre, manifestant·e·s et grévistes du 18 septembre, nous n'irons pas à l'école, au travail, dans les commerces. Nous manifesterons ensemble dans toutes les villes du pays :</p>
+    <ul>
+      <li><strong>Pour l'abrogation immédiate</strong> de la loi Darmanin et des circulaires Retailleau</li>
+      <li><strong>Pour l'égalité des droits</strong> de toutes et tous, à l'école, au logement, à la santé, à la culture, au travail.</li>
+      <li><strong>Pour la régularisation</strong> des sans-papiers</li>
+      <li><strong>Pour la fermeture</strong> des centres de rétention administrative (CRA)</li>
+      <li><strong>Pour la justice sociale et la solidarité</strong>, contre le racisme et le fascisme</li>
+    </ul>
+    <div class="join-us-box">
+      <p>Si tu le souhaites, tu peux nous rejoindre. Tu peux cliquer sur le lien en dessous et remplir le formulaire, nous t'enverrons le programme.</p>
+    </div>`
+  },
+  'en': {
+    rtl: false,
+    audio: 'assets/audio/audio-english.mp3',
+    content: `<div class="intro">
+      <p><strong>"A Day Without Us: If We Stop, Everything Stops"</strong> is organised to mark <strong>International Migrants Day on the 18th of December 2025.</strong></p>
+      <p>This day of action, initiated by <strong>collectives of undocumented migrants and immigrants</strong>, calls for a <strong>political solidarity strike</strong> against <strong>state racism</strong>, precarity, and the erosion of migrants' rights in France.</p>
+      <p>We believe that <strong>this struggle concerns all of us</strong>, because racist laws and exclusionary policies pave the way for fascism and undermine everyone's rights.</p>
+      <p>Collectives, trade unions, associations, cultural spaces, and social movements are mobilising across France to build this historic day together.</p>
+    </div>
+    <p><strong>Here is our call to action:</strong></p>
+    <p>This country cannot function without immigrants. It cannot exist without immigration and benefits from it in every way.</p>
+    <p>It is not immigration that is destroying this country. This country is being destroyed by the policies that are being implemented, racism and injustice.</p>
+    <p>On the 18th December, International Migrants Day, we call on everyone to protest.</p>
+    <p>We call on everyone to organise, in all our neighbourhoods and workplaces, "A Day Without us: if we stop, everything stops!".</p>
+    <p>Documented or undocumented, immigrants, children of immigrants, first-, second- and third-generation migrants, cousins, neighbours, colleagues, those involved in the Block Everything movement on the 10th of September, demonstrators and strikers from the 18th of September, we will not go to school, to work or to the shops. We will demonstrate together in every city across the country:</p>
+    <ul>
+      <li><strong>For the immediate repeal</strong> of the Darmanin law and the Retailleau memorandum</li>
+      <li><strong>For equal rights for all</strong>, in education, housing, healthcare, culture and employment</li>
+      <li><strong>For the processing</strong> of undocumented migrants</li>
+      <li><strong>For the closure</strong> of administrative detention centres (CRA)</li>
+      <li><strong>For social justice and solidarity</strong>, against racism and fascism</li>
+    </ul>
+    <div class="join-us-box">
+      <p>If you would like to join us, click on the link below and fill in the form, and we will send you the programme.</p>
+    </div>`
+  },
+  'ar': {
+    rtl: true,
+    audio: 'assets/audio/audio-arabeclassique.mp3',
+    content: `<div class="intro rtl">
+      <p><strong>"يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!"</strong></p>
+      <p>نداء بمناسبة <strong>اليوم العالمي للمهاجرين والمهاجرات، يوم 18 دجنبر 2025.</strong></p>
+      <p>هذا اليوم الاحتجاجي مبادرة من طرف <strong>جمعيات و منظمات مهاجرين و مهاجرات</strong> يناضلون من اجل تعديل وضعيتهم الادارية، يدعون فيه إلى <strong>إضراب تضامني وسياسي</strong> ضدّ <strong>العنصرية المُمأسسة</strong>، وضدّ التهميش، وتراجع الحقوق والحريات الفردية للمهاجرين والمهاجرات في فرنسا.</p>
+      <p>و نعتقد أن <strong>هذه المعركة تهمّنا جميعًا</strong>، ألن القوانين العنصرية والسياسات الإقصائية تُمهِّد الطريق للظلم والفاشية وتُضعِف حقوق كلّ فرد.</p>
+      <p>عديد من جماعات، ونقابات، وجمعيات، وحركات اجتماعية، تتحرك في جميع أنحاء فرنسا لبناء هذا اليوم التاريخي معًا، فانضموا إلينا.</p>
+    </div>
+    <p><strong>نص النداء:</strong></p>
+    <p>هذا البلد لا يسير بدون المهاجرين. فهو لا وُجود له بدون الهجرة، ويستفيد منها من جميع الجوانب.</p>
+    <p>ليست الهجرة هي التي دمّرته، بل السياسات المتّبعة، والعنصرية، والظلم.</p>
+    <p>في 18 دجنبر، بمناسبة اليوم العالمي للمهاجرين، ندعو إلى القيام بإثبات ذلك.</p>
+    <p>ندعو إلى تنظيم "يوم بدوننا: إذا توقّفنا، يتوقّف كلّ شيء!" في جميع أحيائنا، وأماكن عملنا.</p>
+    <p>مهاجرون و مهاجرات حاصلين على أوراق أو بدون أوراق، بنات و أبناء المهاجرين، من الجيل الأول والثاني والثالث، أبناء أعمامهم وبنات خالاتهن، الجيران، الزملاء، المشاركين في إضرابات 10 شتنبر، والمتظاهرين والمضربين في 18 شتنبر، لن نذهب إلى المدرسة، ولا إلى العمل، ولا إلى المحلات التجارية. سنتظاهر معًا في جميع مدن البلاد:</p>
+    <ul>
+      <li><strong>من أجل الإلغاء الفوري</strong> لقانون دارمانان ومذكّرات ريتايو</li>
+      <li><strong>من أجل المساواة في الحقوق</strong> للجميع، في المدرسة، والسكن، والصحة، والثقافة، والعمل</li>
+      <li><strong>من أجل تسوية أوضاع</strong> غير الحاصلين على الأوراق</li>
+      <li><strong>من أجل إغلاق</strong> مراكز الاحتجاز الإداري</li>
+      <li><strong>من أجل العدالة الاجتماعية والتضامن</strong>، وضدّ العنصرية والفاشية</li>
+    </ul>
+    <div class="join-us-box rtl">
+      <p>إذا رغبت في الانضمام إلينا. إضغط على الرابط أدناه وملء الاستمارة ليصلك البرنامج ✍️.</p>
+    </div>`
   }
+};
 
-  // Initial
-  const defaultLang = keys.includes('fr') ? 'fr' : keys[0];
-  select.value = defaultLang;
-  applyLang(defaultLang);
+// État audio
+const audioStates = {
+  'fr': { playing: false, player: null },
+  'en': { playing: false, player: null },
+  'ar': { playing: false, player: null }
+};
 
-  // Changement
-  select.addEventListener('change', e => {
-    applyLang(e.target.value);
-    // Si on change de langue, on remet le player au début
-    audio.pause(); playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
-    seek.value = 0; time.textContent = '0:00';
-  });
-
-  /* ====== Mini player ====== */
-  const audio = document.getElementById('audioPlayer');
-  const playBtn = document.getElementById('audioPlayPause');
-  const seek = document.getElementById('audioSeek');
-  const time = document.getElementById('audioTime');
-  const mute = document.getElementById('audioMute');
-
-  const fmt = s => { s=Math.floor(s||0); const m=Math.floor(s/60); const ss=(s%60).toString().padStart(2,'0'); return `${m}:${ss}`; };
-
-  // Charger la piste de la langue initiale si dispo
-  if (translations[defaultLang]?.audio) audio.src = translations[defaultLang].audio;
-
-  playBtn.addEventListener('click', async () => {
-    // Si pas de source, tenter assets/audio/audio-<clé>.mp3 par convention
-    if (!audio.src) {
-      const k = select.value;
-      audio.src = translations[k]?.audio || `assets/audio/audio-${k}.mp3`;
-    }
-    if (audio.paused) {
-      try { await audio.play(); playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'; }
-      catch(e){ console.warn(e); }
-    } else {
-      audio.pause(); playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
-    }
-  });
-
-  mute.addEventListener('click', () => {
-    audio.muted = !audio.muted;
-    mute.innerHTML = audio.muted ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>';
-  });
-
-  audio.addEventListener('loadedmetadata', () => { seek.max = Math.floor(audio.duration || 0); });
-  audio.addEventListener('timeupdate', () => { seek.value = Math.floor(audio.currentTime || 0); time.textContent = fmt(audio.currentTime); });
-  audio.addEventListener('ended', () => { playBtn.innerHTML = '<i class="fa-solid fa-play"></i>'; seek.value = 0; time.textContent = '0:00'; });
-  seek.addEventListener('input', () => { audio.currentTime = +seek.value; });
-
-  /* ====== Formulaires + partage (inchangé) ====== */
+// Initialisation
+document.addEventListener('DOMContentLoaded', function() {
+  // Charger français par défaut
+  changeLanguage();
+  
+  // Initialiser audio
+  audioStates.fr.player = document.getElementById('audioPlayerFR');
+  audioStates.en.player = document.getElementById('audioPlayerEN');
+  audioStates.ar.player = document.getElementById('audioPlayerAR');
+  
+  audioStates.fr.player.addEventListener('ended', () => resetAudioButton('fr'));
+  audioStates.en.player.addEventListener('ended', () => resetAudioButton('en'));
+  audioStates.ar.player.addEventListener('ended', () => resetAudioButton('ar'));
+  
+  // Event listeners
+  document.getElementById('languageSelect').addEventListener('change', changeLanguage);
+  document.getElementById('audioFR').addEventListener('click', () => toggleAudio('fr'));
+  document.getElementById('audioEN').addEventListener('click', () => toggleAudio('en'));
+  document.getElementById('audioAR').addEventListener('click', () => toggleAudio('ar'));
   document.getElementById('triggerCollectif').addEventListener('click', () => toggleForm('collectif'));
   document.getElementById('triggerIndividu').addEventListener('click', () => toggleForm('individu'));
   document.getElementById('shareButton').addEventListener('click', shareContent);
+});
 
-  function toggleForm(type) {
-    const c = document.getElementById('form-collectif');
-    const i = document.getElementById('form-individu');
-    if (type === 'collectif') {
-      const on = c.classList.contains('active');
-      c.classList.toggle('active'); i.classList.remove('active');
-      if (!on) setTimeout(()=>c.scrollIntoView({behavior:'smooth',block:'start'}), 100);
+function changeLanguage() {
+  const select = document.getElementById('languageSelect');
+  const selectedLang = select.value;
+  const contentText = document.getElementById('contentText');
+  const content = document.getElementById('content');
+  
+  stopAllAudios();
+  
+  if (translations[selectedLang]) {
+    contentText.innerHTML = translations[selectedLang].content;
+    if (translations[selectedLang].rtl) {
+      content.classList.add('rtl');
     } else {
-      const on = i.classList.contains('active');
-      i.classList.toggle('active'); c.classList.remove('active');
-      if (!on) setTimeout(()=>i.scrollIntoView({behavior:'smooth',block:'start'}), 100);
+      content.classList.remove('rtl');
+    }
+  } else {
+    contentText.innerHTML = `<div class="intro"><p><strong>Traduction en cours</strong></p><p>Cette traduction sera bientôt disponible.</p></div>`;
+    content.classList.remove('rtl');
+  }
+}
+
+function toggleAudio(lang) {
+  const state = audioStates[lang];
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+  
+  if (!translations[lang] || !translations[lang].audio) {
+    alert('Audio disponible prochainement');
+    return;
+  }
+  
+  if (!state.playing) {
+    stopAllAudios();
+    state.player.src = translations[lang].audio;
+    state.player.play();
+    state.playing = true;
+    button.classList.add('playing');
+    icon.className = 'fa-solid fa-volume-high';
+  } else {
+    state.player.pause();
+    state.playing = false;
+    button.classList.remove('playing');
+    icon.className = 'fa-solid fa-headphones';
+  }
+}
+
+function stopAllAudios() {
+  Object.keys(audioStates).forEach(lang => {
+    const state = audioStates[lang];
+    if (state.playing) {
+      state.player.pause();
+      state.player.currentTime = 0;
+      resetAudioButton(lang);
+    }
+  });
+}
+
+function resetAudioButton(lang) {
+  const state = audioStates[lang];
+  const button = document.getElementById('audio' + lang.toUpperCase());
+  const icon = document.getElementById('icon' + lang.toUpperCase());
+  
+  state.playing = false;
+  button.classList.remove('playing');
+  icon.className = 'fa-solid fa-headphones';
+}
+
+function toggleForm(type) {
+  const formCollectif = document.getElementById('form-collectif');
+  const formIndividu = document.getElementById('form-individu');
+  
+  if (type === 'collectif') {
+    const isActive = formCollectif.classList.contains('active');
+    formCollectif.classList.toggle('active');
+    formIndividu.classList.remove('active');
+    if (!isActive) {
+      setTimeout(() => formCollectif.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  } else {
+    const isActive = formIndividu.classList.contains('active');
+    formIndividu.classList.toggle('active');
+    formCollectif.classList.remove('active');
+    if (!isActive) {
+      setTimeout(() => formIndividu.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
     }
   }
+}
 
-  function shareContent() {
-    const t = "Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
-    const u = window.location.href;
-    if (navigator.share) navigator.share({ title: 'Appel — Journée Sans Nous', text: t, url: u });
-    else navigator.clipboard.writeText(`${t}\n${u}`).then(()=>alert('Lien copié ✅'));
+function shareContent() {
+  const t = "Appel — Journée Sans Nous (18 décembre) : « Si on s'arrête, tout s'arrête ! »";
+  const u = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title: 'Appel — Journée Sans Nous', text: t, url: u });
+  } else {
+    navigator.clipboard.writeText(`${t}\n${u}`).then(() => alert('Lien copié ✅'));
   }
-})();
+}
 </script>
 
 <script src="js/menu.js"></script>
+
 </body>
 </html>
