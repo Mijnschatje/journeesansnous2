@@ -237,7 +237,7 @@ Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko 
       <p>N’a i be se be taa an na, duguma linku la, furu formilɛɛri la, an be i na programu l</p>
     `
   },
-  snk: {
+  pul: {
     label: "🇸🇳🇬🇳 Pulaar / Peul",
     rtl: false,
     audio: "",
@@ -267,7 +267,7 @@ Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko 
       <p>So a yiɗi heɓde e amen, ɗooɗtu e link ngal, rew e formilaar ngal, minen ɗiɗo nanndi-ma program ngal.</p>
     `
    },
-  snk: {
+  ewo: {
     label: "🇨🇲 Ewondo",
     rtl: false,
     audio: "",
@@ -298,7 +298,7 @@ Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko 
       <p>So a bɔg a ngɔ é nnam, fɔ link nloé, si formilɛɛr, an bɛ̂ a yɔ programme.</p>
     `
    },
-  snk: {
+  bamb: {
     label: "🇲🇱 Bambara",
     rtl: false,
     audio: "",
