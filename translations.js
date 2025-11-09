@@ -608,7 +608,5 @@ bas: {
 
     <p>Ni a bô ngɔ nyi njambɛ an yi, fɛ link bô, fɔrmilɛr bô, an yi a ǹdiŋ bô programme.</p>
   `
-},
-
-  }
+}
 };
