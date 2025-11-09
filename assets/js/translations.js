@@ -515,5 +515,6 @@ label: "🇸🇳 Serer / Seereer",
     <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir fippu ci njàkk njàmm ak lenyol</li> 
     </ul> 
     <div class="join-us-box"> <p>So a fẹ ka bokk e min, nga danne dow foom bi, min naŋ naatnoy a jeyaa porogaraam bi ✍️.</p> </div> 
-  }                              // ← puis fermer l’objet "snk"
+    `   // ← FERMER le backtick ici
+  }     // ← fermer l’objet "snk" (pas de virgule si c’est le dernier)
 }; 
