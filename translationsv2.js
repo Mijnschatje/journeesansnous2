@@ -325,6 +325,224 @@ Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko 
       </ul>
       <p>Ni i b’a fɛ ka b’a yɛrɛma an na, <strong>ka sɛbɛn linku min bɛ kɔfɛ, ka sɛbɛn formilɛri</strong>, an bɛ i na programu la.</p>
     `
+   },
+  ling: {
+    label: "🇨🇩 Lingala",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Mokolo ya biso te : soki biso to tiká mosala, nyonso e tiká !”<strong></p>
+<p>Mokolo oyo ekozala <strong>18 décembre 2025</strong>, mpo na <strong>mokolo ya bato ya mboka mosusu (Journée internationale des migrant·e·s)</strong>.
+ Mokolo oyo esalami mpo na <strong>kosɛnga boyokani mpe greve ya politiki</strong>, mpo na <strong>kobunda na boyibi ya makoki, na mobulu ya etat, mpe na ndenge oyo bato ya mboka mosusu bazali kobebisama na France.</strong></p>
+<p>Biso nyonso toyebi ete <strong>likambo oyo ezali mpo na biso nyonso</strong>, pamba te <strong>mobulu mpe mobeko ya kopengola bato ebotaka bokasi ya bato nyonso mpe ebotaka nzela ya fascisme.</strong></p>
+<p>Bato ya misala, syndicá, lisanga, mpe bato ya culture bazali kotala ndenge ya kosala elongo mokolo oyo ya monene.<p>
+      </div>
+      <p>Maloba na biso :</p>
+<p><strong>Mboka oyo ekoki te kozala soki bato ya mboka mosusu te.</strong></p>
+<p>Ezali bango nde bakotisi bomoi, mayele mpe makasi na mboka.</p>
+<p> <strong>Ezali te bango bazali kobebisa mboka, kasi ezalaki politiki mabe, mobulu mpe bosembo te.</strong></p>
+<p>Na<strong> mokolo ya 18 décembre</strong>, na mokolo ya bato ya mboka mosusu, biso tolingi kolakisa boye :
+ <strong>“Mokolo ya biso te : soki biso to tiká mosala, nyonso e tiká !”</strong></p>
+Bato nyonso — ba oyo bazali na papye to te, bana ya bato ya mboka mosusu, mibali, basi, ba oyo bazali na mibu ebele o mboka, bayekoli, basali - <strong>tokotika kelasi, mosala, mpe zando, mpo tokende kolakisa esika nyonso</strong>.
+<p>Tosɛngi :</p>
+      <ul>
+        <li><strong>Kolongola mobeko Darmanin mpe ba circulaire ya Retailleau</strong></li>
+        <li><strong>Kopesa bato nyonso makoki moko : na kelasi, ndako, nzoto malamu, culture mpe mosala</strong></li>
+        <li><strong>Kopesa bapapié na bato oyo bazali na yango te</strong></li>
+        <li><strong>Koboma ba centre ya kokanga bato (CRA)</strong></li>
+        <li><strong>Kosala mpo na bosembo, boyokani, mpe kobunda na mobulu mpe fascisme.</strong></li>
+      </ul>
+      <p>Soki olingi kozala elongo na biso, finá link oyo awa, kotá formilɛr, mpe tokotindela yo program ya mokolo yango.</p>
+    `  
+     },
+  kiko: {
+    label: "🇨🇩🇨🇬 Kikongo",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Bansi ya beto te : bila beto tuvua, makambu yonso me vuvama !”</strong></p>
+<p>Bansi yai me salama <strong>na 18 décembre 2025</strong>, sambu na <strong>Bansi ya Banguna ya Mfinda (Journée internationale des migrant·e·s)</strong>.
+ Bansi yai ke lombaka <strong>kisalu ya kimvuka mpi ya politiki</strong>, sambu na <strong>kubundisa luvunu ya bukongo, ntwala ya ngangu ya nsi mpi kubebisa makoki ya banguna ya mfinda na France.</strong></p>
+<p>Beto nyonso to yindula nde <strong>luzingu yai ke tangula beto nyonso</strong>, sambu <strong>mibeko ya luvunu mpi bampangi ya kupwisana bantu ke bumbaka nzila ya fashisimu mpi ke matisa luvunu ya bantu nyonso.</strong></p>
+<p>Bampangi ya kisalu, basindika, banzila ya kimvuka mpi ba-association ya bukanda ke lombaka <strong>kusala sambu beto nyonso tubaka bansi yai ya nkaka.</strong></p>
+      </div>
+      <p>Mambu ma beto :</p>
+<p><strong>Nsi yai ke lembaka bila banguna ya mfinda ve.</strong></p>
+<p> Ake lombaka banguna yai sambu na kisalu mpi kisadi.
+<strong> Banguna yai ke bebisa ve nsi, kansi mibeko mabe mpi luvunu ya batu.</strong></p>
+<p>Na <strong>18 décembre</strong>, na Bansi ya Banguna ya Mfinda, beto ke yindula boye :
+<strong> “Bansi ya beto te : bila beto tuvua, makambu yonso me vuvama !”</strong></p>
+<p>Banguna ya makanda, ya mpasi, bantu ya mboka, bana ya banguna ya mfinda, baleke, bafuku, bampangi, basadi, balume, baoyo ke sala kisalu, bayekoli - <strong>beto ta vutula kisalu, kisikola mpi zandu sambu tubunda kimvuka.</strong></p>
+<p>Beto ke lomba :<p>
+      <ul>
+        <li><strong>Kumona na mambu ma Darmanin mpi ma Retailleau</strong></li>
+        <li><strong>Kupesa makoki ma mosi na bantu nyonso : na kisikola, ndaku, nitu, mambu ma nkanda mpi kisalu</strong></li>
+        <li><strong>Kuyindula bantu ya nsi ke na papié ve</strong></li>
+        <li><strong>Kuvanda ba CRA (centres ya kukanga bantu)</strong></li>
+        <li><strong>Kusala sambu na kimvuka, luzingu mpi kubundisa luvunu mpi fashisimu.</strong></li>
+      </ul>
+      <p>Soki nge ke zola kuvanda na beto, landa link yai awa, samba formilɛri, mpi beto ta tuma nge program ya kisalu.</p>
+    `    
+   },
+  malag: {
+    label: "🇲🇬 Malagasy",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Andro tsy misy izahay : raha mijanona izahay, dia mijanona ny zava-drehetra !”</strong></p>
+<p>Ity hetsika ity dia hatao <strong>amin’ny 18 Desambra 2025</strong>, ho fankalazana ny <strong>Andro Iraisam-pirenena ho an’ny Mpifindra-monina (Journée internationale des migrant·e·s)</strong>.
+ Ity andro ity dia antso ho amin’ny <strong>fitokonana iray mifototra amin’ny firaisankina sy ny politika</strong>, manohitra ny <strong>fanjakan’ny fanavakavaham-bolon-koditra, ny fahantrana ary ny famerana ny zon’ny mpifindra-monina any Frantsa.</strong></p>
+<p>Izahay rehetra dia mino fa <strong>ity tolona ity dia an’ny tsirairay sy ny rehetra</strong>, satria <strong>ny lalàna sy ny politika manavakavaka dia mametraka lalana ho amin’ny jadona sy manimba ny zon’ny olon-drehetra.</strong></p>
+<p>Fikambanana, sendika, hetsika ara-kolontsaina sy ara-tsosialy maro no mivondrona manerana an’i Frantsa mba hananganana miaraka ity andro lehibe ity.</p>
+      </div>
+      <p><strong>Tsy afaka mandeha ity firenena ity raha tsy eo ny mpifindra-monina</strong>.
+ Tsy misy izy raha tsy misy ny fifindra-monina, ary mandray soa amin’izany isan’andro izy.
+<strong>Tsy ny fifindra-monina no manimba azy, fa ny politika ratsy, ny fanavakavahana ary ny tsy rariny.</strong></p>
+<p>Amin’ny <strong>18 Desambra</strong>, amin’ny Andro Iraisam-pirenena ho an’ny Mpifindra-monina, dia miantso izahay hoe :
+<strong>“Andro tsy misy izahay : raha mijanona izahay, dia mijanona ny zava-drehetra !”</strong></p>
+<p>Na manana taratasy na tsia, mpifindra-monina, zanaky ny mpifindra-monina, taranaka voalohany, faharoa, fahatelo, mpiara-monina, namana, mpiasa, mpianatra - <strong>tsy hiditra an-tsekoly, tsy hiasa, tsy hisokatra ny fivarotana, fa hivoaka an-dalambe isika rehetra.</strong></p>
+<p>Izahay dia miady :</p>
+      <ul>
+        <li><strong>Ho fanafoanana avy hatrany ny lalàna Darmanin sy ny didy Retailleau</strong></li>
+        <li><strong>Ho fitovian-jo ho an’ny rehetra : amin’ny fanabeazana, ny trano, ny fahasalamana, ny kolontsaina ary ny asa</strong></li>
+        <li><strong>Ho fanomezana ara-dalàna ho an’ireo tsy manana taratasy</strong></li>
+        <li><strong>Ho fanakatonana ny foibe fitazonana mpifindra-monina (CRA)</strong></li>
+        <li><strong>Ho rariny ara-tsosialy, firaisankina, sy amin’ny fanoherana ny fanavakavahana sy ny fasista</strong></li>
+      </ul>
+      <p>Raha te-hiditra miaraka aminay ianao, tsindrio ny rohy etsy ambany, fenoy ny taratasy fisoratana anarana, ary halefanay aminao ny fandaharan’asa.</p>
+    `    
+   },
+  susu: {
+    label: "🇬🇳 Soussou Susu",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+       <p><strong>Nde fe an bɛ : bɔrɔ an bata, fɔrɔ bɛ bata !”</strong></p>
+<p>Nde yé n’a fɛɛnɛ <strong>18 décembre 2025</strong>, nde don fe <strong>duniya ndee kɛ fɔ n’a maayanka (Journée internationale des migrant·e·s)</strong>.
+ Nde yé n’a fɔ <strong>maayanka e xureya fɔlɔ e politiki</strong>, ka <strong>futtiya fan xurunya e fɔlɔya e hakɛya maayanka e France.</strong></p>
+<p>An bɛ n’a fɔ : <strong>nde fe an bɛ, nde yé an bɛɛ !</strong>
+ Duniya nde bɛɛ ye an tɛ n’a ta - <strong>hakɛya e sɛnniya n’a xureya bɛɛ be tondi n’a fashisimu, be sɔnni n’a an hakɛya.</strong></p>
+<p>Nden, sindika, xureya e bantanyi be n’a tondi e France ka fɔ fɛɛnɛ nde fɛ.</p>
+      </div>
+      <p>An fɔlɔ :</p>
+<p><strong>Duniya nde tɛ kɛ bila maayanka.</strong></p>
+<p>A tɛ kɛ bila maayanka, a be xaxari n’a maayanka yé.</p>
+<p><strong>A tɛ maayanka be fun dunia nde, a be politik bɛɛ e xureya n’a fan.</strong></p>
+<p>Ka <strong>18 décembre</strong>, duniya ndee kɛ fɔ maayanka, an bɛ n’a fɔ :
+<strong>“Nde fe an bɛ : bɔrɔ an bata, fɔrɔ bɛ bata !”</strong></p>
+<p>Maayanka bɛɛ - n’a bɛɛ na karatasi to n’a tɛ, maayanka, denma maayanka, taali fɔlɔ, fila, saba, bɔrɔ, fanan, baara kɛla, sɛbɛnni - <strong>an bɛ bata baara, bata sɛbɛnni, bata sugu, ka taa kɛnɛfɛ fɔlɔya.</strong></p>
+<p>An bɛ fɔ :</p>
+      <ul>
+        <li><strong>Ka dɔ Darmanin e Retailleau la</strong></li>
+        <li><strong>Ka sɛbɛ hakɛya bɛɛ la : sɛbɛnni, so, hɛrɛ, kulture, baara</strong></li>
+        <li><strong>Ka sɛbɛya maayanka min tɛ karatasi</strong></li>
+        <li><strong>Ka da CRA (fɔrɔ min be kanga maayanka)</strong></li>
+        <li><strong>Ka yɛrɛ hakɛya, jamaa e fanan, ka bundu fashisimu e xureya.</strong></li>
+      </ul>
+      <p>Ni i b’a fɛ ka b’a yɛrɛma an na, ka sɛbɛn link min bɛ kɔfɛ, ka sɛbɛn formilɛri, an bɛ i na program la.</p>
+    `    
+    },
+  mali: {
+    label: "🇬🇳 Malinké",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+       <p><strong>“Don di an ye : n’an taara, fɛ ka taa !”</strong></p>
+<p>Don di yɛrɛma <strong>18 décembre 2025</strong>, ka taa <strong>Duniya don kan ka yɛrɛma (Journée internationale des migrant·e·s)</strong>.
+ Don di ye bɛɛ <strong>sininɛ fɔlɔw ka daminɛ ni fɛɛnɛ ka tɔrɔ, ka bundu ka fɔlɔya ni hakɛya, ni ka taa sɛnɛ fɔ n’a yɛrɛma ka fɛɛrɛya Faransi la.</strong></p>
+<p>An bɛ fɔ : <strong>don di an don, an bɛɛ la !</strong></p>
+<p>Duniya di tɛ se ka taa bila yɛrɛma, <strong>politikɛni mɔgɔw min bɛ sɛbɛya kɛ ka banbali hakɛya be n’a fashisimu la ni fɔlɔya.</strong></p>
+<p>Sindika, jamuw ni fɛɛnɛ kɛla bɛɛ bɛ yɛrɛma Faransi la ka fɛ ka kɛ don di ka yɛrɛma, don ba kɛrɛkɛrɛ.</p>
+      </div>
+      <p>An fɔlɔ :</p>
+<p><strong>Dɔw ye tɛ se ka sɔrɔ bila yɛrɛma.</strong></p> 
+<p>A tɛ be taa bila an yɛrɛma la, a be nɔgɔya ni fɛɛrɛ sɔrɔ b’a la.</p>
+<p><strong>A tɛ yɛrɛma ye b’a bɔ nyɛman na, waaye politike ni hakɛya min b’a kɛ.</strong></p>
+<p>Ka <strong>18 décembre</strong>, ka don kan ka yɛrɛma la, an bɛ fɔ :
+ <strong>“Don di an ye : n’an taara, fɛ ka taa !”</strong></p>
+<p>Yɛrɛma ni yɛrɛma min tɛ makaratasi, denw min bɛɛ ye yɛrɛma denw, taali fɔlɔ, fila, saba, jamu, fɛɛnɛ, baara kɛla ni sɛbɛnniw - <strong>an bɛ taara baara la, sɛbɛnni la, sugu la, ka taa sigida la kɛrɛkɛrɛ.</strong></p>
+<p>An bɛ fɔ :</p>
+      <ul>
+        <li><strong>Ka bo loi Darmanin ni Retailleau</strong></li>
+        <li><strong>Ka yɛrɛ hakɛ bɛɛ la : sɛbɛnni, so, hɛrɛ, kulture, baara</strong></li>
+        <li><strong>Ka yɛrɛma min tɛ makaratasi ka sɛbɛya</strong></li>
+        <li><strong>Ka da tɔɔrɔso (CRA)</strong></li>
+        <li><strong>Ka kɛ hakɛ ni kɛlɛya, ni jamu ni fɔlɔya fɔ ka fɛɛrɛya ni fashisimu ta.</strong></li>
+      </ul>
+      <p>Ni i b’a fɛ ka b’a yɛrɛma an na, ka sɛbɛn linku min bɛ kɔfɛ, ka sɛbɛn formilɛri, an bɛ i na programu la.</p>
+    `    
+    },
+  kreo: {
+    label: "🇲🇺 Kreol Morisien",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+       <p><strong>“Zourné san nou : si nou aret, tou aret !”</strong></p>
+<p>Sa zourné-la pou fer <strong>le 18 Desam 2025</strong>, dan kad <strong>Zourné Internasional bann Migran (Journée internationale des migrant·e·s)</strong>.
+ Zourné-la finn lanse par bann kolektif dimunn san papie ek migran, pou fer enn <strong>grèv solidarite ek politik kont rasism Leta, lamizer ek dimounn pe perdi zot drwa dan Lafrans.</strong></p>
+<p>Nou krwar sa lalit-la konsern nou tou, parski <strong>bann lalwa rasis ek politik ki diviz dimunn pe ouver sime pou fasism, ek pe febli drwa sak dimounn.</strong><p>
+<p>Bann kolektif, sindika, lasosyasyon ek mouvman sosyal pe mobilize partou dan Lafrans pou batir ansam sa zourné istorik-la.</p>
+      </div>
+      <p>Nou lapel :</p>
+</p><strong>Sa pei-la pa kapav mars san bann migran.</strong></p>
+<p>Li pa egziste san zot, ek li benefisye ar zot sak zour.</p>
+<p><strong>Se pa bann migran ki pe detrir pei-la, me se bann politik inziris ek rasis.</strong></p>
+<p>Le <strong>18 Desam</strong>, pou Zourné Internasional bann Migran, nou pe dir :
+<strong>“Zourné san nou : si nou aret, tou aret !”</strong><p>
+<p>Migran ki ena papie kouma bann san papie, zanfan bann migran, premie, deziem, trwaziem zenerasion, pros, vwazin, koleg, travayer, etidian - <strong>nou pou pa al travay, pa al lekol, pa ouver laboutik. Nou pou sorti ansam dan lari.</strong><p>
+<p>Nou pe lager :<p>
+      <ul>
+        <li><strong>Pou anil lalwa Darmanin ek bann sirkiler Retailleau</strong></li>
+        <li><strong>Pou egalite drwa pou tou dimounn : dan lekol, lakaz, lasante, kiltir ek travay</strong></li>
+        <li><strong>Pou regularizasion bann san papie</strong></li>
+        <li><strong>Pou ferm bann sant retansion administratif (CRA)</strong></li>
+        <li><strong>Pou lazistis sosyal ek solidarite, kont rasism ek fasism.</strong></li>
+      </ul>
+      <p>Si to anvi zwenn nou, klik lor link-la anba, ranpli formiler-la, ek nou pou avoy twa program zourné-la.</p>
+    `  
+    },
+  bang: {
+    label: "🇧🇩 Bangla",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+       <p><strong>“আমাদের ছাড়া একদিন : আমরা যদি থামি, তাহলে সবকিছু থেমে যাবে!”</strong></p>
+<p><strong>১৮ ডিসেম্বর ২০২৫</strong>, আন্তর্জাতিক অভিবাসী দিবসের উপলক্ষে,
+ আমরা একসাথে আয়োজন করছি “<strong>আমাদের ছাড়া একদিন” — একটি সংহতি ও রাজনৈতিক আন্দোলনের দিন।</strong></p>
+<p>এই দিনটি আহ্বান জানায় <strong>রাষ্ট্রীয় বর্ণবাদ, অবিচার ও অভিবাসীদের অধিকার হরণের বিরুদ্ধে</strong> একত্রিত হওয়ার জন্য।
+ এই লড়াই শুধু অভিবাসীদের নয় - <strong>এটি আমাদের সবার লড়াই</strong>, কারণ বর্ণবাদী আইন ও বৈষম্যমূলক নীতি সমাজকে বিভক্ত করে,
+ অন্যায়ের পথ তৈরি করে এবং আমাদের সবার অধিকার দুর্বল করে।</p>
+<p>আজ ফ্রান্সে শত শত <strong>সংগঠন, ইউনিয়ন, সামাজিক ও সাংস্কৃতিক আন্দোলন</strong> একসাথে কাজ করছে,
+ এই ঐতিহাসিক দিনের প্রস্তুতি নিতে এবং এক কণ্ঠে বলার জন্য —<strong>“যদি আমরা থামি, তাহলে সবকিছু থেমে যাবে!”</strong></p>
+      </div>
+      <p>আমাদের আহ্বান :</p>
+<p><strong>এই দেশ অভিবাসীদের ছাড়া চলতে পারে না।</strong></p>
+<p> অভিবাসন ছাড়া এই দেশ অস্তিত্বই রাখতে পারে না, এবং প্রতিদিনই অভিবাসীরা এই সমাজে অবদান রাখছে।
+<strong> অভিবাসীরা দেশ ধ্বংস করছে না, বরং ধ্বংস করছে বর্ণবাদ, অন্যায় ও বৈষম্য।</strong></p>
+<p><strong>১৮ ডিসেম্বর</strong>, আন্তর্জাতিক অভিবাসী দিবসে, আমরা সবাই মিলে আহ্বান জানাই -
+ <strong>“আমাদের ছাড়া একদিন : আমরা যদি থামি, তাহলে সবকিছু থেমে যাবে!”</strong></p>
+<p>কাগজপত্র থাক বা না থাক, অভিবাসী, অভিবাসীদের সন্তান, প্রথম, দ্বিতীয়, তৃতীয় প্রজন্ম,
+ আত্মীয়স্বজন, প্রতিবেশী, সহকর্মী, ছাত্রছাত্রী, শ্রমিক, শিক্ষক —<strong>আমরা স্কুলে যাব না, কাজে যাব না, দোকান খুলব না।
+ আমরা সবাই একসাথে রাস্তায় নামব।</strong></p>
+ <p>আমাদের দাবি :</p>
+      <ul>
+        <li><strong>ডার্মানিন আইন ও রেতাইয়ো সার্কুলার বাতিল করতে হবে।</strong></li>
+        <li><strong>সমান অধিকার দিতে হবে সবার জন্য : শিক্ষা, বাসস্থান, স্বাস্থ্য, সংস্কৃতি ও কাজের ক্ষেত্রে।</strong></li>
+        <li><strong>কাগজবিহীন অভিবাসীদের বৈধতা দিতে হবে।</strong></li>
+        <li><strong>অভিবাসী আটক কেন্দ্র (CRA) বন্ধ করতে হবে।</li>
+        <li><strong>সামাজিক ন্যায়বিচার, সংহতি ও বর্ণবাদ ও ফ্যাসিবাদের বিরুদ্ধে ঐক্য গড়ে তুলতে হবে।</strong></li>
+      </ul>
+      <p>আমাদের সঙ্গে যোগ দিন :
+তুমি যদি চাও, তুমি আমাদের সঙ্গে যোগ দিতে পারো।
+ নিচের লিংকে ক্লিক করো এবং ফর্মটি পূরণ করো, আমরা তোমার কাছে পুরো কর্মসূচি পাঠিয়ে দেবো।</p>
+    `           
     
   }
 };
