@@ -282,7 +282,7 @@ window.translations = {
   bm: {
   label: "🇲🇱 Bambara / Bamanankan",
   rtl: false,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p>“Don o be an ye : ni an taara, fɛ ka taa !”</p>
@@ -317,7 +317,7 @@ window.translations = {
 ln: {
   label: "🇨🇬🇨🇩 Lingála",
   rtl: false,
-  audio: null,
+ audio: "",
  content: `
     <div class="intro">
       <p>“Mokolo ya biso te : soki biso to tiká mosala, nyonso e tiká !”</p>
@@ -350,7 +350,7 @@ ln: {
 "ar-dz": {
   label: "🇩🇿 العربية (الجزائري)",
   rtl: true,
-  audio: null,
+ audio: "",
   content: `
     <div class="intro">
       <p>النهار بلاّ بينا: كي نحبسو، كلش يحبس !</p>
@@ -390,7 +390,7 @@ ln: {
   "ar-ma": {
   label: "🇲🇦العربية (الدارجة المغربية)",
   rtl: true,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p>يوقف !</p>
@@ -424,7 +424,7 @@ ln: {
 "ar-tn": {
   label: "🇹🇳 العربية (التونسية)",
   rtl: true,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p>يوقف !</p>
@@ -456,7 +456,7 @@ ln: {
 "tzm-latn": {
   label: "ⵣ Tamazight (Latin)",
   rtl: false,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p>ⵣ Ass war-neɣ : ma neḥbes, akk iḥbes !</p>
@@ -481,7 +481,7 @@ ln: {
  "tzm-tfng": {
   label: "ⵣ ⵜⴰⵎⴰⵣⵉⵖⵜ (Tifinagh)",
   rtl: false,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p><strong>ⴰⵙⵓ ⵡⴰⵔⵏⴻⵖ : ⵎⴰ ⵏⴻⵃⴱⴻⵙ, ⴰⴽⴽ ⵉⵃⴱⴻⵙ !</strong></p>
@@ -508,7 +508,7 @@ ln: {
  ewo: {
   label: "🇨🇲 Ewondo",
   rtl: false,
-  audio: null,
+  audio: "",
   content: `
     <div class="intro">
       <p><strong>Mvog mè an yi : nda an ba’a, mè bɛ̂ ba’a !</strong></p>
@@ -546,7 +546,7 @@ ln: {
 dua: {
   label: "🇨🇲 Douala",
   rtl: false,
-  audio: null,
+  audio: "",
  content: `
     <div class="intro">
       <p><strong>“Mokolo ma wɛna biso te : soki biso to kende, nyonso e kende !”</strong></p>
@@ -578,7 +578,7 @@ dua: {
 bas: {
   label: "🇨🇲 Bassa",
   rtl: false,
-  audio: null,
+  audio: "",
     content: `
     <div class="intro">
       <p><strong>“Mɛŋɛ ma nɔ̀ an : ni an dɔ, bɛŋɛ ma dɔ !”</strong></p>
