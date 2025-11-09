@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Journée Sans Nous – Appel</title>
+  <meta name="description" content="Grève générale solidaire du 18 décembre : lisez et signez notre appel." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    :root{
+      --brand:#ee4943;--brand-600:#d33e38;
+      --ink:#0f172a;--muted:#475569;--line:#e5e7eb;
+      --radius:16px;--warning:#f59e0b;
+    }
+    html,body{width:100%;margin:0;padding:0;max-width:none!important;overflow-x:hidden}
+    body{font:16px/1.6 'Manrope',sans-serif;color:var(--ink);background:#fafafa}
+    a{color:var(--brand);text-decoration:none}
+
+    /* ===== HEADER ===== */
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .wrap{max-width:1100px;margin:auto;padding:0 18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--brand);font-size:18px}
+
+    /* ===== TICKER ===== */
+    .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
+    .ticker .track{display:inline-block;animation:scroll 60s linear infinite;padding:8px 0}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* ===== HERO ===== */
+    .hero{background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%);padding:60px 0;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(238,73,67,.1),transparent);border-radius:50%}
+    .hero h1{color:var(--brand);font-size:clamp(28px,3.2vw,42px);line-height:1.2;margin:0 0 20px 0;font-weight:800;display:flex;align-items:center;gap:14px}
+    .hero .lede{color:var(--muted);margin:.6rem 0 0;font-size:17px}
+
+    /* ===== LANGUAGE & AUDIO CONTROLS ===== */
+    .controls-wrapper{margin-top:24px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+    
+    .language-selector{position:relative;width:100%;max-width:300px}
+    .language-selector select{
+      width:100%;
+      padding:12px 16px;
+      border:2px solid var(--brand);
+      border-radius:12px;
+      background:#fff;
+      color:var(--brand);
+      font:600 16px 'Manrope',sans-serif;
+      cursor:pointer;
+      appearance:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23ee4943' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:right 12px center;
+      transition:all .3s
+    }
+    .language-selector select:hover{background-color:#fff5f4}
+    .language-selector select:focus{outline:none;box-shadow:0 0 0 3px rgba(238,73,67,.2)}
+
+    .audio-buttons{display:flex;gap:10px;flex-wrap:wrap}
+    .audio-btn{
+      padding:10px 18px;
+      border:2px solid var(--brand);
+      border-radius:10px;
+      background:#fff;
+      color:var(--brand);
+      font:600 14px 'Manrope',sans-serif;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      transition:all .3s;
+      display:none
+    }
+    .audio-btn.visible{display:flex}
+    .audio-btn:hover{background:var(--brand);color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(238,73,67,.3)}
+    .audio-btn i{font-size:16px}
+
+    /* ===== CONTENU ===== */
+    main{max-width:900px;margin:auto;padding:40px 18px}
+
+    section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:box-shadow .3s}
+    section:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    section h2{color:var(--brand);margin:0 0 20px;font-size:24px;font-weight:800;display:flex;align-items:center;gap:12px}
+    section h2 i{font-size:24px}
+
+    /* ===== CONTENT AREA ===== */
+    #appelContent{line-height:1.8;transition:opacity .3s}
+    #appelContent.rtl{direction:rtl;text-align:right}
+    #appelContent .intro{background:#fff5f4;padding:20px;border-radius:12px;margin-bottom:24px;border-left:4px solid var(--brand)}
+    #appelContent ul{list-style:none;padding-left:0}
+    #appelContent ul li{padding:12px 0 12px 32px;position:relative;border-bottom:1px solid #f1f5f9}
+    #appelContent ul li:last-child{border-bottom:none}
+    #appelContent ul li::before{content:'➤';position:absolute;left:0;top:12px;color:var(--brand);font-weight:800;font-size:18px}
+    #appelContent.rtl ul li{padding:12px 32px 12px 0}
+    #appelContent.rtl ul li::before{left:auto;right:0}
+
+    /* ===== SIGNATURE SECTION ===== */
+    .signature-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+    .sign-btn{
+      padding:14px 24px;
+      border:none;
+      border-radius:12px;
+      background:var(--brand);
+      color:#fff;
+      font:600 16px 'Manrope',sans-serif;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      transition:all .3s;
+      box-shadow:0 2px 8px rgba(238,73,67,.3)
+    }
+    .sign-btn:hover{background:var(--brand-600);transform:translateY(-2px);box-shadow:0 4px 16px rgba(238,73,67,.5)}
+    .sign-btn i{font-size:18px}
+    .sign-btn.active{background:var(--brand-600)}
+
+    .form-container{
+      display:none;
+      margin-top:20px;
+      border:2px solid var(--line);
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff
+    }
+    .form-container.active{display:block}
+    .form-container iframe{width:100%;min-height:800px;border:none}
+
+    /* ===== FOOTER ===== */
+    footer{background:#fdfdfd;border-top:1px solid #e5e7eb;color:#475569;padding:26px 18px;text-align:center;margin-top:60px}
+    footer .footer-logo{max-width:140px;height:auto;vertical-align:middle;margin:0 8px}
+
+    /* ===== Bouton flottant ===== */
+    .share-button{position:fixed;bottom:24px;right:24px;z-index:9999;background:#ee4943;color:#fff;border:none;border-radius:50px;padding:12px 20px;display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(238,73,67,.4);transition:all .3s}
+    .share-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(238,73,67,.6);background:#d33e38}
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:600px){
+      .controls-wrapper{width:100%}
+      .language-selector{max-width:100%}
+      .audio-buttons{width:100%}
+      .audio-btn{flex:1;justify-content:center}
+      .signature-buttons{flex-direction:column}
+      .sign-btn{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand"><span>Journée Sans Nous</span></div>
+  </div>
+</header>
+
+<div class="ticker"><div class="track">🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • Chaque lundi 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel • 🚨 EN RÉGION PARISIENNE : lundi 17 novembre 19h–21h ➜ Assemblée publique – Bourse du Travail, 29 Bd du Temple, 75011 Paris • Chaque lundi 19h ➜ Réunion d'organisation – 3 rue du Château d'Eau • À L'ÉCHELLE NATIONALE : jeudi 13 novembre 19h–21h ➜ Réunion en visio des collectifs signataires de l'appel</div></div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Appel : Une Journée Sans Nous</h1>
+    <p class="lede">18 décembre 2025 : Grève générale solidaire pour l'égalité des droits.</p>
+    
+    <div class="controls-wrapper">
+      <div class="language-selector">
+        <select id="languageSelect" aria-label="Choisir une langue">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="ar">🌍 العربية</option>
+          <option value="wo">🇸🇳 Wolof</option>
+          <option value="ff">🇸🇳🇲🇱🇬🇳 Fulfulde / Pulaar</option>
+          <option value="serere">🇸🇳 Serer / Seereer</option>
+          <option value="diola-joola-fogny">🇸🇳 Diola / Joola Fogny</option>
+          <option value="snk">🇲🇱🇲🇷 Soninké</option>
+        </select>
+      </div>
+      
+      <div class="audio-buttons">
+        <button class="audio-btn" id="audioFr" data-lang="fr">
+          <i class="fa-solid fa-volume-high"></i> Écouter en français
+        </button>
+        <button class="audio-btn" id="audioEn" data-lang="en">
+          <i class="fa-solid fa-volume-high"></i> Listen in English
+        </button>
+        <button class="audio-btn" id="audioAr" data-lang="ar">
+          <i class="fa-solid fa-volume-high"></i> استمع بالعربية
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="appelSection">
+    <h2><i class="fa-solid fa-bullhorn"></i> L'Appel</h2>
+    <div id="appelContent">
+      <!-- Le contenu sera injecté ici par JavaScript -->
+      <p style="text-align:center;color:var(--muted)">
+        <i class="fa-solid fa-spinner fa-spin"></i> Chargement...
+      </p>
+    </div>
+  </section>
+
+  <section id="signatureSection">
+    <h2><i class="fa-solid fa-pen-nib"></i> Je signe l'appel</h2>
+    <p>Montrez votre soutien en signant l'appel, que vous soyez un collectif ou un individu.</p>
+    
+    <div class="signature-buttons">
+      <button class="sign-btn" id="btnCollectif">
+        <i class="fa-solid fa-users"></i>
+        <span>Signature pour les collectifs</span>
+      </button>
+      <button class="sign-btn" id="btnIndividuel">
+        <i class="fa-solid fa-user"></i>
+        <span>Signature individuelle</span>
+      </button>
+    </div>
+
+    <div class="form-container" id="formCollectif">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScriLBz7nVHMUhRfLjAcr8MP5fTeQ90TCwpYTElVOc3w6tLXA/viewform?embedded=true" loading="lazy">Chargement…</iframe>
+    </div>
+
+    <div class="form-container" id="formIndividuel">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBeOVoAaU20fGz4nbFROA0FBGGbIeHgmZOO8J8f9TVXI-1LQ/viewform?embedded=true" loading="lazy">Chargement…</iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © Journée Sans Nous • Initiative de
+  <a href="https://www.antiracisme-solidarite.org" target="_blank" rel="noreferrer noopener">
+    <img src="assets/img/Marche_des_Solidarites_logo.svg" alt="Marche des Solidarités" class="footer-logo">
+  </a>
+  • 2025
+</footer>
+
+<button class="share-button" id="shareButton">
+  <i class="fa-solid fa-share-nodes"></i> <span>Partager</span>
+</button>
+
+<!-- Audio player (hidden) -->
+<audio id="audioPlayer" style="display:none"></audio>
+
+<!-- Scripts -->
+<script src="assets/js/translations.js"></script>
+<script>
+  // Vérifier que les traductions sont chargées
+  if (!window.translations) {
+    console.error('❌ Le fichier translations.js n\'a pas pu être chargé');
+  }
+
+  // === GESTION DES LANGUES ===
+  const languageSelect = document.getElementById('languageSelect');
+  const appelContent = document.getElementById('appelContent');
+  const audioPlayer = document.getElementById('audioPlayer');
+  
+  // Boutons audio
+  const audioButtons = {
+    fr: document.getElementById('audioFr'),
+    en: document.getElementById('audioEn'),
+    ar: document.getElementById('audioAr')
+  };
+
+  // Variable pour suivre l'audio en cours
+  let currentAudio = null;
+
+  // Fonction pour afficher le contenu dans la langue sélectionnée
+  function displayLanguage(langCode) {
+    const translation = window.translations[langCode];
+    
+    if (!translation) {
+      console.error(`Traduction non trouvée pour : ${langCode}`);
+      return;
+    }
+
+    // Mettre à jour le contenu
+    appelContent.innerHTML = translation.content;
+    
+    // Gérer le RTL (right-to-left) pour l'arabe
+    if (translation.rtl) {
+      appelContent.classList.add('rtl');
+    } else {
+      appelContent.classList.remove('rtl');
+    }
+
+    // Afficher les boutons audio appropriés
+    Object.keys(audioButtons).forEach(key => {
+      if (audioButtons[key]) {
+        audioButtons[key].classList.remove('visible');
+      }
+    });
+
+    // Afficher uniquement les boutons pour les langues avec audio
+    ['fr', 'en', 'ar'].forEach(key => {
+      const trans = window.translations[key];
+      if (trans && trans.audio && audioButtons[key]) {
+        audioButtons[key].classList.add('visible');
+      }
+    });
+
+    // Arrêter l'audio en cours si on change de langue
+    if (currentAudio) {
+      audioPlayer.pause();
+      currentAudio = null;
+      Object.values(audioButtons).forEach(btn => {
+        if (btn) {
+          const icon = btn.querySelector('i');
+          if (icon) {
+            icon.className = 'fa-solid fa-volume-high';
+          }
+        }
+      });
+    }
+  }
+
+  // Gestionnaire de changement de langue
+  languageSelect.addEventListener('change', (e) => {
+    displayLanguage(e.target.value);
+  });
+
+  // === GESTION DE L'AUDIO ===
+  Object.entries(audioButtons).forEach(([lang, button]) => {
+    if (button) {
+      button.addEventListener('click', () => {
+        const translation = window.translations[lang];
+        if (!translation || !translation.audio) {
+          alert('Audio non disponible pour cette langue.');
+          return;
+        }
+
+        const icon = button.querySelector('i');
+        
+        // Si c'est le même audio qui est en cours
+        if (currentAudio === lang) {
+          if (audioPlayer.paused) {
+            audioPlayer.play();
+            icon.className = 'fa-solid fa-pause';
+          } else {
+            audioPlayer.pause();
+            icon.className = 'fa-solid fa-volume-high';
+          }
+        } else {
+          // Charger et jouer un nouvel audio
+          audioPlayer.src = translation.audio;
+          audioPlayer.play();
+          currentAudio = lang;
+          
+          // Mettre à jour les icônes
+          Object.values(audioButtons).forEach(btn => {
+            if (btn) {
+              const btnIcon = btn.querySelector('i');
+              if (btnIcon) {
+                btnIcon.className = 'fa-solid fa-volume-high';
+              }
+            }
+          });
+          icon.className = 'fa-solid fa-pause';
+        }
+      });
+    }
+  });
+
+  // Réinitialiser l'icône quand l'audio se termine
+  audioPlayer.addEventListener('ended', () => {
+    Object.values(audioButtons).forEach(btn => {
+      if (btn) {
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.className = 'fa-solid fa-volume-high';
+        }
+      }
+    });
+    currentAudio = null;
+  });
+
+  // === GESTION DES FORMULAIRES DE SIGNATURE ===
+  const btnCollectif = document.getElementById('btnCollectif');
+  const btnIndividuel = document.getElementById('btnIndividuel');
+  const formCollectif = document.getElementById('formCollectif');
+  const formIndividuel = document.getElementById('formIndividuel');
+
+  btnCollectif.addEventListener('click', () => {
+    const isActive = formCollectif.classList.contains('active');
+    
+    // Fermer l'autre formulaire
+    formIndividuel.classList.remove('active');
+    btnIndividuel.classList.remove('active');
+    
+    // Toggle le formulaire collectif
+    if (isActive) {
+      formCollectif.classList.remove('active');
+      btnCollectif.classList.remove('active');
+    } else {
+      formCollectif.classList.add('active');
+      btnCollectif.classList.add('active');
+      
+      // Scroll vers le formulaire
+      setTimeout(() => {
+        formCollectif.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    }
+  });
+
+  btnIndividuel.addEventListener('click', () => {
+    const isActive = formIndividuel.classList.contains('active');
+    
+    // Fermer l'autre formulaire
+    formCollectif.classList.remove('active');
+    btnCollectif.classList.remove('active');
+    
+    // Toggle le formulaire individuel
+    if (isActive) {
+      formIndividuel.classList.remove('active');
+      btnIndividuel.classList.remove('active');
+    } else {
+      formIndividuel.classList.add('active');
+      btnIndividuel.classList.add('active');
+      
+      // Scroll vers le formulaire
+      setTimeout(() => {
+        formIndividuel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    }
+  });
+
+  // === BOUTON DE PARTAGE ===
+  document.getElementById('shareButton').addEventListener('click', function() {
+    const txt = "18 décembre 2025 : Grève générale solidaire pour l'égalité des droits. #JournéeSansNous";
+    const url = window.location.href;
+    
+    if (navigator.share) {
+      navigator.share({
+        title: "Journée Sans Nous",
+        text: txt,
+        url: url
+      }).catch(() => {
+        // Fallback si le partage échoue
+        copyToClipboard(txt, url);
+      });
+    } else {
+      copyToClipboard(txt, url);
+    }
+  });
+
+  function copyToClipboard(txt, url) {
+    const button = document.getElementById('shareButton');
+    navigator.clipboard.writeText(txt + "\n" + url).then(() => {
+      button.innerHTML = '<i class="fa-solid fa-check"></i> Copié !';
+      setTimeout(() => {
+        button.innerHTML = '<i class="fa-solid fa-share-nodes"></i> <span>Partager</span>';
+      }, 2000);
+    }).catch(() => {
+      alert('Impossible de copier. Veuillez copier manuellement : ' + txt + '\n' + url);
+    });
+  }
+
+  // === INITIALISATION ===
+  // Charger le français par défaut au démarrage
+  window.addEventListener('DOMContentLoaded', () => {
+    displayLanguage('fr');
+  });
+</script>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>
