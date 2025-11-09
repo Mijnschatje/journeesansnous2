@@ -83,7 +83,7 @@ window.translations = {
         <li><strong>إغلاق</strong> مراكز الاحتجاز الإداري (CRA)</li>
         <li><strong>العدالة الاجتماعية والتضامن</strong> ضدّ العنصرية والفاشية</li>
       </ul>
-      <p dir="rtl">إذا أردت الانضمام إلينا، انقر على الرابط أدناه واملأ النموذج، وسنرسل لك البرنامج. ✍️</p>
+      <p dir="rtl">إذا أردت الانضمام إلينا، انقر على الرابط أدناه واملأ النموذج، وسنرسل لك البرنامج.</p>
     `
   },
 
@@ -108,7 +108,7 @@ window.translations = {
         <li><strong>Ñu tëj kajoori nguur gi (CRA)</strong></li>
         <li><strong>Ñu taxaw ngir njàmm, wàllu askan wi</strong>, ak fattu ci gor-góorlu ak xees gi</li>
       </ul>
-      <p>Bu soo bëggee bokk ak nun, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun di la yóbbu program bi. ✍️</p>
+      <p>Bu soo bëggee bokk ak nun, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun di la yóbbu program bi.</p>
     `
   },
 
@@ -118,20 +118,27 @@ window.translations = {
     audio: "",
     content: `
       <div class="intro">
-        <p><strong>"Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !"</strong></p>
-        <p>Ko ñalnde ɓeydii ɗi waɗii e <strong>ɗeeɗi jokkondiraaɓe ɗe waɗi e waɗɓe waɗi alaa papiiri</strong>, ɗe waɗi ɗi huutoraa <strong>golle jogii ɗum e jom siyasaare e jom ngorgu</strong> ngal ɗi ɗoɓɓude <strong>lenyol ngal e dow heeri ngam ngal e dowlere</strong>.</p>
+        <p>Ñalnde nde ina waɗi </strong>18 décembre 2025</strong>, ko <strong>Ñalnde aduna nde e jeegooɓe (Journée internationale des migrant·e·s)</strong>.
+ Ko ɓe waɗi ɗum ngam <strong>ɗe geɗe e jammaaji e politig</strong>, ɗe waɗi ɗum ngam ɗe fowru e nguurndam, maayde e pullooji e cokkere hakkunde jeegooɓe e Farayse.</p>
+<p>Minen ɗiɗo njahdi : <strong>liggey ngal e jokkere ngal ena jokkondir e amen fow</strong>, ndaar laamateeri e dow politig ceerii waɗi ko ɓataaki e neenɗo ngam hokkude dariima e ndimu.</p>
+<p>Goɗɗi ɗiɗo, sindikà, e jaaɓe, e heewɓe moƴƴi ena heddii e Farayse ngir waɗde e nder ɗiɗo ngal ñalnde, ñalnde mawɗo ngal.</p>
       </div>
-      <p><strong>Ko ɗum ɗi waɗi goonga ngal e hakkunde amen:</strong></p>
-      <p>Ɗoole ndee waawaa waɗde tawa alaa Immigré. Ndee ngal jeyaa ko woni kala tawa ngalaa immigreeji, tee ngal njogii keɓe e ɗum.</p>
-      <p>Ko Immigréji ɗe waɗi waɗde ngal, waaye ko siyasaaji ɗi, lenyol ngal e baɗɗal ɗi waɗi ngal waɗde ngal.</p>
+     <p><strong>Kalam amen :</strong>
+<p><strong>Leydi nde waawaani e hoore mum so wonaa jeegooɓe.</strong>
+ Leydi nde waawaani e hoore mum so wonaa ɓe, ndaar e jeegooɓe ko waɗi wonande moƴƴere.</p>
+<p><strong>Ko wonaa jeegooɓe waɗi leydi nde njahda, waaye ko politig, laamateeri e neenɗo ɗiɗo.</strong></p>
+<p>Ñalnde <strong>18 décembre, e ñalnde aduna nde e jeegooɓe, minen ɗiɗo njahdi :
+ “Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !”</strong></p>
+<p>Jeegooɓe e ɓe wonaa makaratase, ɓe nden, jowɗo jeegooɓe, ɓe taɓo, ɓe aduno, ɓe jiɓinirde — minen ɗiɗo njahdi e duuɓi, e baɗte, e wurooɓe, ngam waɗde galle ɗiɗo.</p>
+<p>Minen ɗiɗo ɗaɓɓi :</p>
       <ul>
-        <li><strong>Ngam momtude ɗum kala ɗoo</strong> laawol Darmanin e gandal Retailleau</li>
-        <li><strong>Ngam waɗde hakkunde fow</strong> — e njangol, leydi, ñaamande, laawol, e golle</li>
-        <li><strong>Ngam waɗde njangu</strong> e waɗɓe waɗi alaa papiiri</li>
-        <li><strong>Ngam uddugol</strong> galle jeygol ɓurnde ɗi waɗi ɗum CRA</li>
-        <li><strong>Ngam ɗum e dow laawol e hakkunde mbooɗum</strong>, ngal ɗi waɗi ɗi ɗoɓɓude lenyol e dow faaɗaare</li>
+        <li><strong>Waɗtu leyɗe Darmanin e Retailleau</li>
+        <li><strong>Jokkitir hakkunde heen e ɗoɓɓe fow : e jango, e galle, e jom cewɗe, e al’ada, e liggey</li>
+        <li><strong>Hollude dowka jeegooɓe ɓe wonaa makaratase</li>
+        <li><strong>Udditde cewre nguurndam (CRA)</li>
+        <li><strong>Feddirde e hakkunde e jam, e wakkilal, e ndeenɗo, e fenaare ɓataaki ak fascisme</li>
       </ul>
-      <p>So aɗa yiɗi waɗde e amen, ɗum waɗi ngam a njokkondiri e min, na a ɗaɓɓitii dow link ngal e njokkondiri foom ngal, minen ɗi naatnoy a jeyaa ngal porogaraam ✍️.</p>
+      <p>So a yiɗi heɓde e amen, ɗooɗtu e link ngal, rew e formilaar ngal, minen ɗiɗo nanndi-ma program ngal.</p>
     `
   },
 
@@ -141,19 +148,27 @@ window.translations = {
     audio: "",
     content: `
       <div class="intro">
-        <p><strong>"Béss bu ñu amul nun: bu ñu taxaw, lépp dina taxaw!"</strong></p>
-        <p>Béss boo di def ngir <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025</strong>.</p>
-      </div>
-      <p><strong>Lii mooy sunu ndigël:</strong></p>
-      <p>Réew du dox bu amul Immigree. Réew du nekk dara bu amul Immigree, ndaxte ñoom la mu bëgg di doon.</p>
+      <p></strong>“Ngéén jaamu ji ñu amul : bu ñu jooy, lépp dina jooy !”</strong></p>
+<p>Ngéén jaamu ji ñu amul dafay am </strong>ci 18 décembre 2025</strong>, ngir <strong>ngéén aduna bu ñuul yi (Journée internationale des migrant·e·s)</strong>.
+ Ngéén jaamu ji ñu amul dafay <strong>tànn mbir mu jëmm ak politig, ngir jooy ci doole ju xees, jafe-jafe ak mbugal ci njàng, nguur ak dund</strong> ci Farãs.
+Ñu ngi faale ne : <strong>lii mooy sunu mbir bopp, ndax mboolem njiitu nguur ak politig yu xees dañuy def lu yàq sañ-sañu ñuul yi ak sañ-sañu askan wi yépp.</strong>
+Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko <strong> bés bu mag bu jàmm ak doole.</strong></p>
+    </div>
+      <p>Sunuy wax :</p>
+<p><strong>Réew mii du dox ndax ñuul yi.</strong></p> <p>Du am itam so du jël sa doole ci ñoom.</p>
+ <p>Du ñuul yi ñuy dagg réew mii, waaye politig ak jafe-jafe lañu tax.</p>
+<p>Ci 18 décembre, bésu aduna bu ñuul yi, danu naan :</p>
+<p><strong> “Ngéén jaamu ji ñu amul : bu ñu jooy, lépp dina jooy !”</strong></p>
+<p>Ñu am ak ñu amul ndombo, ñuul yi, doom yu ñuul yi, ñaari taali, ñetteel, aji-jàngkat, aji-liggéey, aji-sell — danu dëpp liggéey, jàng, jaay, ngir génn ci yoon bi ak sunu bopp.</p>
+<p>Danu tàbbi :</p>
       <ul>
-        <li><strong>Ngir simmali léegi</strong> laawol Darmanin ak tektal Retailleau</li>
-        <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada, ak liggéey</li>
-        <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
-        <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
-        <li><strong>Ngir njàmm, mbooloom nit ak ngérëm</strong>, te ngir fippu ci arafat ak gàddaay</li>
+        <li><strong> Ñu dindi <strong>loi Darmanin ak Retailleau</strong></li>
+        <li><<strong>Ñu jàppale <strong>ndimbal ak doole bu mel ne sunu ñépp</strong>, ci jàng, kër, dund, jàmm, ak liggéey</li>
+        <li><strong>Ñu def <strong>sañ-sañ bu dëgg ngir ñu amul ndombo yi</strong></li>
+        <li><strong>Ñu tëj <strong>kajoori nguur gi (CRA)</strong></li>
+        <li>Ñu jëf <strong>ngir jàmm, doole ak sago askan wi, ak fattu ci xees ak fascisme</strong></li>
       </ul>
-      <p>Soo bëggee bokk ci jàmm bii, nga fal foom bi ci suuf, te nu la yónnee porogaraam bi ✍️.</p>
+      <p>So bëgg nga bokk, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun di la yóbbu program bi.</p>
     `
   },
 
@@ -163,41 +178,58 @@ window.translations = {
     audio: "",
     content: `
       <div class="intro">
-        <p><strong>"Ala beŋ eneŋ eŋa: naŋ a beŋ eneŋ, a beŋ eneŋ a beŋ!"</strong></p>
-        <p>Bésu ñu ngi def ci <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025</strong>.</p>
+        <p><strong>"Abaŋ aneŋ ñi : kaŋ ankaŋ, baŋ ankaŋ !"</strong></p>
+        <p>Abaŋ aneŋ ñi aŋul beŋ <strong>18 décembre 2025</strong>, eneŋ <strong>Abaŋ a dunia e baŋu-mbaŋ (Journée internationale des migrant·e·s).</strong></p>
+<p>Abaŋ aneŋ ñi, eŋu di <strong>afañ e kanyin baŋu, afañ e politiki</strong>, ngir <strong>baŋu kufu, kanyin, ak kasum e saŋa yi</strong>.</p>
+<p>Eŋu fiŋ eneŋ : <strong>baŋu yaŋ eneŋ ñi, baŋu yaŋ eneŋ ñi bubaŋ !</strong></p>
+ <p>Abaŋ aneŋ ñi eŋu di afañ ngir <strong>kaw e joola yi, ak ñi bubaŋ beŋ Francia</strong>, ngir eŋu kuñul, kaŋ ankaŋ ak bubaŋ.</p>
+<p>Ñi eŋu buñu, ak sindika, ak kuñul yi beŋ Francia, eŋu baŋu ngir di akeneŋ e abaŋ aneŋ ñi bu mag.</p>
       </div>
-      <p><strong>Lii mooy sunu ndigël:</strong></p>
-      <p>Réew du dox bu amul Immigree. Réew du nekk dara bu amul ñeeñu delloo, ndaxte ñoom la mu bëgg di doxal.</p>
+      <p><strong>Ankaŋ aŋu</strong></p>
+      <strong>Baŋu kasum beŋu ñi bubaŋ yi.</strong> Kasum aŋul beŋ ñi bubaŋ, eŋu ñi bubaŋ aŋu naŋu kasum.
+ <strong>Ñi bubaŋ aŋul beŋ baŋu kufu kasum, baŋu kufu ñi aŋu ñi bubaŋ, ak politiki yi.</strong>
+<p>Beŋ 18 décembre, abaŋ a dunia e baŋu-mbaŋ, eŋu baŋu :</p>
+ <p><strong>“Abaŋ aneŋ ñi : kaŋ ankaŋ, baŋ ankaŋ !”</strong></p>
+<p>Ñi bubaŋ ak ñi amul karatasi, ñi bubaŋ yi, ñi baŋu-mbaŋ yi, ñi taali yi, ñi akaneŋ ak ñi liggey — eŋu kaŋ ankaŋ e baŋu sukul, e liggey, e kasum, eŋu baŋu baŋu-mbaŋ.</p>
+<p>Eŋu baŋu :</p>
       <ul>
-        <li><strong>Ngir simmali</strong> laawol Darmanin ak tektal Retailleau</li>
-        <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
-        <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
-        <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
-        <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir jàppale ak arafat ak gàddaay</li>
+        <li><Kaŋu <strong>loi Darmanin ak Retailleau</strong></li>
+        <li>Kaŋu <strong>hakë beŋ ñi bubaŋ ñi ñi yépp</strong>, e sukul, e kasum, e jam, e kultura, e liggey</li>
+        <li>Kaŋu <strong>hakë ñi amul karatasi yi</strong></li>
+        <li>Kaŋu <strong>tey jofe yi (CRA)</strong></li>
+        <li>Kaŋu <strong>hakë jam, baŋu beŋ ñi bubaŋ, eŋu kuñul, ak kasum e xees ak fascisme</strong></li>
       </ul>
-      <p>Soo bëggee bokk, nga fal foom bi ci suuf te nu la yónnee porogaraam bi ✍️.</p>
+      <p>So aŋul beŋ naŋu, kaŋ link baŋ beŋ, fut formileer, eŋu baŋu ñi jool program bi.</p>
     `
   },
 
   snk: {
-    label: "🇲🇱🇲🇷 Soninké",
+    label: "🇲🇱🇲🇷 Soninké / Sarakolé",
     rtl: false,
     audio: "",
     content: `
       <div class="intro">
-        <p><strong>"A da taa waati, a da taa kulu!"</strong></p>
-        <p>Naŋ béé 18 diisamburu 2025, ko <strong>waati kafu immigree</strong>, bésu àdduna bu ñeeñu immigree ak ñeeñu amul papie.</p>
+        <p>Janna n’a be ta <strong>18 décembre 2025</strong>, ka taa <strong>Duniya ka janna ta iɲaŋu (Journée internationale des migrant·e·s)</strong>.</p>
+ <p>Janna n’a n’a be naamu ka <strong>toɔma ani politiki ka naamu</strong>, ka fɔ <strong>dankunyaa ani laahuraa</strong>, ka ɗa <strong>a jaŋɛ ka faaŋe ani a naamuya e Faransi.</strong></p>
+<p>An be fɔ : <strong>n’a la be an bɛɛ ka taa, an n’a be naamu ka taa.</strong>
+ Laha n’a be taa <strong>n’a jaamu ta iɲaŋu la</strong>, ndax a ye ngoro ani laahuraa n’a bɛ ka da faaŋe ka laahuraa.</p>
+<p>Tilenmu, sindika ani jamu be Faransi la, n’a be n’aamu ka janna n’a ta ka naamu.</p>
+<p>An naamu :</p>
       </div>
-      <p><strong>Lii mooy sunu ndigël:</strong></p>
-      <p>Réew du dox bu amul Immigree. A la waati ye, réew du nekk bu amul ñeeñu delloo, ndaxte ñoom la mu nàmp nekk.</p>
+      <p><strong>Duniya la mɛn tɛ taa bila iɲaŋu.</strong> A tɛ be taa bila an naamuya la, ani an bɛɛ be faaŋe a la.</p>
+<p><strong>A tɛ iɲaŋu be naamu duniya la, waaye politiki ani laahuraa n’a be faaŋe.</strong><p>
+<p><strong>18 décembre</strong>, duniya ka janna ta iɲaŋu la, an be fɔ :</p>
+<p><strong>“Janna ka n’a te an ma : n’an ta, le bɛ ta !”</strong></p>
+<p>Iɲaŋu ani n’a be makaratasi, n’a be iɲaŋu la, iɲaŋu denmɛ ta 1er, 2ème ani 3ème kelen, jamu, sɛnɛkɛ, mɔgɔw ani jamanaw — an be ta baara, sukuru ani suguba, ka taa sɛbɛɛnɛ.</p>
+<p>An be naamu :</p>
       <ul>
-        <li><strong>Ngir momtude léegi</strong> laawol Darmanin ak tektal Retailleau</li>
-        <li><strong>Ngir sañ-sañu ñépp</strong> — ci njàng, kër, njàmm, aada ak liggéey</li>
-        <li><strong>Ngir yore sañ-sañ</strong> ngir ñeeñu amul papie</li>
-        <li><strong>Ngir tëj</strong> kërug jey gi (CRA)</li>
-        <li><strong>Ngir njàmm ak mbooloom nit</strong>, ngir fippu ci njàkk njàmm ak lenyol</li>
+        <li>Ka <strong>Darmanin ani Retailleau</strong> ka sɛbɛ</li>
+        <li>Ka <strong>hakɛ la be bɛɛ la</strong> : sukuru, so, hɛrɛ, kulturu ani baara</li>
+        <li>Ka<strong> iɲaŋu min tɛ makaratasi</strong> ka faaŋe</li>
+        <li><Ka <strong>CRA</strong> ka sɛbɛ (ka taa dɔnna min naamu)</li>
+        <li>Ka <strong>hakɛ ani laahuraa</strong>, ka taa jamu ani laahuraa, ka faaŋe xees ani fascismu.</li>
       </ul>
-      <p>So a fẹ ka bokk e min, nga danne dow foom bi, min naŋ naatnoy a jeyaa porogaraam bi ✍️.</p>
+      <p>N’a i be se be taa an na, duguma linku la, furu formilɛɛri la, an be i na programu l</p>
     `
   }
 };
