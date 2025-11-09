@@ -93,22 +93,27 @@ window.translations = {
     audio: "",
     content: `
       <div class="intro">
-        <p><strong>"Béss bi ñu amul nun: bu ñu taxaw, lépp dina taxaw!"</strong></p>
-        <p>Ndaje bu ñu ngi def ci <strong>Bésu Àdduna bu Immigree yi, 18 Disàmbar 2025</strong>.</p>
-        <p>Béss bii dafa nekk initiative <strong>ñeeñu Immigree ak ñeeñu amul papie</strong> ñu ngi liggéey ngir jappale <strong>gàddaay bu njàmm ak bu politig</strong> ci <strong>njàkk sañ-sañ</strong>, ci fippu, ci njàngoro yi ñu di jappale ñeeñu Immigree ci Farans.</p>
+        <p>Bés bi dafay am ci <strong>18 décembre 2025</strong>, ngir <strong>Bésu Àdduna bu Ñuul yi (Journée internationale des migrant·e·s)</strong>.</p>
+<p> Bés bi dafa taxaw ci <strong>jàmmu ak liggéeyu ndimbal</strong>, ngir fattu ci <strong>ngor gi ñuul gi, lii di njaxlaf ak yàqu xel y</strong>i, ak lii di <strong>taxawal ci seen doole ak seeni doxalin ci Farans.</strong></p>
+<p>Nun ñépp, danu xam ne <strong>lutte bii, sunu lutte la</strong>, ndax <strong>sàmmakat yi ak politig yi xees, ñoom lañu wara fattu</strong>, ndax ñoom lañuy tekki jàmm ak njàmm, di taxaale sunu doole.</p>
+<p>Aji-jàmm, syndicá, jaarjaar yi ak aji-mbokk yu bari lañu di jëfandikoo bés bi, ngir dëgg-dëgg defar bés bu mag bi.</p>
       </div>
-      <p><strong>Lii mooy sunu ndigël:</strong></p>
-      <p>"Réew bii du dox ndax ñuul yi. Du am itam ndax du yitteelu, te du am njariñ ci mbir mu nekk.</p>
-      <p>Du ñuul yi ñuy dagg réew mii, waaye lii mooy politig yi, ngor gu ñuul gi ak loolu di njàmmu doole.</p>
-      <p>Ci 18 Disàmbar, ci Bésu Àdduna bu Ñuul yi, danu naan: "Bés bi ñu amul ñu : bu ñu dindi sunu liggéey, lépp dina taxaw !"</p>
+      <p><strong>Sunuy wax :</strong></p>
+      <p><strong>Réew mii du dox ndax ñuul yi.</strong></p>
+<p> Du am itam ndax du yitteelu, te du am njariñ ci mbir mu nekk.</p>
+<p> <strong>Du ñuul yi ñuy dagg réew mii, waaye lii mooy politig yi, ngor gu ñuul gi ak loolu di njàmmu doole.</strong></p>
+<p>Ci <strong>18 décembre</strong>, ci Bésu Àdduna bu Ñuul yi, danu naan :
+ <strong>“Bés bi ñu amul ñu : bu ñu dindi sunu liggéey, lépp dina taxaw !”</strong></p>
+<p>Ñu am ak ñu amul ndombo, ñuul yi, doom yu ñuul yi, ci taali bu jëkk, ci ñaareel, ci ñetteel, aji-nawle, aji-mbokk, aji-liggéey, aji-jàngkat — danu dëpp liggéey, jàng, jaay, ngir génn ci yoon bi.</p>
+<p>Danu jàngale :</p>
       <ul>
-        <li><strong>Ñu dindi séy Darmanin ak yeneen ndigëlu Retailleau</strong></li>
-        <li><strong>Ñu jàppale ndimbal ak doole bu mel ne sunu ñépp</strong>, ci jàng, kër, dund, cosaan, ak liggéey</li>
-        <li><strong>Ñu def doxalin bu dëgg ngir ñu amul ndombo yi</strong></li>
-        <li><strong>Ñu tëj kajoori nguur gi (CRA)</strong></li>
-        <li><strong>Ñu taxaw ngir njàmm, wàllu askan wi</strong>, ak fattu ci gor-góorlu ak xees gi</li>
+        <li>Ñu dindi <strong>séy Darmanin ak yeneen ndigëlu Retailleau</strong></li>
+        <li>Ñu jàppale <strong>ndimbal ak doole bu mel ne sunu ñépp</strong>, ci jàng, kër, dund, cosaan, ak liggéey</li>
+        <li>Ñu def <strong>doxalin bu dëgg ngir ñu amul ndombo yi</strong></li>
+        <li>Ñu tëj <strong>kajoori nguur gi (CRA)</strong></li>
+        <li>Ñu taxaw <strong>ngir njàmm, wàllu askan wi, ak fattu ci gor-góorlu ak xees gi</strong></li>
       </ul>
-      <p>Bu soo bëggee bokk ak nun, duggal sa tur ci lëkkalekaay bi, nga fattaliku formileer bi, nun di la yóbbu program bi.</p>
+      <p>Bu soo bëggee bokk ak nun, <strong>duggal sa tur ci lëkkalekaay bi</strong>, nga fattaliku formileer bi, nun di la yóbbu program bi.</p>
     `
   },
 
@@ -231,5 +236,95 @@ Ngir ndimbal ak jàmm, ñu bari lañu ngi bëgg jëfandikoo bés bi ngir def ko 
       </ul>
       <p>N’a i be se be taa an na, duguma linku la, furu formilɛɛri la, an be i na programu l</p>
     `
+  },
+  snk: {
+    label: "🇸🇳🇬🇳 Pulaar / Peul",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !”</strong></p>
+<p>Ñalnde nde ina waɗi ci <strong>18 décembre 2025</strong>, ko <strong>Ñalnde aduna nde e jeegooɓe (Journée internationale des migrant·e·s)</strong>.</p>
+<p> Ko ɗum waɗi ɓurnde e jammaaji e politig, ɗum ɗaɓɓii ngol fenaare e cokkere laamateeri ngir waɗde e ɓataaki nguurndam, maayde e pullooji e cokkere hakkunde jeegooɓe e Farayse.</p>
+<p>Minen ɗiɗo wujjii : <strong>liggey ngal e jokkere ngal ena jokkondir e amen fow</strong>, ndaar laamateeri e dow politig ceerii waɗi ko ɓataaki e neenɗo ngam hokkude dariima e ndimu.</p>
+<p>Goɗɗi ɗiɗo, sindikà, e jaaɓe, e heewɓe moƴƴi ena heddii e Farayse ngir waɗde e nder ɗiɗo ngal ñalnde, ñalnde mawɗo ngal.</p>
+      </div>
+      <p>Kalam amen :</p>
+<p><strong>Leydi nde wonaani tigi so wonaa jeegooɓe.</strong></p>
+<p> Leydi nde waawaani e hoore mum so wonaa ɓe, ndaar e jeegooɓe ko waɗi wonande moƴƴere.</p>
+ <p><strong>Ko wonaa jeegooɓe waɗi leydi nde njahda, waaye ko politig, laamateeri e neenɗo ɗiɗo.</strong></p>
+<p>Ñalnde <strong>18 décembre</strong>, e ñalnde aduna nde e jeegooɓe, minen ɗiɗo njahdi :
+ <strong>“Ñalnde nde wonaa amen : so amen njahdi, kala fof njahda !”</strong></p>
+<p>Jeegooɓe e ɓe wonaa makaratase, ɓe nden, jowɗo jeegooɓe, ɓe taɓo, ɓe aduno, ɓe jiɓinirde — minen ɗiɗo njahdi e duuɓi, e baɗte, e wurooɓe, ngam waɗde galle ɗiɗo.</p>
+<p>Minen ɗiɗo ɗaɓɓi :</p>
+      <ul>
+        <li>Waɗtu leyɗe Darmanin e Retailleau</li>
+        <li>Jokkitir hakkunde heen e ɗoɓɓe fow : e jango, e galle, e jom cewɗe, e al’ada, e liggey</li>
+        <li>Hollude dowka jeegooɓe ɓe wonaa makaratase</li>
+        <li>Udditde cewre nguurndam (CRA)</li>
+        <li>Feddirde e hakkunde e jam, e wakkilal, e ndeenɗo, e fenaare ɓataaki ak fascisme.</li>
+      </ul>
+      <p>So a yiɗi heɓde e amen, ɗooɗtu e link ngal, rew e formilaar ngal, minen ɗiɗo nanndi-ma program ngal.</p>
+    `
+   },
+  snk: {
+    label: "🇨🇲 Ewondo",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Mvog mè an yi : nda an ba’a, mè bɛ̂ ba’a !”</strong></p>
+<p>Mvog mè an yi é mininga <strong>18 décembre 2025</strong>, mè nloé <strong>Journée internationale des migrant·e·s</strong>.</p>
+<p>Mvog a yi ndé nloé <strong>mbong o ndingan a sɔŋ e meyené</strong>, ngir <strong>bɔlo e ndingan a nganan e mvet, e meyené nloé eton e nkukuma nloé France</strong>.</p>
+<p>An bɔg e naŋ : <strong>a mbɔg maŋa mininga an bɔg a yi an bɔg bɛn !</strong></p>
+<p>É bɛ̂ meyené e nganan, é bɔlo meyené a bɔg, é yèm a ngɔ e mvet, a nganan é bɛ̂ meyené e ndingan a nlong.</p>
+<p>Ngumba, syndicà, meyené e mefo, e nkukuma nloé France, é nloé meyené é bɛ̂ bɔg e mvog mè a yi.</p>
+      </div>
+      <p>Meyené mè an bɔg :</p>
+<p><strong>Nnam ndé a tɛ́ kɛ́ é ndingan meyené.</strong></p>
+<p>A tɛ́ bɛ̂ kɛ́ é sɔŋ, é meyené bɛ̂ nloé a ngɔ e nkukuma.</p> 
+<p><strong>A bɛ̂ meyené é ngɔ e nkukuma, wa meyené é bɛ̂ e meyené a bɔlo.</strong></p>
+<p>Nloé <strong>18 décembre</strong>, é meyené nloé e meyené é ngɔ e nkukuma, an bɔg :
+ <strong>“Mvog mè an yi : nda an ba’a, mè bɛ̂ ba’a !”</strong></p>
+<p>Meyené é nloé e bɛ̂ é bɔlo, é meyené é ngɔ e nnam, é bɛ̂ é ngɔ e nkukuma nloé : meyené é jɔ́ mvet, e ndingan, e nkukuma, é bɛ̂ bɔg é meyené é nloé.</p>
+<p>An bɔg :</p>
+      <ul>
+        <li>Nda a ba’a <strong>loi Darmanin é Retailleau</strong></li>
+        <li>Nda <strong>meyené e ndingan meyené a sɔŋ</strong>, é mvet, e nkukuma, e mbolo, e meyené</li>
+        <li>Nda <strong>meyené é ngɔ e nnam nloé é bɛ̂ bɔlo</strong></li>
+        <li>Nda <strong>nkukuma é ngɔ e mvet (CRA)</strong></li>
+        <li>Nda <strong>meyené e ndingan a sɔŋ</strong>, e meyené a ndingan a ngɔ e nnam, é bɛ̂ bɔg é meyené a ngɔ e mvet e meyené e nganan.</li>
+      </ul>
+      <p>So a bɔg a ngɔ é nnam, fɔ link nloé, si formilɛɛr, an bɛ̂ a yɔ programme.</p>
+    `
+   },
+  snk: {
+    label: "🇲🇱 Bambara",
+    rtl: false,
+    audio: "",
+    content: `
+      <div class="intro">
+        <p><strong>“Don o be an ye : ni an taara, fɛ ka taa !”</strong></p>
+<p>Don o be yɛrɛma <strong>18 décembre 2025</strong>, ka taa <strong>Duniya don kan ka yɛrɛma (Journée internationale des migrant·e·s)</strong>.</p>
+<p>Don o ye bɛɛ <strong>sininɛ fɔlɔw ka daminɛ ni i ni kɛla bɛɛ ka tɔrɔ</strong>, fɔ <strong>ka b’a fɛ b’a dɔ kunu ye, ka b’a bɔ nyɛman na, ni ka sigida yɛrɛma ka fɛɛrɛya Faransi la.</strong></p>
+<p>An b’a fɔ bɛɛ : <strong>don o ye an don, an b’a fɔ bɛɛ la !</strong></p>
+<p>Ni a ye <strong>so, politike ni faamuya</strong> kɛ b’a la fɔ ka jigin fɔ n’u bɛɛ, a bɛ sɔrɔ la ka bɔ n’i hakɛ ni kɛlɛya la.</p>
+<p><strong>Sindika, jamuw ni fɛɛnɛ kɛla bɛɛ be b’a yɛrɛma Faransi la</strong>, bɛɛ be b’a fɛ ka kɛ don o ka yɛrɛma, don ba kɛrɛkɛrɛ.</p>
+      </div>
+      <p>Don o be yɛrɛma <strong>18 décembre 2025</strong>, ka taa <strong>Duniya don kan ka yɛrɛma (Journée internationale des migrant·e·s)</strong>.</p>
+<p>Don o ye bɛɛ <strong>sininɛ fɔlɔw ka daminɛ ni i ni kɛla bɛɛ ka tɔrɔ</strong>, fɔ <strong>ka b’a fɛ b’a dɔ kunu ye, ka b’a bɔ nyɛman na, ni ka sigida yɛrɛma ka fɛɛrɛya Faransi la.</strong></p>
+<p>An b’a fɔ bɛɛ : <strong>don o ye an don, an b’a fɔ bɛɛ la !</strong></p>
+<p>Ni a ye <strong>so, politike ni faamuya</strong> kɛ b’a la fɔ ka jigin fɔ n’u bɛɛ, a bɛ sɔrɔ la ka bɔ n’i hakɛ ni kɛlɛya la.</p>
+<p><strong>Sindika, jamuw ni fɛɛnɛ kɛla bɛɛ be b’a yɛrɛma Faransi la</strong>, bɛɛ be b’a fɛ ka kɛ don o ka yɛrɛma, don ba kɛrɛkɛrɛ.</p>
+      <ul>
+        <li><strong>Ka bo loi Darmanin ni Retailleau</strong></li>
+        <li><strong>Ka yɛrɛ hakɛ bɛɛ la : sɛbɛnni, so, dɔgɔkun, kulture ni baara</strong></li>
+        <li><strong>Ka yɛrɛma min tɛ makaratasi ka sɛbɛya</strong></li>
+        <li><strong>Ka da tɔɔrɔso (CRA)</strong></li>
+        <li><strong>Ka kɛ hakɛ ni kɛlɛya, ni jamu ni fɔlɔya fɔ ka fɛɛrɛya ni fashisimu ta.</strong></li>
+      </ul>
+      <p>Ni i b’a fɛ ka b’a yɛrɛma an na, <strong>ka sɛbɛn linku min bɛ kɔfɛ, ka sɛbɛn formilɛri</strong>, an bɛ i na programu la.</p>
+    `
+    
   }
 };
