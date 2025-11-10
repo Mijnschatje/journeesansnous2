@@ -369,7 +369,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-count"><span class="counter-animation" data-target="302">0</span></div>
+      <div class="hero-count"><span class="counter-animation" data-target="307">0</span></div>
       <div class="hero-label">Organisations signataires</div>
       <p class="hero-subtitle">
         Syndicats, associations, collectifs locaux et organisations citoyennes mobilisés de toute la France pour le 18 décembre.
@@ -380,7 +380,7 @@
   <!-- Main -->
   <main>
     <p class="intro-text">
-      <strong>Une mobilisation historique.</strong> 302 organisations ont répondu présent à notre appel, 
+      <strong>Une mobilisation historique.</strong> 307 organisations ont répondu présent à notre appel, 
       de toutes les régions de France et de tous horizons.
     </p>
 
@@ -411,7 +411,7 @@
 
     <!-- Tous les signataires -->
     <section class="all-section">
-      <h2 class="section-title">Et 302 organisations</h2>
+      <h2 class="section-title">Et 307 organisations</h2>
       <p class="section-subtitle">Liste alphabétique de tous nos signataires</p>
 
       <!-- Search -->
@@ -874,91 +874,91 @@
   </button>
 
   <script>
-    // Counter animation
-    function animateCounter() {
-      const counter = document.querySelector('.counter-animation');
-      const target = parseInt(counter.getAttribute('data-target'));
-      const duration = 2000; // 2 secondes
-      const frameDuration = 1000 / 60; // 60 FPS
-      const totalFrames = Math.round(duration / frameDuration);
-      let frame = 0;
-      
-      const easeOutQuad = t => t * (2 - t);
-      
-      const animate = () => {
-        frame++;
-        const progress = easeOutQuad(frame / totalFrames);
-        const currentCount = Math.round(progress * target);
-        
-        counter.textContent = currentCount;
-        
-        if (frame < totalFrames) {
-          requestAnimationFrame(animate);
-        } else {
-          counter.textContent = target;
-        }
-      };
-      
-      animate();
-    }
+  // Compteur automatique
+  function animateCounter() {
+    const counter = document.querySelector('.counter-animation');
+    const orgItems = document.querySelectorAll('.org-item');
+    const target = orgItems.length; // ✅ compte automatiquement le nombre d'éléments
+    const duration = 2000; // durée totale : 2 secondes
+    const frameDuration = 1000 / 60; // 60 FPS
+    const totalFrames = Math.round(duration / frameDuration);
+    let frame = 0;
     
-    // Démarrer l'animation au chargement
-    window.addEventListener('load', animateCounter);
+    const easeOutQuad = t => t * (2 - t);
     
-    // Search functionality
-    const searchInput = document.getElementById('searchInput');
-    const noResults = document.getElementById('noResults');
-    const alphaList = document.getElementById('alphaList');
-    
-    searchInput.addEventListener('input', function(e) {
-      const searchTerm = e.target.value.toLowerCase().trim();
-      const orgItems = document.querySelectorAll('.org-item');
-      const alphaSections = document.querySelectorAll('.alpha-section');
-      let visibleCount = 0;
+    const animate = () => {
+      frame++;
+      const progress = easeOutQuad(frame / totalFrames);
+      const currentCount = Math.round(progress * target);
+      counter.textContent = currentCount;
       
-      orgItems.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        if (text.includes(searchTerm)) {
-          item.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-      
-      // Hide empty sections
-      alphaSections.forEach(section => {
-        const visibleItems = section.querySelectorAll('.org-item:not(.hidden)');
-        section.style.display = visibleItems.length > 0 ? 'block' : 'none';
-      });
-      
-      // Show/hide no results message
-      if (searchTerm && visibleCount === 0) {
-        noResults.classList.add('show');
-        alphaList.style.display = 'none';
+      if (frame < totalFrames) {
+        requestAnimationFrame(animate);
       } else {
-        noResults.classList.remove('show');
-        alphaList.style.display = 'block';
-      }
-    });
-
-    // Share button
-    document.getElementById('shareButton').onclick = () => {
-      const t = "302 organisations ont signé l'appel à la Journée Sans Nous";
-      const u = window.location.href;
-      if (navigator.share) {
-        navigator.share({ 
-          title: 'Journée Sans Nous — Signataires', 
-          text: t, 
-          url: u 
-        });
-      } else {
-        navigator.clipboard.writeText(t + "\n" + u).then(() => 
-          alert('Lien copié ✅')
-        );
+        counter.textContent = target;
       }
     };
-  </script>
+    
+    animate();
+  }
+
+  // Démarrer le compteur au chargement de la page
+  window.addEventListener('load', animateCounter);
+
+  // --- Fonctionnalité de recherche (inchangée) ---
+  const searchInput = document.getElementById('searchInput');
+  const noResults = document.getElementById('noResults');
+  const alphaList = document.getElementById('alphaList');
+  
+  searchInput.addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase().trim();
+    const orgItems = document.querySelectorAll('.org-item');
+    const alphaSections = document.querySelectorAll('.alpha-section');
+    let visibleCount = 0;
+    
+    orgItems.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      if (text.includes(searchTerm)) {
+        item.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+    
+    alphaSections.forEach(section => {
+      const visibleItems = section.querySelectorAll('.org-item:not(.hidden)');
+      section.style.display = visibleItems.length > 0 ? 'block' : 'none';
+    });
+    
+    if (searchTerm && visibleCount === 0) {
+      noResults.classList.add('show');
+      alphaList.style.display = 'none';
+    } else {
+      noResults.classList.remove('show');
+      alphaList.style.display = 'block';
+    }
+  });
+
+   // --- Bouton de partage (adapté aussi) ---
+  document.getElementById('shareButton').onclick = () => {
+    const orgItems = document.querySelectorAll('.org-item');
+    const count = orgItems.length;
+    const t = `${count} organisations ont signé l'appel à la Journée Sans Nous`;
+    const u = window.location.href;
+    if (navigator.share) {
+      navigator.share({ 
+        title: 'Journée Sans Nous — Signataires', 
+        text: t, 
+        url: u 
+      });
+    } else {
+      navigator.clipboard.writeText(t + "\n" + u).then(() => 
+        alert('Lien copié ✅')
+      );
+    }
+  };
+</script>
   <script src="js/menu.js"></script>
 </body>
 </html>
