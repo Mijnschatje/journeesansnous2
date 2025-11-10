@@ -21,6 +21,14 @@
     .wrap{max-width:1100px;margin:auto;padding:0 18px}
     .topbar{display:flex;justify-content:space-between;align-items:center;height:64px;gap:12px;flex-wrap:wrap}
     .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--brand);font-size:18px}
+    .site-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-title-link:hover {
+  opacity: 0.8;
+}
 
     /* ===== TICKER ===== */
     .ticker{background:var(--brand);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:14px}
@@ -163,7 +171,7 @@
 <body>
 <header>
   <div class="wrap topbar">
-    <div class="brand"><span>Journée Sans Nous</span></div>
+    <div class="brand"><span><a href="/" class="site-title-link">Journée Sans Nous</a></span></div>
   </div>
 </header>
 
