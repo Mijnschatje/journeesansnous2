@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Signataires — Journée Sans Nous</title>
+  <meta name="description" content="Plus de 300 organisations signataires de l'appel à la Journée Sans Nous pour la régularisation des personnes sans papiers."/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link href="assets/css/menu.css" rel="stylesheet"/>
+  
+  <style>
+    :root {
+      --brand: #ee4943;
+      --brand-600: #d33e38;
+      --brand-700: #b42727;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e5e7eb;
+      --bg: #fafafa;
+      --card: #fff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font: 16px/1.6 'Manrope', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a { color: var(--brand); text-decoration: none; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+    }
+    
+    .wrap {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 18px;
+    }
+    
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+    }
+    
+    .brand {
+      font-weight: 800;
+      color: var(--brand);
+      font-size: 18px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--brand-700) 0%, var(--brand) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,.15), transparent);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-count {
+      font-size: clamp(60px, 10vw, 100px);
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 10px rgba(0,0,0,.2);
+      font-variant-numeric: tabular-nums;
+    }
+    
+    .counter-animation {
+      display: inline-block;
+    }
+
+    .hero-label {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2vw, 18px);
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Main */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 50px;
+      line-height: 1.7;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro-text strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Section initiateurs */
+    .initiateurs-section {
+      background: var(--card);
+      border: 2px solid var(--brand);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 60px;
+      box-shadow: 0 4px 12px rgba(238, 73, 67, 0.1);
+    }
+
+    .initiateurs-section h2 {
+      color: var(--brand);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .initiateurs-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .initiateurs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .initiateur-item {
+      padding: 12px 16px;
+      background: #fff5f4;
+      border-left: 3px solid var(--brand);
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    /* Section tous signataires */
+    .all-section {
+      margin-top: 60px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    /* Search */
+    .search-container {
+      max-width: 600px;
+      margin: 0 auto 50px;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 50px 16px 20px;
+      font-size: 16px;
+      border: 2px solid var(--line);
+      border-radius: 50px;
+      font-family: 'Manrope', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px rgba(238, 73, 67, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    /* Liste alphabétique */
+    .alpha-list {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+
+    .alpha-section {
+      margin-bottom: 40px;
+    }
+
+    .alpha-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .alpha-letter {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--brand);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--brand);
+      display: inline-block;
+      min-width: 60px;
+    }
+
+    .orgs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+
+    .org-item {
+      padding: 10px 0;
+      font-size: 15px;
+      color: var(--ink);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .org-item::before {
+      content: '•';
+      color: var(--brand);
+      font-size: 20px;
+      font-weight: bold;
+      flex-shrink: 0;
+      margin-top: -2px;
+    }
+
+    .org-item.hidden {
+      display: none;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--ink);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--brand);
+    }
+
+    .footer-logo {
+      height: 30px;
+      vertical-align: middle;
+      margin: 0 8px;
+    }
+
+    /* Share button */
+    .share-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 16px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(238, 73, 67, .3);
+      transition: all 0.3s ease;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .share-button:hover {
+      background: var(--brand-600);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(238, 73, 67, .4);
+    }
+
+    @media (max-width: 768px) {
+      .share-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 14px 20px;
+        font-size: 14px;
+      }
+
+      .orgs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .initiateurs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      display: none;
+      font-size: 18px;
+    }
+
+    .no-results.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <a href="/" class="brand">Journée Sans Nous</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-count"><span class="counter-animation" data-target="302">0</span></div>
+      <div class="hero-label">Organisations signataires</div>
+      <p class="hero-subtitle">
+        Syndicats, associations, collectifs locaux et organisations citoyennes mobilisés de toute la France pour la régularisation des personnes sans papiers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main>
+    <p class="intro-text">
+      <strong>Une mobilisation historique.</strong> 302 organisations ont répondu présent à notre appel, 
+      de toutes les régions de France et de tous horizons. Ensemble, nous portons la voix de milliers de personnes exclues et exploitées.
+    </p>
+
+    <!-- Initiateurs -->
+    <section class="initiateurs-section">
+      <h2>À l'initiative de</h2>
+      <p class="initiateurs-subtitle">La Marche des Solidarités et 15 collectifs de sans-papiers et mineur·e·s isolé·e·s en lutte</p>
+      
+      <div class="initiateurs-grid">
+        <div class="initiateur-item">Marche des Solidarités</div>
+        <div class="initiateur-item">CISPM</div>
+        <div class="initiateur-item">Collectif des jeunes du parc de Belleville</div>
+        <div class="initiateur-item">Collectif des jeunes mineur·e·s en recours des Bois Blancs</div>
+        <div class="initiateur-item">Collectif des jeunes mineurs et majeurs isolés de Rouen</div>
+        <div class="initiateur-item">Collectif des travailleurs sans-papiers de Vitry (CTSPV94)</div>
+        <div class="initiateur-item">Collectif Jeunes Tours</div>
+        <div class="initiateur-item">Coordination Sans-Papiers 75</div>
+        <div class="initiateur-item">CSP 17ème</div>
+        <div class="initiateur-item">CSP 44</div>
+        <div class="initiateur-item">CSP 59</div>
+        <div class="initiateur-item">CSP 95</div>
+        <div class="initiateur-item">CSP Montreuil</div>
+        <div class="initiateur-item">DIEL</div>
+        <div class="initiateur-item">Droits Devant!</div>
+        <div class="initiateur-item">Intercollectif des sans-papiers Ile-de-France</div>
+      </div>
+    </section>
+
+    <!-- Tous les signataires -->
+    <section class="all-section">
+      <h2 class="section-title">Et 302 organisations</h2>
+      <p class="section-subtitle">Liste alphabétique de tous nos signataires</p>
+
+      <!-- Search -->
+      <div class="search-container">
+        <div class="search-box">
+          <input 
+            type="text" 
+            class="search-input" 
+            id="searchInput" 
+            placeholder="Rechercher une organisation..."
+          />
+          <i class="fa-solid fa-search search-icon"></i>
+        </div>
+      </div>
+
+      <div class="no-results" id="noResults">
+        <i class="fa-solid fa-search" style="font-size: 48px; opacity: 0.3; margin-bottom: 16px;"></i>
+        <p>Aucune organisation trouvée.</p>
+      </div>
+
+      <!-- Liste alphabétique -->
+      <div class="alpha-list" id="alphaList">
+        
+        <!-- Section A -->
+        <div class="alpha-section">
+          <div class="alpha-letter">A</div>
+          <div class="orgs-grid">
+            <div class="org-item">100 POUR 1 VAUCLUSE</div>
+            <div class="org-item">18e en lutte</div>
+            <div class="org-item">20eme solidaire avec tou.te.s les migrant.e.s</div>
+            <div class="org-item">Accueil Hébergement Accompagnement d'exilés au Sud de Rennes</div>
+            <div class="org-item">Accueil Migrants de la Vallée du Doux</div>
+            <div class="org-item">Accueil Migrants Vallée du Doux</div>
+            <div class="org-item">Act For Ref</div>
+            <div class="org-item">Action Antifasciste Alpes-De-Haute-Provence</div>
+            <div class="org-item">Action Justice Climat Paris</div>
+            <div class="org-item">ACTIT</div>
+            <div class="org-item">AERéSP28</div>
+            <div class="org-item">AFA Annecy</div>
+            <div class="org-item">AG Social en lutte 31</div>
+            <div class="org-item">AJMMI</div>
+            <div class="org-item">Alarm Phone Paris</div>
+            <div class="org-item">Alors on Aide</div>
+            <div class="org-item">AMi Pays de Pouzauges</div>
+            <div class="org-item">AMIES (Association Migrant.e.s Informations Ensemble Solidaires)</div>
+            <div class="org-item">AMISO Association Migrants Solution</div>
+            <div class="org-item">Amoureux au ban public 63</div>
+            <div class="org-item">Angegouines</div>
+            <div class="org-item">Angers Antiraciste Anticoloniale</div>
+            <div class="org-item">Apardap</div>
+            <div class="org-item">ASIAD Association de Solidarité et d'information pour l'Accès aux Droits</div>
+            <div class="org-item">Assemblée Logement 94</div>
+            <div class="org-item">Association 123soleil cinéma solidaire</div>
+            <div class="org-item">Association Accueil réfugiés Bruz</div>
+            <div class="org-item">Association AYYEM ZAMEN</div>
+            <div class="org-item">Association CSMG (Collectif de Soutien aux Migrants du Goëlo)</div>
+            <div class="org-item">Association Cultures du Monde</div>
+            <div class="org-item">Association de la diaspora africaine orléanaise</div>
+            <div class="org-item">Association des Marocains en France (AMF)</div>
+            <div class="org-item">Association des Travailleurs Maghrébins de France (ATMF)</div>
+            <div class="org-item">Association Fafadané Solidarité Internationale</div>
+            <div class="org-item">Association féministe Apel-Égalité</div>
+            <div class="org-item">Association FEMMES PLURIELLES</div>
+            <div class="org-item">Association France Palestine Solidarité (AFPS)</div>
+            <div class="org-item">Association Internationale d'Ethnopsychanalyse - Marie Rose Moro</div>
+            <div class="org-item">Association La Boussole</div>
+            <div class="org-item">Association La Caselle</div>
+            <div class="org-item">Association LEA</div>
+            <div class="org-item">Association Maison Sésame</div>
+            <div class="org-item">Association Puissance des Liens</div>
+            <div class="org-item">Association Solidarité Réfugié.e.s - centre bretagne</div>
+            <div class="org-item">Association Somin L'exil</div>
+            <div class="org-item">Association soutien 59 st just</div>
+            <div class="org-item">Association transmissions</div>
+            <div class="org-item">Association Transmissions</div>
+            <div class="org-item">Association VIAMI Val d'Ille-Aubigné Accueil Migrants</div>
+            <div class="org-item">Association Voies Libres Drôme</div>
+            <div class="org-item">Association WELCOMELINK</div>
+            <div class="org-item">Asso-Solidaires 13</div>
+            <div class="org-item">Asti 44 - Gasprom</div>
+            <div class="org-item">Asti de Petit Quevilly</div>
+            <div class="org-item">Asti Lamballe Terre d'Accueil</div>
+            <div class="org-item">Asti Les Ulis</div>
+            <div class="org-item">Asti Orléans</div>
+            <div class="org-item">Asti Romans-sur-Isere</div>
+            <div class="org-item">Atelier d'étude et de recherche NANSEN</div>
+            <div class="org-item">Ateneo Popular Español de Montpellier</div>
+            <div class="org-item">ATPAC Maison Solidaire</div>
+            <div class="org-item">Attac Flandre</div>
+            <div class="org-item">Attac Landes Côte Sud</div>
+            <div class="org-item">Attac Oise</div>
+            <div class="org-item">Attac Paris Nord-Ouest</div>
+            <div class="org-item">Attac Vienne Pays Rhodanien</div>
+            <div class="org-item">Attac39</div>
+          </div>
+        </div>
+
+        <!-- Section B -->
+        <div class="alpha-section">
+          <div class="alpha-letter">B</div>
+          <div class="orgs-grid">
+            <div class="org-item">Baam</div>
+            <div class="org-item">Baobab</div>
+            <div class="org-item">Bissai</div>
+            <div class="org-item">Bléd - bibliothèque décoloniale</div>
+            <div class="org-item">Brigades de Solidarité Populaire Ile-de-France</div>
+          </div>
+        </div>
+
+        <!-- Section C -->
+        <div class="alpha-section">
+          <div class="alpha-letter">C</div>
+          <div class="orgs-grid">
+            <div class="org-item">Calais Food Collective</div>
+            <div class="org-item">Camo</div>
+            <div class="org-item">CAMO Collectif d'Aide aux Migrants de Ouistreham</div>
+            <div class="org-item">CARAF (collectif antiraciste & antifasciste des Lilas, de Romainville et du Pré-Saint-Gervais)</div>
+            <div class="org-item">CATG (Coordination Antiracisme Trégor-Goëlo)</div>
+            <div class="org-item">CDDLE (Collectif de Défense des Droits et Libertés des Étrangers) Besançon</div>
+            <div class="org-item">Cent Pour un Toit Oise</div>
+            <div class="org-item">Centre LGBTI de Normandie</div>
+            <div class="org-item">Chorale Antirouille</div>
+            <div class="org-item">CISEM 38 (Coordination Iséroise de Solidarité avec les étranger.e.s et migrant.e.s)</div>
+            <div class="org-item">CNL (Confédération Nationale du Logement)</div>
+            <div class="org-item">Collages féministes Marseille</div>
+            <div class="org-item">Collectif 25 novembre</div>
+            <div class="org-item">Collectif Antifa de Lutte Montrouge et Environs</div>
+            <div class="org-item">Collectif Antifasciste Paris 20eme</div>
+            <div class="org-item">Collectif Antifasciste Tourangeau</div>
+            <div class="org-item">Collectif Antiraciste Antifasciste Rouennais (CAAR)</div>
+            <div class="org-item">Collectif Contre-attaque Antiraciste</div>
+            <div class="org-item">Collectif de soutien aux réfugiés en Ariège</div>
+            <div class="org-item">Collectif de soutien aux sans papiers du Trégor (LANNION 22)</div>
+            <div class="org-item">Collectif des Resi-liantes</div>
+            <div class="org-item">Collectif écoféministe Voix déterres</div>
+            <div class="org-item">Collectif Exilé.e.s 84</div>
+            <div class="org-item">Collectif Fontenay-Diversité</div>
+            <div class="org-item">Collectif justice et vérité pour Babacar Gueye</div>
+            <div class="org-item">Collectif Lillois des Luttes Féministes (CLLF)</div>
+            <div class="org-item">Collectif Migrants 83</div>
+            <div class="org-item">Collectif Nta Rajel</div>
+            <div class="org-item">Collectif Pot-Pourri</div>
+            <div class="org-item">Collectif pour une Nation Refuge (CNR)</div>
+            <div class="org-item">Collectif Réfugiés du Vaucluse</div>
+            <div class="org-item">Collectif soutiens / migrants Croix-Rousse</div>
+            <div class="org-item">Collectif Vietnam-Dioxine</div>
+            <div class="org-item">Collectif Vigilance Antifasciste 22</div>
+            <div class="org-item">Collectif Villejuif Ville d'Accueil</div>
+            <div class="org-item">Collectifinsurrectiontrans</div>
+            <div class="org-item">Comité CGT des précaires et privés d'emploi Ivry-Vitry</div>
+            <div class="org-item">Comité Palestine Paris I Panthéon-Sorbonne</div>
+            <div class="org-item">Comité Vérité et Justice pour Lamine Dieng et Réseau d'Entraide Vérité et Justice</div>
+            <div class="org-item">Commission de mobilisation du travail social IDF</div>
+            <div class="org-item">Coordination Pas sans Nous</div>
+            <div class="org-item">Corps Dissidents</div>
+            <div class="org-item">Coudes à coudes</div>
+            <div class="org-item">COUP D'BOL</div>
+            <div class="org-item">CRID</div>
+            <div class="org-item">Culture en lutte IDF</div>
+          </div>
+        </div>
+
+        <!-- Section D -->
+        <div class="alpha-section">
+          <div class="alpha-letter">D</div>
+          <div class="orgs-grid">
+            <div class="org-item">D'ailleurs NousSommes d'Ici 67</div>
+            <div class="org-item">Decolonial News</div>
+            <div class="org-item">Demain Angers</div>
+            <div class="org-item">Des Pavés et des Paillettes</div>
+          </div>
+        </div>
+
+        <!-- Section E -->
+        <div class="alpha-section">
+          <div class="alpha-letter">E</div>
+          <div class="orgs-grid">
+            <div class="org-item">El cambalache</div>
+            <div class="org-item">El Manba (collectif de soutien migrantes 13)</div>
+            <div class="org-item">ELAfF (Ecolo Libertaire Antifasciste & Féministe)</div>
+            <div class="org-item">Elkartasuna Larrun</div>
+            <div class="org-item">Emmaüs Bidean</div>
+            <div class="org-item">ERIS</div>
+            <div class="org-item">Extinction Rebellion Auxerre</div>
+            <div class="org-item">Extinction Rebellion France</div>
+          </div>
+        </div>
+
+        <!-- Section F -->
+        <div class="alpha-section">
+          <div class="alpha-letter">F</div>
+          <div class="orgs-grid">
+            <div class="org-item">FASTI</div>
+            <div class="org-item">Fédération Anarchiste</div>
+            <div class="org-item">Fédération Nationale de la Libre Pensée</div>
+            <div class="org-item">Fédération SUD Commerce</div>
+            <div class="org-item">Fédération Syndicale Étudiante (FSE)</div>
+            <div class="org-item">Féministes révolutionnaires Paris</div>
+            <div class="org-item">FOCDP</div>
+            <div class="org-item">Front Uni de la Restauration 44 - Syndicat CGT de la Restauration</div>
+          </div>
+        </div>
+
+        <!-- Section G -->
+        <div class="alpha-section">
+          <div class="alpha-letter">G</div>
+          <div class="orgs-grid">
+            <div class="org-item">Garde Rouge</div>
+            <div class="org-item">Gauche Ecosocialiste 34</div>
+            <div class="org-item">Gauche Révolutionnaire</div>
+            <div class="org-item">Génération Panasiatique</div>
+            <div class="org-item">Génération·s</div>
+            <div class="org-item">Groupe antifasciste Charvieu et environs</div>
+            <div class="org-item">Groupe antifasciste Villefranche et environ</div>
+            <div class="org-item">Groupe féministe de Fougères</div>
+            <div class="org-item">Groupe local EELV Kemper-Kerne</div>
+            <div class="org-item">Guerre à la guerre</div>
+            <div class="org-item">GUINÉE À MARSEILLE</div>
+          </div>
+        </div>
+
+        <!-- Section I-J -->
+        <div class="alpha-section">
+          <div class="alpha-letter">I - J</div>
+          <div class="orgs-grid">
+            <div class="org-item">ICED 95 - Initiatives contre l'Extrême Droite 95</div>
+            <div class="org-item">IDF Mémoires et Partages</div>
+            <div class="org-item">Initiative Grecque</div>
+            <div class="org-item">Itinerance-Dieppe</div>
+            <div class="org-item">Jamais Sans Toit 46</div>
+            <div class="org-item">Jamais Sans Toit en Trégor</div>
+            <div class="org-item">Juives et Juifs Révolutionnaires</div>
+          </div>
+        </div>
+
+        <!-- Section K-L -->
+        <div class="alpha-section">
+          <div class="alpha-letter">K - L</div>
+          <div class="orgs-grid">
+            <div class="org-item">Khlass les Clichés</div>
+            <div class="org-item">L'APRÈS</div>
+            <div class="org-item">L'APRÈS 84</div>
+            <div class="org-item">La Brèche</div>
+            <div class="org-item">La Cimade</div>
+            <div class="org-item">La Cimade Lyon</div>
+            <div class="org-item">La Jeunesse Communiste</div>
+            <div class="org-item">La Nuée</div>
+            <div class="org-item">La Voix Étudiante</div>
+            <div class="org-item">Las Rojas Paris</div>
+            <div class="org-item">L'Assemblée Citoyenne des Originaires de Turquie - L'ACORT</div>
+            <div class="org-item">LDH Auxerre</div>
+            <div class="org-item">LDH section de Calais</div>
+            <div class="org-item">LDH section de martigues</div>
+            <div class="org-item">LDH section d'Evreux</div>
+            <div class="org-item">LDH Section EHESS</div>
+            <div class="org-item">LDH section intercommunale du Val-de-Bièvre</div>
+            <div class="org-item">Le bruit qui court</div>
+            <div class="org-item">Le chant des Déferlantes</div>
+            <div class="org-item">Le collectif Le PONT de martigues 13</div>
+            <div class="org-item">Le Média</div>
+            <div class="org-item">Le Partenariat</div>
+            <div class="org-item">Le poing levé</div>
+            <div class="org-item">Le Village du droit des étrangers (V3DE)</div>
+            <div class="org-item">Les Amoureux au ban public</div>
+            <div class="org-item">Les Apprentis de la Terre</div>
+            <div class="org-item">Les écologistes Rouen</div>
+            <div class="org-item">Les Jeunes de L'APRÈS</div>
+            <div class="org-item">Les jeunes de L'APRÈS 84</div>
+            <div class="org-item">L'Offensive</div>
+          </div>
+        </div>
+
+        <!-- Section M -->
+        <div class="alpha-section">
+          <div class="alpha-letter">M</div>
+          <div class="orgs-grid">
+            <div class="org-item">Main Violette CAEN</div>
+            <div class="org-item">Maison de l'Hospitalité</div>
+            <div class="org-item">Maison des Peuples et de la Paix</div>
+            <div class="org-item">Maison des Potes - Maison de l'Egalité</div>
+            <div class="org-item">Maison du peuple en Colère</div>
+            <div class="org-item">MIF - Militant•es pour l'Interdiction des Frontières</div>
+            <div class="org-item">MIGRACTION 59</div>
+            <div class="org-item">MigrENS</div>
+            <div class="org-item">Mille Parcours</div>
+            <div class="org-item">Mip47</div>
+            <div class="org-item">Mise en Place Marseille</div>
+            <div class="org-item">Mise En Place Paris</div>
+            <div class="org-item">Mouvement contre le Racisme et pour l'Amitié entre les Peuples de Montpellier (MRAP)</div>
+            <div class="org-item">Mouvement de la Paix</div>
+            <div class="org-item">Mouvement_etudiant31</div>
+            <div class="org-item">MRAP MEL</div>
+          </div>
+        </div>
+
+        <!-- Section N-O -->
+        <div class="alpha-section">
+          <div class="alpha-letter">N - O</div>
+          <div class="orgs-grid">
+            <div class="org-item">NFP Belleville-Ménilmontant</div>
+            <div class="org-item">Nos Couleurs</div>
+            <div class="org-item">NousToutes</div>
+            <div class="org-item">NousToutes 22est</div>
+            <div class="org-item">NousToutes 31</div>
+            <div class="org-item">NousToutes 33</div>
+            <div class="org-item">NousToutes 49</div>
+            <div class="org-item">NousToutes 79</div>
+            <div class="org-item">NousToutes 80</div>
+            <div class="org-item">NousToutes 81</div>
+            <div class="org-item">NousToutes 85</div>
+            <div class="org-item">NousToutes Brest</div>
+            <div class="org-item">Nouvelle Page</div>
+            <div class="org-item">NPA - L'Anticapitaliste</div>
+            <div class="org-item">NPA - Révolutionnaires</div>
+            <div class="org-item">Oink Block</div>
+            <div class="org-item">One Peace Intifada</div>
+            <div class="org-item">Opal'Exil</div>
+            <div class="org-item">Organisation de Solidarité Trans (OST)</div>
+          </div>
+        </div>
+
+        <!-- Section P -->
+        <div class="alpha-section">
+          <div class="alpha-letter">P</div>
+          <div class="orgs-grid">
+            <div class="org-item">Parti des Travailleur.euse.s de Turquie</div>
+            <div class="org-item">Parti politique : Nouvelle Donne</div>
+            <div class="org-item">Pas d'enfant à la rue 67</div>
+            <div class="org-item">Patrons-nes solidaires</div>
+            <div class="org-item">Peaux Noires Ligne Rouge</div>
+            <div class="org-item">PEPS Pour Une Ecologie Populaire et Sociale</div>
+            <div class="org-item">Permanence administrative pour les personnes étrangères Foix 09</div>
+            <div class="org-item">Perspectives Musulmanes</div>
+            <div class="org-item">PLATEAU ASILE SOLIDARITE</div>
+            <div class="org-item">PORT D'ATTACHE</div>
+            <div class="org-item">Pride Radicale Toulouse</div>
+            <div class="org-item">Puissance des Liens</div>
+          </div>
+        </div>
+
+        <!-- Section Q-R -->
+        <div class="alpha-section">
+          <div class="alpha-letter">Q - R</div>
+          <div class="orgs-grid">
+            <div class="org-item">QUAZAR</div>
+            <div class="org-item">Rennes Sud Mobilisée</div>
+            <div class="org-item">Réseau Université Sans Frontières 34 (RUSF34)</div>
+            <div class="org-item">Réseau Universités Sans Frontières (RUSF) Université Paris Cité</div>
+            <div class="org-item">Resf Vienne Roussillon</div>
+            <div class="org-item">Ressources Trans Toulouse</div>
+            <div class="org-item">Révolution Permanente</div>
+            <div class="org-item">Revue multitudes</div>
+            <div class="org-item">Riposte Antifasciste Marseille</div>
+            <div class="org-item">Riposte Populaire</div>
+            <div class="org-item">Rosmerta</div>
+          </div>
+        </div>
+
+        <!-- Section S -->
+        <div class="alpha-section">
+          <div class="alpha-letter">S</div>
+          <div class="orgs-grid">
+            <div class="org-item">Saintes Antifasciste</div>
+            <div class="org-item">Samba</div>
+            <div class="org-item">SDASFO35</div>
+            <div class="org-item">Secours Rouge Toulouse</div>
+            <div class="org-item">Sénart en Lutte</div>
+            <div class="org-item">SFAL</div>
+            <div class="org-item">SNEP-FSU 93</div>
+            <div class="org-item">SOCCER DE RUE</div>
+            <div class="org-item">Socialisme ou Barbarie</div>
+            <div class="org-item">Solidaires 31</div>
+            <div class="org-item">Solidaires 93</div>
+            <div class="org-item">Solidaires Etudiant-e-s</div>
+            <div class="org-item">Solidarité Migrant.es</div>
+            <div class="org-item">Solidarité Migrant.es Portes de Gascogne (SMPG)</div>
+            <div class="org-item">Solidarité Migrants Annecy</div>
+            <div class="org-item">Solidarité Migrants Chablais</div>
+            <div class="org-item">Solidarité Migrants Eysines</div>
+            <div class="org-item">Solidarité migrants wilson</div>
+            <div class="org-item">Solidarité Pays de Ploërmel</div>
+            <div class="org-item">Solidarité Sans Papiers. CREIL</div>
+            <div class="org-item">Solidarités Asie France (SAF)</div>
+            <div class="org-item">Solidarités et Racines</div>
+            <div class="org-item">SOS Ezéchiel</div>
+            <div class="org-item">Soutien Migrants Graulhet</div>
+            <div class="org-item">Sövkipeu</div>
+            <div class="org-item">Sporting Villeurbanne</div>
+            <div class="org-item">Sud commerces et services 39</div>
+            <div class="org-item">SUD éducation 35</div>
+            <div class="org-item">SUD éducation Paris</div>
+            <div class="org-item">SUD protection sociale 93</div>
+            <div class="org-item">Sud+idées Sorbonne Université</div>
+            <div class="org-item">Survie</div>
+            <div class="org-item">Syndicat CGT ArianeGroup Issac</div>
+            <div class="org-item">Syndicat des CGT des Municipaux de Villeurbanne</div>
+            <div class="org-item">Syndicat Unifié du Bâtiment/CNT-f</div>
+            <div class="org-item">SYNPTAC</div>
+          </div>
+        </div>
+
+        <!-- Section T -->
+        <div class="alpha-section">
+          <div class="alpha-letter">T</div>
+          <div class="orgs-grid">
+            <div class="org-item">team sama</div>
+            <div class="org-item">Toit Migrant Solidarité</div>
+            <div class="org-item">Toulouse Anti CRA</div>
+            <div class="org-item">Tous Migrants</div>
+            <div class="org-item">Tous Réfugiés</div>
+            <div class="org-item">Tous Unis Nous Vaincrons !</div>
+            <div class="org-item">Traversé.e.s</div>
+            <div class="org-item">Tsedek! Collectif juif décolonial</div>
+          </div>
+        </div>
+
+        <!-- Section U -->
+        <div class="alpha-section">
+          <div class="alpha-letter">U</div>
+          <div class="orgs-grid">
+            <div class="org-item">UBUNTU-La Margelle</div>
+            <div class="org-item">Une Ecole Un Avenir</div>
+            <div class="org-item">UNEF Angers</div>
+            <div class="org-item">Union communiste libertaire (UCL)</div>
+            <div class="org-item">Union des Femmes Socialistes (SKB)</div>
+            <div class="org-item">Union Étudiante Marseille</div>
+            <div class="org-item">Union Pirate ENSAB</div>
+            <div class="org-item">Union pour la Reconstruction Communiste (URC)</div>
+            <div class="org-item">UNION SYNDICALE SOLIDAIRES RHONE</div>
+          </div>
+        </div>
+
+        <!-- Section V-Z -->
+        <div class="alpha-section">
+          <div class="alpha-letter">V - Z</div>
+          <div class="orgs-grid">
+            <div class="org-item">V3DE</div>
+            <div class="org-item">Vigilanceogm21</div>
+            <div class="org-item">Vincennes Antifasciste</div>
+            <div class="org-item">Young Struggle</div>
+            <div class="org-item">ZORA</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      © Journée Sans Nous • Initiative de
+      <a href="https://www.antiracisme-solidarite.org" rel="noreferrer noopener" target="_blank">
+        <img alt="Marche des Solidarités" class="footer-logo" src="assets/img/Marche_des_Solidarites_logo.svg"/>
+      </a> • 2025
+    </div>
+  </footer>
+
+  <!-- Share Button -->
+  <button class="share-button" id="shareButton">
+    <i class="fa-solid fa-share-nodes"></i> Partager
+  </button>
+
+  <script>
+    // Counter animation
+    function animateCounter() {
+      const counter = document.querySelector('.counter-animation');
+      const target = parseInt(counter.getAttribute('data-target'));
+      const duration = 2000; // 2 secondes
+      const frameDuration = 1000 / 60; // 60 FPS
+      const totalFrames = Math.round(duration / frameDuration);
+      let frame = 0;
+      
+      const easeOutQuad = t => t * (2 - t);
+      
+      const animate = () => {
+        frame++;
+        const progress = easeOutQuad(frame / totalFrames);
+        const currentCount = Math.round(progress * target);
+        
+        counter.textContent = currentCount;
+        
+        if (frame < totalFrames) {
+          requestAnimationFrame(animate);
+        } else {
+          counter.textContent = target;
+        }
+      };
+      
+      animate();
+    }
+    
+    // Démarrer l'animation au chargement
+    window.addEventListener('load', animateCounter);
+    
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const noResults = document.getElementById('noResults');
+    const alphaList = document.getElementById('alphaList');
+    
+    searchInput.addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase().trim();
+      const orgItems = document.querySelectorAll('.org-item');
+      const alphaSections = document.querySelectorAll('.alpha-section');
+      let visibleCount = 0;
+      
+      orgItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+      
+      // Hide empty sections
+      alphaSections.forEach(section => {
+        const visibleItems = section.querySelectorAll('.org-item:not(.hidden)');
+        section.style.display = visibleItems.length > 0 ? 'block' : 'none';
+      });
+      
+      // Show/hide no results message
+      if (searchTerm && visibleCount === 0) {
+        noResults.classList.add('show');
+        alphaList.style.display = 'none';
+      } else {
+        noResults.classList.remove('show');
+        alphaList.style.display = 'block';
+      }
+    });
+
+    // Share button
+    document.getElementById('shareButton').onclick = () => {
+      const t = "302 organisations ont signé l'appel à la Journée Sans Nous";
+      const u = window.location.href;
+      if (navigator.share) {
+        navigator.share({ 
+          title: 'Journée Sans Nous — Signataires', 
+          text: t, 
+          url: u 
+        });
+      } else {
+        navigator.clipboard.writeText(t + "\n" + u).then(() => 
+          alert('Lien copié ✅')
+        );
+      }
+    };
+  </script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
