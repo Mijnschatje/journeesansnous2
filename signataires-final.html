@@ -380,8 +380,8 @@
   <!-- Main -->
   <main>
     <p class="intro-text">
-      <strong>Une mobilisation historique.</strong> 307 organisations ont répondu présent à notre appel, 
-      de toutes les régions de France et de tous horizons.
+      <strong>Une mobilisation historique.</strong> <span data-bind="org-count">307</span> organisations ont répondu présent, 
+      dans toute la France.
     </p>
 
     <!-- Initiateurs -->
@@ -411,7 +411,7 @@
 
     <!-- Tous les signataires -->
     <section class="all-section">
-      <h2 class="section-title">Et 307 organisations</h2>
+      <h2 class="section-title">Et <span data-bind="org-count">307</span> organisations</h2>
       <p class="section-subtitle">Liste alphabétique de tous nos signataires</p>
 
       <!-- Search -->
@@ -873,32 +873,41 @@
     <i class="fa-solid fa-share-nodes"></i> Partager
   </button>
 
-  <script>
-  // Compteur automatique
+<script>
+  // Compteur automatique + MAJ des textes liés
   function animateCounter() {
     const counter = document.querySelector('.counter-animation');
     const orgItems = document.querySelectorAll('.org-item');
-    const target = orgItems.length; // ✅ compte automatiquement le nombre d'éléments
-    const duration = 2000; // durée totale : 2 secondes
+    const target = orgItems.length; // ✅ nombre réel d'items
+
+    // ✅ Met à jour toutes les occurrences textuelles (ex : "Et 307 organisations", intro, etc.)
+    document.querySelectorAll('[data-bind="org-count"]').forEach(el => {
+      el.textContent = target;
+    });
+
+    // Si pas de compteur visuel, on s'arrête là (les textes sont déjà à jour)
+    if (!counter) return;
+
+    const duration = 2000; // 2 s
     const frameDuration = 1000 / 60; // 60 FPS
     const totalFrames = Math.round(duration / frameDuration);
     let frame = 0;
-    
+
     const easeOutQuad = t => t * (2 - t);
-    
+
     const animate = () => {
       frame++;
       const progress = easeOutQuad(frame / totalFrames);
       const currentCount = Math.round(progress * target);
       counter.textContent = currentCount;
-      
+
       if (frame < totalFrames) {
         requestAnimationFrame(animate);
       } else {
         counter.textContent = target;
       }
     };
-    
+
     animate();
   }
 
