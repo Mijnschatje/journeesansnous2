@@ -30,6 +30,14 @@
     .ticker{ background:var(--brand); color:#fff; overflow:hidden; white-space:nowrap; font-weight:600; font-size:14px; }
     .ticker .track{ display:inline-block; animation:scroll 60s linear infinite; padding:8px 0; }
     @keyframes scroll{ 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+    .site-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-title-link:hover {
+  opacity: 0.8;
+}
 
     /* ===== Hero (fond clair comme outil-mails) ===== */
     .hero{ background:linear-gradient(135deg,#fff 0%,#fff5f4 50%,#ffe8e6 100%); padding:60px 0; border-bottom:1px solid var(--line); position:relative; overflow:hidden; }
@@ -76,7 +84,7 @@
   <!-- Header -->
   <header>
     <div class="wrap topbar">
-      <div class="brand">Journée Sans Nous</div>
+      <div class="brand"><a href="/" class="site-title-link">Journée Sans Nous</a></div>
     </div>
   </header>
 
